@@ -20,7 +20,7 @@ Examples of behavior that contributes to a positive environment for our communit
 ### Community Values
 
 - Excellence in game design and balanced mechanics
-- Professional documentation standards  
+- Professional documentation standards
 - Transparent development processes
 - Educational focus and skill development
 - Long-term project sustainability

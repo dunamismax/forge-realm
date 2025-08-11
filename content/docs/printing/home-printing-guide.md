@@ -8,10 +8,11 @@ description: >
 
 This guide provides step-by-step instructions to print Forge Realm cards at home.
 
-## 1. Prepare Files
+## 1. Get Card Files
 
-- Download card images or PDFs from the project repository.
-- Ensure images are at least 300 DPI for clear prints.
+- Browse and download card files from our [Card Gallery](/cards/)
+- Choose your preferred format: PDF sheets, individual PNGs, or starter decks
+- All files are provided at 300 DPI for optimal print quality
 
 ## 2. Printer Settings
 

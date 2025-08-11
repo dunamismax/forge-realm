@@ -2,7 +2,30 @@
   <img src="https://github.com/dunamismax/images/blob/main/forge-realm/forge-realm-alt.png" alt="Forge Realm - Open Source Trading Card Game" width="500" />
 </p>
 
+# Forge Realm - Open Source Trading Card Game
+
 Forge Realm is a fully open-source trading card game built for tabletop play. The project focuses on transparent development, community governance, unrestricted print-and-play access, and no artificial scarcity.
+
+## Official Website
+
+**[forge-realm.com](https://forge-realm.com)** - Complete documentation, rules, printing guides, and everything you need to play
+
+## Quick Start
+
+1. **Learn the Rules**: Visit [forge-realm.com/docs/gameplay/quick-start/](https://forge-realm.com/docs/gameplay/quick-start/) for a beginner's guide
+2. **Get Cards**: Browse and download card files at [forge-realm.com/cards/](https://forge-realm.com/cards/)
+3. **Print Cards**: Follow our [printing guide](https://forge-realm.com/docs/printing/home-printing-guide/) to create physical cards at home  
+4. **Play**: Gather friends and start your first game!
+
+## Documentation
+
+All game documentation is available on the official website:
+
+- **[Quick Start Guide](https://forge-realm.com/docs/gameplay/quick-start/)** - Learn the basics
+- **[Comprehensive Rules](https://forge-realm.com/docs/gameplay/comprehensive-rules/)** - Complete rule set
+- **[Card Gallery](https://forge-realm.com/cards/)** - Browse and download all cards
+- **[Printing Guides](https://forge-realm.com/docs/printing/)** - Print cards at home
+- **[Game Formats](https://forge-realm.com/docs/gameplay/formats/)** - Different ways to play
 
 ## Core Principles
 
@@ -11,30 +34,21 @@ Forge Realm is a fully open-source trading card game built for tabletop play. Th
 - **Free accessibility** – print-and-play for everyone
 - **No artificial scarcity** – all cards available to all players
 
-## Getting Started
-
-Visit our website at **[forge-realm.com](https://forge-realm.com)** for complete documentation, rules, and guides.
-
-Join our community on [Discord](https://discord.gg/KQTY8DfY) to help shape the game and participate in design discussions.
-
-New to Forge Realm? Start with the [Quick Start Guide](docs/gameplay/quick-start.md) to learn the basics and begin playing.
-
-For detailed mechanics, see the [Comprehensive Rules](docs/gameplay/comprehensive-rules.md).
-
-## Printing Cards
-
-Use the [Home Printing Guide](docs/printing/home-printing-guide.md) for instructions on producing cards at home. Additional tips, including printer recommendations and cardstock options, are available in the [Printing Docs](docs/printing/).
-
-## Project Information
-
-Contributions are welcome across all disciplines. Read the [Project Documentation](docs/project/) for repository structure, quality guidelines, and digital tool plans.
-
 ## Community
 
 - **[forge-realm.com](https://forge-realm.com)** – Official website with complete documentation
-- **[Discord](https://discord.gg/KQTY8DfY)** – Real-time chat and coordination, bug reports and feature requests, long-form design discussion
+- **[Discord](https://discord.gg/KQTY8DfY)** – Real-time chat, design discussions, and community coordination
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) to get involved.
+## Contributing
+
+Contributions are welcome! Visit the [Contributing Guide](https://forge-realm.com/contributing/) on our website to learn how to get involved in:
+
+- Game design and balance
+- Card artwork and graphics  
+- Documentation and guides
+- Community events and testing
+
+Join our [Discord](https://discord.gg/KQTY8DfY) for real-time collaboration and see [CONTRIBUTING.md](CONTRIBUTING.md) for technical guidelines.
 
 ## License
 
@@ -43,4 +57,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) to get involved.
 
 ---
 
-**Ready to contribute?** Visit [forge-realm.com](https://forge-realm.com) and join our [Discord](https://discord.gg/KQTY8DfY) to start collaborating!
+**Ready to play?** Visit **[forge-realm.com](https://forge-realm.com)** and join our [Discord](https://discord.gg/KQTY8DfY) to start your journey!

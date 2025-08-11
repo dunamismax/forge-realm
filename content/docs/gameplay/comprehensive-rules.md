@@ -6,7 +6,9 @@ description: >
   Complete rules for Forge Realm with detailed timing and interaction information.
 ---
 
-This document defines the full ruleset for Forge Realm. It supplements the Quick Start Guide with detailed timing and interaction information.
+{{% pageinfo color="warning" %}}
+**Complete Rulebook** - This document defines the full ruleset for Forge Realm and supplements the [Quick Start Guide](../quick-start/) with detailed timing and interaction information.
+{{% /pageinfo %}}
 
 ## 1. Game Concepts
 

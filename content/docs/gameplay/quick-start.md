@@ -6,7 +6,11 @@ description: >
   Get started playing Forge Realm quickly with this essential guide.
 ---
 
-Forge Realm is designed for easy print-and-play tabletop sessions. This guide covers the essentials to get you playing quickly.
+{{% pageinfo color="primary" %}}
+**Ready to play in 5 minutes?** This guide covers everything you need to start playing Forge Realm immediately.
+{{% /pageinfo %}}
+
+Forge Realm is designed for easy print-and-play tabletop sessions. Follow these simple steps to begin your first game.
 
 ## Components
 
@@ -35,8 +39,12 @@ Essence is the primary resource for casting spells and summoning creatures. Each
 
 Reduce your opponent's life to zero or force them to draw from an empty library.
 
-## Further Reading
+{{% alert title="Need Cards?" color="info" %}}
+Don't have cards yet? Browse our [Card Gallery](/cards/) to download card files, then check out our [Printing Guide](../../printing/home-printing-guide/) to learn how to print your own high-quality cards at home.
+{{% /alert %}}
 
-- [Comprehensive Rules](../comprehensive-rules/)
-- [Formats](../formats/)
-- Join the community on [Discord](https://discord.gg/KQTY8DfY) for strategy and deck-building discussions.
+## Next Steps
+
+- **Master the Rules**: Read the [Comprehensive Rules](../comprehensive-rules/) for advanced mechanics
+- **Explore Formats**: Learn about different ways to play in [Formats](../formats/)
+- **Join the Community**: Connect with players on [Discord](https://discord.gg/KQTY8DfY) for strategy discussions and deck building tips

@@ -1,20 +1,29 @@
 # Contributing to Forge Realm
 
-Thank you for contributing to Forge Realm! This guide covers our development process and community standards.
+Thank you for contributing to Forge Realm! This guide covers technical contributions to the Hugo website repository.
+
+## Primary Contribution Channels
+
+- **Game Design & Cards**: Join [Discord](https://discord.gg/KQTY8DfY) for game design, card submissions, and community discussions
+- **Website Development**: Use GitHub for technical website contributions
+- **Complete Guide**: Visit [forge-realm.com/contributing/](https://forge-realm.com/contributing/) for comprehensive contribution information
 
 ## Code of Conduct
 
 All contributors must follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-## Getting Started
+## Technical Website Contributions
+
+This repository contains the Hugo static site generator code for [forge-realm.com](https://forge-realm.com).
 
 ### Prerequisites
 
 - Git 2.20+
-- Markdown editor
-- Discord account (for community discussion)
+- Hugo Extended v0.128.0+
+- Node.js 18+ and npm
+- Discord account for community coordination
 
-### Setup
+### Local Development Setup
 
 ```bash
 # Fork and clone
@@ -23,89 +32,61 @@ cd forge-realm
 
 # Add upstream remote
 git remote add upstream https://github.com/dunamismax/forge-realm.git
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
 ```
 
-## Contribution Workflow
+### Website Contribution Workflow
 
 1. **Create Feature Branch**
-
    ```bash
-   git checkout -b feature/your-contribution
+   git checkout -b website/your-improvement
    ```
 
 2. **Make Changes**
-   - Follow markdown conventions
-   - Test any new print templates
-   - Update related documentation
+   - Edit Hugo content in `content/` directory
+   - Update site configuration in `hugo.toml`
+   - Modify styles or templates as needed
+   - Test changes locally with `npm run dev`
 
 3. **Test Changes**
-   - Verify all links work correctly
-   - Check markdown formatting
-   - Test print templates if applicable
+   - Verify site builds: `npm run build`
+   - Check all links work correctly
+   - Ensure responsive design
+   - Test on multiple devices/browsers
 
 4. **Submit Pull Request**
-   - Clear description of changes
+   - Clear description of website changes
    - Reference related Discord discussions
-   - Include playtesting notes for game content
+   - Include screenshots for visual changes
 
-## Documentation Standards
+## What Goes Where
 
-- Use consistent markdown formatting
-- Keep language concise and developer-friendly
-- Include practical examples where helpful
-- Link to Discord for real-time discussion
+### GitHub (This Repository)
+- Hugo website source code
+- Technical documentation improvements  
+- Website bug fixes and enhancements
+- Build system and deployment improvements
 
-## Contribution Types
+### Discord Community
+- Game design and card discussions
+- Card artwork submissions
+- Balance feedback and playtesting
+- Community events and coordination
+- All major game-related decisions
 
-### Game Designers
+### Website Content
+- All game documentation lives at [forge-realm.com](https://forge-realm.com)
+- Card galleries and download files
+- Complete contribution guidelines
+- Community resources and guides
 
-- Card designs and balance proposals
-- New mechanic development
-- Format creation and testing
-- Rules clarification and updates
+## Questions?
 
-### Artists and Designers
-
-- Card artwork and illustrations
-- Template design and layout
-- Icon creation and graphics
-- Print template optimization
-
-### Documentation Writers
-
-- Rule clarifications and examples
-- Strategy guides and tutorials
-- Printing guides and troubleshooting
-- Community event documentation
-
-### Technical Contributors
-
-- Asset processing and optimization
-- Template creation and formatting
-- Documentation automation
-
-## Review Process
-
-All contributions require:
-
-1. Community discussion on Discord
-2. Documentation review from maintainers
-3. Playtesting for game content changes
-4. Asset quality verification for artwork
-
-## Community Integration
-
-All major discussions happen on Discord. Use GitHub for:
-
-- Formal documentation updates
-- Asset contributions
-- Bug reports for printing/template issues
-
-Active Discord participation is encouraged for:
-
-- Game design discussions
-- Balance feedback and testing
-- Community event coordination
-- Real-time collaboration
-
-Questions? Join our [Discord community](https://discord.gg/KQTY8DfY)!
+- **Website Issues**: Open a GitHub issue
+- **Game Questions**: Join our [Discord community](https://discord.gg/KQTY8DfY)
+- **Complete Guide**: Visit [forge-realm.com/contributing/](https://forge-realm.com/contributing/)

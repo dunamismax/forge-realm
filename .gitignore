@@ -575,11 +575,7 @@ ipython_config.py
 # ALLOW SPECIFIC IMPORTANT FILES
 # =============================================================================
 
-# Allow specific configuration files even if they match patterns above
+# Allow important VSCode configuration files
 !/.vscode/settings.json
 !/.vscode/launch.json
 !/.vscode/tasks.json
-!/docs/**/*.pdf
-!/assets/**/*.pdf
-!/card-templates/**/*.ai
-!/logos/**/*.ai

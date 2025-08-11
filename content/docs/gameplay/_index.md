@@ -10,14 +10,28 @@ description: >
 Everything you need to know about playing Forge Realm.
 {{% /pageinfo %}}
 
-## Getting Started
+{{% blocks/section color="primary" type="row" %}}
 
-If you're new to Forge Realm, start with the [Quick Start Guide](quick-start/) to learn the basics and begin playing immediately.
+{{% blocks/feature icon="fa-rocket" title="Quick Start" url="quick-start/" %}}
+New to Forge Realm? Learn the basics and start playing in minutes.
+{{% /blocks/feature %}}
 
-## Complete Rules
+{{% blocks/feature icon="fa-book" title="Complete Rules" url="comprehensive-rules/" %}}
+Detailed mechanics and advanced interactions for competitive play.
+{{% /blocks/feature %}}
 
-For detailed mechanics and advanced interactions, see the [Comprehensive Rules](comprehensive-rules/).
+{{% blocks/feature icon="fa-chess" title="Game Formats" url="formats/" %}}
+Different ways to play: Standard, Legacy, Draft, and Casual formats.
+{{% /blocks/feature %}}
 
-## Game Formats
+{{% /blocks/section %}}
 
-Learn about different ways to play in [Formats](formats/).
+{{% blocks/section color="light" %}}
+
+## Ready to Play?
+
+1. **Learn**: Read the [Quick Start Guide](quick-start/) (5 minutes)
+2. **Print**: Follow the [Printing Guide](/docs/printing/home-printing-guide/) to create cards
+3. **Play**: Gather 2+ players and start your first game!
+4. **Join**: Connect with the community on [Discord](https://discord.gg/KQTY8DfY)
+{{% /blocks/section %}}

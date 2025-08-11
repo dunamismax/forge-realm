@@ -1,11 +1,9 @@
 {
   "name": "forge-realm",
   "version": "1.0.0",
-  "description": "<p align=\"center\">   <img src=\"https://github.com/dunamismax/images/blob/main/forge-realm/forge-realm-alt.png\" alt=\"Forge Realm - Open Source Trading Card Game\" width=\"500\" /> </p>",
+  "description": "Hugo website for Forge Realm - Open Source Trading Card Game",
   "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
+  "homepage": "https://forge-realm.com",
   "scripts": {
     "dev": "hugo server --buildDrafts --bind 0.0.0.0",
     "build": "hugo mod tidy && hugo --minify --environment production",

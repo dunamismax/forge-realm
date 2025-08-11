@@ -59,6 +59,10 @@ title = 'Forge Realm - Open Source Trading Card Game'
     url = "/docs/gameplay/"
     weight = 10
   [[menu.main]]
+    name = "Cards"
+    url = "/cards/"
+    weight = 15
+  [[menu.main]]
     name = "Printing"
     url = "/docs/printing/"
     weight = 20

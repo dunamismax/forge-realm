@@ -9,7 +9,9 @@ description: >
   Learn how to contribute to the Forge Realm project.
 ---
 
+{{% pageinfo %}}
 Thank you for contributing to Forge Realm! This guide covers our development process and community standards.
+{{% /pageinfo %}}
 
 ## Code of Conduct
 
@@ -64,34 +66,45 @@ git remote add upstream https://github.com/dunamismax/forge-realm.git
 - Include practical examples where helpful
 - Link to Discord for real-time discussion
 
-## Contribution Types
+## How to Contribute
 
-### Game Designers
+We welcome contributions in many forms:
+
+{{% blocks/section color="primary" type="row" %}}
+
+{{% blocks/feature icon="fa-gamepad" title="Game Design" %}}
 
 - Card designs and balance proposals
 - New mechanic development
 - Format creation and testing
 - Rules clarification and updates
+{{% /blocks/feature %}}
 
-### Artists and Designers
+{{% blocks/feature icon="fa-palette" title="Art & Design" %}}
 
 - Card artwork and illustrations
 - Template design and layout
 - Icon creation and graphics
 - Print template optimization
+{{% /blocks/feature %}}
 
-### Documentation Writers
+{{% blocks/feature icon="fa-pen" title="Documentation" %}}
 
 - Rule clarifications and examples
 - Strategy guides and tutorials
 - Printing guides and troubleshooting
 - Community event documentation
+{{% /blocks/feature %}}
 
-### Technical Contributors
+{{% blocks/feature icon="fa-code" title="Technical" %}}
 
-- Asset processing and optimization
-- Template creation and formatting
-- Documentation automation
+- Website development and improvements
+- Hugo site optimization and features
+- Asset processing and CDN integration
+- Build and deployment automation
+{{% /blocks/feature %}}
+
+{{% /blocks/section %}}
 
 ## Review Process
 
@@ -102,19 +115,37 @@ All contributions require:
 3. Playtesting for game content changes
 4. Asset quality verification for artwork
 
+{{% blocks/section color="light" %}}
+
 ## Community Integration
 
-All major discussions happen on Discord. Use GitHub for:
+### Discord - Primary Community Hub
 
-- Formal documentation updates
-- Asset contributions
-- Bug reports for printing/template issues
+All major discussions happen on Discord. Join for:
 
-Active Discord participation is encouraged for:
-
-- Game design discussions
-- Balance feedback and testing
+- Game design discussions and brainstorming
+- Balance feedback and playtesting
+- Card artwork and asset submissions
 - Community event coordination
-- Real-time collaboration
+- Real-time collaboration with other contributors
+- Announcements about new card releases
 
-Questions? Join our [Discord community](https://discord.gg/KQTY8DfY)!
+### GitHub - Technical Development
+
+Use GitHub for:
+
+- Website and documentation improvements
+- Technical contributions to the Hugo site
+- Bug reports for website functionality
+- Code contributions and build system improvements
+
+<div class="text-center mt-4">
+  <a class="btn btn-lg btn-primary me-3 mb-4" href="https://discord.gg/KQTY8DfY">
+    Join Discord <i class="fab fa-discord ms-2"></i>
+  </a>
+  <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/dunamismax/forge-realm">
+    View on GitHub <i class="fab fa-github ms-2"></i>
+  </a>
+</div>
+
+{{% /blocks/section %}}
