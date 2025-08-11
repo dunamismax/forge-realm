@@ -1,8 +1,8 @@
 module github.com/dunamismax/forge-realm
 
-go 1.24.6
+go 1.22
 
 require (
-	github.com/google/docsy v0.12.0 // indirect
-	github.com/google/docsy/dependencies v0.7.2 // indirect
+	github.com/colinwilson/lotusdocs v0.2.0 // indirect
+	github.com/gohugoio/hugo-mod-bootstrap-scss/v5 v5.20300.20400 // indirect
 )

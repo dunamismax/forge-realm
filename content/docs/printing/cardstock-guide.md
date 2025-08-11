@@ -8,9 +8,9 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo color="success" %}}
+{{< alert context="success" >}}
 The right cardstock makes all the difference in card quality and durability.
-{{% /pageinfo %}}
+{{< /alert >}}
 
 Choosing the right cardstock is crucial for creating professional-quality Forge Realm cards that feel authentic and durable during gameplay.
 

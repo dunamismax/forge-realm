@@ -8,9 +8,9 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo color="info" %}}
+{{< alert context="info" >}}
 Choose the right printer for high-quality card printing at home.
-{{% /pageinfo %}}
+{{< /alert >}}
 
 Choosing the right printer is crucial for producing high-quality Forge Realm cards at home. This guide covers recommended models, specifications, and detailed setup instructions.
 

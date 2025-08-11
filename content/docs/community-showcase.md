@@ -8,29 +8,22 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo color="success" %}}
+{{< alert context="success" >}}
 **Celebrating Our Community** - Explore the incredible creativity, strategic insights, and achievements of Forge Realm players worldwide.
-{{% /pageinfo %}}
+{{< /alert >}}
 
 ## Featured Community Content
 
 ### Player Spotlights
 
-{{% blocks/section color="primary" type="row" %}}
-
-{{% blocks/feature icon="fa-trophy" title="Tournament Champions" %}}
+### Tournament Champions
 Celebrating players who have achieved victory in competitive play and community tournaments.
-{{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-star" title="Content Creators" %}}
+### Content Creators
 Highlighting community members who create videos, guides, and educational content about Forge Realm.
-{{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-palette" title="Community Artists" %}}
+### Community Artists
 Showcasing talented artists who contribute card artwork, fan art, and creative designs to the project.
-{{% /blocks/feature %}}
-
-{{% /blocks/section %}}
 
 ## Deck Showcases
 
@@ -117,7 +110,6 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 ### Tournament Highlights
 
-{{% blocks/section color="light" %}}
 
 #### Upcoming Events
 
@@ -138,7 +130,6 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
   - Special formats and variant rules
   - Focus on fun and community building
 
-{{% /blocks/section %}}
 
 ### Community Challenges
 

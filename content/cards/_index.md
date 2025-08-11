@@ -10,9 +10,9 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo color="primary" %}}
+{{< alert context="primary" >}}
 **Complete Card Collection** - Browse all Forge Realm cards, view high-resolution artwork, and download print-ready files. **First cards releasing December 25, 2025.**
-{{% /pageinfo %}}
+{{< /alert >}}
 
 <div class="row align-items-center my-4">
   <div class="col-md-8">
@@ -24,21 +24,14 @@ description: >
   </div>
 </div>
 
-{{% blocks/section color="dark" type="row" %}}
-
-{{% blocks/feature icon="fa-star" title="Core Set" url="core/" %}}
+### [Core Set](core/)
 The foundational cards that form the basis of Forge Realm gameplay.
-{{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-magic" title="Expansion Sets" url="#expansions" %}}
+### [Expansion Sets](#expansions)
 Additional cards that introduce new mechanics and strategies.
-{{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-download" title="Print Files" url="#downloads" %}}
+### [Print Files](#downloads)
 High-quality print-ready files for home and professional printing.
-{{% /blocks/feature %}}
-
-{{% /blocks/section %}}
 
 ## Download Options
 
@@ -52,7 +45,6 @@ All card files are available in multiple formats optimized for different printin
 All files are provided at 300 DPI with proper bleed margins for professional-quality results. See our [Printing Guide](/docs/printing/home-printing-guide/) for best practices.
 {{% /alert %}}
 
-{{% blocks/section color="light" %}}
 
 ## How to Get Cards
 
@@ -65,7 +57,6 @@ All files are provided at 300 DPI with proper bleed margins for professional-qua
 
 New cards and sets are regularly added. Join our [Discord](https://discord.gg/KQTY8DfY) for announcements about new releases and community voting on upcoming cards.
 
-{{% /blocks/section %}}
 
 ---
 

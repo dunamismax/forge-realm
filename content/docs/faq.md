@@ -8,9 +8,9 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo color="primary" %}}
+{{< alert context="primary" >}}
 Find answers to the most common questions about Forge Realm, from basic gameplay to advanced printing techniques.
-{{% /pageinfo %}}
+{{< /alert >}}
 
 ## General Questions
 

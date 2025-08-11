@@ -8,9 +8,9 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo %}}
+{{< alert context="info" >}}
 Print professional-quality Forge Realm cards at home with these detailed instructions.
-{{% /pageinfo %}}
+{{< /alert >}}
 
 This comprehensive guide will help you print professional-quality Forge Realm cards at home with detailed instructions and troubleshooting tips.
 

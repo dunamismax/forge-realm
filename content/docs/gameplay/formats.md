@@ -8,9 +8,9 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo %}}
+{{< alert context="info" >}}
 Explore different ways to play Forge Realm, from competitive tournaments to casual kitchen table games.
-{{% /pageinfo %}}
+{{< /alert >}}
 
 Forge Realm supports multiple play styles to suit different groups.
 

@@ -8,9 +8,9 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo color="primary" %}}
+{{< alert context="primary" >}}
 **Ready to play in 5 minutes?** This guide covers everything you need to start playing Forge Realm immediately.
-{{% /pageinfo %}}
+{{< /alert >}}
 
 Forge Realm is designed for easy print-and-play tabletop sessions. This guide will get you playing your first game in minutes.
 

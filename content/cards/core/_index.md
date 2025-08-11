@@ -8,9 +8,9 @@ description: >
   The foundational cards of Forge Realm, providing the essential gameplay experience.
 ---
 
-{{% pageinfo color="success" %}}
+{{< alert context="success" >}}
 **Core Set** - The foundational collection of Forge Realm cards that establishes the core gameplay mechanics and provides everything needed for competitive play.
-{{% /pageinfo %}}
+{{< /alert >}}
 
 ## About the Core Set
 
@@ -29,29 +29,20 @@ The Core Set includes 4 copies of each card, providing complete playsets for com
 
 ## Card Categories
 
-{{% blocks/section color="primary" type="row" %}}
-
-{{% blocks/feature icon="fa-dragon" title="Creatures" %}}
+### Creatures
 Essential creatures that establish the fundamental creature types and combat mechanics.
-{{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-magic" title="Spells" %}}
+### Spells
 Instant and sorcery spells that provide the basic spell effects and interactions.
-{{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-gem" title="Artifacts" %}}
+### Artifacts
 Utility artifacts and essence-producing cards that support deck construction.
-{{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-crown" title="Enchantments" %}}
+### Enchantments
 Ongoing effects that modify gameplay and provide strategic depth.
-{{% /blocks/feature %}}
-
-{{% /blocks/section %}}
 
 ## Download Core Set
 
-{{% blocks/section color="light" %}}
 
 ### Available Formats
 
@@ -79,7 +70,6 @@ Core Set files are currently in development with the following timeline:
 Join our [Discord](https://discord.gg/KQTY8DfY) for development updates and early preview access.
 {{% /alert %}}
 
-{{% /blocks/section %}}
 
 ## Community Involvement
 

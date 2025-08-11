@@ -13,9 +13,9 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo %}}
+{{< alert context="info" >}}
 Thank you for contributing to Forge Realm! This guide covers our development process and community standards.
-{{% /pageinfo %}}
+{{< /alert >}}
 
 ## Code of Conduct
 
@@ -78,40 +78,32 @@ git remote add upstream https://github.com/dunamismax/forge-realm.git
 
 We welcome contributions in many forms:
 
-{{% blocks/section color="primary" type="row" %}}
-
-{{% blocks/feature icon="fa-gamepad" title="Game Design" %}}
+### Game Design
 
 - Card designs and balance proposals
 - New mechanic development
 - Format creation and testing
 - Rules clarification and updates
-{{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-palette" title="Art & Design" %}}
+### Art & Design
 
 - Card artwork and illustrations
 - Template design and layout
 - Icon creation and graphics
 - Print template optimization
-{{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-pen" title="Documentation" %}}
+### Documentation
 
 - Rule clarifications and examples
 - Strategy guides and tutorials
 - Printing guides and troubleshooting
 - Community event documentation
-{{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-code" title="Technical" %}}
+### Technical
 
 - Website development and improvements
 - Hugo site optimization and features
 - Asset processing and CDN integration
-{{% /blocks/feature %}}
-
-{{% /blocks/section %}}
 
 <div class="mt-5"></div>
 ## Review Process
@@ -123,7 +115,6 @@ All contributions require:
 3. Playtesting for game content changes
 4. Asset quality verification for artwork
 
-{{% blocks/section color="light" %}}
 
 ## Community Integration
 
@@ -156,4 +147,3 @@ Use GitHub for:
   </a>
 </div>
 
-{{% /blocks/section %}}
