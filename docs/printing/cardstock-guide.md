@@ -1,9 +1,9 @@
 # Cardstock Guide
 
-Card feel and durability depend on the paper you choose. For best results:
+Card quality and durability depend on your paper choice. For professional results:
 
 - **Thickness**: Use cardstock between 280–330 GSM for a professional feel.
 - **Finish**: Matte finish reduces glare while gloss enhances colors.
 - **Sleeving**: If using card sleeves, 200 GSM paper with a backing card can also work.
 
-Always test a single sheet before large print runs to ensure your printer handles the chosen stock.
+Always run a test print before large batches to ensure your printer handles the cardstock properly.

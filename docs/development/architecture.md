@@ -1,13 +1,12 @@
 # Project Architecture
 
-Forge Realm is currently a documentation-focused repository. The structure is organized as follows:
+Forge Realm maintains a clean documentation-focused structure for core game materials and assets:
 
 ```
 root/
 ├── docs/           # Gameplay rules, printing guides, development notes
-├── community/      # Meeting notes, proposals, and voting records
 ├── assets/         # Logos, card templates, and artwork
 └── README.md       # Project overview and links
 ```
 
-Future digital tools (such as a Discord bot or web client) will be developed in separate repositories to keep this space focused on tabletop play materials.
+Community discussion and collaboration happens on Discord rather than in repository folders to maintain focus on documentation and game assets. Future digital tools (Discord bot, web client) will be developed in separate repositories.

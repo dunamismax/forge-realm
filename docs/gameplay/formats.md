@@ -11,9 +11,9 @@ Forge Realm supports multiple play styles to suit different groups.
 - Ideal for long-term collection play and experimental decks.
 
 ## Draft
-- Players open predetermined boosters, pick cards in rounds, and build decks from their selections.
+- Players draft cards from booster packs and build decks on the fly.
 - Great for events and introducing new sets.
 
-## Casual
+## Casual  
 - House rules and custom cards encouraged.
-- Perfect for testing mechanics or playing with new players.
+- Perfect for testing new mechanics or teaching new adventurers.

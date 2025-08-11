@@ -4,19 +4,13 @@
 
 Forge Realm operates under a democratic governance model designed to ensure community input drives all major decisions while maintaining project stability and technical excellence. This document outlines our decision-making processes, voting procedures, and organizational structure.
 
-## Governance Philosophy
+## Core Principles
 
-### Core Principles
-
-**Democratic Decision Making**: All stakeholders have a voice in proportion to their contribution and investment in the project's success.
-
-**Transparent Process**: Every decision, vote, and discussion is conducted openly with full documentation available to the community.
-
-**Technical Excellence**: Governance structures support high-quality code, balanced game design, and professional documentation standards.
-
-**Community Ownership**: The project belongs to its contributors and users, not any individual or organization.
-
-**Long-term Sustainability**: Decisions consider the project's long-term health over short-term convenience.
+- **Democratic Decision Making**: Contributors have proportional voice in project direction
+- **Transparent Process**: Open decision-making with public documentation  
+- **Technical Excellence**: High standards for game design and documentation
+- **Community Ownership**: Project belongs to contributors, not individuals
+- **Long-term Focus**: Sustainable development over quick fixes
 
 ## Organizational Structure
 

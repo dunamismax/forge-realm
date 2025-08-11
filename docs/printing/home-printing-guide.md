@@ -21,6 +21,6 @@ This guide provides step-by-step instructions to print Forge Realm cards at home
 - For added rigidity, insert a common card as backing.
 
 ## 5. Storage
-- Store cards in a cool, dry place away from direct sunlight.
+- Store cards in a cool, dry place away from direct sunlight to preserve their power.
 
 For community tips and troubleshooting, join the [Discord server](https://discord.gg/KQTY8DfY).

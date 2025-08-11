@@ -1,6 +1,6 @@
 # Contributing to Forge Realm
 
-Thank you for contributing to Forge Realm! This guide covers our development process and standards.
+Thank you for contributing to Forge Realm! This guide covers our development process and community standards.
 
 ## Code of Conduct
 
@@ -10,10 +10,9 @@ All contributors must follow our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Prerequisites
 
-- Go 1.24+
 - Git 2.20+
-- Mage build tool
-- Code editor with Go support
+- Markdown editor
+- Discord account (for community discussion)
 
 ### Setup
 
@@ -24,82 +23,81 @@ cd forge-realm
 
 # Add upstream remote
 git remote add upstream https://github.com/dunamismax/forge-realm.git
-
-# Install dependencies and build
-go mod download
-mage build
-mage test
 ```
 
-## Development Workflow
+## Contribution Workflow
 
 1. **Create Feature Branch**
    ```bash
-   git checkout -b feature/your-feature
+   git checkout -b feature/your-contribution
    ```
 
 2. **Make Changes**
-   - Follow Go conventions
-   - Write tests for new functionality
-   - Update documentation if needed
+   - Follow markdown conventions
+   - Test any new print templates
+   - Update related documentation
 
 3. **Test Changes**
-   ```bash
-   mage lint
-   mage test
-   mage build
-   ```
+   - Verify all links work correctly
+   - Check markdown formatting
+   - Test print templates if applicable
 
 4. **Submit Pull Request**
    - Clear description of changes
-   - Reference related issues
-   - Ensure CI passes
+   - Reference related Discord discussions
+   - Include playtesting notes for game content
 
-## Code Standards
+## Documentation Standards
 
-- Follow standard Go formatting (`go fmt`)
-- Use meaningful variable and function names
-- Write comprehensive tests
-- Document exported functions
-- Keep functions small and focused
+- Use consistent markdown formatting
+- Keep language concise and developer-friendly
+- Include practical examples where helpful
+- Link to Discord for real-time discussion
 
 ## Contribution Types
 
-### Developers
-- Game engine improvements
-- Build system enhancements  
-- Testing infrastructure
-- Performance optimizations
-
 ### Game Designers
-- Card design and balance
-- Mechanic proposals
-- Format development
-- Rules clarification
+- Card designs and balance proposals
+- New mechanic development
+- Format creation and testing
+- Rules clarification and updates
 
-### Artists
-- Card artwork
-- Template design
-- Icon creation
-- UI/UX improvements
+### Artists and Designers
+- Card artwork and illustrations
+- Template design and layout
+- Icon creation and graphics
+- Print template optimization
+
+### Documentation Writers
+- Rule clarifications and examples
+- Strategy guides and tutorials
+- Printing guides and troubleshooting
+- Community event documentation
+
+### Developers
+- Future digital tool development (separate repos)
+- Build automation and templates
+- Asset processing scripts
 
 ## Review Process
 
 All contributions require:
-1. Code review from maintainer
-2. Passing automated tests
-3. Documentation updates (if applicable)
-4. Community approval for design changes
+1. Community discussion on Discord
+2. Documentation review from maintainers
+3. Playtesting for game content changes
+4. Asset quality verification for artwork
 
-## Build Commands
+## Community Integration
 
-```bash
-mage build      # Compile application
-mage test       # Run all tests  
-mage lint       # Check code style
-mage clean      # Remove build artifacts
-mage dev        # Build and run
-mage all        # Full pipeline
-```
+All major discussions happen on Discord. Use GitHub for:
+- Formal documentation updates
+- Asset contributions
+- Bug reports for printing/template issues
 
-Questions? Open an issue or join our Discord community!
+Active Discord participation is encouraged for:
+- Game design discussions
+- Balance feedback and testing
+- Community event coordination
+- Real-time collaboration
+
+Questions? Join our [Discord community](https://discord.gg/KQTY8DfY)!

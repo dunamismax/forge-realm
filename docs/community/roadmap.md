@@ -1,21 +1,33 @@
 # Project Roadmap
 
-This roadmap outlines the near-term goals for Forge Realm.
+Development priorities and timeline for Forge Realm, shaped by community feedback and playtesting.
 
-## Q1
-- Finalize core rules and balance the initial card set.
-- Host first public playtest event.
+## Phase 1: Core Foundation
+- Complete comprehensive rules documentation
+- Balance initial card set through playtesting
+- Establish print templates and formatting standards
+- Launch regular playtest events on Discord
 
-## Q2
-- Release printable deck templates and art assets.
-- Launch community-driven card design contest.
+## Phase 2: Community Growth  
+- Release complete printable starter decks
+- Community-driven card design initiatives
+- Expand format options and tournament support
+- Develop comprehensive strategy guides
 
-## Q3
-- Begin work on a Discord bot for rules lookup and card search.
-- Prepare second card set with community feedback.
+## Phase 3: Digital Integration
+- Discord bot for rules lookup and card database
+- Web-based deck builder and card gallery
+- Digital playtest tools and feedback systems
+- Organized play infrastructure
 
-## Q4
-- Evaluate digital play options (web or mobile clients).
-- Plan for organized play structure and ranking system.
+## Phase 4: Expansion
+- Second card set development and release
+- Advanced tournament formats and ranking
+- Community content creation tools
+- Cross-platform play options
 
-The roadmap evolves with community input. Join discussions on [Discord](https://discord.gg/KQTY8DfY).
+## Community Input
+
+Roadmap priorities are discussed and voted on through Discord. Major decisions involve community polls and feedback sessions.
+
+Join [Discord](https://discord.gg/KQTY8DfY) to influence development direction and participate in planning discussions.

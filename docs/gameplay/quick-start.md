@@ -1,6 +1,6 @@
 # Quick Start Guide
 
-Forge Realm is designed for easy print-and-play tabletop sessions. This guide will walk you through the essentials so you can start playing immediately.
+Forge Realm is designed for easy print-and-play tabletop sessions. This guide covers the essentials to get you playing quickly.
 
 ## Components
 - A deck of at least 60 Forge Realm cards
@@ -19,10 +19,10 @@ Forge Realm is designed for easy print-and-play tabletop sessions. This guide wi
 4. **End Phase** – Resolve end-of-turn effects, then pass priority.
 
 ## Essence
-Essence is the resource used to play cards. Each card shows the amount and type of essence required. Players may generate one essence of any type once per turn by tapping a card or ability that produces it.
+Essence is the primary resource for casting spells and summoning creatures. Each card shows its essence cost and type requirements. Players may generate one essence per turn by tapping an appropriate source.
 
 ## Winning the Game
-Reduce your opponent's life total to zero or force them to draw from an empty deck.
+Reduce your opponent's life to zero or force them to draw from an empty library.
 
 ## Further Reading
 - [Comprehensive Rules](comprehensive-rules.md)

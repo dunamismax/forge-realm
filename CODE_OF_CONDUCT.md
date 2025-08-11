@@ -2,9 +2,7 @@
 
 ## Our Commitment
 
-We as members, contributors, and leaders pledge to make participation in the Forge Realm community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
-
-We pledge to act and interact in ways that contribute to an open, welcoming, diverse, inclusive, and healthy community focused on collaborative game development and design.
+The Forge Realm community is committed to providing a harassment-free environment for everyone, regardless of background, experience, or identity. We focus on collaborative game development and maintaining a welcoming space for all contributors.
 
 ## Our Standards
 
@@ -12,21 +10,20 @@ Examples of behavior that contributes to a positive environment for our communit
 
 ### Encouraged Behavior
 
-- **Respectful Communication**: Using welcoming and inclusive language in all interactions
-- **Constructive Feedback**: Providing thoughtful, actionable feedback on designs and code
-- **Knowledge Sharing**: Helping others learn game design, development, and TCG mechanics
-- **Collaborative Problem-Solving**: Working together to solve technical and design challenges
-- **Credit Attribution**: Recognizing and crediting others' contributions appropriately
-- **Professional Discourse**: Maintaining focus on project goals and technical merit
-- **Inclusive Decision-Making**: Ensuring all voices are heard in governance and design discussions
+- Respectful communication and inclusive language
+- Constructive feedback on designs and documentation
+- Knowledge sharing and helping others learn
+- Collaborative problem-solving
+- Proper attribution of contributions
+- Focus on project goals and technical merit
 
 ### Community Values
 
-- **Excellence in Design**: Striving for high-quality game mechanics and balanced gameplay
-- **Technical Competence**: Maintaining professional standards in code and documentation
-- **Transparent Development**: Keeping all decisions and processes open and documented
-- **Educational Focus**: Helping community members improve their skills and understanding
-- **Long-term Thinking**: Considering the project's sustainability and growth
+- Excellence in game design and balanced mechanics
+- Professional documentation standards  
+- Transparent development processes
+- Educational focus and skill development
+- Long-term project sustainability
 
 ## Unacceptable Behavior
 
@@ -34,29 +31,19 @@ The following behaviors are considered harassment and are unacceptable within ou
 
 ### Prohibited Conduct
 
-- **Personal Attacks**: Insulting, derogatory comments, or personal attacks directed at individuals
-- **Harassment**: Deliberate intimidation, stalking, following, or unwelcome sexual attention
-- **Discrimination**: Discriminatory language or actions based on protected characteristics
-- **Trolling and Disruption**: Deliberately derailing discussions or wasting community time
-- **Doxxing**: Publishing others' private information without explicit permission
-- **Spam and Self-Promotion**: Excessive promotional content unrelated to project goals
-- **Intellectual Property Violations**: Using copyrighted material without proper authorization
-
-### Design and Development Misconduct
-
-- **Bad Faith Proposals**: Submitting proposals intended to disrupt rather than improve the game
-- **Sabotage**: Deliberately introducing bugs, imbalanced cards, or harmful code
-- **Plagiarism**: Claiming others' work as your own without proper attribution
-- **Vote Manipulation**: Attempting to manipulate community voting through fake accounts
-- **Information Hoarding**: Deliberately withholding important project information
+- Personal attacks, harassment, or discrimination
+- Trolling, spam, or deliberate disruption
+- Doxxing or sharing private information
+- Bad faith proposals or sabotage attempts
+- Plagiarism or improper attribution
+- Vote manipulation or sockpuppeting
 
 ### Communication Standards
 
-- **Respectful Disagreement**: While disagreement is expected and healthy, it must remain professional
-- **Technical Focus**: Criticize ideas, designs, and code, not people
-- **Constructive Tone**: Frame feedback in ways that help improve the project
-- **Cultural Sensitivity**: Be mindful of cultural differences in communication styles
-- **Professional Language**: Avoid profanity and inflammatory language
+- Maintain professional, respectful discourse
+- Focus criticism on ideas, not individuals
+- Frame feedback constructively
+- Keep discussions on-topic and productive
 
 ## Enforcement Responsibilities
 
