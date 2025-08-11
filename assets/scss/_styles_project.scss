@@ -30,36 +30,57 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 400;
   line-height: 1.6;
+  background-color: var(--forge-bg-primary) !important;
+  color: var(--forge-text-primary) !important;
 }
 
-// Code typography
+// Ensure consistent backgrounds across all containers
+.container,
+.container-fluid {
+  background-color: transparent !important;
+}
+
+// Code typography - Enhanced with proper fallbacks
 code, pre, .highlight {
-  font-family: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', monospace !important;
+  font-family: 'JetBrains Mono', 'Source Code Pro', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace !important;
   font-weight: 400;
   font-feature-settings: "liga" 1;
+  font-size: 0.9em;
+  line-height: 1.4;
 }
 
-// Fix header spacing and overlap issues
+// Fix header spacing and overlap issues - Remove light border
 .td-navbar {
   z-index: 1030;
   backdrop-filter: blur(10px);
   background: rgba(13, 17, 23, 0.95) !important;
-  border-bottom: 1px solid rgba(199, 125, 255, 0.1);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+  border-bottom: none !important; // Remove the light grey border
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
 }
 
 // Homepage specific - minimal padding for hero section
+// More aggressive targeting to ensure it overrides Docsy defaults
+body.td-dark-mode.home .td-main,
 .home .td-main {
-  padding-top: 10px; // Reduced padding at top
-
+  padding-top: 0 !important; // Remove all top padding
+  
   main {
     padding-top: 0 !important; // No padding on homepage main
+    margin-top: 0 !important; // Remove any margin too
   }
-
-  // Minimal cover section padding
-  .blocks-cover {
-    padding-top: 0.5rem !important;
-    padding-bottom: 2rem !important;
+  
+  // Target the cover section more aggressively
+  .blocks-cover,
+  .td-cover {
+    padding-top: 0 !important;
+    padding-bottom: 1rem !important;
+    margin-top: 0 !important;
+  }
+  
+  // Also target the container within the cover
+  .blocks-cover .container {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
   }
 }
 
@@ -81,44 +102,101 @@ code, pre, .highlight {
   text-align: left;
 }
 
-// Enhanced buttons with dark magic theme
-.btn-primary {
-  background-color: var(--forge-primary);
-  border: none;
-  box-shadow: var(--forge-shadow);
+// Enhanced buttons with dark magic theme - Unified styling for ALL buttons
+.btn-primary,
+.btn.btn-primary {
+  background-color: var(--forge-primary) !important;
+  border: none !important;
+  box-shadow: var(--forge-shadow) !important;
   color: white !important;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  border-radius: 6px !important;
 
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--forge-shadow-hover);
-    background-color: var(--forge-primary);
-    opacity: 0.9;
-  }
-
+  &:hover,
+  &:active,
   &:focus {
-    box-shadow: var(--forge-glow);
+    transform: translateY(-2px) !important;
+    box-shadow: var(--forge-shadow-hover) !important;
+    background-color: var(--forge-primary) !important;
+    opacity: 0.9 !important;
+    color: white !important;
+    text-decoration: none !important;
+    border: none !important;
   }
 }
 
-.btn-secondary {
-  background-color: var(--forge-secondary);
-  border: none;
-  box-shadow: var(--forge-shadow);
+.btn-secondary,
+.btn.btn-secondary {
+  background-color: var(--forge-secondary) !important;
+  border: none !important;
+  box-shadow: var(--forge-shadow) !important;
   color: white !important;
-  font-weight: 500;
-  transition: all 0.3s ease;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  border-radius: 6px !important;
 
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--forge-shadow-hover);
-    background-color: var(--forge-secondary);
-    opacity: 0.9;
-  }
-
+  &:hover,
+  &:active,
   &:focus {
-    box-shadow: var(--forge-glow);
+    transform: translateY(-2px) !important;
+    box-shadow: var(--forge-shadow-hover) !important;
+    background-color: var(--forge-secondary) !important;
+    opacity: 0.9 !important;
+    color: white !important;
+    text-decoration: none !important;
+    border: none !important;
+  }
+}
+
+// Fix the problematic outline buttons (like GitHub button)
+.btn-outline-light,
+.btn.btn-outline-light {
+  background-color: var(--forge-bg-tertiary) !important;
+  border: 2px solid var(--forge-primary) !important;
+  box-shadow: var(--forge-shadow) !important;
+  color: var(--forge-text-primary) !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  border-radius: 6px !important;
+
+  &:hover,
+  &:active,
+  &:focus {
+    transform: translateY(-2px) !important;
+    box-shadow: var(--forge-shadow-hover) !important;
+    background-color: var(--forge-primary) !important;
+    border-color: var(--forge-primary) !important;
+    color: white !important;
+    text-decoration: none !important;
+  }
+}
+
+// Ensure ALL buttons follow the same theme
+.btn {
+  &:not(.btn-primary):not(.btn-secondary):not(.btn-outline-light) {
+    background-color: var(--forge-bg-tertiary) !important;
+    border: 2px solid var(--forge-primary) !important;
+    box-shadow: var(--forge-shadow) !important;
+    color: var(--forge-text-primary) !important;
+    font-weight: 500 !important;
+    transition: all 0.3s ease !important;
+    text-decoration: none !important;
+    border-radius: 6px !important;
+
+    &:hover,
+    &:active,
+    &:focus {
+      transform: translateY(-2px) !important;
+      box-shadow: var(--forge-shadow-hover) !important;
+      background-color: var(--forge-primary) !important;
+      border-color: var(--forge-primary) !important;
+      color: white !important;
+      text-decoration: none !important;
+    }
   }
 }
 
