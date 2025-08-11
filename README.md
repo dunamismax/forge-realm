@@ -20,11 +20,13 @@ Open-source trading card game built by the community. Transparent development, d
 ## Quick Start
 
 ### Prerequisites
+
 - Go 1.24+
 - Mage build tool
 - Git
 
 ### Installation
+
 ```bash
 git clone https://github.com/dunamismax/forge-realm.git
 cd forge-realm
@@ -34,6 +36,7 @@ mage test
 ```
 
 ### Run Server
+
 ```bash
 mage dev
 # Visit http://localhost:8080
@@ -42,12 +45,15 @@ mage dev
 ## Game Mechanics
 
 ### Essence System
+
 Dynamic mana system where players choose essence types during deck construction.
 
 ### Stack-Based Resolution  
+
 All spells and abilities use stack-based timing for precise interactions.
 
 ### Format Support
+
 - **Standard**: Current sets with rotation
 - **Legacy**: All-time card pool
 - **Draft**: Community-voted set design
