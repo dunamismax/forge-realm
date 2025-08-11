@@ -11,9 +11,9 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo %}}
+{{< alert title="Welcome Contributors!" >}}
 Thank you for contributing to Forge Realm! This guide covers our development process and community standards.
-{{% /pageinfo %}}
+{{< /alert >}}
 
 ## Code of Conduct
 
@@ -21,21 +21,38 @@ Thank you for contributing to Forge Realm! This guide covers our development pro
   <img src="/images/forge-realm-PNG-circular-emblem.webp" alt="Forge Realm Emblem" style="max-width: 80px; height: auto;" class="img-fluid">
 </div>
 
-All contributors must follow our [Code of Conduct](https://github.com/dunamismax/forge-realm/blob/main/CODE_OF_CONDUCT.md).
+All contributors must follow our [Code of Conduct](/contributing/code-of-conduct/).
 
 ## Getting Started
 
 ### Prerequisites
 
 - Git 2.20+
+- Hugo Extended v0.128.0+ (for website development)
+- Node.js 18+ and npm (for website development)
 - Markdown editor
 - Discord account (for community discussion)
 
-### Setup
+### Website Development Setup
+
+This repository contains the Hugo static site for [forge-realm.com](https://forge-realm.com).
 
 ```bash
 # Fork and clone
-git clone https://github.com/yourusername/forge-realm.git
+git clone https://github.com/your-username/forge-realm.git
+cd forge-realm
+git remote add upstream https://github.com/dunamismax/forge-realm.git
+
+# Install dependencies and start (for website development)
+npm install
+npm run dev
+```
+
+### General Setup
+
+```bash
+# Fork and clone
+git clone https://github.com/your-username/forge-realm.git
 cd forge-realm
 
 # Add upstream remote
@@ -43,6 +60,15 @@ git remote add upstream https://github.com/dunamismax/forge-realm.git
 ```
 
 ## Contribution Workflow
+
+### Website Development Workflow
+
+1. **Create Branch**: `git checkout -b forge-realm/your-improvement`
+2. **Make Changes**: Edit content, styles, or templates
+3. **Test Locally**: `npm run dev` and `npm run build`
+4. **Submit PR**: Clear description with screenshots for visual changes
+
+### General Contribution Workflow
 
 1. **Create Feature Branch**
 

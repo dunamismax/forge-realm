@@ -1,0 +1,267 @@
+//
+// Forge Realm custom styles for Docsy theme
+// Enhanced project-specific styles with magical/fantasy theme
+//
+
+// Custom CSS Properties for Forge Realm Dark Theme
+:root {
+  --forge-gradient-primary: linear-gradient(135deg, #50fa7b 0%, #a6e3a1 100%);
+  --forge-gradient-secondary: linear-gradient(135deg, #8839ef 0%, #bd93f9 100%);
+  --forge-gradient-gold: linear-gradient(135deg, #d69e2e 0%, #fe640b 100%);
+  --forge-gradient-danger: linear-gradient(135deg, #d20f39 0%, #f38ba8 100%);
+  --forge-gradient-info: linear-gradient(135deg, #88c0d0 0%, #81a1c1 100%);
+  --forge-shadow: 0 4px 16px rgba(80, 250, 123, 0.15);
+  --forge-shadow-hover: 0 8px 32px rgba(80, 250, 123, 0.25);
+  --forge-glow: 0 0 20px rgba(80, 250, 123, 0.3);
+  --forge-card-bg: #2e3440;
+  --forge-surface-bg: #3b4252;
+}
+
+// Fix header spacing issues
+.td-main {
+  padding-top: 2rem;
+  
+  main {
+    // Ensure content is not blocked by navigation header
+    padding-top: 1rem;
+  }
+}
+
+// Improve page title spacing
+.td-page-meta .td-page-title {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+// Improve alert box styling in dark mode
+.alert {
+  margin: 1.5rem 0;
+}
+
+// Ensure proper contrast for links in dark mode
+.td-dark-mode {
+  .alert a {
+    color: inherit;
+    text-decoration: underline;
+    
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+// Mobile responsiveness improvements
+@media (max-width: 768px) {
+  .td-main {
+    padding-top: 1rem;
+  }
+  
+  // Improve button spacing on mobile
+  .btn {
+    margin-bottom: 0.5rem;
+  }
+}
+
+// Improve footer styling
+.td-footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+}
+
+// Fix card spacing and layout
+.card {
+  margin-bottom: 1.5rem;
+}
+
+// Better block quote styling in dark mode
+.td-dark-mode blockquote {
+  border-left: 4px solid var(--bs-primary);
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+}
+
+// Enhanced button styling with Forge Realm theme
+.btn-primary {
+  background: var(--forge-gradient-primary);
+  border: none;
+  box-shadow: var(--forge-shadow);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--forge-shadow-hover);
+  }
+}
+
+.btn-secondary {
+  background: var(--forge-gradient-secondary);
+  border: none;
+  box-shadow: var(--forge-shadow);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--forge-shadow-hover);
+  }
+}
+
+// Enhanced hero section
+.blocks-cover {
+  background: linear-gradient(135deg, #0b0b0b 0%, #2e3440 50%, #3b4252 100%);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/images/forge-realm-main-wide.webp') center/cover;
+    opacity: 0.1;
+    z-index: -1;
+  }
+}
+
+// Feature blocks enhancement
+.blocks-feature {
+  .card {
+    background: var(--forge-card-bg);
+    border: 1px solid rgba(80, 250, 123, 0.1);
+    box-shadow: var(--forge-shadow);
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--forge-glow);
+    }
+    
+    .card-body {
+      padding: 2rem;
+    }
+    
+    .fas, .fab {
+      color: #50fa7b;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Dark mode enhancements
+.td-dark-mode {
+  .blocks-feature .card {
+    background: var(--forge-card-bg);
+    border: 1px solid rgba(80, 250, 123, 0.2);
+    
+    .fas, .fab {
+      color: #50fa7b;
+    }
+  }
+  
+  // Enhanced navbar in dark mode
+  .td-navbar {
+    background: linear-gradient(90deg, #0b0b0b 0%, #2e3440 100%) !important;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(80, 250, 123, 0.1);
+  }
+  
+  // Enhanced cards with new theme
+  .card {
+    background-color: var(--forge-card-bg) !important;
+    border-color: rgba(80, 250, 123, 0.1) !important;
+  }
+  
+  // Code blocks
+  pre, code {
+    background-color: #1e1e2e !important;
+    color: #bd93f9 !important;
+  }
+}
+
+// Improved page header styling
+.td-page-title {
+  background: var(--forge-gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+// Enhanced alert styling with new theme
+.alert {
+  border: none;
+  border-radius: 12px;
+  box-shadow: var(--forge-shadow);
+  
+  &.alert-info {
+    background: linear-gradient(135deg, rgba(136, 192, 208, 0.1), rgba(129, 161, 193, 0.1));
+    border-left: 4px solid #88c0d0;
+  }
+  
+  &.alert-success {
+    background: linear-gradient(135deg, rgba(166, 227, 161, 0.1), rgba(169, 173, 128, 0.1));
+    border-left: 4px solid #a6e3a1;
+  }
+  
+  &.alert-warning {
+    background: linear-gradient(135deg, rgba(254, 100, 11, 0.1), rgba(214, 158, 46, 0.1));
+    border-left: 4px solid #fe640b;
+  }
+  
+  &.alert-danger {
+    background: linear-gradient(135deg, rgba(210, 15, 57, 0.1), rgba(243, 139, 168, 0.1));
+    border-left: 4px solid #d20f39;
+  }
+}
+
+// Additional dark theme enhancements
+.td-dark-mode {
+  // Sidebar styling
+  .td-sidebar {
+    background-color: var(--forge-surface-bg) !important;
+    border-right: 1px solid rgba(80, 250, 123, 0.1);
+  }
+  
+  .td-sidebar-nav .td-sidebar-link {
+    &.active {
+      background-color: rgba(80, 250, 123, 0.1) !important;
+      border-left: 3px solid #50fa7b;
+    }
+    
+    &:hover {
+      background-color: rgba(80, 250, 123, 0.05) !important;
+    }
+  }
+  
+  // Table styling
+  table {
+    background-color: var(--forge-card-bg) !important;
+    
+    th {
+      background-color: var(--forge-surface-bg) !important;
+      border-bottom: 2px solid rgba(80, 250, 123, 0.2) !important;
+    }
+    
+    td {
+      border-bottom: 1px solid rgba(80, 250, 123, 0.1) !important;
+    }
+  }
+  
+  // Footer styling
+  .td-footer {
+    background: linear-gradient(135deg, #0b0b0b 0%, #2e3440 100%) !important;
+    border-top: 1px solid rgba(80, 250, 123, 0.1);
+  }
+  
+  // Search styling
+  .td-search-input {
+    background-color: var(--forge-surface-bg) !important;
+    border: 1px solid rgba(80, 250, 123, 0.2) !important;
+    
+    &:focus {
+      border-color: #50fa7b !important;
+      box-shadow: 0 0 0 0.2rem rgba(80, 250, 123, 0.25) !important;
+    }
+  }
+}

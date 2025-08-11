@@ -8,9 +8,9 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo color="primary" %}}
-**Complete Card Collection** - Browse all Forge Realm cards, view high-resolution artwork, and download print-ready files. **First cards releasing September 2025.**
-{{% /pageinfo %}}
+{{< alert title="Complete Card Collection" >}}
+Browse all Forge Realm cards, view high-resolution artwork, and download print-ready files. **First cards releasing December 25, 2025.**
+{{< /alert >}}
 
 <div class="row align-items-center my-4">
   <div class="col-md-8">
@@ -46,9 +46,9 @@ All card files are available in multiple formats optimized for different printin
 - **Individual PNG** - High-resolution images for custom layouts
 - **Print & Play Packages** - Complete starter decks ready to print
 
-{{% alert title="Print Quality" color="info" %}}
+{{< alert title="Print Quality" color="info" >}}
 All files are provided at 300 DPI with proper bleed margins for professional-quality results. See our [Printing Guide](/docs/printing/home-printing-guide/) for best practices.
-{{% /alert %}}
+{{< /alert >}}
 
 {{% blocks/section color="light" %}}
 
@@ -67,20 +67,20 @@ New cards and sets are regularly added. Join our [Discord](https://discord.gg/KQ
 
 ---
 
-## Release Timeline
+## Release Schedule
 
-{{% alert title="Core Set Release" color="info" %}}
-**Target Release: September 2025**
+{{< alert title="Core Set Release" color="info" >}}
+**Target Release: December 25, 2025**
 
 The Core Set and initial card collection are currently in development with the following milestones:
 
-- **Q1 2025**: Gameplay mechanics finalized
-- **Q2 2025**: Artwork and card design completion
-- **Q3 2025**: Community playtesting and balance validation
-- **September 2025**: Core Set release with downloadable files
+- **December 2025**: Gameplay mechanics finalized
+- **October 2025**: Artwork and card design completion
+- **November 2025**: Community playtesting and balance validation
+- **December 25, 2025**: Core Set release with downloadable files
 
 [Join our Discord](https://discord.gg/KQTY8DfY) for development updates and early preview access.
-{{% /alert %}}
+{{< /alert >}}
 
 ## Expansions {#expansions}
 
@@ -88,4 +88,4 @@ The Core Set and initial card collection are currently in development with the f
 
 ## Downloads {#downloads}
 
-*Direct download links will be provided here for easy access to all card files beginning September 2025.*
+*Direct download links will be provided here for easy access to all card files beginning December 25, 2025.*

@@ -1,0 +1,44 @@
+# Forge Realm Theme Configuration
+# This file contains the color palette and theme settings for easy customization
+
+forge_theme:
+  # Core brand colors
+  colors:
+    primary: "#50fa7b"      # Forge neon green (Dracula green)
+    secondary: "#8839ef"    # Deep mauve/purple (Catppuccin mauve)
+    success: "#a6e3a1"      # Soft success green (Catppuccin mocha)
+    info: "#88c0d0"         # Icy info (Nord Frost)
+    warning: "#fe640b"      # Peachy amber
+    danger: "#d20f39"       # Deeper crimson (Catppuccin red)
+    light: "#e5e9f0"        # Light text/surfaces (Nord Snow Storm)
+    dark: "#0b0b0b"         # Near-black base (Vampire Black)
+    
+  # Surface colors
+  surfaces:
+    body_bg: "#0b0b0b"      # Main background
+    body_color: "#cdd6f4"   # Body text (Catppuccin mocha text)
+    card_bg: "#2e3440"      # Cards and panels (Nord Polar Night 1)
+    surface_bg: "#3b4252"   # Secondary surfaces
+    border: "#434c5e"       # UI dividers
+    
+  # Code styling
+  code:
+    background: "#1e1e2e"   # Code blocks (Catppuccin mocha base)
+    color: "#bd93f9"        # Code text (Dracula purple)
+    
+  # Effects
+  effects:
+    enable_gradients: true
+    enable_shadows: true
+    enable_glow: true
+    
+  # Typography
+  font:
+    family: "Roboto"
+    display: "swap"
+    
+# Theme inspiration sources for reference:
+# - Dracula: Neon green/purple accents
+# - Nord: Stable neutral backgrounds
+# - Catppuccin Mocha: Mauve/red danger colors
+# - Cyberpunk: Teal info accents

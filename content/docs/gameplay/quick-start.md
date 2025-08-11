@@ -249,7 +249,7 @@ Essence is your primary resource:
 - **Combat tricks**: Save instant spells for key moments
 
 {{% alert title="Getting Your First Cards" color="info" %}}
-**Cards releasing September 2025!** Until then:
+**Cards releasing December 25, 2025!** Until then:
 
 - **Learn the rules** with this guide and practice with friends using placeholder cards
 - **Join the community** on [Discord](https://discord.gg/KQTY8DfY) for early playtesting opportunities

@@ -18,7 +18,7 @@ This is the complete documentation for Forge Realm, covering gameplay rules, pri
 
 ## What is Forge Realm?
 
-Forge Realm is a fully open-source trading card game built for tabletop play. The project focuses on transparent development, community governance, unrestricted print-and-play access, and no artificial scarcity.
+Forge Realm TCG is a fully open-source trading card game built for tabletop play. The project focuses on democratizing trading card games through transparent development, community governance, unrestricted print-and-play access, and no artificial scarcity.
 
 ## Core Principles
 

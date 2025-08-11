@@ -1,11 +1,14 @@
 baseURL = 'https://forge-realm.com'
 languageCode = 'en-us'
-title = 'Forge Realm - Open Source Trading Card Game'
-# Hugo version
+title = 'Forge Realm TCG - Open Source Trading Card Game'
+contentDir = 'content'
+enableEmoji = true
+enableRobotsTXT = true
+
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.128.0"
+    min = "0.146.0"
 
   [[module.imports]]
     path = "github.com/google/docsy"
@@ -16,52 +19,80 @@ title = 'Forge Realm - Open Source Trading Card Game'
     disable = false
 
 [params]
-  version_menu = "Releases"
-  archived_version = false
-  version = "1.1"
-  url_latest_version = "https://forge-realm.com"
-  github_repo = 'https://github.com/dunamismax/forge-realm'
+  github_repo = "https://github.com/dunamismax/forge-realm"
   github_branch = "main"
-
-[params.ui]
-  breadcrumb_disable = false
-  taxonomy_breadcrumb_disable = false
-  navbar_logo = true
-  navbar_translucent_over_cover_disable = false
-  sidebar_menu_compact = false
-  sidebar_search_disable = false
-
-[params.links]
-  [[params.links.developer]]
-    name = "GitHub"
-    url = "https://github.com/dunamismax/forge-realm"
-    icon = "fab fa-github"
-    desc = "Development takes place here!"
-  [[params.links.user]]
-    name ="Discord"
-    url = "https://discord.gg/KQTY8DfY"
-    icon = "fab fa-discord"
-    desc = "Chat with other project users in Discord!"
+  github_project_repo = "https://github.com/dunamismax/forge-realm"
+  
+  # Enable Lunr.js offline search
+  offlineSearch = true
+  
+  # Enable syntax highlighting and copy buttons on code blocks with Prism
+  prism_syntax_highlighting = true
+  
+  # User interface configuration
+  [params.ui]
+    showLightDarkModeMenu = true
+    sidebar_menu_compact = false
+    sidebar_cache_limit = 10
+    breadcrumb_disable = false
+    sidebar_menu_foldable = true
+    
+    # Set to false to disable the About link in the site footer
+    footer_about_enable = true
+  
+  # Configure edit page links
+  [params.ui.readingtime]
+    enable = false
+    
+  # Footer copyright
+  copyright = "© 2025 Forge Realm TCG. Open source trading card game."
+  privacy_policy = ""
+  
+  [params.links]
+    [[params.links.user]]
+      name = "Discord"
+      url = "https://discord.gg/KQTY8DfY"
+      icon = "fab fa-discord"
+      desc = "Community discussions and support"
+    [[params.links.user]]
+      name = "GitHub"
+      url = "https://github.com/dunamismax/forge-realm"
+      icon = "fab fa-github"
+      desc = "Development happens here"
+      
+    [[params.links.developer]]
+      name = "GitHub Repository"
+      url = "https://github.com/dunamismax/forge-realm"
+      icon = "fab fa-github"
+      desc = "Development happens here"
 
 [markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    startLevel = 1
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-  [markup.highlight]
-    style = "github"
-    lineNos = false
-    lineNumbersInTable = false
-    tabWidth = 4
+  [markup.goldmark.parser]
+    [markup.goldmark.parser.attribute]
+      block = true
 
 [menu]
-  [[menu.main]]
+  [[menu.primary]]
     name = "Documentation"
     url = "/docs/"
+    identifier = "docs"
     weight = 10
-  [[menu.main]]
+  [[menu.primary]]
     name = "Cards"
     url = "/cards/"
-    weight = 15
+    identifier = "cards"
+    weight = 20
+  [[menu.primary]]
+    name = "Contributing"
+    url = "/contributing/"
+    identifier = "contributing"
+    weight = 30
 
 [outputs]
   home = ["HTML", "RSS"]

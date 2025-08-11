@@ -37,7 +37,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 ### Innovative Deck Designs
 
 {{% alert title="Deck Submission" color="info" %}}
-**Share Your Creations!** Once cards are released in September 2025, submit your innovative deck designs to be featured in the community showcase. Include your deck list, strategy guide, and playtesting results.
+**Share Your Creations!** Once cards are released in December 25, 2025, submit your innovative deck designs to be featured in the community showcase. Include your deck list, strategy guide, and playtesting results.
 {{% /alert %}}
 
 #### Featured Deck Archetypes
@@ -68,7 +68,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 ### Community Deck Database
 
-*Coming September 2025*: A comprehensive database where community members can:
+*Coming December 25, 2025*: A comprehensive database where community members can:
 
 - **Submit deck lists** with detailed descriptions
 - **Rate and review** other players' creations
@@ -82,24 +82,24 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 #### Beginner Guides
 
-- **"Your First Deck"** by CommunityMember1 *(coming soon)*
+- **"Your First Deck"** by TODO *(coming soon)*
   - Step-by-step deck building for new players
   - Budget-friendly card recommendations
   - Common mistakes to avoid
 
-- **"Understanding the Stack"** by CommunityMember2 *(coming soon)*
+- **"Understanding the Stack"** by TODO *(coming soon)*
   - Advanced timing and priority concepts
   - Complex interaction examples
   - Tournament-level play insights
 
 #### Advanced Strategy
 
-- **"Essence Management Mastery"** *(coming soon)*
+- **"Essence Management Mastery"** by TODO *(coming soon)*
   - Optimizing resource allocation
   - Curve construction principles
   - Multi-format considerations
 
-- **"Combat Math and Decision Trees"** *(coming soon)*
+- **"Combat Math and Decision Trees"** by TODO *(coming soon)*
   - Calculating damage and trade values
   - When to attack vs. block
   - Combat trick timing
@@ -121,7 +121,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 #### Upcoming Events
 
-- **Core Set Release Tournament** - September 2025
+- **Core Set Release Tournament** - December 25, 2025
   - Celebrating the launch of the first official card set
   - Open to all players worldwide
   - Prizes include exclusive card variants and recognition
@@ -164,7 +164,9 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 **We want to hear from you!** Share your Forge Realm journey, memorable games, and community experiences. Contact us on [Discord](https://discord.gg/KQTY8DfY) to be featured in our showcase.
 {{% /alert %}}
 
-#### Featured Stories *(coming soon)*
+#### Featured Stories
+
+TODO: Community member stories will be featured here once we have submissions after the December 25, 2025 release.
 
 **"From Casual to Competitive"**
 
@@ -206,7 +208,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 #### YouTube Creators
 
-*Launching alongside card release in September 2025*
+*Launching alongside card release in December 25, 2025*
 
 - **Gameplay Videos**: Tournament matches and casual play sessions
 - **Deck Tech Breakdowns**: Detailed analysis of successful strategies
@@ -279,7 +281,32 @@ The community regularly develops new ways to play Forge Realm:
 - **Community Voting**: Major decisions made by player consensus
 - **Proposal System**: Structured process for suggesting changes
 - **Discussion Forums**: Open debate about game direction
+- **Card Balance Updates**: Community can propose and vote on card balance changes through Discord
 - **Transparency**: All development decisions made publicly
+
+### Community-Driven Card Balance
+
+The Forge Realm community has the power to modify and balance cards after release:
+
+#### Balance Proposal Process
+
+1. **Issue Identification**: Players identify problematic cards through gameplay
+2. **Discord Discussion**: Community discusses balance concerns in #balance-discussion
+3. **Formal Proposal**: Submit detailed balance proposals with reasoning
+4. **Community Review**: Open discussion period for feedback and refinement
+5. **Voting Period**: Community votes on proposed changes
+6. **Implementation**: Approved changes are officially implemented
+
+#### What Can Be Changed
+
+- **Power/Toughness adjustments** for creatures that prove over/underpowered
+- **Essence cost modifications** to improve game balance
+- **Rules text clarifications** or minor ability adjustments
+- **Format restrictions** for cards that dominate specific play styles
+
+{{% alert title="Community Balance" color="info" %}}
+**Your Voice Matters!** Join our Discord server to participate in balance discussions and help ensure Forge Realm remains fun and fair for all players.
+{{% /alert %}}
 
 ## Getting Involved
 

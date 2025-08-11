@@ -63,7 +63,7 @@ Choosing the right printer is crucial for producing high-quality Forge Realm car
 - **Special Features**: Automatic duplex, 5-color ink system
 - **Best for**: High-volume printing, cost-conscious users
 - **Card Quality**: Excellent color reproduction, sharp detail
-- **Community Rating**: ★★★★★
+- **Community Rating**: 5/5
 
 #### Canon PIXMA Pro-200
 
@@ -74,7 +74,7 @@ Choosing the right printer is crucial for producing high-quality Forge Realm car
 - **Special Features**: Professional color accuracy, fine art printing
 - **Best for**: Premium quality, color-critical work
 - **Card Quality**: Outstanding color accuracy, gallery-quality prints
-- **Community Rating**: ★★★★★
+- **Community Rating**: 5/5
 
 #### Epson Expression Photo XP-970
 
@@ -85,7 +85,7 @@ Choosing the right printer is crucial for producing high-quality Forge Realm car
 - **Special Features**: Wireless, compact design, photo tray
 - **Best for**: Home users, occasional printing
 - **Card Quality**: Very good color reproduction, good detail
-- **Community Rating**: ★★★★☆
+- **Community Rating**: 4/5
 
 ### Mid-Range Models
 
@@ -98,7 +98,7 @@ Choosing the right printer is crucial for producing high-quality Forge Realm car
 - **Special Features**: Large format support, crafting applications
 - **Best for**: Versatile home printing, craft projects
 - **Card Quality**: Good color accuracy, reliable performance
-- **Community Rating**: ★★★★☆
+- **Community Rating**: 4/5
 
 #### Epson EcoTank ET-2850
 
@@ -109,7 +109,7 @@ Choosing the right printer is crucial for producing high-quality Forge Realm car
 - **Special Features**: Ultra-low cost per page, wireless
 - **Best for**: Budget-conscious users, regular printing
 - **Card Quality**: Good overall quality, economical operation
-- **Community Rating**: ★★★★☆
+- **Community Rating**: 4/5
 
 ### Budget Options
 
@@ -122,7 +122,7 @@ Choosing the right printer is crucial for producing high-quality Forge Realm car
 - **Special Features**: Large format support, photo specialist
 - **Best for**: Photo printing, large format cards
 - **Card Quality**: Good color reproduction, high resolution
-- **Community Rating**: ★★★★☆
+- **Community Rating**: 4/5
 
 #### HP OfficeJet Pro 9015e
 
@@ -133,7 +133,7 @@ Choosing the right printer is crucial for producing high-quality Forge Realm car
 - **Special Features**: Business-focused, HP+ subscription compatible
 - **Best for**: Office use, reliable daily printing
 - **Card Quality**: Good text quality, adequate color reproduction
-- **Community Rating**: ★★★☆☆
+- **Community Rating**: 3/5
 
 ## Recommended Laser Printers
 
@@ -148,7 +148,7 @@ Choosing the right printer is crucial for producing high-quality Forge Realm car
 - **Special Features**: Fast speeds, robust build, enterprise features
 - **Best for**: High-volume printing, office environments
 - **Card Quality**: Sharp text, good color consistency
-- **Community Rating**: ★★★★☆
+- **Community Rating**: 4/5
 
 #### HP Color LaserJet Pro M479fdw
 
@@ -159,7 +159,7 @@ Choosing the right printer is crucial for producing high-quality Forge Realm car
 - **Special Features**: All-in-one, wireless, mobile printing
 - **Best for**: Office use, versatile functionality
 - **Card Quality**: Good text sharpness, reliable color output
-- **Community Rating**: ★★★★☆
+- **Community Rating**: 4/5
 
 ### Mid-Range Models
 
@@ -172,7 +172,7 @@ Choosing the right printer is crucial for producing high-quality Forge Realm car
 - **Special Features**: Wireless, compact design, mobile printing
 - **Best for**: Home office, moderate volume printing
 - **Card Quality**: Good text quality, decent color reproduction
-- **Community Rating**: ★★★★☆
+- **Community Rating**: 4/5
 
 #### HP Color LaserJet Pro M255dw
 
@@ -183,7 +183,7 @@ Choosing the right printer is crucial for producing high-quality Forge Realm car
 - **Special Features**: Fast printing, wireless, energy efficient
 - **Best for**: Small office, consistent quality needs
 - **Card Quality**: Sharp text, good color consistency
-- **Community Rating**: ★★★★☆
+- **Community Rating**: 4/5
 
 ## Printer Selection Criteria
 

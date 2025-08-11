@@ -1,0 +1,65 @@
+//
+// Forge Realm — Dark Theme (Docsy/Bootstrap variables)
+// Inspired by Dracula (neon green/purple), Nord (stable neutrals), Catppuccin Mocha (mauve/red), cyberpunk teal.
+// Focus: legibility on near-black backgrounds with punchy highlights.
+//
+
+// ---- Brand & Semantic Colors ----
+$primary:   #50fa7b !default; // Forge neon green (Dracula green)
+$secondary: #8839ef !default; // Deep mauve/purple (Catppuccin mauve)
+$success:   #a6e3a1 !default; // Soft success green (Catppuccin mocha)
+$info:      #88c0d0 !default; // Icy info (Nord Frost)
+$warning:   #fe640b !default; // Peachy amber
+$danger:    #d20f39 !default; // Deeper crimson (Catppuccin red)
+$light:     #e5e9f0 !default; // Light text/surfaces (Nord Snow Storm)
+$dark:      #0b0b0b !default; // Near-black base (Vampire Black)
+
+// Map for Bootstrap utilities/components
+$theme-colors: (
+  "primary":   $primary,
+  "secondary": $secondary,
+  "success":   $success,
+  "info":      $info,
+  "warning":   $warning,
+  "danger":    $danger,
+  "light":     $light,
+  "dark":      $dark
+) !default;
+
+// ---- Core Surfaces & Text ----
+$body-bg:        $dark !default;         // page background
+$body-color:     #cdd6f4 !default;       // high-contrast body text (Catppuccin mocha text)
+$card-bg:        #2e3440 !default;       // primary surface (Nord Polar Night 1)
+$card-border-color: #3b4252 !default;    // subtle borders
+$border-color:   #434c5e !default;       // UI dividers
+$code-bg:        #1e1e2e !default;       // code blocks (Catppuccin mocha base)
+$code-color:     #bd93f9 !default;       // code inline accents (Dracula purple)
+
+// ---- Links & States ----
+$link-color:            $primary !default;
+$link-hover-color:      #a6e3a1 !default; // gentler green on hover
+$component-active-bg:   $primary !default;
+$focus-ring-color:      rgba(80, 250, 123, 0.35) !default; // accessible green focus glow
+
+// ---- Legacy Forge Realm Colors (for compatibility) ----
+$forge-gold: #d69e2e !default;     // Mystical gold
+$forge-purple: $secondary !default; // Now maps to new secondary
+$forge-ember: $danger !default;     // Now maps to new danger
+$forge-nature: $success !default;   // Now maps to new success
+$forge-void: #2d3748 !default;     // Void essence
+$forge-spirit: $info !default;     // Now maps to new info
+
+// Typography
+$google-font-name: "Roboto" !default;
+$google-font-display: "swap" !default;
+$td-enable-google-fonts: true !default;
+
+// ---- Effects ----
+$enable-gradients: true !default;
+$enable-shadows:   true !default;
+
+// Optional: soft neon shadow for primary buttons/badges
+$btn-box-shadow: 0 0.25rem 0.75rem rgba(80, 250, 123, 0.15) !default;
+
+// ---- Dark mode ----
+$td-dark-mode-default: true !default;

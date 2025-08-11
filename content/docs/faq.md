@@ -8,9 +8,9 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo color="primary" %}}
+{{< alert title="Frequently Asked Questions" >}}
 Find answers to the most common questions about Forge Realm, from basic gameplay to advanced printing techniques.
-{{% /pageinfo %}}
+{{< /alert >}}
 
 ## General Questions
 
@@ -36,7 +36,7 @@ Yes! The game rules, card designs, and all digital assets are freely available. 
 
 ### When will the first cards be released?
 
-The Core Set and initial card collection are targeted for release in **September 2025**. This timeline allows for comprehensive community testing, artwork completion, and thorough game balance validation.
+The Core Set and initial card collection are targeted for release in **December 25, 2025**. This timeline allows for comprehensive community testing, artwork completion, and thorough game balance validation.
 
 ## Gameplay Questions
 
@@ -273,7 +273,7 @@ Currently no official mobile app exists. The project focuses on:
 
 1. **Read the [Quick Start Guide](/docs/gameplay/quick-start/)** to learn basic rules
 2. **Join our [Discord server](https://discord.gg/KQTY8DfY)** for community support
-3. **Download starter deck files** when available (September 2025)
+3. **Download starter deck files** when available (December 25, 2025)
 4. **Print a small test batch** to try the process
 5. **Find local players** or introduce friends to the game
 
@@ -282,7 +282,7 @@ Currently no official mobile app exists. The project focuses on:
 **Basic requirements**:
 
 - **Rulebook**: Free download from our website
-- **Starter deck**: Will be available September 2025
+- **Starter deck**: Will be available December 25, 2025
 - **Basic printing**: Even office paper works for initial testing
 - **Opponents**: Friends or local gaming community
 

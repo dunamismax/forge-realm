@@ -6,9 +6,9 @@ description: >
   The foundational cards of Forge Realm, providing the essential gameplay experience.
 ---
 
-{{% pageinfo color="success" %}}
-**Core Set** - The foundational collection of Forge Realm cards that establishes the core gameplay mechanics and provides everything needed for competitive play.
-{{% /pageinfo %}}
+{{< alert title="Core Set" color="success" >}}
+The foundational collection of Forge Realm cards that establishes the core gameplay mechanics and provides everything needed for competitive play.
+{{< /alert >}}
 
 ## About the Core Set
 
@@ -21,9 +21,9 @@ The Core Set contains the fundamental cards that define Forge Realm's gameplay e
 - **Artifacts** - Core utility and mana-fixing artifacts
 - **Enchantments** - Basic ongoing effects and board presence
 
-{{% alert title="Complete Playset" color="info" %}}
+{{< alert title="Complete Playset" color="info" >}}
 The Core Set includes 4 copies of each card, providing complete playsets for competitive deck construction.
-{{% /alert %}}
+{{< /alert >}}
 
 ## Card Categories
 
@@ -64,18 +64,18 @@ Ongoing effects that modify gameplay and provide strategic depth.
 - **Bleed**: 0.125" bleed margin included
 - **Format**: CMYK color profile for professional printing
 
-{{% alert title="September 2025 Release" color="warning" %}}
-**Target Release: September 2025**
+{{< alert title="December 25, 2025 Release" color="warning" >}}
+**Target Release: December 25, 2025**
 
 Core Set files are currently in development with the following timeline:
 
-- **Q1 2025**: Mechanics and rules finalization
-- **Q2 2025**: Artwork completion and card layout
-- **Q3 2025**: Community playtesting and balance validation
-- **September 2025**: Full Core Set release with downloadable files
+- **December 2025**: Mechanics and rules finalization
+- **October 2025**: Artwork completion and card layout
+- **November 2025**: Community playtesting and balance validation
+- **December 25, 2025**: Full Core Set release with downloadable files
 
 Join our [Discord](https://discord.gg/KQTY8DfY) for development updates and early preview access.
-{{% /alert %}}
+{{< /alert >}}
 
 {{% /blocks/section %}}
 
@@ -89,14 +89,14 @@ The Core Set was developed through community collaboration and playtesting. Futu
 
 **Current Status** (Updated regularly):
 
-- ✅ Core gameplay mechanics designed
-- ✅ Card framework and templating established  
-- 🔄 Artwork creation in progress
-- 🔄 Community playtesting ongoing
-- ⏳ Final card balancing and artwork completion
-- ⏳ Print-ready file preparation
+- ✓ Core gameplay mechanics designed
+- ✓ Card framework and templating established  
+- ◐ Artwork creation in progress
+- ◐ Community playtesting ongoing
+- ○ Final card balancing and artwork completion
+- ○ Print-ready file preparation
 
-*Card artwork and final files will be displayed here upon release in September 2025.*
+*Card artwork and final files will be displayed here upon release in December 25, 2025.*
 
 ---
 
