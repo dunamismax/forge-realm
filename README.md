@@ -4,120 +4,44 @@
 
 # Forge Realm - Open Source Trading Card Game
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Contributors](https://img.shields.io/github/contributors/dunamismax/forge-realm)](https://github.com/dunamismax/forge-realm/graphs/contributors)
-[![Go Version](https://img.shields.io/badge/Go-1.24-blue.svg)](https://golang.org)
+Join our community on [Discord](https://discord.gg/KQTY8DfY) to help shape the game and participate in design discussions.
 
-A fully Open-source TCG built by the community. Transparent development, democratic governance, unrestricted print-and-play access, and no artificial scarcity.
+Forge Realm is a fully open-source trading card game built for tabletop play. The project focuses on transparent development, community governance, and unrestricted print-and-play access.
 
 ## Core Principles
 
-- **Complete transparency** - all decisions made publicly
-- **Democratic governance** - community votes drive direction
-- **Free accessibility** - print-and-play for everyone
-- **No artificial scarcity** - all cards available to all players
+- **Complete transparency** – all decisions made publicly
+- **Democratic governance** – community votes drive direction
+- **Free accessibility** – print-and-play for everyone
+- **No artificial scarcity** – all cards available to all players
 
-## Quick Start
+## Getting Started
 
-### Prerequisites
+New to Forge Realm? Start with the [Quick Start Guide](docs/gameplay/quick-start.md) to learn the basics and begin playing.
 
-- Go 1.24+
-- Mage build tool
-- Git
+For detailed mechanics, see the [Comprehensive Rules](docs/gameplay/comprehensive-rules.md).
 
-### Installation
+## Printing Cards
 
-```bash
-git clone https://github.com/dunamismax/forge-realm.git
-cd forge-realm
-go mod download
-mage build
-mage test
-```
+Use the [Home Printing Guide](docs/printing/home-printing-guide.md) for instructions on producing cards at home. Additional tips, including printer recommendations and cardstock options, are available in the [Printing Docs](docs/printing/).
 
-### Run Server
+## Development
 
-```bash
-mage dev
-# Visit http://localhost:8080
-```
-
-## Game Mechanics
-
-### Essence System
-
-Dynamic mana system where players choose essence types during deck construction.
-
-### Stack-Based Resolution
-
-All spells and abilities use stack-based timing for precise interactions.
-
-### Format Support
-
-- **Standard**: Current sets with rotation
-- **Legacy**: All-time card pool
-- **Draft**: Community-voted set design
-
-## Contributing
-
-We welcome contributors across all disciplines:
-
-- **Developers**: Game engine, tooling, testing
-- **Designers**: Card design, mechanics, formats
-- **Artists**: Card artwork, templates, icons
-- **Community**: Documentation, tournaments, localization
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-## Governance
-
-Democratic decision-making structure:
-
-1. **Technical Changes**: Standard PR review (2 approvals)
-2. **Design Changes**: Community vote (>50%)
-3. **Core Rules**: Extended discussion + supermajority (>66%)
-
-Contributors with merged PRs gain voting rights.
-
-## Print System
-
-Professional print-and-play cards:
-
-- **Size**: 63.5mm x 88.9mm (poker standard)
-- **Resolution**: 300+ DPI
-- **Cardstock**: 300 GSM recommended
-- **Formats**: PDF, PNG, SVG, digital exports
-
-## Build Commands
-
-```bash
-mage build      # Compile application
-mage test       # Run tests
-mage lint       # Run linter
-mage clean      # Remove build artifacts
-mage dev        # Build and run server
-mage all        # Full build pipeline
-```
-
-## License
-
-- **Source Code**: Apache License 2.0
-- **Game Content**: Creative Commons BY-SA 4.0
+Contributions are welcome across all disciplines. Read the [Development Documentation](docs/development/) for information on repository structure, testing, and future API plans.
 
 ## Community
 
-- **GitHub Issues**: Bug reports and features
-- **GitHub Discussions**: General development
-- **Discord**: Real-time community chat
-- **Reddit**: r/ForgeRealm
+- [Discord](https://discord.gg/KQTY8DfY) – real-time chat and coordination
+- [GitHub Issues](https://github.com/dunamismax/forge-realm/issues) – bug reports and feature requests
+- [GitHub Discussions](https://github.com/dunamismax/forge-realm/discussions) – long-form design discussion
 
-## Documentation
+See [CONTRIBUTING.md](CONTRIBUTING.md) to get involved.
 
-- [Quick Start Guide](docs/gameplay/quick-start.md)
-- [Comprehensive Rules](docs/gameplay/comprehensive-rules.md)
-- [Printing Guide](docs/printing/home-printing-guide.md)
-- [Development Docs](docs/development/)
+## License
+
+- **Game Content**: Creative Commons BY-SA 4.0
+- **Documentation**: Apache License 2.0
 
 ---
 
-**Ready to contribute?** Read [CONTRIBUTING.md](CONTRIBUTING.md) and join our community!
+**Ready to contribute?** Join our [Discord](https://discord.gg/KQTY8DfY) and start collaborating!
