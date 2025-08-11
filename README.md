@@ -8,12 +8,12 @@
 [![Contributors](https://img.shields.io/github/contributors/dunamismax/forge-realm)](https://github.com/dunamismax/forge-realm/graphs/contributors)
 [![Go Version](https://img.shields.io/badge/Go-1.24-blue.svg)](https://golang.org)
 
-Open-source trading card game built by the community. Transparent development, democratic governance, and unrestricted print-and-play access.
+Open-source trading card game built by the community. Transparent development, democratic governance, unrestricted print-and-play access, and no artificial scarcity.
 
 ## Core Principles
 
 - **Complete transparency** - all decisions made publicly
-- **Democratic governance** - community votes drive direction  
+- **Democratic governance** - community votes drive direction
 - **Free accessibility** - print-and-play for everyone
 - **No artificial scarcity** - all cards available to all players
 
@@ -48,7 +48,7 @@ mage dev
 
 Dynamic mana system where players choose essence types during deck construction.
 
-### Stack-Based Resolution  
+### Stack-Based Resolution
 
 All spells and abilities use stack-based timing for precise interactions.
 
@@ -63,7 +63,7 @@ All spells and abilities use stack-based timing for precise interactions.
 We welcome contributors across all disciplines:
 
 - **Developers**: Game engine, tooling, testing
-- **Designers**: Card design, mechanics, formats  
+- **Designers**: Card design, mechanics, formats
 - **Artists**: Card artwork, templates, icons
 - **Community**: Documentation, tournaments, localization
 
@@ -74,7 +74,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 Democratic decision-making structure:
 
 1. **Technical Changes**: Standard PR review (2 approvals)
-2. **Design Changes**: Community vote (>50%)  
+2. **Design Changes**: Community vote (>50%)
 3. **Core Rules**: Extended discussion + supermajority (>66%)
 
 Contributors with merged PRs gain voting rights.
@@ -91,7 +91,7 @@ Professional print-and-play cards:
 ## Build Commands
 
 ```bash
-mage build      # Compile application  
+mage build      # Compile application
 mage test       # Run tests
 mage lint       # Run linter
 mage clean      # Remove build artifacts
@@ -114,7 +114,7 @@ mage all        # Full build pipeline
 ## Documentation
 
 - [Quick Start Guide](docs/gameplay/quick-start.md)
-- [Comprehensive Rules](docs/gameplay/comprehensive-rules.md)  
+- [Comprehensive Rules](docs/gameplay/comprehensive-rules.md)
 - [Printing Guide](docs/printing/home-printing-guide.md)
 - [Development Docs](docs/development/)
 
