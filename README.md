@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/dunamismax/images/blob/main/forge-realm/forge-realm-alt.png" alt="Forge Realm" width="500" />
+  <img src="https://github.com/dunamismax/images/blob/main/forge-realm/forge-realm-alt.png" alt="Forge Realm" width="600" />
 </p>
 
 # Forge Realm - Open Source Trading Card Game
