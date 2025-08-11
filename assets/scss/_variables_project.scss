@@ -4,15 +4,16 @@
 // Focus: legibility on near-black backgrounds with punchy highlights.
 //
 
-// ---- Brand & Semantic Colors ----
-$primary:   #50fa7b !default; // Forge neon green (Dracula green)
-$secondary: #8839ef !default; // Deep mauve/purple (Catppuccin mauve)
-$success:   #a6e3a1 !default; // Soft success green (Catppuccin mocha)
-$info:      #88c0d0 !default; // Icy info (Nord Frost)
-$warning:   #fe640b !default; // Peachy amber
-$danger:    #d20f39 !default; // Deeper crimson (Catppuccin red)
-$light:     #e5e9f0 !default; // Light text/surfaces (Nord Snow Storm)
-$dark:      #0b0b0b !default; // Near-black base (Vampire Black)
+// ---- Dark Magic Theme Colors ----
+// Inspired by old school Magic: The Gathering - dark, mystical, edgy
+$primary:   #c77dff !default; // Dark mystical purple (main brand)
+$secondary: #7209b7 !default; // Deep shadow purple
+$success:   #2d5016 !default; // Dark forest green
+$info:      #264653 !default; // Dark teal
+$warning:   #e76f51 !default; // Dark flame orange
+$danger:    #8b0000 !default; // Blood red
+$light:     #f4f3ee !default; // Aged parchment
+$dark:      #0d1117 !default; // Void black
 
 // Map for Bootstrap utilities/components
 $theme-colors: (
@@ -26,20 +27,20 @@ $theme-colors: (
   "dark":      $dark
 ) !default;
 
-// ---- Core Surfaces & Text ----
-$body-bg:        $dark !default;         // page background
-$body-color:     #cdd6f4 !default;       // high-contrast body text (Catppuccin mocha text)
-$card-bg:        #2e3440 !default;       // primary surface (Nord Polar Night 1)
-$card-border-color: #3b4252 !default;    // subtle borders
-$border-color:   #434c5e !default;       // UI dividers
-$code-bg:        #1e1e2e !default;       // code blocks (Catppuccin mocha base)
-$code-color:     #bd93f9 !default;       // code inline accents (Dracula purple)
+// ---- Dark Magic Surfaces & Text ----
+$body-bg:        #0d1117 !default;       // void background
+$body-color:     #e6edf3 !default;       // ghost white text
+$card-bg:        #21262d !default;       // dark stone surface
+$card-border-color: #30363d !default;    // shadow borders
+$border-color:   #484f58 !default;       // mystic dividers
+$code-bg:        #161b22 !default;       // spell scroll background
+$code-color:     #c77dff !default;       // mystical purple code
 
-// ---- Links & States ----
+// ---- Dark Magic Links & States ----
 $link-color:            $primary !default;
-$link-hover-color:      #a6e3a1 !default; // gentler green on hover
+$link-hover-color:      #e0aaff !default; // lighter purple on hover
 $component-active-bg:   $primary !default;
-$focus-ring-color:      rgba(80, 250, 123, 0.35) !default; // accessible green focus glow
+$focus-ring-color:      rgba(199, 125, 255, 0.4) !default; // mystical purple focus glow
 
 // ---- Legacy Forge Realm Colors (for compatibility) ----
 $forge-gold: #d69e2e !default;     // Mystical gold
@@ -49,10 +50,14 @@ $forge-nature: $success !default;   // Now maps to new success
 $forge-void: #2d3748 !default;     // Void essence
 $forge-spirit: $info !default;     // Now maps to new info
 
-// Typography
-$google-font-name: "Roboto" !default;
+// Typography - Dark Magic Theme
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+$font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif !default;
+$font-family-monospace: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace !default;
+$google-font-name: "Inter" !default;
 $google-font-display: "swap" !default;
-$td-enable-google-fonts: true !default;
+$td-enable-google-fonts: false !default;
 
 // ---- Effects ----
 $enable-gradients: true !default;

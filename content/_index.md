@@ -3,7 +3,10 @@ title: "Forge Realm"
 linkTitle: "Forge Realm"
 ---
 
-{{< blocks/cover title="Forge Realm" image_anchor="top" height="full" >}}
+{{< blocks/cover title="Forge Realm" image_anchor="top" height="full" color="dark" >}}
+<div class="mx-auto">
+  <img src="/images/forge-realm-main-wide.webp" alt="Forge Realm TCG" class="img-fluid mb-4" style="max-width: 800px; width: 100%;">
+</div>
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
   Get Started <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>

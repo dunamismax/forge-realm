@@ -1,94 +1,94 @@
 //
-// Forge Realm custom styles for Docsy theme
-// Enhanced project-specific styles with magical/fantasy theme
+// Forge Realm Dark Magic Theme - Custom Styles
+// Inspired by old school Magic: The Gathering - dark, mystical, edgy
 //
 
-// Custom CSS Properties for Forge Realm Dark Theme
+// Dark Magic CSS Properties
 :root {
-  --forge-gradient-primary: linear-gradient(135deg, #50fa7b 0%, #a6e3a1 100%);
-  --forge-gradient-secondary: linear-gradient(135deg, #8839ef 0%, #bd93f9 100%);
-  --forge-gradient-gold: linear-gradient(135deg, #d69e2e 0%, #fe640b 100%);
-  --forge-gradient-danger: linear-gradient(135deg, #d20f39 0%, #f38ba8 100%);
-  --forge-gradient-info: linear-gradient(135deg, #88c0d0 0%, #81a1c1 100%);
-  --forge-shadow: 0 4px 16px rgba(80, 250, 123, 0.15);
-  --forge-shadow-hover: 0 8px 32px rgba(80, 250, 123, 0.25);
-  --forge-glow: 0 0 20px rgba(80, 250, 123, 0.3);
-  --forge-card-bg: #2e3440;
-  --forge-surface-bg: #3b4252;
+  --forge-primary: #c77dff;
+  --forge-secondary: #7209b7;
+  --forge-success: #2d5016;
+  --forge-danger: #8b0000;
+  --forge-warning: #e76f51;
+  --forge-info: #264653;
+  
+  --forge-bg-primary: #0d1117;
+  --forge-bg-secondary: #21262d;
+  --forge-bg-tertiary: #30363d;
+  
+  --forge-text-primary: #e6edf3;
+  --forge-text-secondary: #8b949e;
+  
+  --forge-shadow: 0 4px 16px rgba(199, 125, 255, 0.2);
+  --forge-shadow-hover: 0 8px 32px rgba(199, 125, 255, 0.3);
+  --forge-glow: 0 0 20px rgba(199, 125, 255, 0.4);
+  
+  // Gradients for magical effects
+  --forge-gradient-primary: linear-gradient(135deg, #c77dff 0%, #e0aaff 100%);
+  --forge-gradient-secondary: linear-gradient(135deg, #7209b7 0%, #a663cc 100%);
+  --forge-gradient-dark: linear-gradient(135deg, #0d1117 0%, #21262d 50%, #30363d 100%);
 }
 
-// Fix header spacing issues
+// Base typography improvements
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+// Code typography
+code, pre, .highlight {
+  font-family: 'JetBrains Mono', 'SF Mono', Monaco, 'Cascadia Code', monospace !important;
+  font-weight: 400;
+  font-feature-settings: "liga" 1;
+}
+
+// Fix header spacing and overlap issues
+.td-navbar {
+  z-index: 1030;
+  backdrop-filter: blur(10px);
+  background: rgba(13, 17, 23, 0.95) !important;
+  border-bottom: 1px solid rgba(199, 125, 255, 0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+}
+
 .td-main {
-  padding-top: 2rem;
+  padding-top: 80px; // Account for fixed navbar
   
   main {
-    // Ensure content is not blocked by navigation header
-    padding-top: 1rem;
+    padding-top: 2rem;
   }
 }
 
-// Improve page title spacing
-.td-page-meta .td-page-title {
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
+// Page title improvements
+.td-page-title {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  background: var(--forge-gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: left;
 }
 
-// Improve alert box styling in dark mode
-.alert {
-  margin: 1.5rem 0;
-}
-
-// Ensure proper contrast for links in dark mode
-.td-dark-mode {
-  .alert a {
-    color: inherit;
-    text-decoration: underline;
-    
-    &:hover {
-      text-decoration: none;
-    }
-  }
-}
-
-// Mobile responsiveness improvements
-@media (max-width: 768px) {
-  .td-main {
-    padding-top: 1rem;
-  }
-  
-  // Improve button spacing on mobile
-  .btn {
-    margin-bottom: 0.5rem;
-  }
-}
-
-// Improve footer styling
-.td-footer {
-  margin-top: 3rem;
-  padding: 2rem 0;
-}
-
-// Fix card spacing and layout
-.card {
-  margin-bottom: 1.5rem;
-}
-
-// Better block quote styling in dark mode
-.td-dark-mode blockquote {
-  border-left: 4px solid var(--bs-primary);
-  background-color: rgba(var(--bs-primary-rgb), 0.1);
-}
-
-// Enhanced button styling with Forge Realm theme
+// Enhanced buttons with dark magic theme
 .btn-primary {
   background: var(--forge-gradient-primary);
   border: none;
   box-shadow: var(--forge-shadow);
+  color: var(--forge-bg-primary) !important;
+  font-weight: 500;
   transition: all 0.3s ease;
   
   &:hover {
     transform: translateY(-2px);
     box-shadow: var(--forge-shadow-hover);
+    background: var(--forge-gradient-primary);
+  }
+  
+  &:focus {
+    box-shadow: var(--forge-glow);
   }
 }
 
@@ -96,17 +96,162 @@
   background: var(--forge-gradient-secondary);
   border: none;
   box-shadow: var(--forge-shadow);
+  color: var(--forge-text-primary) !important;
+  font-weight: 500;
   transition: all 0.3s ease;
   
   &:hover {
     transform: translateY(-2px);
     box-shadow: var(--forge-shadow-hover);
   }
+  
+  &:focus {
+    box-shadow: var(--forge-glow);
+  }
 }
 
-// Enhanced hero section
+// Dark theme enhancements
+.td-dark-mode {
+  background-color: var(--forge-bg-primary) !important;
+  
+  // Enhanced cards
+  .card {
+    background-color: var(--forge-bg-secondary) !important;
+    border: 1px solid var(--forge-bg-tertiary) !important;
+    box-shadow: var(--forge-shadow);
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--forge-shadow-hover);
+    }
+  }
+  
+  // Enhanced sidebar
+  .td-sidebar {
+    background-color: var(--forge-bg-secondary) !important;
+    border-right: 1px solid var(--forge-bg-tertiary);
+  }
+  
+  .td-sidebar-nav .td-sidebar-link {
+    color: var(--forge-text-secondary) !important;
+    transition: all 0.2s ease;
+    
+    &:hover {
+      background-color: rgba(199, 125, 255, 0.1) !important;
+      color: var(--forge-text-primary) !important;
+    }
+    
+    &.active {
+      background-color: rgba(199, 125, 255, 0.15) !important;
+      border-left: 3px solid var(--forge-primary);
+      color: var(--forge-primary) !important;
+    }
+  }
+  
+  // Code blocks with dark magic theme
+  pre, code {
+    background-color: #161b22 !important;
+    color: var(--forge-text-primary) !important;
+    border: 1px solid var(--forge-bg-tertiary);
+  }
+  
+  .highlight {
+    background-color: #161b22 !important;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid var(--forge-bg-tertiary);
+    
+    code {
+      background: transparent !important;
+      border: none;
+    }
+  }
+  
+  // Tables
+  table {
+    background-color: var(--forge-bg-secondary) !important;
+    
+    th {
+      background-color: var(--forge-bg-tertiary) !important;
+      border-bottom: 2px solid rgba(199, 125, 255, 0.3) !important;
+      color: var(--forge-text-primary) !important;
+    }
+    
+    td {
+      border-bottom: 1px solid var(--forge-bg-tertiary) !important;
+      color: var(--forge-text-secondary) !important;
+    }
+    
+    tr:hover {
+      background-color: rgba(199, 125, 255, 0.05) !important;
+    }
+  }
+  
+  // Footer
+  .td-footer {
+    background: var(--forge-gradient-dark) !important;
+    border-top: 1px solid var(--forge-bg-tertiary);
+    margin-top: 4rem;
+  }
+  
+  // Enhanced alerts with dark magic theme
+  .alert {
+    border: none;
+    border-radius: 8px;
+    box-shadow: var(--forge-shadow);
+    margin: 1.5rem 0;
+    
+    &.alert-info {
+      background: linear-gradient(135deg, rgba(38, 70, 83, 0.2), rgba(38, 70, 83, 0.1));
+      border-left: 4px solid var(--forge-info);
+    }
+    
+    &.alert-success {
+      background: linear-gradient(135deg, rgba(45, 80, 22, 0.2), rgba(45, 80, 22, 0.1));
+      border-left: 4px solid var(--forge-success);
+    }
+    
+    &.alert-warning {
+      background: linear-gradient(135deg, rgba(231, 111, 81, 0.2), rgba(231, 111, 81, 0.1));
+      border-left: 4px solid var(--forge-warning);
+    }
+    
+    &.alert-danger {
+      background: linear-gradient(135deg, rgba(139, 0, 0, 0.2), rgba(139, 0, 0, 0.1));
+      border-left: 4px solid var(--forge-danger);
+    }
+  }
+}
+
+// Feature blocks with magical enhancement
+.blocks-feature {
+  .card {
+    background: var(--forge-bg-secondary);
+    border: 1px solid rgba(199, 125, 255, 0.2);
+    transition: all 0.3s ease;
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--forge-glow);
+      border-color: rgba(199, 125, 255, 0.4);
+    }
+    
+    .fas, .fab {
+      color: var(--forge-primary);
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 0 0 10px rgba(199, 125, 255, 0.3);
+    }
+  }
+}
+
+// Enhanced hero section with dark magic
 .blocks-cover {
-  background: linear-gradient(135deg, #0b0b0b 0%, #2e3440 50%, #3b4252 100%);
+  background: var(--forge-gradient-dark);
+  position: relative;
+  overflow: hidden;
   
   &::before {
     content: '';
@@ -115,153 +260,101 @@
     left: 0;
     right: 0;
     bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(199, 125, 255, 0.1) 0%, transparent 70%);
+    z-index: 1;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     background: url('/images/forge-realm-main-wide.webp') center/cover;
-    opacity: 0.1;
-    z-index: -1;
+    opacity: 0.05;
+    z-index: 0;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 2;
   }
 }
 
-// Feature blocks enhancement
-.blocks-feature {
-  .card {
-    background: var(--forge-card-bg);
-    border: 1px solid rgba(80, 250, 123, 0.1);
-    box-shadow: var(--forge-shadow);
-    transition: all 0.3s ease;
-    
-    &:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--forge-glow);
-    }
-    
-    .card-body {
-      padding: 2rem;
-    }
-    
-    .fas, .fab {
-      color: #50fa7b;
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-    }
+// Search enhancements
+.td-search-input {
+  background-color: var(--forge-bg-secondary) !important;
+  border: 1px solid var(--forge-bg-tertiary) !important;
+  color: var(--forge-text-primary) !important;
+  
+  &:focus {
+    border-color: var(--forge-primary) !important;
+    box-shadow: 0 0 0 0.2rem rgba(199, 125, 255, 0.25) !important;
   }
 }
 
-// Dark mode enhancements
-.td-dark-mode {
-  .blocks-feature .card {
-    background: var(--forge-card-bg);
-    border: 1px solid rgba(80, 250, 123, 0.2);
-    
-    .fas, .fab {
-      color: #50fa7b;
-    }
+// Mobile responsiveness
+@media (max-width: 768px) {
+  .td-main {
+    padding-top: 70px;
   }
   
-  // Enhanced navbar in dark mode
-  .td-navbar {
-    background: linear-gradient(90deg, #0b0b0b 0%, #2e3440 100%) !important;
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.3);
-    border-bottom: 1px solid rgba(80, 250, 123, 0.1);
+  .td-page-title {
+    font-size: 1.75rem;
+    text-align: center;
   }
   
-  // Enhanced cards with new theme
-  .card {
-    background-color: var(--forge-card-bg) !important;
-    border-color: rgba(80, 250, 123, 0.1) !important;
-  }
-  
-  // Code blocks
-  pre, code {
-    background-color: #1e1e2e !important;
-    color: #bd93f9 !important;
+  .btn {
+    margin-bottom: 0.5rem;
+    width: 100%;
   }
 }
 
-// Improved page header styling
-.td-page-title {
-  background: var(--forge-gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 2rem;
+// Typography scale improvements
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
 }
 
-// Enhanced alert styling with new theme
-.alert {
-  border: none;
-  border-radius: 12px;
-  box-shadow: var(--forge-shadow);
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.25rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+}
+
+// Link enhancements
+a {
+  transition: color 0.2s ease;
   
-  &.alert-info {
-    background: linear-gradient(135deg, rgba(136, 192, 208, 0.1), rgba(129, 161, 193, 0.1));
-    border-left: 4px solid #88c0d0;
-  }
-  
-  &.alert-success {
-    background: linear-gradient(135deg, rgba(166, 227, 161, 0.1), rgba(169, 173, 128, 0.1));
-    border-left: 4px solid #a6e3a1;
-  }
-  
-  &.alert-warning {
-    background: linear-gradient(135deg, rgba(254, 100, 11, 0.1), rgba(214, 158, 46, 0.1));
-    border-left: 4px solid #fe640b;
-  }
-  
-  &.alert-danger {
-    background: linear-gradient(135deg, rgba(210, 15, 57, 0.1), rgba(243, 139, 168, 0.1));
-    border-left: 4px solid #d20f39;
+  &:hover {
+    text-decoration: none;
   }
 }
 
-// Additional dark theme enhancements
-.td-dark-mode {
-  // Sidebar styling
-  .td-sidebar {
-    background-color: var(--forge-surface-bg) !important;
-    border-right: 1px solid rgba(80, 250, 123, 0.1);
-  }
-  
-  .td-sidebar-nav .td-sidebar-link {
-    &.active {
-      background-color: rgba(80, 250, 123, 0.1) !important;
-      border-left: 3px solid #50fa7b;
-    }
-    
-    &:hover {
-      background-color: rgba(80, 250, 123, 0.05) !important;
-    }
-  }
-  
-  // Table styling
-  table {
-    background-color: var(--forge-card-bg) !important;
-    
-    th {
-      background-color: var(--forge-surface-bg) !important;
-      border-bottom: 2px solid rgba(80, 250, 123, 0.2) !important;
-    }
-    
-    td {
-      border-bottom: 1px solid rgba(80, 250, 123, 0.1) !important;
-    }
-  }
-  
-  // Footer styling
-  .td-footer {
-    background: linear-gradient(135deg, #0b0b0b 0%, #2e3440 100%) !important;
-    border-top: 1px solid rgba(80, 250, 123, 0.1);
-  }
-  
-  // Search styling
-  .td-search-input {
-    background-color: var(--forge-surface-bg) !important;
-    border: 1px solid rgba(80, 250, 123, 0.2) !important;
-    
-    &:focus {
-      border-color: #50fa7b !important;
-      box-shadow: 0 0 0 0.2rem rgba(80, 250, 123, 0.25) !important;
-    }
-  }
+// Enhanced syntax highlighting - Dark Magic theme
+.highlight {
+  .c, .c1, .cm, .cp, .cs { color: #8b949e; } // Comments
+  .k, .kd, .kn, .kr, .kt { color: #c77dff; } // Keywords
+  .s, .s1, .s2, .se, .sh, .si, .sx { color: #a5d6ff; } // Strings
+  .n, .na, .nb, .nc, .no, .nd, .ni, .ne, .nf, .nl, .nn, .nt, .nv { color: #e6edf3; } // Names
+  .m, .mf, .mh, .mi, .mo { color: #79c0ff; } // Numbers  
+  .o, .ow { color: #ff7b72; } // Operators
+  .p { color: #e6edf3; } // Punctuation
+  .gd { background-color: #8b0000; color: #ffdcd7; } // Diff deleted
+  .gi { background-color: #2d5016; color: #aff5b4; } // Diff inserted
+  .gh { color: #c77dff; font-weight: bold; } // Generic heading
+  .gu { color: #c77dff; } // Generic subheading
+  .err { color: #ff7b72; background-color: #8b0000; } // Errors
 }

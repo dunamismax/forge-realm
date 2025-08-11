@@ -1,6 +1,6 @@
 baseURL = 'https://forge-realm.com'
 languageCode = 'en-us'
-title = 'Forge Realm TCG - Open Source Trading Card Game'
+title = 'Forge Realm TCG'
 contentDir = 'content'
 enableEmoji = true
 enableRobotsTXT = true
@@ -60,11 +60,6 @@ enableRobotsTXT = true
       icon = "fab fa-github"
       desc = "Development happens here"
       
-    [[params.links.developer]]
-      name = "GitHub Repository"
-      url = "https://github.com/dunamismax/forge-realm"
-      icon = "fab fa-github"
-      desc = "Development happens here"
 
 [markup]
   [markup.tableOfContents]
