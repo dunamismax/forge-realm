@@ -109,7 +109,6 @@ Contributions are welcome! Visit the [Contributing Guide](https://forge-realm.co
 **Getting Started:**
 
 - **Complete Contributing Guide**: [forge-realm.com/docs/contributing/](https://forge-realm.com/docs/contributing/) - Everything you need to know
-- **Developer Guide**: [forge-realm.com/docs/developer-guide/](https://forge-realm.com/docs/developer-guide/) - Technical documentation
 - **Style Guide**: [forge-realm.com/docs/style-guide/](https://forge-realm.com/docs/style-guide/) - Design system and components
 - **Real-time Chat**: Join our [Discord](https://discord.gg/KQTY8DfY) for collaboration
 
@@ -119,12 +118,10 @@ This repository contains the Hugo static site for [forge-realm.com](https://forg
 
 **For game design, cards, and community discussions**, join our [Discord](https://discord.gg/KQTY8DfY).
 
-**For complete documentation** including contributing guidelines, developer guides, and style guides, visit [forge-realm.com](https://forge-realm.com).
-
 ### Repository Structure
 
 - **`content/`** - Hugo content (game documentation, guides, card gallery)
-- **`layouts/`** - Hugo templates and custom shortcodes  
+- **`layouts/`** - Hugo templates and custom shortcodes
 - **`static/`** - Static assets (images, favicon, headers configuration)
 - **Root files** - Project configuration and website build settings
 
