@@ -1,9 +1,0 @@
-# Documentation and Rules
-/docs/ @dunamismax
-*.md @dunamismax
-
-# Assets and Templates  
-/assets/ @dunamismax
-
-# GitHub Configuration
-/.github/ @dunamismax
