@@ -22,13 +22,13 @@ enableRobotsTXT = true
   github_repo = "https://github.com/dunamismax/forge-realm"
   github_branch = "main"
   github_project_repo = "https://github.com/dunamismax/forge-realm"
-  
+
   # Enable Lunr.js offline search
   offlineSearch = true
-  
+
   # Enable syntax highlighting and copy buttons on code blocks with Prism
   prism_syntax_highlighting = true
-  
+
   # User interface configuration
   [params.ui]
     showLightDarkModeMenu = true
@@ -36,18 +36,18 @@ enableRobotsTXT = true
     sidebar_cache_limit = 10
     breadcrumb_disable = false
     sidebar_menu_foldable = true
-    
+
     # Set to false to disable the About link in the site footer
     footer_about_enable = true
-  
+
   # Configure edit page links
   [params.ui.readingtime]
     enable = false
-    
+
   # Footer copyright
   copyright = "© 2025 Forge Realm TCG. Open source trading card game."
   privacy_policy = ""
-  
+
   [params.links]
     [[params.links.user]]
       name = "Discord"
@@ -59,7 +59,7 @@ enableRobotsTXT = true
       url = "https://github.com/dunamismax/forge-realm"
       icon = "fab fa-github"
       desc = "Development happens here"
-      
+
 
 [markup]
   [markup.tableOfContents]
