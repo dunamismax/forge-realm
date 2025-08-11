@@ -37,7 +37,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 ### Innovative Deck Designs
 
 {{% alert title="Deck Submission" color="info" %}}
-**Share Your Creations!** Once cards are released in September 2025, submit your innovative deck designs to be featured in the community showcase. Include your deck list, strategy guide, and playtesting results.
+**Share Your Creations!** Once cards are released on December 25, 2025, submit your innovative deck designs to be featured in the community showcase. Include your deck list, strategy guide, and playtesting results.
 {{% /alert %}}
 
 #### Featured Deck Archetypes
@@ -68,7 +68,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 ### Community Deck Database
 
-*Coming September 2025*: A comprehensive database where community members can:
+*Coming December 25, 2025*: A comprehensive database where community members can:
 
 - **Submit deck lists** with detailed descriptions
 - **Rate and review** other players' creations
@@ -106,7 +106,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 ### Meta Analysis Reports
 
-**Monthly Meta Reviews** *(starting October 2025)*
+**Monthly Meta Reviews** *(starting January 2026)*
 
 - Popular deck archetypes and win rates
 - Format balance assessments
@@ -121,7 +121,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 #### Upcoming Events
 
-- **Core Set Release Tournament** - September 2025
+- **Core Set Release Tournament** - December 2025
   - Celebrating the launch of the first official card set
   - Open to all players worldwide
   - Prizes include exclusive card variants and recognition
@@ -206,7 +206,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 #### YouTube Creators
 
-*Launching alongside card release in September 2025*
+*Launching alongside card release on December 25, 2025*
 
 - **Gameplay Videos**: Tournament matches and casual play sessions
 - **Deck Tech Breakdowns**: Detailed analysis of successful strategies

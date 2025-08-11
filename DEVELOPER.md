@@ -126,9 +126,6 @@ hugo server --buildDrafts --bind 0.0.0.0
 
 ```
 forge-realm/
-├── .github/                 # GitHub workflows and templates
-│   └── workflows/
-│       └── validate.yml     # HTML and link validation
 ├── content/                 # Hugo content (Markdown files)
 │   ├── _index.md           # Homepage content
 │   ├── cards/              # Card gallery section
