@@ -43,6 +43,7 @@ npm run dev
 ### Website Contribution Workflow
 
 1. **Create Feature Branch**
+
    ```bash
    git checkout -b website/your-improvement
    ```
@@ -67,12 +68,14 @@ npm run dev
 ## What Goes Where
 
 ### GitHub (This Repository)
+
 - Hugo website source code
-- Technical documentation improvements  
+- Technical documentation improvements
 - Website bug fixes and enhancements
 - Build system and deployment improvements
 
 ### Discord Community
+
 - Game design and card discussions
 - Card artwork submissions
 - Balance feedback and playtesting
@@ -80,6 +83,7 @@ npm run dev
 - All major game-related decisions
 
 ### Website Content
+
 - All game documentation lives at [forge-realm.com](https://forge-realm.com)
 - Card galleries and download files
 - Complete contribution guidelines

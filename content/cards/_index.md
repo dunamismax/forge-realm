@@ -9,7 +9,7 @@ description: >
 <div class="mt-4"></div>
 
 {{% pageinfo color="primary" %}}
-**Complete Card Collection** - Browse all Forge Realm cards, view high-resolution artwork, and download print-ready files.
+**Complete Card Collection** - Browse all Forge Realm cards, view high-resolution artwork, and download print-ready files. **First cards releasing September 2025.**
 {{% /pageinfo %}}
 
 <div class="row align-items-center my-4">
@@ -67,10 +67,25 @@ New cards and sets are regularly added. Join our [Discord](https://discord.gg/KQ
 
 ---
 
+## Release Timeline
+
+{{% alert title="Core Set Release" color="info" %}}
+**Target Release: September 2025**
+
+The Core Set and initial card collection are currently in development with the following milestones:
+
+- **Q1 2025**: Gameplay mechanics finalized
+- **Q2 2025**: Artwork and card design completion
+- **Q3 2025**: Community playtesting and balance validation
+- **September 2025**: Core Set release with downloadable files
+
+[Join our Discord](https://discord.gg/KQTY8DfY) for development updates and early preview access.
+{{% /alert %}}
+
 ## Expansions {#expansions}
 
-*Expansion sets will be added as they are developed and released by the community.*
+*Expansion sets will be added as they are developed and released by the community. First expansion planned for Q1 2026.*
 
 ## Downloads {#downloads}
 
-*Direct download links will be provided here for easy access to all card files.*
+*Direct download links will be provided here for easy access to all card files beginning September 2025.*

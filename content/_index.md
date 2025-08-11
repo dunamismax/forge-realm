@@ -7,9 +7,9 @@ linkTitle: "Forge Realm"
 <div class="text-center mb-4">
   <picture>
     <source srcset="/images/forge-realm-main-wide.webp" type="image/webp">
-    <img src="/images/forge-realm-main-wide.webp" alt="Forge Realm - Open Source Trading Card Game" 
-         style="max-width: 600px; width: 100%; height: auto;" 
-         loading="eager" 
+    <img src="/images/forge-realm-main-wide.webp" alt="Forge Realm - Open Source Trading Card Game"
+         style="max-width: 600px; width: 100%; height: auto;"
+         loading="eager"
          class="img-fluid">
   </picture>
 </div>
@@ -48,9 +48,13 @@ Print-and-play access for everyone, no restrictions.
 
 ## Getting Started
 
-New to Forge Realm? Start with the [Quick Start Guide](/docs/gameplay/quick-start/) to learn the basics and begin playing.
+New to Forge Realm? Start with the [Quick Start Guide](/docs/gameplay/quick-start/) to learn the basics and prepare for the upcoming card release.
 
 For detailed mechanics, see the [Comprehensive Rules](/docs/gameplay/comprehensive-rules/).
+
+{{% alert title="Core Set Release" color="info" %}}
+**First cards available September 2025** - Join our [Discord](https://discord.gg/KQTY8DfY) for development updates and early playtesting opportunities.
+{{% /alert %}}
 
 {{% /blocks/section %}}
 

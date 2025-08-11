@@ -1,0 +1,204 @@
+{{- $name := .Get "name" -}}
+{{- $role := .Get "role" -}}
+{{- $avatar := .Get "avatar" -}}
+{{- $discord := .Get "discord" -}}
+{{- $achievement := .Get "achievement" -}}
+{{- $quote := .Inner -}}
+
+<div class="community-highlight">
+  <div class="highlight-header">
+    <div class="highlight-avatar">
+      {{ if $avatar }}
+      <img src="{{ $avatar }}" alt="{{ $name }}" loading="lazy">
+      {{ else }}
+      <div class="avatar-placeholder">
+        <i class="fa fa-user"></i>
+      </div>
+      {{ end }}
+    </div>
+    <div class="highlight-info">
+      <h4 class="highlight-name">{{ $name }}</h4>
+      {{ if $role }}
+      <span class="highlight-role">{{ $role }}</span>
+      {{ end }}
+      {{ if $discord }}
+      <span class="highlight-discord">{{ $discord }}</span>
+      {{ end }}
+    </div>
+    {{ if $achievement }}
+    <div class="highlight-achievement">
+      <i class="fa fa-trophy"></i>
+      <span>{{ $achievement }}</span>
+    </div>
+    {{ end }}
+  </div>
+  
+  {{ if $quote }}
+  <div class="highlight-quote">
+    <i class="fa fa-quote-left quote-icon"></i>
+    <p>{{ $quote | markdownify }}</p>
+  </div>
+  {{ end }}
+</div>
+
+<style>
+.community-highlight {
+  background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  border: 1px solid #dee2e6;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.community-highlight:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.highlight-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.highlight-avatar {
+  flex-shrink: 0;
+}
+
+.highlight-avatar img,
+.avatar-placeholder {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  background: linear-gradient(135deg, #6c757d, #495057);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.highlight-info {
+  flex-grow: 1;
+}
+
+.highlight-name {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  color: #495057;
+  font-weight: 600;
+}
+
+.highlight-role {
+  display: block;
+  font-size: 0.9rem;
+  color: #007bff;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.highlight-discord {
+  display: block;
+  font-size: 0.8rem;
+  color: #6c757d;
+  font-family: monospace;
+}
+
+.highlight-achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  background: linear-gradient(135deg, #ffc107, #ffcd39);
+  border-radius: 8px;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 500;
+  min-width: 80px;
+}
+
+.highlight-achievement i {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.highlight-quote {
+  position: relative;
+  padding: 1rem 1.5rem;
+  background: rgba(0,123,255,0.05);
+  border-left: 4px solid #007bff;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.quote-icon {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 1.2rem;
+  color: #007bff;
+  opacity: 0.7;
+}
+
+.highlight-quote p {
+  margin: 0;
+  padding-left: 1rem;
+  color: #495057;
+}
+
+@media (max-width: 768px) {
+  .community-highlight {
+    padding: 1rem;
+  }
+  
+  .highlight-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  
+  .highlight-achievement {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: auto;
+  }
+  
+  .highlight-achievement i {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  
+  .highlight-quote {
+    padding: 0.75rem 1rem;
+  }
+  
+  .highlight-quote p {
+    padding-left: 0.75rem;
+  }
+}
+
+/* Animation for new highlights */
+.community-highlight.new {
+  animation: highlightGlow 3s ease-in-out;
+}
+
+@keyframes highlightGlow {
+  0%, 100% {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(0,123,255,0.3);
+  }
+}
+</style>

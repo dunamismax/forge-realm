@@ -13,3 +13,23 @@
 <!-- DNS prefetch for external resources -->
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//discord.gg">
+
+<!-- Security and Performance Headers -->
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="X-XSS-Protection" content="1; mode=block">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+
+<!-- Content Security Policy for enhanced security -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; media-src 'self'; object-src 'none'; child-src 'none'; worker-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
+<!-- Resource caching hints -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+{{ if not .Site.IsServer }}
+<!-- Production-only performance optimizations -->
+<meta http-equiv="Cache-Control" content="public, max-age=31536000, immutable" data-resource-hint="static">
+<link rel="prefetch" href="/docs/" data-resource-hint="likely-navigation">
+<link rel="prefetch" href="/cards/" data-resource-hint="likely-navigation">
+{{ end }}

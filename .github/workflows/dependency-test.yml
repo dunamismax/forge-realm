@@ -1,0 +1,279 @@
+name: Test Dependency Updates
+
+on:
+  pull_request:
+    paths:
+      - 'package*.json'
+      - 'go.mod'
+      - 'go.sum'
+      - '.github/workflows/*.yml'
+  workflow_dispatch:
+
+jobs:
+  test-npm-updates:
+    runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.title, 'npm') || github.event_name == 'workflow_dispatch'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Check for vulnerabilities
+      run: npm audit --audit-level=high
+      continue-on-error: true
+      
+    - name: Run npm scripts test
+      run: |
+        # Test that all npm scripts work
+        npm run clean
+        echo "✅ Clean script works"
+        
+        # Test build process
+        npm run build
+        echo "✅ Build script works"
+        
+        # Check that public directory was created
+        if [ ! -d "public" ]; then
+          echo "❌ Build did not create public directory"
+          exit 1
+        fi
+        echo "✅ Build output directory exists"
+        
+    - name: Test validation tools
+      run: |
+        # Test that validation dependencies work
+        if command -v htmltest &> /dev/null; then
+          echo "✅ htmltest is available"
+        else
+          echo "ℹ️ htmltest not in PATH (will be installed by npm script)"
+        fi
+
+  test-hugo-modules:
+    runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.title, 'go') || github.event_name == 'workflow_dispatch'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: '0.128.0'
+        extended: true
+        
+    - name: Setup Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.21'
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install npm dependencies
+      run: npm ci
+      
+    - name: Test Hugo modules
+      run: |
+        # Clean and fetch modules
+        hugo mod clean
+        hugo mod get -u
+        hugo mod tidy
+        echo "✅ Hugo modules updated successfully"
+        
+        # Verify modules are working
+        hugo mod graph
+        echo "✅ Module dependency graph generated"
+        
+    - name: Test Hugo build
+      run: |
+        # Test that site builds with updated modules
+        hugo --minify --environment production
+        echo "✅ Hugo build completed successfully"
+        
+        # Check critical files exist
+        if [ ! -f "public/index.html" ]; then
+          echo "❌ Index page not generated"
+          exit 1
+        fi
+        echo "✅ Index page generated"
+        
+        if [ ! -d "public/docs" ]; then
+          echo "❌ Documentation section not generated"
+          exit 1
+        fi
+        echo "✅ Documentation section generated"
+
+  test-github-actions:
+    runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.title, 'ci') || github.event_name == 'workflow_dispatch'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Validate workflow syntax
+      run: |
+        # Check that all workflow files are valid YAML
+        for file in .github/workflows/*.yml .github/workflows/*.yaml; do
+          if [ -f "$file" ]; then
+            echo "Checking $file..."
+            python -c "import yaml; yaml.safe_load(open('$file'))"
+            echo "✅ $file is valid YAML"
+          fi
+        done
+        
+    - name: Test updated actions
+      run: |
+        echo "✅ GitHub Actions syntax validation passed"
+        echo "ℹ️ Individual action compatibility will be tested in main workflow"
+
+  integration-test:
+    runs-on: ubuntu-latest
+    needs: [test-npm-updates, test-hugo-modules]
+    if: always() && (needs.test-npm-updates.result == 'success' || needs.test-hugo-modules.result == 'success')
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+        
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: '0.128.0'
+        extended: true
+        
+    - name: Setup Go
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.21'
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Full integration test
+      run: |
+        # Install all dependencies
+        npm ci
+        hugo mod get -u
+        hugo mod tidy
+        
+        # Full build and validation
+        npm run build
+        
+        echo "✅ Full integration test completed successfully"
+        
+    - name: Performance check
+      run: |
+        # Basic performance checks
+        if [ -d "public" ]; then
+          SIZE=$(du -sh public | cut -f1)
+          echo "📊 Site size: $SIZE"
+          
+          FILE_COUNT=$(find public -type f | wc -l)
+          echo "📊 File count: $FILE_COUNT"
+          
+          # Check for large files that might indicate a problem
+          LARGE_FILES=$(find public -type f -size +1M)
+          if [ -n "$LARGE_FILES" ]; then
+            echo "⚠️ Large files found:"
+            echo "$LARGE_FILES"
+          else
+            echo "✅ No unusually large files found"
+          fi
+        fi
+
+  security-check:
+    runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.title, 'npm') || github.event_name == 'workflow_dispatch'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: npm ci
+      
+    - name: Run security audit
+      run: |
+        echo "🔒 Running security audit..."
+        npm audit --audit-level=moderate
+        
+    - name: Check for known vulnerabilities
+      run: |
+        # Additional security checks could go here
+        echo "✅ Security audit completed"
+
+  notification:
+    runs-on: ubuntu-latest
+    needs: [test-npm-updates, test-hugo-modules, test-github-actions, integration-test, security-check]
+    if: always() && github.event_name == 'pull_request'
+    
+    steps:
+    - name: Summarize results
+      run: |
+        echo "## Dependency Update Test Results" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        
+        if [ "${{ needs.test-npm-updates.result }}" == "success" ]; then
+          echo "✅ NPM dependencies test passed" >> $GITHUB_STEP_SUMMARY
+        elif [ "${{ needs.test-npm-updates.result }}" == "failure" ]; then
+          echo "❌ NPM dependencies test failed" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "⏭️ NPM dependencies test skipped" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        if [ "${{ needs.test-hugo-modules.result }}" == "success" ]; then
+          echo "✅ Hugo modules test passed" >> $GITHUB_STEP_SUMMARY
+        elif [ "${{ needs.test-hugo-modules.result }}" == "failure" ]; then
+          echo "❌ Hugo modules test failed" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "⏭️ Hugo modules test skipped" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        if [ "${{ needs.integration-test.result }}" == "success" ]; then
+          echo "✅ Integration test passed" >> $GITHUB_STEP_SUMMARY
+        elif [ "${{ needs.integration-test.result }}" == "failure" ]; then
+          echo "❌ Integration test failed" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "⏭️ Integration test skipped" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        if [ "${{ needs.security-check.result }}" == "success" ]; then
+          echo "✅ Security check passed" >> $GITHUB_STEP_SUMMARY
+        elif [ "${{ needs.security-check.result }}" == "failure" ]; then
+          echo "❌ Security check failed" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "⏭️ Security check skipped" >> $GITHUB_STEP_SUMMARY
+        fi
+        
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Next Steps:**" >> $GITHUB_STEP_SUMMARY
+        echo "- Review any failed tests before merging" >> $GITHUB_STEP_SUMMARY
+        echo "- Test the site locally if needed" >> $GITHUB_STEP_SUMMARY
+        echo "- Merge if all tests pass and functionality is verified" >> $GITHUB_STEP_SUMMARY

@@ -1,0 +1,144 @@
+# Cloudflare Headers Configuration for Forge Realm
+# https://developers.cloudflare.com/pages/platform/headers/
+
+# Global headers for all routes
+/*
+  # Security Headers
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  
+  # Performance Headers
+  X-DNS-Prefetch-Control: on
+  
+  # Content Security Policy
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; media-src 'self'; object-src 'none'; child-src 'none'; worker-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
+
+# Static Assets - Long-term caching
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+  Vary: Accept-Encoding
+
+*.css
+  Cache-Control: public, max-age=31536000, immutable
+  Vary: Accept-Encoding
+
+*.js
+  Cache-Control: public, max-age=31536000, immutable
+  Vary: Accept-Encoding
+
+*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+  Cross-Origin-Resource-Policy: cross-origin
+
+*.woff
+  Cache-Control: public, max-age=31536000, immutable
+  Cross-Origin-Resource-Policy: cross-origin
+
+*.ttf
+  Cache-Control: public, max-age=31536000, immutable
+  Cross-Origin-Resource-Policy: cross-origin
+
+# Favicon and icons - Medium-term caching
+/favicon.ico
+  Cache-Control: public, max-age=604800
+  Vary: Accept-Encoding
+
+# PDF files and downloads - Long-term caching with validation
+*.pdf
+  Cache-Control: public, max-age=2592000
+  Vary: Accept-Encoding
+  Content-Type: application/pdf
+
+# Image optimization
+*.webp
+  Cache-Control: public, max-age=31536000, immutable
+  Vary: Accept-Encoding
+
+*.png
+  Cache-Control: public, max-age=31536000, immutable
+  Vary: Accept-Encoding
+
+*.jpg
+  Cache-Control: public, max-age=31536000, immutable
+  Vary: Accept-Encoding
+
+*.jpeg
+  Cache-Control: public, max-age=31536000, immutable  
+  Vary: Accept-Encoding
+
+*.gif
+  Cache-Control: public, max-age=31536000, immutable
+  Vary: Accept-Encoding
+
+*.svg
+  Cache-Control: public, max-age=31536000, immutable
+  Vary: Accept-Encoding
+  Content-Type: image/svg+xml
+
+# HTML pages - Short-term caching with validation
+*.html
+  Cache-Control: public, max-age=3600, must-revalidate
+  Vary: Accept-Encoding
+
+# Homepage - Very short caching for frequent updates
+/
+  Cache-Control: public, max-age=1800, must-revalidate
+  Vary: Accept-Encoding
+
+# Documentation pages - Medium caching
+/docs/*
+  Cache-Control: public, max-age=7200, must-revalidate
+  Vary: Accept-Encoding
+
+# Card gallery - Medium caching (will update when cards release)
+/cards/*
+  Cache-Control: public, max-age=7200, must-revalidate
+  Vary: Accept-Encoding
+
+# RSS feeds and sitemaps - Short caching
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/xml
+
+/index.xml
+  Cache-Control: public, max-age=3600
+  Content-Type: application/xml
+
+# API or dynamic content (if added later)
+/api/*
+  Cache-Control: no-cache, no-store, must-revalidate
+  Pragma: no-cache
+  Expires: 0
+
+# Error pages - No caching
+/404.html
+  Cache-Control: no-cache, no-store, must-revalidate
+  
+# Prevent caching of sensitive files
+/.well-known/*
+  Cache-Control: no-cache, no-store, must-revalidate
+
+# Manifest and service worker files
+/manifest.json
+  Cache-Control: public, max-age=86400
+  Content-Type: application/json
+
+/sw.js
+  Cache-Control: no-cache, no-store, must-revalidate
+  Content-Type: application/javascript
+
+# Security.txt and robots.txt
+/security.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain
+
+/robots.txt
+  Cache-Control: public, max-age=86400
+  Content-Type: text/plain
+
+# GZIP Compression hints for Cloudflare
+/*
+  CF-Cache-Status: DYNAMIC

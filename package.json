@@ -10,7 +10,9 @@
     "build:preview": "hugo --buildDrafts --environment staging",
     "clean": "rm -rf public resources",
     "serve": "hugo server --environment production --disableFastRender",
-    "cf-pages": "npm run build"
+    "cf-pages": "npm run build",
+    "validate:build": "npm run build",
+    "test": "npm run validate:build"
   },
   "repository": {
     "type": "git",

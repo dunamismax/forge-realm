@@ -1,0 +1,82 @@
+name: HTML and Link Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    # Run weekly to check for broken external links
+    - cron: '0 2 * * 1'  # Mondays at 2 AM UTC
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Needed for Hugo modules
+        
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: '0.128.0'
+        extended: true
+        
+    - name: Setup Go (for Hugo modules)
+      uses: actions/setup-go@v5
+      with:
+        go-version: '1.21'
+        
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+        
+    - name: Install dependencies
+      run: |
+        npm ci
+        # Install htmltest
+        curl -L https://github.com/wjdp/htmltest/releases/latest/download/htmltest_linux_amd64.tar.gz | tar xz
+        sudo mv htmltest /usr/local/bin/
+        
+    - name: Build site
+      run: npm run build
+      
+    - name: Validate HTML structure
+      run: htmltest
+      continue-on-error: false
+      
+    - name: Start Hugo server for link checking
+      run: |
+        hugo server --bind 0.0.0.0 --port 1313 --disableFastRender &
+        sleep 10  # Wait for server to start
+        
+    - name: Install muffet (link checker)
+      run: |
+        curl -L https://github.com/raviqqe/muffet/releases/latest/download/muffet_linux_amd64.tar.gz | tar xz
+        sudo mv muffet /usr/local/bin/
+        
+    - name: Check internal links
+      run: |
+        muffet \
+          --exclude="discord.gg" \
+          --exclude="mailto:" \
+          --timeout=30 \
+          --max-connections=10 \
+          --color=always \
+          http://localhost:1313
+      continue-on-error: true  # External links can be flaky
+      
+    - name: Archive validation results
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: validation-results
+        path: |
+          htmltest.log
+          tmp/htmltest/
+        retention-days: 30

@@ -10,12 +10,18 @@ Forge Realm is a fully open-source trading card game built for tabletop play. Th
 
 **[forge-realm.com](https://forge-realm.com)** - Complete documentation, rules, printing guides, and everything you need to play
 
+## Release Status
+
+🗓️ **Core Set Release: September 2025**
+
+The first official card set is currently in development with community involvement. Join our [Discord](https://discord.gg/KQTY8DfY) for early playtesting opportunities and development updates.
+
 ## Quick Start
 
-1. **Learn the Rules**: Visit [forge-realm.com/docs/gameplay/quick-start/](https://forge-realm.com/docs/gameplay/quick-start/) for a beginner's guide
-2. **Get Cards**: Browse and download card files at [forge-realm.com/cards/](https://forge-realm.com/cards/)
-3. **Print Cards**: Follow our [printing guide](https://forge-realm.com/docs/printing/home-printing-guide/) to create physical cards at home
-4. **Play**: Gather friends and start your first game!
+1. **Learn the Rules**: Visit [forge-realm.com/docs/gameplay/quick-start/](https://forge-realm.com/docs/gameplay/quick-start/) for a comprehensive beginner's guide
+2. **Get Ready**: Review [printing guides](https://forge-realm.com/docs/printing/home-printing-guide/) and prepare your setup
+3. **Join Community**: Connect with players on [Discord](https://discord.gg/KQTY8DfY) for early access and testing
+4. **Stay Updated**: Follow development progress at [forge-realm.com/cards/](https://forge-realm.com/cards/)
 
 ## Documentation
 
@@ -44,17 +50,41 @@ All game documentation is available on the official website:
 
 Contributions are welcome! Visit the [Contributing Guide](https://forge-realm.com/contributing/) on our website to learn how to get involved in:
 
+### Game Development
+
 - Game design and balance
 - Card artwork and graphics
-- Documentation and guides
+- Playtesting and feedback
 - Community events and testing
 
-Join our [Discord](https://discord.gg/KQTY8DfY) for real-time collaboration and see [CONTRIBUTING.md](CONTRIBUTING.md) for technical guidelines.
+### Technical Development
+
+- Website development and improvements
+- Documentation and guides
+- Developer tools and automation
+- Performance and accessibility
+
+**Getting Started:**
+
+- **General Contributions**: [CONTRIBUTING.md](CONTRIBUTING.md) - Basic guidelines
+- **Technical Development**: [DEVELOPER.md](DEVELOPER.md) - Comprehensive technical documentation
+- **Design System**: [STYLE_GUIDE.md](STYLE_GUIDE.md) - Component library and styling
+- **Real-time Chat**: Join our [Discord](https://discord.gg/KQTY8DfY) for collaboration
+
+## Repository Structure
+
+- **`content/`** - Hugo content (game documentation, guides, card gallery)
+- **`layouts/`** - Hugo templates and custom shortcodes
+- **`static/`** - Static assets (images, favicon, headers configuration)
+- **Root files** - Project configuration and documentation
 
 ## License
 
-- **Game Content**: Creative Commons BY-SA 4.0
-- **Documentation**: Apache License 2.0
+- **Game Content**: Creative Commons BY-SA 4.0 - Freely usable with attribution
+- **Documentation & Code**: Apache License 2.0 - Open source development
+- **Website Content**: Apache License 2.0 - Community contributions welcome
+
+See [LICENSE](LICENSE) for complete terms.
 
 ---
 

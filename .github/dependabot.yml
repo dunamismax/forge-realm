@@ -1,0 +1,107 @@
+# Dependabot configuration for automated dependency updates
+# https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+
+updates:
+  # NPM dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "UTC"
+    open-pull-requests-limit: 5
+    reviewers:
+      - "dunamismax"
+    assignees:
+      - "dunamismax"
+    commit-message:
+      prefix: "npm"
+      prefix-development: "npm-dev"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "npm"
+    ignore:
+      # Ignore major version updates for core dependencies
+      # that might require manual testing
+      - dependency-name: "hugo*"
+        update-types: ["version-update:semver-major"]
+    groups:
+      # Group PostCSS related updates
+      postcss:
+        patterns:
+          - "postcss*"
+          - "autoprefixer"
+      # Group development tools
+      dev-tools:
+        patterns:
+          - "htmltest"
+          - "muffet"
+        update-types:
+          - "minor"
+          - "patch"
+
+  # Go modules (Hugo modules)
+  - package-ecosystem: "gomod"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "tuesday"
+      time: "09:00"
+      timezone: "UTC"
+    open-pull-requests-limit: 3
+    reviewers:
+      - "dunamismax"
+    assignees:
+      - "dunamismax"
+    commit-message:
+      prefix: "go"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "hugo-modules"
+    ignore:
+      # Only allow patch updates for Docsy theme
+      # to avoid breaking changes
+      - dependency-name: "github.com/google/docsy"
+        update-types: ["version-update:semver-major", "version-update:semver-minor"]
+    groups:
+      # Group Docsy theme and dependencies
+      docsy:
+        patterns:
+          - "github.com/google/docsy*"
+        update-types:
+          - "patch"
+
+  # GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      day: 15
+      time: "10:00"
+      timezone: "UTC"
+    open-pull-requests-limit: 2
+    reviewers:
+      - "dunamismax"
+    assignees:
+      - "dunamismax"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
+    labels:
+      - "dependencies"
+      - "github-actions"
+      - "ci"
+    groups:
+      # Group all GitHub Actions updates
+      actions:
+        patterns:
+          - "*"
+        update-types:
+          - "major"
+          - "minor"
+          - "patch"

@@ -64,8 +64,17 @@ Ongoing effects that modify gameplay and provide strategic depth.
 - **Bleed**: 0.125" bleed margin included
 - **Format**: CMYK color profile for professional printing
 
-{{% alert title="Download Coming Soon" color="warning" %}}
-Core Set files are currently being prepared for release. Join our [Discord](https://discord.gg/KQTY8DfY) to be notified when downloads become available.
+{{% alert title="September 2025 Release" color="warning" %}}
+**Target Release: September 2025**
+
+Core Set files are currently in development with the following timeline:
+
+- **Q1 2025**: Mechanics and rules finalization
+- **Q2 2025**: Artwork completion and card layout
+- **Q3 2025**: Community playtesting and balance validation
+- **September 2025**: Full Core Set release with downloadable files
+
+Join our [Discord](https://discord.gg/KQTY8DfY) for development updates and early preview access.
 {{% /alert %}}
 
 {{% /blocks/section %}}
@@ -76,4 +85,19 @@ The Core Set was developed through community collaboration and playtesting. Futu
 
 ---
 
-*Card artwork and final files will be displayed here once available.*
+## Development Progress
+
+**Current Status** (Updated regularly):
+
+- ✅ Core gameplay mechanics designed
+- ✅ Card framework and templating established  
+- 🔄 Artwork creation in progress
+- 🔄 Community playtesting ongoing
+- ⏳ Final card balancing and artwork completion
+- ⏳ Print-ready file preparation
+
+*Card artwork and final files will be displayed here upon release in September 2025.*
+
+---
+
+**Want early access?** Join our [Discord community](https://discord.gg/KQTY8DfY) to participate in playtesting, provide feedback on card designs, and get exclusive previews of artwork as it's completed.
