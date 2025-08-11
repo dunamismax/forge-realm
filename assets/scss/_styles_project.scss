@@ -3,10 +3,10 @@
 // Inspired by old school Magic: The Gathering - dark, mystical, edgy
 //
 
-// Dark Magic CSS Properties
+// Dark Magic CSS Properties - No Gradients
 :root {
-  --forge-primary: #c77dff;
-  --forge-secondary: #7209b7;
+  --forge-primary: #8b5cf6;
+  --forge-secondary: #6b46c1;
   --forge-success: #2d5016;
   --forge-danger: #8b0000;
   --forge-warning: #e76f51;
@@ -19,14 +19,9 @@
   --forge-text-primary: #e6edf3;
   --forge-text-secondary: #8b949e;
   
-  --forge-shadow: 0 4px 16px rgba(199, 125, 255, 0.2);
-  --forge-shadow-hover: 0 8px 32px rgba(199, 125, 255, 0.3);
-  --forge-glow: 0 0 20px rgba(199, 125, 255, 0.4);
-  
-  // Gradients for magical effects
-  --forge-gradient-primary: linear-gradient(135deg, #c77dff 0%, #e0aaff 100%);
-  --forge-gradient-secondary: linear-gradient(135deg, #7209b7 0%, #a663cc 100%);
-  --forge-gradient-dark: linear-gradient(135deg, #0d1117 0%, #21262d 50%, #30363d 100%);
+  --forge-shadow: 0 4px 16px rgba(139, 92, 246, 0.2);
+  --forge-shadow-hover: 0 8px 32px rgba(139, 92, 246, 0.3);
+  --forge-glow: 0 0 20px rgba(139, 92, 246, 0.4);
 }
 
 // Base typography improvements
@@ -52,6 +47,16 @@ code, pre, .highlight {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
+// Homepage specific - minimal padding
+.home .td-main {
+  padding-top: 60px; // Reduced padding for homepage
+  
+  main {
+    padding-top: 0; // No extra padding for homepage
+  }
+}
+
+// Other pages - normal padding
 .td-main {
   padding-top: 80px; // Account for fixed navbar
   
@@ -65,26 +70,24 @@ code, pre, .highlight {
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-weight: 600;
-  background: var(--forge-gradient-primary);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--forge-primary);
   text-align: left;
 }
 
 // Enhanced buttons with dark magic theme
 .btn-primary {
-  background: var(--forge-gradient-primary);
+  background-color: var(--forge-primary);
   border: none;
   box-shadow: var(--forge-shadow);
-  color: var(--forge-bg-primary) !important;
+  color: white !important;
   font-weight: 500;
   transition: all 0.3s ease;
   
   &:hover {
     transform: translateY(-2px);
     box-shadow: var(--forge-shadow-hover);
-    background: var(--forge-gradient-primary);
+    background-color: var(--forge-primary);
+    opacity: 0.9;
   }
   
   &:focus {
@@ -93,16 +96,18 @@ code, pre, .highlight {
 }
 
 .btn-secondary {
-  background: var(--forge-gradient-secondary);
+  background-color: var(--forge-secondary);
   border: none;
   box-shadow: var(--forge-shadow);
-  color: var(--forge-text-primary) !important;
+  color: white !important;
   font-weight: 500;
   transition: all 0.3s ease;
   
   &:hover {
     transform: translateY(-2px);
     box-shadow: var(--forge-shadow-hover);
+    background-color: var(--forge-secondary);
+    opacity: 0.9;
   }
   
   &:focus {
@@ -191,7 +196,7 @@ code, pre, .highlight {
   
   // Footer
   .td-footer {
-    background: var(--forge-gradient-dark) !important;
+    background-color: var(--forge-bg-secondary) !important;
     border-top: 1px solid var(--forge-bg-tertiary);
     margin-top: 4rem;
   }
@@ -204,22 +209,22 @@ code, pre, .highlight {
     margin: 1.5rem 0;
     
     &.alert-info {
-      background: linear-gradient(135deg, rgba(38, 70, 83, 0.2), rgba(38, 70, 83, 0.1));
+      background-color: rgba(38, 70, 83, 0.15);
       border-left: 4px solid var(--forge-info);
     }
     
     &.alert-success {
-      background: linear-gradient(135deg, rgba(45, 80, 22, 0.2), rgba(45, 80, 22, 0.1));
+      background-color: rgba(45, 80, 22, 0.15);
       border-left: 4px solid var(--forge-success);
     }
     
     &.alert-warning {
-      background: linear-gradient(135deg, rgba(231, 111, 81, 0.2), rgba(231, 111, 81, 0.1));
+      background-color: rgba(231, 111, 81, 0.15);
       border-left: 4px solid var(--forge-warning);
     }
     
     &.alert-danger {
-      background: linear-gradient(135deg, rgba(139, 0, 0, 0.2), rgba(139, 0, 0, 0.1));
+      background-color: rgba(139, 0, 0, 0.15);
       border-left: 4px solid var(--forge-danger);
     }
   }
@@ -247,22 +252,11 @@ code, pre, .highlight {
   }
 }
 
-// Enhanced hero section with dark magic
+// Enhanced hero section with dark magic - no gradients
 .blocks-cover {
-  background: var(--forge-gradient-dark);
+  background-color: var(--forge-bg-primary);
   position: relative;
   overflow: hidden;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(199, 125, 255, 0.1) 0%, transparent 70%);
-    z-index: 1;
-  }
   
   &::after {
     content: '';

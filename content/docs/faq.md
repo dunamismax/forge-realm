@@ -150,7 +150,7 @@ Durability depends on cardstock quality, printing method, and handling.
 **Documentation**: Help improve guides and rules
 **Website**: Contribute to the Hugo website on [GitHub](https://github.com/dunamismax/forge-realm)
 
-See our [Contributing Guide](/contributing/) for complete details.
+See our [Contributing Guide](/docs/contributing/) for complete details.
 
 ### How are game decisions made?
 

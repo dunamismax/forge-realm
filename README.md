@@ -90,7 +90,7 @@ We believe that the joy of trading card games shouldn't be locked behind corpora
 
 ## Contributing
 
-Contributions are welcome! Visit the [Contributing Guide](https://forge-realm.com/contributing/) on our website to learn how to get involved in:
+Contributions are welcome! Visit the [Contributing Guide](https://forge-realm.com/docs/contributing/) on our website to learn how to get involved in:
 
 ### Game Development
 
@@ -108,7 +108,7 @@ Contributions are welcome! Visit the [Contributing Guide](https://forge-realm.co
 
 **Getting Started:**
 
-- **Complete Contributing Guide**: [forge-realm.com/contributing/](https://forge-realm.com/contributing/) - Everything you need to know
+- **Complete Contributing Guide**: [forge-realm.com/docs/contributing/](https://forge-realm.com/docs/contributing/) - Everything you need to know
 - **Developer Guide**: [forge-realm.com/docs/developer-guide/](https://forge-realm.com/docs/developer-guide/) - Technical documentation
 - **Style Guide**: [forge-realm.com/docs/style-guide/](https://forge-realm.com/docs/style-guide/) - Design system and components
 - **Real-time Chat**: Join our [Discord](https://discord.gg/KQTY8DfY) for collaboration

@@ -78,16 +78,6 @@ enableRobotsTXT = true
     url = "/docs/"
     identifier = "docs"
     weight = 10
-  [[menu.primary]]
-    name = "Cards"
-    url = "/cards/"
-    identifier = "cards"
-    weight = 20
-  [[menu.primary]]
-    name = "Contributing"
-    url = "/contributing/"
-    identifier = "contributing"
-    weight = 30
 
 [outputs]
   home = ["HTML", "RSS"]

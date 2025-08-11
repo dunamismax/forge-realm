@@ -33,7 +33,7 @@ Paper types, weights, and finishes for the best card quality.
 ## Print Process Overview
 
 1. **Choose Equipment**: Review our [printer recommendations](recommended-printers/) and [cardstock guide](cardstock-guide/)
-2. **Get Card Files**: Browse and download from our [Card Gallery](/cards/)
+2. **Get Card Files**: Browse and download from our [Card Gallery](/docs/cards/)
 3. **Follow Guide**: Use our [step-by-step printing guide](home-printing-guide/)
 4. **Cut and Sleeve**: Prepare your cards for play
 

@@ -254,7 +254,7 @@ Essence is your primary resource:
 - **Learn the rules** with this guide and practice with friends using placeholder cards
 - **Join the community** on [Discord](https://discord.gg/KQTY8DfY) for early playtesting opportunities
 - **Prepare to print** by reviewing our [Printing Guide](../../printing/home-printing-guide/)
-- **Browse upcoming cards** in our [Card Gallery](/cards/) to plan your first deck
+- **Browse upcoming cards** in our [Card Gallery](/docs/cards/) to plan your first deck
 {{% /alert %}}
 
 ## Next Steps
@@ -267,7 +267,7 @@ Essence is your primary resource:
 
 ### Prepare for Play
 
-- **[Card Gallery](/cards/)**: Browse upcoming cards and plan your first deck
+- **[Card Gallery](/docs/cards/)**: Browse upcoming cards and plan your first deck
 - **[Printing Guides](/docs/printing/)**: Everything you need to print professional-quality cards
 - **[Community Showcase](/docs/community-showcase/)**: See what other players are creating and playing
 
@@ -279,7 +279,7 @@ Essence is your primary resource:
 
 ### Contributing
 
-- **[Contributing Guide](/contributing/)**: Help shape the game through design feedback and testing
+- **[Contributing Guide](/docs/contributing/)**: Help shape the game through design feedback and testing
 - **Playtesting**: Participate in balance testing and provide feedback
 - **Content creation**: Share strategies, deck lists, and gameplay videos
 

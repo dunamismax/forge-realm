@@ -1,7 +1,7 @@
 ---
 title: "Card Gallery"
 linkTitle: "Cards"
-weight: 15
+weight: 20
 description: >
   Browse, view, and download all Forge Realm cards for printing and play.
 ---

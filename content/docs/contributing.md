@@ -1,10 +1,7 @@
 ---
-title: "Contributing to Forge Realm"
+title: "Contributing Guide"
 linkTitle: "Contributing"
-weight: 30
-menu:
-  main:
-    weight: 30
+weight: 80
 description: >
   Learn how to contribute to the Forge Realm project.
 ---
@@ -21,7 +18,7 @@ Thank you for contributing to Forge Realm! This guide covers our development pro
   <img src="/images/forge-realm-PNG-circular-emblem.webp" alt="Forge Realm Emblem" style="max-width: 80px; height: auto;" class="img-fluid">
 </div>
 
-All contributors must follow our [Code of Conduct](/contributing/code-of-conduct/).
+All contributors must follow our [Code of Conduct](/docs/code-of-conduct/).
 
 ## Getting Started
 

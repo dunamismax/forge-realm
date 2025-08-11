@@ -33,7 +33,7 @@ Forge Realm TCG is a fully open-source trading card game built for tabletop play
 Learn the rules and start playing Forge Realm in minutes.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-images" title="Card Gallery" url="/cards/" %}}
+{{% blocks/feature icon="fa-images" title="Card Gallery" url="/docs/cards/" %}}
 Browse all cards, view artwork, and download print-ready files.
 {{% /blocks/feature %}}
 
@@ -41,7 +41,7 @@ Browse all cards, view artwork, and download print-ready files.
 Complete guides for printing professional-quality cards at home.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-heart" title="Get Involved" url="/contributing/" %}}
+{{% blocks/feature icon="fa-heart" title="Get Involved" url="/docs/contributing/" %}}
 Join our community and help shape the future of Forge Realm.
 {{% /blocks/feature %}}
 

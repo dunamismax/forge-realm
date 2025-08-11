@@ -42,7 +42,7 @@ This comprehensive guide will help you print professional-quality Forge Realm ca
 
 ### Download Process
 
-1. Visit the [Card Gallery](/cards/)
+1. Visit the [Card Gallery](/docs/cards/)
 2. Select your desired card set or individual cards
 3. Choose format based on your printing needs:
    - **Beginners**: Use PDF print sheets for easiest setup
