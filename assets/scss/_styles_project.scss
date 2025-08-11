@@ -49,47 +49,57 @@ code, pre, .highlight {
   line-height: 1.4;
 }
 
-// Fix header spacing and overlap issues - Remove light border
-.td-navbar {
-  z-index: 1030;
-  backdrop-filter: blur(10px);
-  background: rgba(13, 17, 23, 0.95) !important;
-  border-bottom: none !important; // Remove the light grey border
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.8);
-}
-
-// Homepage specific - minimal padding for hero section
-// More aggressive targeting to ensure it overrides Docsy defaults
+/* ===========================
+   Homepage: remove all space above hero
+   =========================== */
 body.home,
 body.td-dark-mode.home {
-  .td-main {
-    padding-top: 0 !important; // Remove all top padding
-    
-    main {
-      padding-top: 0 !important; // No padding on homepage main
-      margin-top: 0 !important; // Remove any margin too
-    }
-  }
-  
-  // Target the cover section more aggressively
-  .blocks-cover,
-  .td-cover {
-    padding-top: 10px !important; // Minimal padding at top
-    padding-bottom: 1rem !important;
+
+  /* Don’t offset for the fixed navbar on the homepage */
+  .td-main,
+  .td-main > main {
+    padding-top: 0 !important;
     margin-top: 0 !important;
   }
-  
-  // Also target the container within the cover
-  .blocks-cover .container {
-    padding-top: 10px !important; // Reduced padding at top
+
+  /* Hero/cover containers */
+  .td-cover,
+  .blocks-cover {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Kill Bootstrap padding utilities INSIDE the cover (they use !important) */
+  .td-cover [class*="py-"],
+  .td-cover [class*="pt-"],
+  .blocks-cover [class*="py-"],
+  .blocks-cover [class*="pt-"] {
+    padding-top: 0 !important;
+  }
+
+  /* Containers/rows inside the cover */
+  .td-cover > .container,
+  .blocks-cover > .container,
+  .td-cover > .container > .row,
+  .blocks-cover > .container > .row {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Prevent top-margin collapse from the first element in the hero */
+  .td-cover :is(h1,h2,h3,p,div,section):first-child,
+  .blocks-cover :is(h1,h2,h3,p,div,section):first-child {
     margin-top: 0 !important;
   }
-  
-  // Target any section that might add extra spacing
-  .blocks-cover .row {
-    margin-top: 0 !important;
+
+  /* If the cover is set to “full height”, reset it to content height */
+  .td-cover[class*="height-"],
+  .blocks-cover[class*="height-"] {
+    height: auto !important;
+    min-height: 0 !important;
   }
 }
+
 
 // Other pages - normal padding
 .td-main {
