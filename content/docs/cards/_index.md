@@ -9,7 +9,7 @@ description: >
 <div class="mt-4"></div>
 
 {{< alert title="Complete Card Collection" >}}
-Browse all Forge Realm cards, view high-resolution artwork, and download print-ready files. **First cards releasing December 25, 2025.**
+Browse all Forge Realm cards, view high-resolution artwork, and download print-ready files. **Core Set releasing Q1 2026 (tentative)** featuring complete original artwork and balanced gameplay.
 {{< /alert >}}
 
 <div class="row align-items-center my-4">
@@ -70,22 +70,23 @@ New cards and sets are regularly added. Join our [Discord](https://discord.gg/KQ
 ## Release Schedule
 
 {{< alert title="Core Set Release" color="info" >}}
-**Target Release: December 25, 2025**
+**Target Release: Q1 2026 (Tentative)**
 
-The Core Set and initial card collection are currently in development with the following milestones:
+The Core Set featuring full original artwork, complete mechanics, and two balanced 60-card starter decks is in development with updated milestones:
 
-- **December 2025**: Gameplay mechanics finalized
-- **October 2025**: Artwork and card design completion
-- **November 2025**: Community playtesting and balance validation
-- **December 25, 2025**: Core Set release with downloadable files
+- **Q4 2025**: Core mechanics finalized (hybrid of MTG 60%, F&B 30%, Sorcery 10%)
+- **Q1 2026**: Artwork completion and final balance testing
+- **Q1 2026**: Core Set release with two complete starter decks
+
+**We need contributors!** Join our Discord for card mechanics, artwork, and game design contributions.
 
 [Join our Discord](https://discord.gg/KQTY8DfY) for development updates and early preview access.
 {{< /alert >}}
 
 ## Expansions {#expansions}
 
-*Expansion sets will be added as they are developed and released by the community. First expansion planned for Q1 2026.*
+*Expansion sets will be added as they are developed and released by the community. First expansion planned for Q2 2026.*
 
 ## Downloads {#downloads}
 
-*Direct download links will be provided here for easy access to all card files beginning December 25, 2025.*
+*Direct download links will be provided here for easy access to all card files beginning Q1 2026.*

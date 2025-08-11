@@ -12,13 +12,13 @@
 
 ---
 
-## **Core Set Launch: December 25, 2025**
+## **Core Set Launch: Tentative Q1 2026**
 
-The inaugural card set is in active development with community involvement at every step. **Early playtesting is happening now** - join our Discord to get involved!
+The inaugural card set featuring full original artwork, complete mechanics, and two balanced 60-card starter decks is in active development. This hybrid game combines the best of Magic: The Gathering (60%), Flesh and Blood (30%), and Sorcery: Contested Realm (10%) into one superior strategic experience. **Join our Discord - we need contributors for card mechanics, artwork, and game design!**
 
 ---
 
-## **Why Forge Realm TCG?**
+## **Why Forge Realm?**
 
 ### **For Players**
 
@@ -38,7 +38,7 @@ The inaugural card set is in active development with community involvement at ev
 
 ## **Start Playing in 4 Steps**
 
-```
+```sh
 1. Learn the Rules     → forge-realm.com/docs/gameplay/quick-start/
 2. Print Your Cards    → forge-realm.com/docs/printing/
 3. Join Our Community  → discord.gg/KQTY8DfY
@@ -82,12 +82,6 @@ We believe that the joy of trading card games shouldn't be locked behind corpora
 
 **Contact**: [dunamismax@forge-realm.com](mailto:dunamismax@forge-realm.com) - Questions? Ideas? Let's talk!
 
-## Community
-
-- **[forge-realm.com](https://forge-realm.com)** – Official website with complete documentation
-- **[Discord](https://discord.gg/KQTY8DfY)** – Real-time chat, design discussions, and community coordination
-- **Email**: [dunamismax@forge-realm.com](mailto:dunamismax@forge-realm.com) – Direct contact with project maintainer
-
 ## Contributing
 
 Contributions are welcome! Visit the [Contributing Guide](https://forge-realm.com/docs/contributing/) on our website to learn how to get involved in:
@@ -106,25 +100,6 @@ Contributions are welcome! Visit the [Contributing Guide](https://forge-realm.co
 - Developer tools and automation
 - Performance and accessibility
 
-**Getting Started:**
-
-- **Complete Contributing Guide**: [forge-realm.com/docs/contributing/](https://forge-realm.com/docs/contributing/) - Everything you need to know
-- **Style Guide**: [forge-realm.com/docs/style-guide/](https://forge-realm.com/docs/style-guide/) - Design system and components
-- **Real-time Chat**: Join our [Discord](https://discord.gg/KQTY8DfY) for collaboration
-
-## Website Development
-
-This repository contains the Hugo static site for [forge-realm.com](https://forge-realm.com).
-
-**For game design, cards, and community discussions**, join our [Discord](https://discord.gg/KQTY8DfY).
-
-### Repository Structure
-
-- **`content/`** - Hugo content (game documentation, guides, card gallery)
-- **`layouts/`** - Hugo templates and custom shortcodes
-- **`static/`** - Static assets (images, favicon, headers configuration)
-- **Root files** - Project configuration and website build settings
-
 ## License
 
 - **Game Content**: Creative Commons BY-SA 4.0 - Freely usable with attribution
@@ -135,4 +110,4 @@ See [LICENSE](LICENSE) for complete terms.
 
 ---
 
-**Ready to play?** Visit **[forge-realm.com](https://forge-realm.com)** and join our [Discord](https://discord.gg/KQTY8DfY) to start your journey!
+**Ready to play? We'll be there soon!** Visit **[forge-realm.com](https://forge-realm.com)** and join our [Discord](https://discord.gg/KQTY8DfY) to join us on this journey!

@@ -19,9 +19,9 @@ linkTitle: "Forge Realm"
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/dunamismax/forge-realm">
   <i class="fab fa-github me-2"></i>View on GitHub
 </a>
-<p class="lead mt-5">Democratizing trading card games by bringing the magic of Magic: The Gathering to the world, forever. Built with complete transparency, community governance, and unlimited print-and-play access for all players.</p>
+<p class="lead mt-5">The ultimate hybrid trading card game combining Magic: The Gathering (60%), Flesh and Blood (30%), and Sorcery: Contested Realm (10%) into one superior strategic experience. Built with complete transparency, community governance, and unlimited print-and-play access for all players.</p>
 <div class="mx-auto">
-  <p class="lead"><strong>First card set releasing December 25, 2025</strong> • Join our <a href="https://discord.gg/KQTY8DfY">Discord</a> for playtesting</p>
+  <p class="lead"><strong>Core Set launching Q1 2026 (tentative)</strong> • Join our <a href="https://discord.gg/KQTY8DfY">Discord</a> - we need contributors for mechanics, artwork, and design!</p>
 </div>
 {{< /blocks/cover >}}
 

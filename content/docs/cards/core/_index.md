@@ -64,17 +64,16 @@ Ongoing effects that modify gameplay and provide strategic depth.
 - **Bleed**: 0.125" bleed margin included
 - **Format**: CMYK color profile for professional printing
 
-{{< alert title="December 25, 2025 Release" color="warning" >}}
-**Target Release: December 25, 2025**
+{{< alert title="Q1 2026 Release (Tentative)" color="warning" >}}
+**Target Release: Q1 2026 (Tentative)**
 
-Core Set files are currently in development with the following timeline:
+The Core Set featuring full original artwork, complete mechanics, and two balanced 60-card starter decks is in development:
 
-- **December 2025**: Mechanics and rules finalization
-- **October 2025**: Artwork completion and card layout
-- **November 2025**: Community playtesting and balance validation
-- **December 25, 2025**: Full Core Set release with downloadable files
+- **Q4 2025**: Core mechanics finalization (hybrid gameplay combining MTG 60%, F&B 30%, Sorcery 10%)
+- **Q1 2026**: Complete original artwork and final balance testing
+- **Q1 2026**: Full Core Set release with two starter decks
 
-Join our [Discord](https://discord.gg/KQTY8DfY) for development updates and early preview access.
+**We need contributors for mechanics, artwork, and design!** Join our [Discord](https://discord.gg/KQTY8DfY) to help make this game a reality.
 {{< /alert >}}
 
 {{% /blocks/section %}}
@@ -96,7 +95,7 @@ The Core Set was developed through community collaboration and playtesting. Futu
 - ○ Final card balancing and artwork completion
 - ○ Print-ready file preparation
 
-*Card artwork and final files will be displayed here upon release in December 25, 2025.*
+*Card artwork and final files will be displayed here upon release in Q1 2026.*
 
 ---
 

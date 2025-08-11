@@ -37,7 +37,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 ### Innovative Deck Designs
 
 {{% alert title="Deck Submission" color="info" %}}
-**Share Your Creations!** Once cards are released in December 25, 2025, submit your innovative deck designs to be featured in the community showcase. Include your deck list, strategy guide, and playtesting results.
+**Share Your Creations!** Once cards are released in Q1 2026, submit your innovative deck designs to be featured in the community showcase. Include your deck list, strategy guide, and playtesting results. **We need contributors for card mechanics, artwork, and game design - join our Discord to help!**
 {{% /alert %}}
 
 #### Featured Deck Archetypes
@@ -68,7 +68,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 ### Community Deck Database
 
-*Coming December 25, 2025*: A comprehensive database where community members can:
+*Coming Q1 2026*: A comprehensive database where community members can:
 
 - **Submit deck lists** with detailed descriptions
 - **Rate and review** other players' creations
@@ -106,7 +106,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 ### Meta Analysis Reports
 
-**Monthly Meta Reviews** *(starting October 2025)*
+**Monthly Meta Reviews** *(starting Q2 2026)*
 
 - Popular deck archetypes and win rates
 - Format balance assessments
@@ -121,7 +121,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 #### Upcoming Events
 
-- **Core Set Release Tournament** - December 25, 2025
+- **Core Set Release Tournament** - Q1 2026
   - Celebrating the launch of the first official card set
   - Open to all players worldwide
   - Prizes include exclusive card variants and recognition
@@ -166,7 +166,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 #### Featured Stories
 
-TODO: Community member stories will be featured here once we have submissions after the December 25, 2025 release.
+TODO: Community member stories will be featured here once we have submissions after the Q1 2026 release.
 
 **"From Casual to Competitive"**
 
@@ -190,7 +190,7 @@ TODO: Community member stories will be featured here once we have submissions af
 
 #### Global Reach
 
-- **Players from 25+ countries** *(projected by end of 2025)*
+- **Players from 25+ countries** *(projected by end of 2026)*
 - **Multiple language communities** with translation projects
 - **Regional tournaments** and local play groups
 - **Cultural card variants** celebrating different traditions
@@ -208,7 +208,7 @@ TODO: Community member stories will be featured here once we have submissions af
 
 #### YouTube Creators
 
-*Launching alongside card release in December 25, 2025*
+*Launching alongside card release in Q1 2026*
 
 - **Gameplay Videos**: Tournament matches and casual play sessions
 - **Deck Tech Breakdowns**: Detailed analysis of successful strategies
