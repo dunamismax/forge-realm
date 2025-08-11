@@ -31,9 +31,7 @@ Contributions are welcome across all disciplines. Read the [Development Document
 
 ## Community
 
-- [Discord](https://discord.gg/KQTY8DfY) – real-time chat and coordination
-- [GitHub Issues](https://github.com/dunamismax/forge-realm/issues) – bug reports and feature requests
-- [GitHub Discussions](https://github.com/dunamismax/forge-realm/discussions) – long-form design discussion
+- [Discord](https://discord.gg/KQTY8DfY) – real-time chat and coordination, bug reports and feature requests, long-form design discussion
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) to get involved.
 
