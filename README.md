@@ -23,9 +23,9 @@ For detailed mechanics, see the [Comprehensive Rules](docs/gameplay/comprehensiv
 
 Use the [Home Printing Guide](docs/printing/home-printing-guide.md) for instructions on producing cards at home. Additional tips, including printer recommendations and cardstock options, are available in the [Printing Docs](docs/printing/).
 
-## Development
+## Project Information
 
-Contributions are welcome across all disciplines. Read the [Development Documentation](docs/development/) for information on repository structure, testing, and future API plans.
+Contributions are welcome across all disciplines. Read the [Project Documentation](docs/project/) for repository structure, quality guidelines, and digital tool plans.
 
 ## Community
 

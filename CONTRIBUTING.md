@@ -74,10 +74,10 @@ git remote add upstream https://github.com/dunamismax/forge-realm.git
 - Printing guides and troubleshooting
 - Community event documentation
 
-### Developers
-- Future digital tool development (separate repos)
-- Build automation and templates
-- Asset processing scripts
+### Technical Contributors
+- Asset processing and optimization
+- Template creation and formatting
+- Documentation automation
 
 ## Review Process
 

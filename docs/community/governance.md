@@ -63,7 +63,7 @@ The Governance Committee consists of 7 members serving staggered 18-month terms:
 
 ### Category 2: Major Technical Changes
 
-**Examples**: New features, architecture changes, API modifications, build system updates
+**Examples**: Documentation restructuring, major format changes, new asset standards
 
 **Authority**: Core Maintainers with Committee oversight
 **Process**: 

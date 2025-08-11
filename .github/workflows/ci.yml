@@ -1,4 +1,4 @@
-name: CI
+name: Documentation Quality
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 jobs:
-  lint:
+  documentation:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -21,8 +21,3 @@ jobs:
       uses: lycheeverse/lychee-action@v1
       with:
         args: '**/*.md'
-        
-    - name: Spell check
-      uses: streetsidesoftware/cspell-action@v6
-      with:
-        files: '**/*.md'

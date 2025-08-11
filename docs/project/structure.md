@@ -1,4 +1,4 @@
-# Project Architecture
+# Repository Structure
 
 Forge Realm maintains a clean documentation-focused structure for core game materials and assets:
 
@@ -9,4 +9,4 @@ root/
 └── README.md       # Project overview and links
 ```
 
-Community discussion and collaboration happens on Discord rather than in repository folders to maintain focus on documentation and game assets. Future digital tools (Discord bot, web client) will be developed in separate repositories.
+Community discussion and collaboration happens entirely on Discord to maintain focus on documentation and game assets. Digital tools are developed in separate repositories and are not part of this documentation-focused repository.

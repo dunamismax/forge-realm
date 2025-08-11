@@ -5,15 +5,15 @@ All notable changes to Forge Realm will be documented in this file.
 ## [Unreleased]
 
 ### Changed
-- Migrated from Node.js to Go 1.24
-- Replaced npm with Mage build system
-- Updated development workflow and documentation
+- Repository restructured as documentation and assets only
+- Community discussions moved entirely to Discord
+- Streamlined documentation structure
 
 ### Added
-- Go module structure with go.mod
-- Mage build targets for development workflow
-- HTTP server with health check endpoint
+- Comprehensive GitHub issue templates
+- Complete printing and gameplay guides
+- Asset organization structure
 
 ### Removed
-- Node.js dependencies and package.json
-- npm scripts and build configuration
+- Development code and build systems (moved to separate repositories)
+- GitHub-based community folders

@@ -15,10 +15,10 @@ Development priorities and timeline for Forge Realm, shaped by community feedbac
 - Develop comprehensive strategy guides
 
 ## Phase 3: Digital Integration
-- Discord bot for rules lookup and card database
-- Web-based deck builder and card gallery
-- Digital playtest tools and feedback systems
-- Organized play infrastructure
+- Discord bot for rules lookup and card database (separate repository)
+- Digital deck builder and card gallery (separate repository)
+- Digital playtest tools and feedback systems (separate repository)
+- Organized play infrastructure (separate repository)
 
 ## Phase 4: Expansion
 - Second card set development and release

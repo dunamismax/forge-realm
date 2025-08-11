@@ -24,4 +24,4 @@ If you discover a security vulnerability:
 - Critical fixes within 7 days
 - Public disclosure after fixes deployed
 
-**Scope includes:** Application security, authentication flaws, data validation bypasses, and build system vulnerabilities.
+**Scope includes:** Documentation accuracy, asset integrity, and any issues affecting print-and-play functionality.
