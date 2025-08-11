@@ -60,26 +60,33 @@ code, pre, .highlight {
 
 // Homepage specific - minimal padding for hero section
 // More aggressive targeting to ensure it overrides Docsy defaults
-body.td-dark-mode.home .td-main,
-.home .td-main {
-  padding-top: 0 !important; // Remove all top padding
-  
-  main {
-    padding-top: 0 !important; // No padding on homepage main
-    margin-top: 0 !important; // Remove any margin too
+body.home,
+body.td-dark-mode.home {
+  .td-main {
+    padding-top: 0 !important; // Remove all top padding
+    
+    main {
+      padding-top: 0 !important; // No padding on homepage main
+      margin-top: 0 !important; // Remove any margin too
+    }
   }
   
   // Target the cover section more aggressively
   .blocks-cover,
   .td-cover {
-    padding-top: 0 !important;
+    padding-top: 10px !important; // Minimal padding at top
     padding-bottom: 1rem !important;
     margin-top: 0 !important;
   }
   
   // Also target the container within the cover
   .blocks-cover .container {
-    padding-top: 0 !important;
+    padding-top: 10px !important; // Reduced padding at top
+    margin-top: 0 !important;
+  }
+  
+  // Target any section that might add extra spacing
+  .blocks-cover .row {
     margin-top: 0 !important;
   }
 }

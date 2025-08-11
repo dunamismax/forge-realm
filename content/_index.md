@@ -8,10 +8,16 @@ linkTitle: "Forge Realm"
   <img src="/images/forge-realm-main-wide.webp" alt="Forge Realm TCG" class="img-fluid mb-4" style="max-width: 800px; width: 100%;">
 </div>
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
-  Get Started <i class="fas fa-arrow-alt-circle-right ms-2"></i>
+  Documentation <i class="fas fa-book ms-2"></i>
 </a>
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="/docs/cards/">
-  Browse Cards <i class="fas fa-clone ms-2 "></i>
+  Browse Cards <i class="fas fa-clone ms-2"></i>
+</a>
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://discord.gg/KQTY8DfY">
+  <i class="fab fa-discord me-2"></i>Join Discord
+</a>
+<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/dunamismax/forge-realm">
+  <i class="fab fa-github me-2"></i>View on GitHub
 </a>
 <p class="lead mt-5">Democratizing trading card games by bringing the magic of Magic: The Gathering to the world, forever. Built with complete transparency, community governance, and unlimited print-and-play access for all players.</p>
 <div class="mx-auto">
@@ -54,24 +60,5 @@ Card designs, rules, and development process are all open source. Contribute to 
 {{% blocks/feature icon="fa-users" title="Community Driven" url="#" %}}
 Join our Discord community to participate in playtesting, provide feedback, and help shape the game.
 {{% /blocks/feature %}}
-
-{{% /blocks/section %}}
-
-{{% blocks/section color="primary" %}}
-
-<div class="col-12">
-<h1 class="text-center">Join the Community</h1>
-<p class="text-center">
-Development is active and the community is growing. Connect with other players, contribute to the game, and be part of something special.
-</p>
-<div class="text-center">
-  <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://discord.gg/KQTY8DfY">
-    <i class="fab fa-discord me-2"></i>Join Discord
-  </a>
-  <a class="btn btn-lg btn-outline-light me-3 mb-4" href="https://github.com/dunamismax/forge-realm">
-    <i class="fab fa-github me-2"></i>View on GitHub
-  </a>
-</div>
-</div>
 
 {{% /blocks/section %}}
