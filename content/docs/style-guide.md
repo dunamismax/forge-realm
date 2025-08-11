@@ -240,9 +240,9 @@ date: 2025-01-01
 
 Leverage Docsy shortcodes for enhanced layouts:
 
-- `{{% alert %}}` - Important notices
-- `{{% blocks/section %}}` - Structured sections
-- `{{% blocks/feature %}}` - Feature highlights
+- `{{%/* alert */%}}` - Important notices
+- `{{%/* blocks/section */%}}` - Structured sections
+- `{{%/* blocks/feature */%}}` - Feature highlights
 
 ### Theme Customization
 
