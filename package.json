@@ -10,7 +10,7 @@
     "build:preview": "hugo --buildDrafts --environment staging",
     "clean": "rm -rf public resources",
     "serve": "hugo server --environment production --disableFastRender",
-    "cf-pages": "go install github.com/magefile/mage@latest && mage ci",
+    "cf-pages": "go install github.com/magefile/mage@latest && $(go env GOPATH)/bin/mage ci",
     "validate:build": "npm run build",
     "test": "npm run validate:build"
   },
