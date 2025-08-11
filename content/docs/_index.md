@@ -13,7 +13,7 @@ This is the complete documentation for Forge Realm, covering gameplay rules, pri
 {{% /pageinfo %}}
 
 <div class="text-center my-4">
-  <img src="/images/forge-realm-PNG-circular-emblem.webp" alt="Forge Realm Emblem" style="max-width: 120px; height: auto;" class="img-fluid">
+  <img src="/images/forge-realm-PNG-circular-emblem.webp" alt="Forge Realm Emblem" style="max-width: 200px; height: auto;" class="img-fluid">
 </div>
 
 ## What is Forge Realm?
