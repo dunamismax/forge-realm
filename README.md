@@ -5,268 +5,113 @@
 # Forge Realm - Open Source Trading Card Game
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Contributors](https://img.shields.io/github/contributors/sawyer/forge-realm)](https://github.com/sawyer/forge-realm/graphs/contributors)
-[![Build Status](https://github.com/sawyer/forge-realm/workflows/CI/badge.svg)](https://github.com/sawyer/forge-realm/actions)
+[![Contributors](https://img.shields.io/github/contributors/dunamismax/forge-realm)](https://github.com/dunamismax/forge-realm/graphs/contributors)
+[![Go Version](https://img.shields.io/badge/Go-1.24-blue.svg)](https://golang.org)
 
-Forge Realm is a fully open-source trading card game designed from the ground up for community-driven development and print-and-play accessibility. Every aspect of the game—from core mechanics to individual card designs—is developed transparently through collaborative GitHub workflows.
+Open-source trading card game built by the community. Transparent development, democratic governance, and unrestricted print-and-play access.
 
-## Project Philosophy
+## Core Principles
 
-Traditional TCGs operate under corporate control with artificial scarcity models that prioritize profit over gameplay innovation. Forge Realm challenges this paradigm by implementing:
+- **Complete transparency** - all decisions made publicly
+- **Democratic governance** - community votes drive direction  
+- **Free accessibility** - print-and-play for everyone
+- **No artificial scarcity** - all cards available to all players
 
-- **Complete transparency** in all design decisions through public GitHub repositories
-- **Democratic governance** where community votes determine major game direction
-- **Unrestricted accessibility** through professionally formatted print-and-play files
-- **Collaborative development** using proven open-source methodologies
-- **No artificial scarcity** - all cards freely available to all players
-
-## Technical Architecture
-
-### Repository Structure
-
-```
-forge-realm/
-├── assets/           # Card artwork, templates, print-ready files
-├── data/             # Card definitions, rules database, formats
-├── docs/             # Comprehensive documentation
-├── src/              # Game engine, validators, generators
-├── community/        # Governance, proposals, voting records
-├── scripts/          # Build automation and utilities
-└── tests/            # Validation and integration testing
-```
-
-### Core Components
-
-- **Game Engine**: Rule enforcement and interaction validation
-- **Card Generator**: Automated print sheet and digital export generation
-- **Data Validator**: Schema validation for cards, rules, and formats
-- **Print System**: High-resolution output for home and commercial printing
-
-## Getting Started
+## Quick Start
 
 ### Prerequisites
-
-- Node.js 16+ for build tools
-- Git for version control
-- 300+ DPI printer for optimal card quality (see [printing guide](docs/printing/home-printing-guide.md))
+- Go 1.24+
+- Mage build tool
+- Git
 
 ### Installation
-
 ```bash
-git clone https://github.com/sawyer/forge-realm.git
+git clone https://github.com/dunamismax/forge-realm.git
 cd forge-realm
-npm install
-npm run build
-npm test
+go mod download
+mage build
+mage test
 ```
 
-### Generate Print Sheets
-
+### Run Server
 ```bash
-npm run generate-prints     # Standard format
-npm run generate-prints-a4  # A4 international format
+mage dev
+# Visit http://localhost:8080
 ```
 
-## Game Mechanics Overview
-
-Forge Realm implements a strategic resource management system with the following core mechanics:
+## Game Mechanics
 
 ### Essence System
+Dynamic mana system where players choose essence types during deck construction.
 
-Dynamic mana system where players choose their essence types during deck construction, allowing for flexible multicolor strategies without traditional mana base constraints.
-
-### Stack-Based Resolution
-
-All spells and abilities use a stack-based timing system familiar to experienced TCG players, ensuring precise interaction timing and competitive play viability.
-
-### Creature Combat
-
-Streamlined combat system with defender choice, first strike, and damage assignment rules optimized for both casual and tournament play.
+### Stack-Based Resolution  
+All spells and abilities use stack-based timing for precise interactions.
 
 ### Format Support
-
-- **Standard**: Current sets with rotation schedule
-- **Legacy**: All-time card pool for eternal format players
-- **Draft**: Booster draft using community-voted set design
-- **Constructed**: 60-card minimum, 4-of limit, sideboard support
+- **Standard**: Current sets with rotation
+- **Legacy**: All-time card pool
+- **Draft**: Community-voted set design
 
 ## Contributing
 
-We welcome contributions across all skill levels and disciplines:
+We welcome contributors across all disciplines:
 
-### Developers
+- **Developers**: Game engine, tooling, testing
+- **Designers**: Card design, mechanics, formats  
+- **Artists**: Card artwork, templates, icons
+- **Community**: Documentation, tournaments, localization
 
-- Game engine improvements
-- Automation and tooling
-- Website and digital platform development
-- Testing and validation systems
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
 
-### Game Designers
+## Governance
 
-- Card design and balance
-- Mechanic proposals
-- Format development
-- Rules refinement
+Democratic decision-making structure:
 
-### Artists
+1. **Technical Changes**: Standard PR review (2 approvals)
+2. **Design Changes**: Community vote (>50%)  
+3. **Core Rules**: Extended discussion + supermajority (>66%)
 
-- Original card artwork
-- Template design
-- Icon and symbol creation
-- Marketing materials
+Contributors with merged PRs gain voting rights.
 
-### Community Management
+## Print System
 
-- Documentation improvement
-- Player onboarding
-- Tournament organization
-- Translation and localization
+Professional print-and-play cards:
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines and development setup.
+- **Size**: 63.5mm x 88.9mm (poker standard)
+- **Resolution**: 300+ DPI
+- **Cardstock**: 300 GSM recommended
+- **Formats**: PDF, PNG, SVG, digital exports
 
-## Governance Model
+## Build Commands
 
-Forge Realm operates under a democratic governance structure:
-
-### Decision Types
-
-1. **Technical Changes**: Code, tooling, infrastructure
-   - Approved through standard pull request review
-   - Requires two maintainer approvals
-
-2. **Design Changes**: Cards, mechanics, rules
-   - Community proposal and discussion period
-   - Formal voting with simple majority (>50%)
-
-3. **Core System Changes**: Fundamental game rules
-   - Extended discussion period (minimum 2 weeks)
-   - Supermajority vote required (>66%)
-
-### Voting Eligibility
-
-Contributors with merged pull requests or accepted proposals gain voting rights. Active community members without code contributions may request voting access through the governance committee.
-
-## Print-and-Play System
-
-### Specifications
-
-- **Card Size**: 63.5mm x 88.9mm (2.5" x 3.5") - poker standard
-- **Print Resolution**: 300 DPI minimum, 600 DPI recommended
-- **Cardstock**: 300 GSM recommended, 270-350 GSM acceptable
-- **Finish**: Linen finish preferred for shuffle feel
-- **Bleed**: 3mm safety margin for cutting variance
-
-### Supported Formats
-
-- **PDF**: Print-ready sheets with cut guides
-- **PNG**: Individual high-resolution card images
-- **SVG**: Vector format for scaling and customization
-- **Digital**: Cockatrice, OCTGN, and Tabletop Simulator exports
-
-## Legal Framework
-
-### Licensing
-
-- **Source Code**: Apache License 2.0
-- **Game Content**: Creative Commons BY-SA 4.0
-- **Artwork**: Individual artist attribution with CC BY-SA 4.0
-
-### Trademark Policy
-
-"Forge Realm" name and logo are protected trademarks. Community use permitted for non-commercial purposes. Commercial use requires explicit permission.
-
-### Contributor Agreement
-
-All contributions subject to project licensing. By submitting pull requests, contributors agree to license their work under project terms.
-
-## Community Resources
-
-### Communication Channels
-
-- **GitHub Issues**: Bug reports, feature requests, proposals
-- **GitHub Discussions**: General development discussion
-- **Discord**: Real-time community interaction (link in repository)
-- **Reddit**: r/ForgeRealm for broader community engagement
-
-### Documentation
-
-- [Quick Start Guide](docs/gameplay/quick-start.md)
-- [Comprehensive Rules](docs/gameplay/comprehensive-rules.md)
-- [Printing Guide](docs/printing/home-printing-guide.md)
-- [Development Documentation](docs/development/)
-- [Community Guidelines](docs/community/)
-
-## Development Roadmap
-
-### Phase 1: Foundation (Current)
-
-- Core repository structure
-- Basic game engine
-- Initial card set (120 cards)
-- Print generation system
-
-### Phase 2: Community Building
-
-- Discord server launch
-- Contributor onboarding
-- First community vote
-- Beta testing program
-
-### Phase 3: Digital Platform
-
-- Web-based gameplay
-- Matchmaking system
-- Tournament infrastructure
-- Mobile companion app
-
-### Phase 4: Expansion
-
-- Multiple set releases
-- International localization
-- Convention presence
-- Educational partnerships
-
-## Support and Recognition
-
-### Monetary Support
-
-While Forge Realm remains completely free, development costs are supported through:
-
-- GitHub Sponsors
-- Community donations
-- Convention sales of premium print runs
-
-### Contributor Recognition
-
-- Commit history attribution
-- Contributor card designs
-- Hall of fame documentation
-- Conference speaking opportunities
-
-## Technical Requirements
-
-### Minimum System Requirements
-
-- **Development**: Node.js 16+, 4GB RAM, 2GB storage
-- **Printing**: 300 DPI printer, 300 GSM cardstock support
-- **Digital Play**: Modern web browser with WebGL support
-
-### Recommended Hardware
-
-- **Canon PIXMA PRO-200** for professional home printing
-- **Epson EcoTank ET-8550** for high-volume printing
-- **Cutting mat and ruler** for precise card cutting
-- **Card sleeves** for protection during play
+```bash
+mage build      # Compile application  
+mage test       # Run tests
+mage lint       # Run linter
+mage clean      # Remove build artifacts
+mage dev        # Build and run server
+mage all        # Full build pipeline
+```
 
 ## License
 
-This project is dual-licensed:
+- **Source Code**: Apache License 2.0
+- **Game Content**: Creative Commons BY-SA 4.0
 
-- Source code under [Apache License 2.0](LICENSE)
-- Game content under [Creative Commons BY-SA 4.0](LICENSE-CONTENT)
+## Community
 
-See individual files for specific licensing information.
+- **GitHub Issues**: Bug reports and features
+- **GitHub Discussions**: General development
+- **Discord**: Real-time community chat
+- **Reddit**: r/ForgeRealm
+
+## Documentation
+
+- [Quick Start Guide](docs/gameplay/quick-start.md)
+- [Comprehensive Rules](docs/gameplay/comprehensive-rules.md)  
+- [Printing Guide](docs/printing/home-printing-guide.md)
+- [Development Docs](docs/development/)
 
 ---
 
-**Ready to contribute to the future of open-source gaming?** Start by reading our [contributing guidelines](CONTRIBUTING.md) and join the discussion in our community channels.
+**Ready to contribute?** Read [CONTRIBUTING.md](CONTRIBUTING.md) and join our community!
