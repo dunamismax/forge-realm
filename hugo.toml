@@ -1,4 +1,4 @@
-baseURL = 'https://your-domain.com'
+baseURL = 'https://forge-realm.com'
 languageCode = 'en-us'
 title = 'Forge Realm - Open Source Trading Card Game'
 # Hugo version
@@ -19,7 +19,7 @@ title = 'Forge Realm - Open Source Trading Card Game'
   version_menu = "Releases"
   archived_version = false
   version = "1.1"
-  url_latest_version = "https://your-domain.com"
+  url_latest_version = "https://forge-realm.com"
   github_repo = 'https://github.com/dunamismax/forge-realm'
   github_branch = "main"
 

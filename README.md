@@ -13,6 +13,8 @@ Forge Realm is a fully open-source trading card game built for tabletop play. Th
 
 ## Getting Started
 
+Visit our website at **[forge-realm.com](https://forge-realm.com)** for complete documentation, rules, and guides.
+
 Join our community on [Discord](https://discord.gg/KQTY8DfY) to help shape the game and participate in design discussions.
 
 New to Forge Realm? Start with the [Quick Start Guide](docs/gameplay/quick-start.md) to learn the basics and begin playing.
@@ -29,7 +31,8 @@ Contributions are welcome across all disciplines. Read the [Project Documentatio
 
 ## Community
 
-[Discord](https://discord.gg/KQTY8DfY) – real-time chat and coordination, bug reports and feature requests, long-form design discussion
+- **[forge-realm.com](https://forge-realm.com)** – Official website with complete documentation
+- **[Discord](https://discord.gg/KQTY8DfY)** – Real-time chat and coordination, bug reports and feature requests, long-form design discussion
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) to get involved.
 
@@ -40,4 +43,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) to get involved.
 
 ---
 
-**Ready to contribute?** Join our [Discord](https://discord.gg/KQTY8DfY) and start collaborating!
+**Ready to contribute?** Visit [forge-realm.com](https://forge-realm.com) and join our [Discord](https://discord.gg/KQTY8DfY) to start collaborating!

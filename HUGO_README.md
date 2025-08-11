@@ -64,13 +64,13 @@ The site uses the [Docsy theme](https://www.docsy.dev/), which is optimized for 
 
 ## Deployment
 
-The site automatically deploys to GitHub Pages via GitHub Actions when changes are pushed to the main branch.
+The site automatically deploys to [Cloudflare Pages](https://forge-realm.com) when changes are pushed to the main branch. See [CLOUDFLARE_PAGES.md](CLOUDFLARE_PAGES.md) for deployment details.
 
 ## Configuration
 
 Site configuration is in `hugo.toml`. Key settings:
 
-- **baseURL**: Set to your GitHub Pages URL
+- **baseURL**: Set to https://forge-realm.com
 - **title**: Site title
 - **params.github_repo**: Link to repository
 - **menu**: Navigation structure

@@ -9,10 +9,10 @@
   "scripts": {
     "dev": "hugo server --buildDrafts --bind 0.0.0.0",
     "build": "hugo --minify --environment production",
-    "build:dev": "hugo --buildDrafts --environment development",
+    "build:preview": "hugo --buildDrafts --environment staging",
     "clean": "rm -rf public resources",
-    "deploy": "npm run clean && npm run build",
-    "serve": "hugo server --environment production --disableFastRender"
+    "serve": "hugo server --environment production --disableFastRender",
+    "cf-pages": "npm run build"
   },
   "repository": {
     "type": "git",
