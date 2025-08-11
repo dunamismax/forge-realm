@@ -1,0 +1,12 @@
+<!-- Preload critical hero image -->
+{{ if .IsHome }}
+<link rel="preload" as="image" href="/images/forge-realm-alt-800w.webp" type="image/webp">
+<link rel="preload" as="image" href="/images/forge-realm-alt-800w.png" type="image/png">
+{{ end }}
+
+<!-- Performance optimization meta tags -->
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- DNS prefetch for external resources -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//discord.gg">

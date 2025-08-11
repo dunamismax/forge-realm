@@ -14,7 +14,7 @@ Forge Realm is a fully open-source trading card game built for tabletop play. Th
 
 1. **Learn the Rules**: Visit [forge-realm.com/docs/gameplay/quick-start/](https://forge-realm.com/docs/gameplay/quick-start/) for a beginner's guide
 2. **Get Cards**: Browse and download card files at [forge-realm.com/cards/](https://forge-realm.com/cards/)
-3. **Print Cards**: Follow our [printing guide](https://forge-realm.com/docs/printing/home-printing-guide/) to create physical cards at home  
+3. **Print Cards**: Follow our [printing guide](https://forge-realm.com/docs/printing/home-printing-guide/) to create physical cards at home
 4. **Play**: Gather friends and start your first game!
 
 ## Documentation
@@ -45,7 +45,7 @@ All game documentation is available on the official website:
 Contributions are welcome! Visit the [Contributing Guide](https://forge-realm.com/contributing/) on our website to learn how to get involved in:
 
 - Game design and balance
-- Card artwork and graphics  
+- Card artwork and graphics
 - Documentation and guides
 - Community events and testing
 

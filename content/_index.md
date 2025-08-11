@@ -5,7 +5,14 @@ linkTitle: "Forge Realm"
 
 {{< blocks/cover title="" image_anchor="top" height="full" >}}
 <div class="text-center mb-4">
-  <img src="/forge-realm-alt.png" alt="Forge Realm - Open Source Trading Card Game" style="max-width: 500px; width: 100%; height: auto;">
+  <picture>
+    <source srcset="/images/forge-realm-alt-800w.webp" type="image/webp">
+    <img src="/images/forge-realm-alt-800w.png" alt="Forge Realm - Open Source Trading Card Game" 
+         style="max-width: 500px; width: 100%; height: auto;" 
+         loading="eager" 
+         width="800" 
+         height="533">
+  </picture>
 </div>
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
   Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>

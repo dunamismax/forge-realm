@@ -12,6 +12,9 @@
 /assets/jsconfig.json
 hugo_stats.json
 
+# Image optimization working directory
+/static/optimized/
+
 # Hugo cache
 /resources/
 /.hugo_build.lock
