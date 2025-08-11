@@ -8,7 +8,7 @@
 [![Contributors](https://img.shields.io/github/contributors/dunamismax/forge-realm)](https://github.com/dunamismax/forge-realm/graphs/contributors)
 [![Go Version](https://img.shields.io/badge/Go-1.24-blue.svg)](https://golang.org)
 
-Open-source trading card game built by the community. Transparent development, democratic governance, unrestricted print-and-play access, and no artificial scarcity.
+A fully Open-source TCG built by the community. Transparent development, democratic governance, unrestricted print-and-play access, and no artificial scarcity.
 
 ## Core Principles
 
