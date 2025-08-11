@@ -38,6 +38,7 @@ All game documentation is available on the official website:
 
 - **[forge-realm.com](https://forge-realm.com)** – Official website with complete documentation
 - **[Discord](https://discord.gg/KQTY8DfY)** – Real-time chat, design discussions, and community coordination
+- **Email**: [dunamismax@forge-realm.com](mailto:dunamismax@forge-realm.com) – Direct contact with project maintainer
 
 ## Contributing
 

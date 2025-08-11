@@ -12,7 +12,7 @@
 If you discover a security vulnerability:
 
 1. **Do NOT create a public GitHub issue**
-2. **Email dunamismax@tutamail.com** with:
+2. **Email dunamismax@forge-realm.com** with:
    - Description of the vulnerability
    - Steps to reproduce
    - Potential impact assessment

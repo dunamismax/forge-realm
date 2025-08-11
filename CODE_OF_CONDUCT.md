@@ -96,7 +96,7 @@ If you are subject to or witness unacceptable behavior, or have any other concer
 
 ### Reporting Channels
 
-- **Primary Contact**: <forge.realm.conduct@gmail.com>
+- **Primary Contact**: <conduct@forge-realm.com>
 - **Discord Moderation**: Direct message to @Moderator role members
 - **GitHub Issues**: Use the "Code of Conduct Violation" template (public or private)
 - **Emergency Contact**: For urgent safety concerns, contact local authorities first
@@ -163,7 +163,7 @@ Individuals who believe they have been unfairly sanctioned may appeal enforcemen
 
 ### Appeal Procedure
 
-1. **Submit Appeal**: Email <forge.realm.appeals@gmail.com> within 30 days of the decision
+1. **Submit Appeal**: Email <appeals@forge-realm.com> within 30 days of the decision
 2. **Provide Information**: Include original incident details, sanction received, and reasoning for appeal
 3. **Review Process**: Independent governance committee members review the case
 4. **Decision Timeline**: Appeals are processed within 14 days
@@ -235,7 +235,7 @@ For answers to common questions about this code of conduct, see the [Contributor
 
 For questions about this Code of Conduct or its enforcement:
 
-- **General Questions**: <forge.realm.conduct@gmail.com>
+- **General Questions**: <conduct@forge-realm.com>
 - **Governance Committee**: <governance@forgerealm.org>
 - **Project Maintainers**: Available through GitHub repository contacts
 
