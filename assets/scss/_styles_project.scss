@@ -11,15 +11,15 @@
   --forge-danger: #660000;
   --forge-warning: #b8572a;
   --forge-info: #1a2d3a;
-  
+
   --forge-bg-primary: #0d1117;
   --forge-bg-secondary: #21262d;
   --forge-bg-tertiary: #30363d;
   --forge-bg-light: #1c2128; // For sections that were too bright
-  
+
   --forge-text-primary: #e6edf3;
   --forge-text-secondary: #8b949e;
-  
+
   --forge-shadow: 0 4px 16px rgba(45, 27, 78, 0.15);
   --forge-shadow-hover: 0 8px 32px rgba(45, 27, 78, 0.25);
   --forge-glow: 0 0 20px rgba(45, 27, 78, 0.3);
@@ -50,12 +50,12 @@ code, pre, .highlight {
 
 // Homepage specific - minimal padding for hero section
 .home .td-main {
-  padding-top: 60px; // Reduced padding at top
-  
+  padding-top: 10px; // Reduced padding at top
+
   main {
     padding-top: 0 !important; // No padding on homepage main
   }
-  
+
   // Minimal cover section padding
   .blocks-cover {
     padding-top: 0.5rem !important;
@@ -66,7 +66,7 @@ code, pre, .highlight {
 // Other pages - normal padding
 .td-main {
   padding-top: 80px; // Account for fixed navbar
-  
+
   main {
     padding-top: 2rem;
   }
@@ -89,14 +89,14 @@ code, pre, .highlight {
   color: white !important;
   font-weight: 500;
   transition: all 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-2px);
     box-shadow: var(--forge-shadow-hover);
     background-color: var(--forge-primary);
     opacity: 0.9;
   }
-  
+
   &:focus {
     box-shadow: var(--forge-glow);
   }
@@ -109,14 +109,14 @@ code, pre, .highlight {
   color: white !important;
   font-weight: 500;
   transition: all 0.3s ease;
-  
+
   &:hover {
     transform: translateY(-2px);
     box-shadow: var(--forge-shadow-hover);
     background-color: var(--forge-secondary);
     opacity: 0.9;
   }
-  
+
   &:focus {
     box-shadow: var(--forge-glow);
   }
@@ -125,145 +125,145 @@ code, pre, .highlight {
 // Comprehensive Dark Theme - Override ALL bright sections
 .td-dark-mode {
   background-color: var(--forge-bg-primary) !important;
-  
+
   // Force ALL sections to be dark
   .blocks-section {
     background-color: var(--forge-bg-secondary) !important;
-    
+
     &[class*="color-primary"] {
       background-color: var(--forge-bg-tertiary) !important;
     }
-    
+
     &[class*="color-light"] {
       background-color: var(--forge-bg-light) !important;
     }
-    
+
     &[class*="color-secondary"] {
       background-color: var(--forge-bg-tertiary) !important;
     }
-    
+
     &[class*="color-white"] {
       background-color: var(--forge-bg-secondary) !important;
     }
   }
-  
+
   // Fix pageinfo blocks
   .pageinfo {
     background-color: var(--forge-bg-tertiary) !important;
     border-left: 4px solid var(--forge-primary) !important;
     color: var(--forge-text-primary) !important;
   }
-  
+
   // Override any white/light backgrounds
   .bg-white,
   .bg-light {
     background-color: var(--forge-bg-secondary) !important;
   }
-  
+
   // Enhanced cards
   .card {
     background-color: var(--forge-bg-secondary) !important;
     border: 1px solid var(--forge-bg-tertiary) !important;
     box-shadow: var(--forge-shadow);
     transition: all 0.3s ease;
-    
+
     &:hover {
       transform: translateY(-2px);
       box-shadow: var(--forge-shadow-hover);
     }
   }
-  
+
   // Enhanced sidebar
   .td-sidebar {
     background-color: var(--forge-bg-secondary) !important;
     border-right: 1px solid var(--forge-bg-tertiary);
   }
-  
+
   .td-sidebar-nav .td-sidebar-link {
     color: var(--forge-text-secondary) !important;
     transition: all 0.2s ease;
-    
+
     &:hover {
       background-color: rgba(199, 125, 255, 0.1) !important;
       color: var(--forge-text-primary) !important;
     }
-    
+
     &.active {
       background-color: rgba(199, 125, 255, 0.15) !important;
       border-left: 3px solid var(--forge-primary);
       color: var(--forge-primary) !important;
     }
   }
-  
+
   // Code blocks with dark magic theme
   pre, code {
     background-color: #161b22 !important;
     color: var(--forge-text-primary) !important;
     border: 1px solid var(--forge-bg-tertiary);
   }
-  
+
   .highlight {
     background-color: #161b22 !important;
     border-radius: 8px;
     padding: 1rem;
     margin: 1rem 0;
     border: 1px solid var(--forge-bg-tertiary);
-    
+
     code {
       background: transparent !important;
       border: none;
     }
   }
-  
+
   // Tables
   table {
     background-color: var(--forge-bg-secondary) !important;
-    
+
     th {
       background-color: var(--forge-bg-tertiary) !important;
       border-bottom: 2px solid rgba(199, 125, 255, 0.3) !important;
       color: var(--forge-text-primary) !important;
     }
-    
+
     td {
       border-bottom: 1px solid var(--forge-bg-tertiary) !important;
       color: var(--forge-text-secondary) !important;
     }
-    
+
     tr:hover {
       background-color: rgba(199, 125, 255, 0.05) !important;
     }
   }
-  
+
   // Footer
   .td-footer {
     background-color: var(--forge-bg-secondary) !important;
     border-top: 1px solid var(--forge-bg-tertiary);
     margin-top: 4rem;
   }
-  
+
   // Enhanced alerts with dark magic theme
   .alert {
     border: none;
     border-radius: 8px;
     box-shadow: var(--forge-shadow);
     margin: 1.5rem 0;
-    
+
     &.alert-info {
       background-color: rgba(38, 70, 83, 0.15);
       border-left: 4px solid var(--forge-info);
     }
-    
+
     &.alert-success {
       background-color: rgba(45, 80, 22, 0.15);
       border-left: 4px solid var(--forge-success);
     }
-    
+
     &.alert-warning {
       background-color: rgba(231, 111, 81, 0.15);
       border-left: 4px solid var(--forge-warning);
     }
-    
+
     &.alert-danger {
       background-color: rgba(139, 0, 0, 0.15);
       border-left: 4px solid var(--forge-danger);
@@ -274,31 +274,31 @@ code, pre, .highlight {
 // Feature blocks with dark magic enhancement
 .blocks-feature {
   background-color: var(--forge-bg-secondary) !important;
-  
+
   .card {
     background-color: var(--forge-bg-tertiary) !important;
     border: 1px solid rgba(91, 33, 182, 0.3) !important;
     transition: all 0.3s ease;
     color: var(--forge-text-primary) !important;
-    
+
     &:hover {
       transform: translateY(-4px);
       box-shadow: var(--forge-glow);
       border-color: rgba(91, 33, 182, 0.5);
     }
-    
+
     .card-body {
       background-color: transparent !important;
       color: var(--forge-text-primary) !important;
     }
-    
+
     .fas, .fab {
       color: var(--forge-primary);
       font-size: 2.5rem;
       margin-bottom: 1rem;
       text-shadow: 0 0 10px rgba(91, 33, 182, 0.4);
     }
-    
+
     h3, h4, h5, p {
       color: var(--forge-text-primary) !important;
     }
@@ -309,24 +309,24 @@ code, pre, .highlight {
 .td-dark-mode {
   .blocks-section {
     background-color: var(--forge-bg-secondary) !important;
-    
+
     // Override Docsy's color classes
     &.color-primary {
       background-color: var(--forge-bg-tertiary) !important;
     }
-    
+
     &.color-light {
       background-color: var(--forge-bg-light) !important;
     }
-    
+
     &.color-secondary {
       background-color: var(--forge-bg-tertiary) !important;
     }
-    
+
     &.color-white {
       background-color: var(--forge-bg-secondary) !important;
     }
-    
+
     &.color-dark {
       background-color: var(--forge-bg-primary) !important;
     }
@@ -338,7 +338,7 @@ code, pre, .highlight {
   background-color: var(--forge-bg-primary);
   position: relative;
   overflow: hidden;
-  
+
   &::after {
     content: '';
     position: absolute;
@@ -350,7 +350,7 @@ code, pre, .highlight {
     opacity: 0.05;
     z-index: 0;
   }
-  
+
   .container {
     position: relative;
     z-index: 2;
@@ -362,7 +362,7 @@ code, pre, .highlight {
   background-color: var(--forge-bg-secondary) !important;
   border: 1px solid var(--forge-bg-tertiary) !important;
   color: var(--forge-text-primary) !important;
-  
+
   &:focus {
     border-color: var(--forge-primary) !important;
     box-shadow: 0 0 0 0.2rem rgba(199, 125, 255, 0.25) !important;
@@ -374,12 +374,12 @@ code, pre, .highlight {
   .td-main {
     padding-top: 70px;
   }
-  
+
   .td-page-title {
     font-size: 1.75rem;
     text-align: center;
   }
-  
+
   .btn {
     margin-bottom: 0.5rem;
     width: 100%;
@@ -412,7 +412,7 @@ h3 {
 // Link enhancements
 a {
   transition: color 0.2s ease;
-  
+
   &:hover {
     text-decoration: none;
   }
@@ -429,19 +429,19 @@ a {
   article {
     background-color: transparent !important;
   }
-  
+
   // Force all text to be light colored
   h1, h2, h3, h4, h5, h6, p, span, div, li {
     color: var(--forge-text-primary) !important;
   }
-  
+
   // Ensure all block sections are dark
   .blocks-section {
     * {
       color: var(--forge-text-primary) !important;
     }
   }
-  
+
   // Fix any remaining light/white sections
   .bg-light,
   .bg-white,
@@ -450,12 +450,12 @@ a {
     background-color: var(--forge-bg-secondary) !important;
     color: var(--forge-text-primary) !important;
   }
-  
+
   // Make sure lead paragraphs are properly styled
   .lead {
     color: var(--forge-text-secondary) !important;
   }
-  
+
   // Fix any remaining card-like elements
   .card-body,
   .card-header,
@@ -464,17 +464,17 @@ a {
     color: var(--forge-text-primary) !important;
     border-color: rgba(45, 27, 78, 0.2) !important;
   }
-  
+
   // AGGRESSIVE OVERRIDE: Force ANY section with color="light" to be dark
   .blocks-section.color-light,
   .blocks-section[class*="color-light"] {
     background-color: var(--forge-bg-secondary) !important;
-    
+
     * {
       color: var(--forge-text-primary) !important;
     }
   }
-  
+
   // Override any bright alert/info boxes
   .alert.alert-info,
   .pageinfo {
@@ -487,7 +487,7 @@ a {
 // NUCLEAR OPTION: Override ALL possible light/bright elements
 body.td-dark-mode {
   background-color: var(--forge-bg-primary) !important;
-  
+
   // Override ALL possible Bootstrap/Docsy color classes
   .color-light,
   .bg-light,
@@ -502,21 +502,21 @@ body.td-dark-mode {
     background-color: var(--forge-bg-secondary) !important;
     color: var(--forge-text-primary) !important;
   }
-  
+
   // Target Docsy specific block sections
   .blocks-section {
     background-color: var(--forge-bg-secondary) !important;
-    
+
     &.color-light,
     &[class*="light"] {
       background-color: var(--forge-bg-secondary) !important;
     }
-    
+
     &.color-primary {
       background-color: var(--forge-bg-tertiary) !important;
     }
   }
-  
+
   // Override Hugo shortcodes
   .alert,
   .pageinfo {
@@ -524,7 +524,7 @@ body.td-dark-mode {
     border-color: var(--forge-primary) !important;
     color: var(--forge-text-primary) !important;
   }
-  
+
   // Ensure no bright backgrounds anywhere
   * {
     &[style*="background-color: white"],
@@ -545,7 +545,7 @@ body.td-dark-mode {
   .k, .kd, .kn, .kr, .kt { color: #c77dff; } // Keywords
   .s, .s1, .s2, .se, .sh, .si, .sx { color: #a5d6ff; } // Strings
   .n, .na, .nb, .nc, .no, .nd, .ni, .ne, .nf, .nl, .nn, .nt, .nv { color: #e6edf3; } // Names
-  .m, .mf, .mh, .mi, .mo { color: #79c0ff; } // Numbers  
+  .m, .mf, .mh, .mi, .mo { color: #79c0ff; } // Numbers
   .o, .ow { color: #ff7b72; } // Operators
   .p { color: #e6edf3; } // Punctuation
   .gd { background-color: #8b0000; color: #ffdcd7; } // Diff deleted
