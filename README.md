@@ -115,7 +115,7 @@ Contributions are welcome! Visit the [Contributing Guide](https://forge-realm.co
 
 ## Website Development
 
-This repository contains the Hugo static site for [forge-realm.com](https://forge-realm.com). 
+This repository contains the Hugo static site for [forge-realm.com](https://forge-realm.com).
 
 **For game design, cards, and community discussions**, join our [Discord](https://discord.gg/KQTY8DfY).
 
