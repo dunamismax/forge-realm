@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/dunamismax/images/blob/main/forge-realm/forge-realm.png" alt="Forge Realm" width="300" />
+</p>
+
 # Forge Realm - Open Source Trading Card Game
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
