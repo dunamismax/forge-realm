@@ -3,7 +3,10 @@ title: "Forge Realm - Open Source Trading Card Game"
 linkTitle: "Forge Realm"
 ---
 
-{{< blocks/cover title="Forge Realm" image_anchor="top" height="full" >}}
+{{< blocks/cover title="" image_anchor="top" height="full" >}}
+<div class="text-center mb-4">
+  <img src="/forge-realm-alt.png" alt="Forge Realm - Open Source Trading Card Game" style="max-width: 500px; width: 100%; height: auto;">
+</div>
 <a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
   Learn More <i class="fas fa-arrow-alt-circle-right ms-2"></i>
 </a>
@@ -33,6 +36,7 @@ Print-and-play access for everyone, no restrictions.
 {{% /blocks/section %}}
 
 {{% blocks/section %}}
+
 ## Getting Started
 
 New to Forge Realm? Start with the [Quick Start Guide](/docs/gameplay/quick-start/) to learn the basics and begin playing.
@@ -42,6 +46,7 @@ For detailed mechanics, see the [Comprehensive Rules](/docs/gameplay/comprehensi
 {{% /blocks/section %}}
 
 {{% blocks/section color="light" %}}
+
 ## Community
 
 Join our community on [Discord](https://discord.gg/KQTY8DfY) to help shape the game and participate in design discussions.

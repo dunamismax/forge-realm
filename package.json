@@ -7,9 +7,12 @@
     "doc": "docs"
   },
   "scripts": {
-    "dev": "hugo server --buildDrafts",
-    "build": "hugo --minify",
-    "clean": "rm -rf public"
+    "dev": "hugo server --buildDrafts --bind 0.0.0.0",
+    "build": "hugo --minify --environment production",
+    "build:dev": "hugo --buildDrafts --environment development",
+    "clean": "rm -rf public resources",
+    "deploy": "npm run clean && npm run build",
+    "serve": "hugo server --environment production --disableFastRender"
   },
   "repository": {
     "type": "git",

@@ -5,6 +5,7 @@ This repository now includes a Hugo-powered documentation website that automatic
 ## Quick Start
 
 ### Prerequisites
+
 - Hugo Extended v0.128.0 or later
 - Node.js and npm (for CSS processing)
 
@@ -81,6 +82,7 @@ Site configuration is in `hugo.toml`. Key settings:
 3. Hugo will automatically generate navigation and pages
 
 Example front matter:
+
 ```yaml
 ---
 title: "Page Title"
@@ -93,6 +95,7 @@ description: "Page description for SEO"
 ## Local Development
 
 The Hugo server supports:
+
 - Hot reload on content changes
 - Draft content preview with `--buildDrafts`
 - Fast rendering for quick iteration

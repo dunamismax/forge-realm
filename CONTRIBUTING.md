@@ -28,6 +28,7 @@ git remote add upstream https://github.com/dunamismax/forge-realm.git
 ## Contribution Workflow
 
 1. **Create Feature Branch**
+
    ```bash
    git checkout -b feature/your-contribution
    ```
@@ -57,24 +58,28 @@ git remote add upstream https://github.com/dunamismax/forge-realm.git
 ## Contribution Types
 
 ### Game Designers
+
 - Card designs and balance proposals
 - New mechanic development
 - Format creation and testing
 - Rules clarification and updates
 
 ### Artists and Designers
+
 - Card artwork and illustrations
 - Template design and layout
 - Icon creation and graphics
 - Print template optimization
 
 ### Documentation Writers
+
 - Rule clarifications and examples
 - Strategy guides and tutorials
 - Printing guides and troubleshooting
 - Community event documentation
 
 ### Technical Contributors
+
 - Asset processing and optimization
 - Template creation and formatting
 - Documentation automation
@@ -82,6 +87,7 @@ git remote add upstream https://github.com/dunamismax/forge-realm.git
 ## Review Process
 
 All contributions require:
+
 1. Community discussion on Discord
 2. Documentation review from maintainers
 3. Playtesting for game content changes
@@ -90,11 +96,13 @@ All contributions require:
 ## Community Integration
 
 All major discussions happen on Discord. Use GitHub for:
+
 - Formal documentation updates
 - Asset contributions
 - Bug reports for printing/template issues
 
 Active Discord participation is encouraged for:
+
 - Game design discussions
 - Balance feedback and testing
 - Community event coordination
