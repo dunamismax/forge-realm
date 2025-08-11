@@ -2,16 +2,16 @@
 # This file contains the color palette and theme settings for easy customization
 
 forge_theme:
-  # Core brand colors
+  # Core brand colors - Dark MTG Inspired Theme
   colors:
-    primary: "#50fa7b"      # Forge neon green (Dracula green)
-    secondary: "#8839ef"    # Deep mauve/purple (Catppuccin mauve)
-    success: "#a6e3a1"      # Soft success green (Catppuccin mocha)
-    info: "#88c0d0"         # Icy info (Nord Frost)
-    warning: "#fe640b"      # Peachy amber
-    danger: "#d20f39"       # Deeper crimson (Catppuccin red)
-    light: "#e5e9f0"        # Light text/surfaces (Nord Snow Storm)
-    dark: "#0b0b0b"         # Near-black base (Vampire Black)
+    primary: "#2d1b4e"      # Deep mystical purple (old MTG black mana inspired)
+    secondary: "#1a0f2e"    # Very dark shadow purple
+    success: "#1b3a1b"      # Dark forest green (MTG green mana inspired)
+    info: "#1a2d3a"         # Dark teal (MTG blue mana inspired)
+    warning: "#b8572a"      # Dark flame orange (MTG red mana inspired)
+    danger: "#660000"       # Blood red
+    light: "#2a2a2a"        # Dark gray (no bright colors)
+    dark: "#0d1117"         # Void black
     
   # Surface colors
   surfaces:

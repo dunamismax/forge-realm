@@ -117,7 +117,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 ### Tournament Highlights
 
-{{% blocks/section color="light" %}}
+{{% blocks/section color="dark" %}}
 
 #### Upcoming Events
 

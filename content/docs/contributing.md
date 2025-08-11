@@ -144,7 +144,7 @@ All contributions require:
 3. Playtesting for game content changes
 4. Asset quality verification for artwork
 
-{{% blocks/section color="light" %}}
+{{% blocks/section color="dark" %}}
 
 ## Community Integration
 

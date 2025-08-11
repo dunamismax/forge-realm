@@ -49,7 +49,7 @@ Ongoing effects that modify gameplay and provide strategic depth.
 
 ## Download Core Set
 
-{{% blocks/section color="light" %}}
+{{% blocks/section color="dark" %}}
 
 ### Available Formats
 

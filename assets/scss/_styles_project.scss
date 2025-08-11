@@ -5,12 +5,12 @@
 
 // Dark Magic CSS Properties - Much Darker Theme
 :root {
-  --forge-primary: #5b21b6;
-  --forge-secondary: #4c1d95;
-  --forge-success: #166534;
-  --forge-danger: #7f1d1d;
-  --forge-warning: #ea580c;
-  --forge-info: #0f766e;
+  --forge-primary: #2d1b4e;
+  --forge-secondary: #1a0f2e;
+  --forge-success: #1b3a1b;
+  --forge-danger: #660000;
+  --forge-warning: #b8572a;
+  --forge-info: #1a2d3a;
   
   --forge-bg-primary: #0d1117;
   --forge-bg-secondary: #21262d;
@@ -20,9 +20,9 @@
   --forge-text-primary: #e6edf3;
   --forge-text-secondary: #8b949e;
   
-  --forge-shadow: 0 4px 16px rgba(91, 33, 182, 0.15);
-  --forge-shadow-hover: 0 8px 32px rgba(91, 33, 182, 0.25);
-  --forge-glow: 0 0 20px rgba(91, 33, 182, 0.3);
+  --forge-shadow: 0 4px 16px rgba(45, 27, 78, 0.15);
+  --forge-shadow-hover: 0 8px 32px rgba(45, 27, 78, 0.25);
+  --forge-glow: 0 0 20px rgba(45, 27, 78, 0.3);
 }
 
 // Base typography improvements
@@ -48,18 +48,18 @@ code, pre, .highlight {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
-// Homepage specific - match documentation page padding
+// Homepage specific - minimal padding for hero section
 .home .td-main {
-  padding-top: 80px; // Match documentation page padding
+  padding-top: 60px; // Reduced padding at top
   
   main {
-    padding-top: 1rem; // Minimal padding for homepage
+    padding-top: 0 !important; // No padding on homepage main
   }
   
-  // Reduce cover section padding
+  // Minimal cover section padding
   .blocks-cover {
-    padding-top: 2rem !important;
-    padding-bottom: 3rem !important;
+    padding-top: 0.5rem !important;
+    padding-bottom: 2rem !important;
   }
 }
 
@@ -462,7 +462,80 @@ a {
   .card-footer {
     background-color: var(--forge-bg-tertiary) !important;
     color: var(--forge-text-primary) !important;
-    border-color: rgba(91, 33, 182, 0.2) !important;
+    border-color: rgba(45, 27, 78, 0.2) !important;
+  }
+  
+  // AGGRESSIVE OVERRIDE: Force ANY section with color="light" to be dark
+  .blocks-section.color-light,
+  .blocks-section[class*="color-light"] {
+    background-color: var(--forge-bg-secondary) !important;
+    
+    * {
+      color: var(--forge-text-primary) !important;
+    }
+  }
+  
+  // Override any bright alert/info boxes
+  .alert.alert-info,
+  .pageinfo {
+    background-color: var(--forge-bg-tertiary) !important;
+    border-color: var(--forge-info) !important;
+    color: var(--forge-text-primary) !important;
+  }
+}
+
+// NUCLEAR OPTION: Override ALL possible light/bright elements
+body.td-dark-mode {
+  background-color: var(--forge-bg-primary) !important;
+  
+  // Override ALL possible Bootstrap/Docsy color classes
+  .color-light,
+  .bg-light,
+  .color-white,
+  .bg-white,
+  .color-primary,
+  .color-secondary,
+  .color-info,
+  .color-success,
+  .color-warning,
+  .color-danger {
+    background-color: var(--forge-bg-secondary) !important;
+    color: var(--forge-text-primary) !important;
+  }
+  
+  // Target Docsy specific block sections
+  .blocks-section {
+    background-color: var(--forge-bg-secondary) !important;
+    
+    &.color-light,
+    &[class*="light"] {
+      background-color: var(--forge-bg-secondary) !important;
+    }
+    
+    &.color-primary {
+      background-color: var(--forge-bg-tertiary) !important;
+    }
+  }
+  
+  // Override Hugo shortcodes
+  .alert,
+  .pageinfo {
+    background-color: var(--forge-bg-tertiary) !important;
+    border-color: var(--forge-primary) !important;
+    color: var(--forge-text-primary) !important;
+  }
+  
+  // Ensure no bright backgrounds anywhere
+  * {
+    &[style*="background-color: white"],
+    &[style*="background-color: #fff"],
+    &[style*="background-color: #ffffff"],
+    &[style*="background: white"],
+    &[style*="background: #fff"],
+    &[style*="background: #ffffff"] {
+      background-color: var(--forge-bg-secondary) !important;
+      background: var(--forge-bg-secondary) !important;
+    }
   }
 }
 

@@ -6,13 +6,13 @@
 
 // ---- Dark Magic Theme Colors ----
 // Inspired by old school Magic: The Gathering - dark, mystical, edgy
-$primary:   #5b21b6 !default; // Much darker mystical purple (main brand)
-$secondary: #4c1d95 !default; // Very deep shadow purple
-$success:   #2d5016 !default; // Dark forest green
-$info:      #264653 !default; // Dark teal
-$warning:   #e76f51 !default; // Dark flame orange
-$danger:    #8b0000 !default; // Blood red
-$light:     #f4f3ee !default; // Aged parchment
+$primary:   #2d1b4e !default; // Much darker mystical purple (main brand)
+$secondary: #1a0f2e !default; // Very deep shadow purple
+$success:   #1b3a1b !default; // Dark forest green
+$info:      #1a2d3a !default; // Dark teal
+$warning:   #b8572a !default; // Dark flame orange
+$danger:    #660000 !default; // Blood red
+$light:     #2a2a2a !default; // Dark gray instead of light
 $dark:      #0d1117 !default; // Void black
 
 // Map for Bootstrap utilities/components
@@ -37,10 +37,10 @@ $code-bg:        #161b22 !default;       // spell scroll background
 $code-color:     #c77dff !default;       // mystical purple code
 
 // ---- Dark Magic Links & States ----
-$link-color:            $primary !default;
-$link-hover-color:      #e0aaff !default; // lighter purple on hover
+$link-color:            #8b7ab8 !default; // Muted purple for links
+$link-hover-color:      #a890d3 !default; // Slightly lighter on hover
 $component-active-bg:   $primary !default;
-$focus-ring-color:      rgba(91, 33, 182, 0.4) !default; // much darker mystical purple focus glow
+$focus-ring-color:      rgba(45, 27, 78, 0.4) !default; // much darker mystical purple focus glow
 
 // ---- Legacy Forge Realm Colors (for compatibility) ----
 $forge-gold: #d69e2e !default;     // Mystical gold

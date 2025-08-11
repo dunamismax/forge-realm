@@ -50,7 +50,7 @@ All card files are available in multiple formats optimized for different printin
 All files are provided at 300 DPI with proper bleed margins for professional-quality results. See our [Printing Guide](/docs/printing/home-printing-guide/) for best practices.
 {{< /alert >}}
 
-{{% blocks/section color="light" %}}
+{{% blocks/section color="dark" %}}
 
 ## How to Get Cards
 

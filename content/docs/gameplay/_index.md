@@ -28,7 +28,7 @@ Different ways to play: Standard, Legacy, Draft, and Casual formats.
 
 {{% /blocks/section %}}
 
-{{% blocks/section color="light" %}}
+{{% blocks/section color="dark" %}}
 
 ## Ready to Play?
 

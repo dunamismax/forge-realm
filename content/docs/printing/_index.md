@@ -28,7 +28,7 @@ Paper types, weights, and finishes for the best card quality.
 
 {{% /blocks/section %}}
 
-{{% blocks/section color="light" %}}
+{{% blocks/section color="dark" %}}
 
 ## Print Process Overview
 
