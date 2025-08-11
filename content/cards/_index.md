@@ -18,7 +18,7 @@ description: >
     <p class="lead">Forge Realm cards are organized by set, with each set containing thematically linked cards and mechanics.</p>
   </div>
   <div class="col-md-4 text-center">
-    <img src="/images/forge-realm-alt-vertical.webp" alt="Forge Realm Card Art" style="max-width: 200px; height: auto;" class="img-fluid rounded">
+    <img src="/images/forge-realm-alt-square.webp" alt="Forge Realm Card Art" style="max-width: 200px; height: auto;" class="img-fluid rounded">
   </div>
 </div>
 
