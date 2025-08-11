@@ -74,7 +74,7 @@ New cards and sets are regularly added. Join our [Discord](https://discord.gg/KQ
 
 The Core Set featuring full original artwork, complete mechanics, and two balanced 60-card starter decks is in development with updated milestones:
 
-- **Q4 2025**: Core mechanics finalized (hybrid of MTG 60%, F&B 30%, Sorcery 10%)
+- **Q4 2025**: Core mechanics finalized (pure MTG with beloved Vintage/Modern mechanics)
 - **Q1 2026**: Artwork completion and final balance testing
 - **Q1 2026**: Core Set release with two complete starter decks
 

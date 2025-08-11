@@ -19,14 +19,14 @@ linkTitle: "Forge Realm"
 <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/dunamismax/forge-realm">
   <i class="fab fa-github me-2"></i>View on GitHub
 </a>
-<p class="lead mt-5">The ultimate hybrid trading card game combining Magic: The Gathering (60%), Flesh and Blood (30%), and Sorcery: Contested Realm (10%) into one superior strategic experience. Built with complete transparency, community governance, and unlimited print-and-play access for all players.</p>
+<p class="lead mt-5">Pure Magic: The Gathering as it was meant to be - focusing on Vintage and Modern's most beloved mechanics with modern enhancements like Ward, double-faced cards, and strategic token gameplay. Built with complete transparency, community governance, and unlimited print-and-play access for all players.</p>
 <div class="mx-auto">
   <p class="lead"><strong>Core Set launching Q1 2026 (tentative)</strong> • Join our <a href="https://discord.gg/KQTY8DfY">Discord</a> - we need contributors for mechanics, artwork, and design!</p>
 </div>
 {{< /blocks/cover >}}
 
 {{% blocks/lead color="primary" %}}
-Forge Realm TCG is revolutionizing trading card games by democratizing access and eliminating corporate gatekeeping. Our mission: to preserve and share the strategic depth and magical experience of TCGs with complete transparency, ensuring the community always comes first.
+Forge Realm is revolutionizing Magic: The Gathering by democratizing access and eliminating corporate gatekeeping. Our mission: to preserve and share Magic's strategic depth and magical gameplay experience with complete transparency, ensuring the community always comes first.
 
 **Why Forge Realm is different:**
 {{% /blocks/lead %}}

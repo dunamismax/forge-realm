@@ -16,7 +16,7 @@ The Core Set contains the fundamental cards that define Forge Realm's gameplay e
 
 ### Set Contents
 
-- **Creatures** - Essential creature types across all essence colors
+- **Creatures** - Essential creature types across all mana colors
 - **Spells** - Fundamental instant and sorcery effects
 - **Artifacts** - Core utility and mana-fixing artifacts
 - **Enchantments** - Basic ongoing effects and board presence
@@ -38,7 +38,7 @@ Instant and sorcery spells that provide the basic spell effects and interactions
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-gem" title="Artifacts" %}}
-Utility artifacts and essence-producing cards that support deck construction.
+Utility artifacts and mana-producing cards that support deck construction.
 {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-crown" title="Enchantments" %}}
@@ -69,7 +69,7 @@ Ongoing effects that modify gameplay and provide strategic depth.
 
 The Core Set featuring full original artwork, complete mechanics, and two balanced 60-card starter decks is in development:
 
-- **Q4 2025**: Core mechanics finalization (hybrid gameplay combining MTG 60%, F&B 30%, Sorcery 10%)
+- **Q4 2025**: Core mechanics finalization (pure MTG with beloved Vintage/Modern mechanics)
 - **Q1 2026**: Complete original artwork and final balance testing
 - **Q1 2026**: Full Core Set release with two starter decks
 

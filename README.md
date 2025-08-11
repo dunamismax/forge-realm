@@ -2,9 +2,9 @@
   <img src="static/images/forge-realm-main-wide.webp" alt="Forge Realm - Open Source Trading Card Game" width="600" />
 </p>
 
-# Forge Realm TCG - Open Source Trading Card Game
+# Forge Realm TCG - Open Source Magic: The Gathering
 
-**Democratizing trading card games forever** - Forge Realm TCG is a fully open-source trading card game that brings the strategic depth and magic of Magic: The Gathering to everyone, everywhere. Built on principles of transparent development, community governance, and unrestricted access, we're creating the future of trading card games where the community shapes every decision and artificial scarcity is eliminated forever.
+**Pure MTG as God intended** - Forge Realm TCG is a fully open-source Magic: The Gathering experience centered around Vintage and Modern formats. Built on principles of transparent development, community governance, and unrestricted access, we're preserving the magic of classic MTG where strategy matters more than your wallet and the community shapes every decision.
 
 [![Play Now](https://img.shields.io/badge/Play_Now-forge--realm.com-50fa7b?style=for-the-badge&labelColor=0b0b0b)](https://forge-realm.com)
 [![Join Discord](https://img.shields.io/badge/Join_Discord-Community-8839ef?style=for-the-badge&labelColor=0b0b0b)](https://discord.gg/KQTY8DfY)
@@ -14,7 +14,7 @@
 
 ## **Core Set Launch: Tentative Q1 2026**
 
-The inaugural card set featuring full original artwork, complete mechanics, and two balanced 60-card starter decks is in active development. This hybrid game combines the best of Magic: The Gathering (60%), Flesh and Blood (30%), and Sorcery: Contested Realm (10%) into one superior strategic experience. **Join our Discord - we need contributors for card mechanics, artwork, and game design!**
+The inaugural card set featuring full original artwork, complete mechanics, and balanced 60-card starter decks is in active development. This pure Magic: The Gathering experience embraces the beloved mechanics from Vintage and Modern - including Ward, double-faced cards, predefined tokens (Clue, Food, Map), and selective alternative costs like Bargain. **Join our Discord - we need contributors for card mechanics, artwork, and game design!**
 
 ---
 
@@ -22,9 +22,9 @@ The inaugural card set featuring full original artwork, complete mechanics, and 
 
 ### **For Players**
 
-- **Always Free** - Print any card, build any deck, no paywalls or artificial scarcity
-- **Community-Driven** - Your vote shapes game balance and new card designs
-- **Strategic Depth** - Rich gameplay inspired by the best TCGs ever created
+- **Always Free** - Print any card, build any deck, no Reserved List nonsense
+- **Pure MTG Experience** - Classic Magic mechanics without corporate interference
+- **Vintage & Modern Focus** - The most strategic and beloved formats
 - **Global Access** - Play anywhere with just a printer and some friends
 
 ### **For the Community**
@@ -32,7 +32,7 @@ The inaugural card set featuring full original artwork, complete mechanics, and 
 - **True Democracy** - Every major decision is voted on by the community
 - **Complete Transparency** - All discussions, votes, and development are public
 - **Open Source Forever** - Game rules, artwork, and code will always be free
-- **No Corporate Control** - Players own and control the game's future
+- **No Corporate Control** - Players own and control Magic's future
 
 ---
 
@@ -51,26 +51,26 @@ The inaugural card set featuring full original artwork, complete mechanics, and 
 
 ## **Our Mission**
 
-**To democratize trading card games and preserve the magic of strategic card play for future generations.**
+**To preserve and democratize Magic: The Gathering's strategic depth for future generations.**
 
-We believe that the joy of trading card games shouldn't be locked behind corporate paywalls or artificial scarcity. Forge Realm TCG represents a new paradigm where:
+We believe that Magic's incredible gameplay shouldn't be locked behind corporate paywalls or artificial scarcity. Forge Realm represents a return to pure Magic where:
 
-- **Players control the game**, not shareholders
-- **Strategy matters more** than wallet size
-- **Communities thrive** through collaboration, not competition for rare cards
-- **Innovation happens** through democratic participation, not boardroom decisions
+- **Players control the game**, not Hasbro shareholders
+- **Strategy matters more** than your collection value
+- **Communities thrive** through collaboration, not chasing expensive singles
+- **Classic Magic lives on** through democratic participation, not corporate decisions
 
 ---
 
 ## **What Makes Us Different**
 
-| Traditional TCGs | Forge Realm TCG |
-|------------------|-----------------|
-| Corporate ownership | Community ownership |
-| Artificial scarcity | Unlimited access |
-| Pay-to-win mechanics | Skill-based gameplay |
+| Corporate MTG | Forge Realm MTG |
+|---------------|------------------|
+| Reserved List gatekeeping | All cards freely available |
+| $200+ Modern decks | Print-and-play for $20 |
+| Hasbro profit focus | Pure gameplay focus |
 | Closed development | Transparent process |
-| Profit-driven decisions | Player-driven choices |
+| Standard format pushing | Vintage/Modern emphasis |
 
 ---
 

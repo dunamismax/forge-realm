@@ -1,6 +1,6 @@
 {
   "name": "forge-realm",
-  "version": "4.7.0",
+  "version": "5.0",
   "description": "Hugo website for Forge Realm - Open Source Trading Card Game",
   "main": "index.js",
   "homepage": "https://forge-realm.com",
@@ -10,7 +10,7 @@
     "build:preview": "hugo --buildDrafts --environment staging",
     "clean": "rm -rf public resources",
     "serve": "hugo server --environment production --disableFastRender",
-    "cf-pages": "npm run build",
+    "cf-pages": "mage ci",
     "validate:build": "npm run build",
     "test": "npm run validate:build"
   },

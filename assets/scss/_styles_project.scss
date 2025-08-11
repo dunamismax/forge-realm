@@ -29,6 +29,7 @@
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-weight: 400;
+  font-size: 15px;
   line-height: 1.6;
   background-color: var(--forge-bg-primary) !important;
   color: var(--forge-text-primary) !important;
@@ -45,7 +46,7 @@ code, pre, .highlight {
   font-family: 'JetBrains Mono', 'Source Code Pro', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace !important;
   font-weight: 400;
   font-feature-settings: "liga" 1;
-  font-size: 0.9em;
+  font-size: 14px;
   line-height: 1.4;
 }
 
@@ -481,7 +482,7 @@ body.td-dark-mode.home {
   }
 }
 
-// Typography scale improvements
+// Typography scale improvements with minimum 15px
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.3;
@@ -502,6 +503,20 @@ h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   margin-top: 1.5rem;
+}
+
+// Ensure minimum 15px for all text elements
+p, li, span, div, td, th {
+  font-size: 15px;
+}
+
+// Exceptions for intentionally smaller text (12px minimum)
+.small, small, .text-muted, .sidebar-secondary, .breadcrumb {
+  font-size: 12px;
+}
+
+.lead {
+  font-size: 18px;
 }
 
 // Link enhancements

@@ -16,7 +16,7 @@ Find answers to the most common questions about Forge Realm, from basic gameplay
 
 ### What is Forge Realm?
 
-Forge Realm is a fully open-source trading card game designed for tabletop play. Unlike traditional TCGs, our project focuses on complete transparency, community-driven development, and unrestricted print-and-play access for everyone.
+Forge Realm is a fully open-source Magic: The Gathering experience designed for tabletop play. Unlike corporate MTG, our project focuses on complete transparency, community-driven development, and unrestricted print-and-play access for everyone.
 
 ### How is Forge Realm different from other card games?
 
@@ -36,7 +36,7 @@ Yes! The game rules, card designs, and all digital assets are freely available. 
 
 ### When will the first cards be released?
 
-The Core Set and initial card collection are targeted for release in **Q1 2026 (tentative)**. This timeline allows for comprehensive community testing, full original artwork completion, and thorough game balance validation of our hybrid gameplay system combining Magic: The Gathering (60%), Flesh and Blood (30%), and Sorcery: Contested Realm (10%).
+The Core Set and initial card collection are targeted for release in **Q1 2026 (tentative)**. This timeline allows for comprehensive community testing, full original artwork completion, and thorough game balance validation of our pure Magic: The Gathering experience with beloved mechanics from Vintage and Modern formats.
 
 ## Gameplay Questions
 

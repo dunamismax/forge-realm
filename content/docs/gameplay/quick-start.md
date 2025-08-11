@@ -20,7 +20,7 @@ Forge Realm is designed for easy print-and-play tabletop sessions. This guide wi
 
 - **Decks**: Each player needs a 60-card deck
 - **Life tracking**: Pen and paper, or d20 dice (start at 20 life)
-- **Essence counters**: Tokens, coins, or dice to track essence
+- **Mana counters**: Tokens, coins, or dice to track mana
 - **Effect markers**: Small tokens for temporary effects
 - **Play area**: Table space for cards and tokens
 
@@ -33,7 +33,7 @@ Forge Realm is designed for easy print-and-play tabletop sessions. This guide wi
 
 ## Game Overview
 
-Forge Realm is a strategic card game where players use **essence** (the game's mana system) to summon creatures, cast spells, and defeat their opponent.
+Forge Realm is a strategic card game where players use **mana** (the game's resource system) to summon creatures, cast spells, and defeat their opponent.
 
 **Goal**: Reduce your opponent's life from 20 to 0, or make them run out of cards.
 
@@ -62,7 +62,7 @@ Each turn follows this sequence:
 
 - **Untap**: Untap all your tapped cards
 - **Draw**: Draw one card from your deck
-- **Essence production**: Generate essence equal to your current essence sources
+- **Mana production**: Generate mana equal to your current mana sources
 
 {{% alert title="Important" color="warning" %}}
 The player going first skips the draw step on their very first turn only.
@@ -74,17 +74,17 @@ This is where most of the action happens:
 
 #### Playing Cards
 
-- **Pay essence costs**: Spend essence to play cards from your hand
+- **Pay mana costs**: Spend mana to play cards from your hand
 - **Summon creatures**: Put creature cards onto the battlefield
 - **Cast spells**: Play instant or sorcery spells for immediate effects
 - **Play artifacts/enchantments**: Put permanent effects into play
 
-#### Essence System
+#### Mana System
 
-- **Essence sources**: Some cards provide ongoing essence generation
-- **Spending essence**: Use accumulated essence to pay for card costs
-- **Essence types**: Different cards may require specific essence types
-- **Banking essence**: Unspent essence carries over between phases (but not turns)
+- **Mana sources**: Some cards provide ongoing mana generation
+- **Spending mana**: Use accumulated mana to pay for card costs
+- **Mana types**: Different cards may require specific mana colors
+- **Banking mana**: Unspent mana carries over between phases (but not turns)
 
 ### 3. Combat Phase
 
@@ -112,14 +112,14 @@ Attack your opponent with creatures:
 
 ## Key Concepts
 
-### Essence Management
+### Mana Management
 
-Essence is your primary resource:
+Mana is your primary resource:
 
 - **Generation**: Played from specific cards or abilities
 - **Spending**: Used to pay costs for spells and abilities
-- **Efficiency**: Balancing essence production with powerful effects
-- **Timing**: Some abilities require essence to be spent at specific times
+- **Efficiency**: Balancing mana production with powerful effects
+- **Timing**: Some abilities require mana to be spent at specific times
 
 ### Card Types
 
@@ -128,7 +128,7 @@ Essence is your primary resource:
 - **Combat**: Can attack and block
 - **Stats**: Power (attack damage) and toughness (damage needed to destroy)
 - **Abilities**: Many have special powers or effects
-- **Summoning**: Generally cost essence to put into play
+- **Summoning**: Generally cost mana to put into play
 
 #### Spells
 
@@ -175,12 +175,12 @@ Essence is your primary resource:
 ### Deck Building
 
 - **Too many expensive cards**: Include cheap, early-game options
-- **No essence sources**: Ensure adequate essence generation
+- **No mana sources**: Ensure adequate mana generation
 - **Unfocused strategy**: Build around a clear game plan
 
 ### Gameplay
 
-- **Poor essence management**: Don't overspend early
+- **Poor mana management**: Don't overspend early
 - **Ignoring card advantage**: Consider long-term resources
 - **Predictable play**: Vary your strategies
 - **Forgetting abilities**: Read cards carefully and use all available effects
@@ -189,23 +189,23 @@ Essence is your primary resource:
 
 **Turn 1 Example:**
 
-1. **Beginning**: Untap (nothing tapped), draw card, generate essence
-2. **Main Phase**: Play an essence-generating artifact for 1 essence
+1. **Beginning**: Untap (nothing tapped), draw card, generate mana
+2. **Main Phase**: Play a mana-generating artifact for 1 mana
 3. **Combat**: No creatures to attack with
-4. **End**: Pass turn (hand: 6 cards, life: 20, essence: 0)
+4. **End**: Pass turn (hand: 6 cards, life: 20, mana: 0)
 
 **Turn 3 Example:**
 
-1. **Beginning**: Untap artifact, draw card, generate 2 essence
-2. **Main Phase**: Play a 3-essence creature, leaving 1 essence
+1. **Beginning**: Untap artifact, draw card, generate 2 mana
+2. **Main Phase**: Play a 3-mana creature, leaving 1 mana
 3. **Combat**: Creature was just played, can't attack yet
-4. **End**: Pass turn (hand: 5 cards, life: 20, essence: 1)
+4. **End**: Pass turn (hand: 5 cards, life: 20, mana: 1)
 
 ## Quick Reference
 
 ### Turn Order
 
-1. Beginning (untap, draw, generate essence)
+1. Beginning (untap, draw, generate mana)
 2. Main phase (play cards, use abilities)
 3. Combat (attack with creatures)
 4. End (cleanup effects, pass turn)
@@ -229,14 +229,14 @@ Essence is your primary resource:
 
 ### Deck Building Basics
 
-- **Essence curve**: Include cards of various essence costs
+- **Mana curve**: Include cards of various mana costs
 - **Win condition**: Have a clear plan for victory
 - **Consistency**: Include multiple copies of key cards
 - **Balance**: Mix creatures, spells, and utility cards
 
 ### Early Game Strategy
 
-- **Develop essence**: Prioritize essence generation early
+- **Develop mana**: Prioritize mana generation early
 - **Board presence**: Play creatures to apply pressure
 - **Card advantage**: Don't waste cards unnecessarily
 - **Flexibility**: Keep some options in hand
