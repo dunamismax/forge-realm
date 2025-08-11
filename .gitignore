@@ -16,9 +16,9 @@ hugo_stats.json
 /resources/
 /.hugo_build.lock
 
-# Hugo modules
-/go.mod
-/go.sum
+# Hugo modules - keep go.mod and go.sum for Cloudflare Pages
+# /go.mod
+# /go.sum
 /_vendor/
 
 # =============================================================================

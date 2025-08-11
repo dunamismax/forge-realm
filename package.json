@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "hugo server --buildDrafts --bind 0.0.0.0",
-    "build": "hugo --minify --environment production",
+    "build": "hugo mod tidy && hugo --minify --environment production",
     "build:preview": "hugo --buildDrafts --environment staging",
     "clean": "rm -rf public resources",
     "serve": "hugo server --environment production --disableFastRender",
