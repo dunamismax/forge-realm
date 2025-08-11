@@ -53,7 +53,7 @@ New to Forge Realm? Start with the [Quick Start Guide](/docs/gameplay/quick-star
 For detailed mechanics, see the [Comprehensive Rules](/docs/gameplay/comprehensive-rules/).
 
 {{% alert title="Core Set Release" color="info" %}}
-**First cards available September 2025** - Join our [Discord](https://discord.gg/KQTY8DfY) for development updates and early playtesting opportunities.
+**First cards available December 25, 2025** — Join our [Discord](https://discord.gg/KQTY8DfY) for development updates and early playtesting opportunities.
 {{% /alert %}}
 
 {{% /blocks/section %}}

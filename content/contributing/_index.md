@@ -2,6 +2,8 @@
 title: "Contributing to Forge Realm"
 linkTitle: "Contributing"
 weight: 30
+type: docs
+layout: docs
 menu:
   main:
     weight: 30
@@ -107,11 +109,11 @@ We welcome contributions in many forms:
 - Website development and improvements
 - Hugo site optimization and features
 - Asset processing and CDN integration
-- Build and deployment automation
 {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
 
+<div class="mt-5"></div>
 ## Review Process
 
 All contributions require:

@@ -2,6 +2,8 @@
 title: "Core Set"
 linkTitle: "Core Set"
 weight: 10
+type: docs
+layout: docs
 description: >
   The foundational cards of Forge Realm, providing the essential gameplay experience.
 ---
@@ -64,15 +66,15 @@ Ongoing effects that modify gameplay and provide strategic depth.
 - **Bleed**: 0.125" bleed margin included
 - **Format**: CMYK color profile for professional printing
 
-{{% alert title="September 2025 Release" color="warning" %}}
-**Target Release: September 2025**
+{{% alert title="Core Set Release" color="warning" %}}
+**Target Release: December 25, 2025**
 
 Core Set files are currently in development with the following timeline:
 
-- **Q1 2025**: Mechanics and rules finalization
-- **Q2 2025**: Artwork completion and card layout
-- **Q3 2025**: Community playtesting and balance validation
-- **September 2025**: Full Core Set release with downloadable files
+- **September 2025**: Gameplay mechanics finalized
+- **October 2025**: Artwork completion and card layout
+- **November 2025**: Community playtesting and balance validation
+- **December 25, 2025**: Full Core Set release with downloadable files
 
 Join our [Discord](https://discord.gg/KQTY8DfY) for development updates and early preview access.
 {{% /alert %}}
@@ -89,14 +91,13 @@ The Core Set was developed through community collaboration and playtesting. Futu
 
 **Current Status** (Updated regularly):
 
-- ✅ Core gameplay mechanics designed
-- ✅ Card framework and templating established  
+- ✅ Card framework and templating established
+- 🔄 Gameplay mechanics finalization in progress (target September 2025)
 - 🔄 Artwork creation in progress
-- 🔄 Community playtesting ongoing
-- ⏳ Final card balancing and artwork completion
+- ⏳ Community playtesting and balance validation
 - ⏳ Print-ready file preparation
 
-*Card artwork and final files will be displayed here upon release in September 2025.*
+*Card artwork and final files will be displayed here upon release on December 25, 2025.*
 
 ---
 

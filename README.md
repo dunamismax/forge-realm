@@ -12,7 +12,7 @@ Forge Realm is a fully open-source trading card game built for tabletop play. Th
 
 ## Release Status
 
-🗓️ **Core Set Release: September 2025**
+🗓️ **Core Set Release: December 25, 2025**
 
 The first official card set is currently in development with community involvement. Join our [Discord](https://discord.gg/KQTY8DfY) for early playtesting opportunities and development updates.
 
@@ -25,13 +25,7 @@ The first official card set is currently in development with community involveme
 
 ## Documentation
 
-All game documentation is available on the official website:
-
-- **[Quick Start Guide](https://forge-realm.com/docs/gameplay/quick-start/)** - Learn the basics
-- **[Comprehensive Rules](https://forge-realm.com/docs/gameplay/comprehensive-rules/)** - Complete rule set
-- **[Card Gallery](https://forge-realm.com/cards/)** - Browse and download all cards
-- **[Printing Guides](https://forge-realm.com/docs/printing/)** - Print cards at home
-- **[Game Formats](https://forge-realm.com/docs/gameplay/formats/)** - Different ways to play
+Complete documentation, rules, and card resources are available at [forge-realm.com/docs/](https://forge-realm.com/docs/).
 
 ## Core Principles
 
@@ -61,7 +55,6 @@ Contributions are welcome! Visit the [Contributing Guide](https://forge-realm.co
 
 - Website development and improvements
 - Documentation and guides
-- Developer tools and automation
 - Performance and accessibility
 
 **Getting Started:**
