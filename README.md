@@ -11,9 +11,9 @@ Forge Realm is a fully open-source trading card game built for tabletop play. Th
 - **Free accessibility** – print-and-play for everyone
 - **No artificial scarcity** – all cards available to all players
 
-Join our community on [Discord](https://discord.gg/KQTY8DfY) to help shape the game and participate in design discussions.
-
 ## Getting Started
+
+Join our community on [Discord](https://discord.gg/KQTY8DfY) to help shape the game and participate in design discussions.
 
 New to Forge Realm? Start with the [Quick Start Guide](docs/gameplay/quick-start.md) to learn the basics and begin playing.
 
