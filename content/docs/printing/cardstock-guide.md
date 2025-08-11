@@ -6,6 +6,12 @@ description: >
   Choose the right paper for professional-quality cards.
 ---
 
+<div class="mt-4"></div>
+
+{{% pageinfo color="success" %}}
+The right cardstock makes all the difference in card quality and durability.
+{{% /pageinfo %}}
+
 Card quality and durability depend on your paper choice. For professional results:
 
 - **Thickness**: Use cardstock between 280–330 GSM for a professional feel.

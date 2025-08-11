@@ -6,13 +6,21 @@ description: >
   Browse, view, and download all Forge Realm cards for printing and play.
 ---
 
+<div class="mt-4"></div>
+
 {{% pageinfo color="primary" %}}
 **Complete Card Collection** - Browse all Forge Realm cards, view high-resolution artwork, and download print-ready files.
 {{% /pageinfo %}}
 
-## Card Sets
-
-Forge Realm cards are organized by set, with each set containing thematically linked cards and mechanics.
+<div class="row align-items-center my-4">
+  <div class="col-md-8">
+    <h2>Card Sets</h2>
+    <p class="lead">Forge Realm cards are organized by set, with each set containing thematically linked cards and mechanics.</p>
+  </div>
+  <div class="col-md-4 text-center">
+    <img src="/images/forge-realm-alt-vertical.webp" alt="Forge Realm Card Art" style="max-width: 200px; height: auto;" class="img-fluid rounded">
+  </div>
+</div>
 
 {{% blocks/section color="dark" type="row" %}}
 

@@ -6,6 +6,12 @@ description: >
   Different ways to play Forge Realm for various group sizes and preferences.
 ---
 
+<div class="mt-4"></div>
+
+{{% pageinfo %}}
+Explore different ways to play Forge Realm, from competitive tournaments to casual kitchen table games.
+{{% /pageinfo %}}
+
 Forge Realm supports multiple play styles to suit different groups.
 
 ## Standard

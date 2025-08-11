@@ -9,11 +9,17 @@ description: >
   Learn how to contribute to the Forge Realm project.
 ---
 
+<div class="mt-4"></div>
+
 {{% pageinfo %}}
 Thank you for contributing to Forge Realm! This guide covers our development process and community standards.
 {{% /pageinfo %}}
 
 ## Code of Conduct
+
+<div class="float-end ms-3 mb-3">
+  <img src="/images/forge-realm-PNG-circular-emblem.webp" alt="Forge Realm Emblem" style="max-width: 80px; height: auto;" class="img-fluid">
+</div>
 
 All contributors must follow our [Code of Conduct](https://github.com/dunamismax/forge-realm/blob/main/CODE_OF_CONDUCT.md).
 

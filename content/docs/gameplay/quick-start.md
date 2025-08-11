@@ -6,6 +6,8 @@ description: >
   Get started playing Forge Realm quickly with this essential guide.
 ---
 
+<div class="mt-4"></div>
+
 {{% pageinfo color="primary" %}}
 **Ready to play in 5 minutes?** This guide covers everything you need to start playing Forge Realm immediately.
 {{% /pageinfo %}}

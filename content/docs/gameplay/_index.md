@@ -6,21 +6,23 @@ description: >
   Learn how to play Forge Realm with rules, guides, and formats.
 ---
 
+<div class="mt-4"></div>
+
 {{% pageinfo %}}
 Everything you need to know about playing Forge Realm.
 {{% /pageinfo %}}
 
 {{% blocks/section color="primary" type="row" %}}
 
-{{% blocks/feature icon="fa-rocket" title="Quick Start" url="quick-start/" %}}
+{{% blocks/feature icon="fa-rocket" title="Quick Start" url="/docs/gameplay/quick-start/" %}}
 New to Forge Realm? Learn the basics and start playing in minutes.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-book" title="Complete Rules" url="comprehensive-rules/" %}}
+{{% blocks/feature icon="fa-book" title="Complete Rules" url="/docs/gameplay/comprehensive-rules/" %}}
 Detailed mechanics and advanced interactions for competitive play.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-chess" title="Game Formats" url="formats/" %}}
+{{% blocks/feature icon="fa-chess" title="Game Formats" url="/docs/gameplay/formats/" %}}
 Different ways to play: Standard, Legacy, Draft, and Casual formats.
 {{% /blocks/feature %}}
 

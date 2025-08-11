@@ -6,6 +6,12 @@ description: >
   Printer models that work well for printing Forge Realm cards.
 ---
 
+<div class="mt-4"></div>
+
+{{% pageinfo color="info" %}}
+Choose the right printer for high-quality card printing at home.
+{{% /pageinfo %}}
+
 Home printing quality can vary greatly by printer. The following models are commonly praised for card printing:
 
 ## Inkjet

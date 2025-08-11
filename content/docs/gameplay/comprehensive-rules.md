@@ -6,6 +6,8 @@ description: >
   Complete rules for Forge Realm with detailed timing and interaction information.
 ---
 
+<div class="mt-4"></div>
+
 {{% pageinfo color="warning" %}}
 **Complete Rulebook** - This document defines the full ruleset for Forge Realm and supplements the [Quick Start Guide](../quick-start/) with detailed timing and interaction information.
 {{% /pageinfo %}}
