@@ -2,7 +2,7 @@
   <img src="https://github.com/dunamismax/images/blob/main/forge-realm/forge-realm-alt.png" alt="Forge Realm - Open Source Trading Card Game" width="600" />
 </p>
 
-Forge Realm is a fully open-source trading card game built for tabletop play. The project focuses on transparent development, community governance, and unrestricted print-and-play access.
+Forge Realm is a fully open-source trading card game built for tabletop play. The project focuses on transparent development, community governance, unrestricted print-and-play access, and no artificial scarcity.
 
 ## Core Principles
 
