@@ -3,25 +3,26 @@
 // Inspired by old school Magic: The Gathering - dark, mystical, edgy
 //
 
-// Dark Magic CSS Properties - No Gradients
+// Dark Magic CSS Properties - Much Darker Theme
 :root {
-  --forge-primary: #8b5cf6;
-  --forge-secondary: #6b46c1;
-  --forge-success: #2d5016;
-  --forge-danger: #8b0000;
-  --forge-warning: #e76f51;
-  --forge-info: #264653;
+  --forge-primary: #5b21b6;
+  --forge-secondary: #4c1d95;
+  --forge-success: #166534;
+  --forge-danger: #7f1d1d;
+  --forge-warning: #ea580c;
+  --forge-info: #0f766e;
   
   --forge-bg-primary: #0d1117;
   --forge-bg-secondary: #21262d;
   --forge-bg-tertiary: #30363d;
+  --forge-bg-light: #1c2128; // For sections that were too bright
   
   --forge-text-primary: #e6edf3;
   --forge-text-secondary: #8b949e;
   
-  --forge-shadow: 0 4px 16px rgba(139, 92, 246, 0.2);
-  --forge-shadow-hover: 0 8px 32px rgba(139, 92, 246, 0.3);
-  --forge-glow: 0 0 20px rgba(139, 92, 246, 0.4);
+  --forge-shadow: 0 4px 16px rgba(91, 33, 182, 0.15);
+  --forge-shadow-hover: 0 8px 32px rgba(91, 33, 182, 0.25);
+  --forge-glow: 0 0 20px rgba(91, 33, 182, 0.3);
 }
 
 // Base typography improvements
@@ -47,12 +48,18 @@ code, pre, .highlight {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
 }
 
-// Homepage specific - minimal padding
+// Homepage specific - match documentation page padding
 .home .td-main {
-  padding-top: 60px; // Reduced padding for homepage
+  padding-top: 80px; // Match documentation page padding
   
   main {
-    padding-top: 0; // No extra padding for homepage
+    padding-top: 1rem; // Minimal padding for homepage
+  }
+  
+  // Reduce cover section padding
+  .blocks-cover {
+    padding-top: 2rem !important;
+    padding-bottom: 3rem !important;
   }
 }
 
@@ -115,9 +122,43 @@ code, pre, .highlight {
   }
 }
 
-// Dark theme enhancements
+// Comprehensive Dark Theme - Override ALL bright sections
 .td-dark-mode {
   background-color: var(--forge-bg-primary) !important;
+  
+  // Force ALL sections to be dark
+  .blocks-section {
+    background-color: var(--forge-bg-secondary) !important;
+    
+    &[class*="color-primary"] {
+      background-color: var(--forge-bg-tertiary) !important;
+    }
+    
+    &[class*="color-light"] {
+      background-color: var(--forge-bg-light) !important;
+    }
+    
+    &[class*="color-secondary"] {
+      background-color: var(--forge-bg-tertiary) !important;
+    }
+    
+    &[class*="color-white"] {
+      background-color: var(--forge-bg-secondary) !important;
+    }
+  }
+  
+  // Fix pageinfo blocks
+  .pageinfo {
+    background-color: var(--forge-bg-tertiary) !important;
+    border-left: 4px solid var(--forge-primary) !important;
+    color: var(--forge-text-primary) !important;
+  }
+  
+  // Override any white/light backgrounds
+  .bg-white,
+  .bg-light {
+    background-color: var(--forge-bg-secondary) !important;
+  }
   
   // Enhanced cards
   .card {
@@ -230,24 +271,64 @@ code, pre, .highlight {
   }
 }
 
-// Feature blocks with magical enhancement
+// Feature blocks with dark magic enhancement
 .blocks-feature {
+  background-color: var(--forge-bg-secondary) !important;
+  
   .card {
-    background: var(--forge-bg-secondary);
-    border: 1px solid rgba(199, 125, 255, 0.2);
+    background-color: var(--forge-bg-tertiary) !important;
+    border: 1px solid rgba(91, 33, 182, 0.3) !important;
     transition: all 0.3s ease;
+    color: var(--forge-text-primary) !important;
     
     &:hover {
       transform: translateY(-4px);
       box-shadow: var(--forge-glow);
-      border-color: rgba(199, 125, 255, 0.4);
+      border-color: rgba(91, 33, 182, 0.5);
+    }
+    
+    .card-body {
+      background-color: transparent !important;
+      color: var(--forge-text-primary) !important;
     }
     
     .fas, .fab {
       color: var(--forge-primary);
       font-size: 2.5rem;
       margin-bottom: 1rem;
-      text-shadow: 0 0 10px rgba(199, 125, 255, 0.3);
+      text-shadow: 0 0 10px rgba(91, 33, 182, 0.4);
+    }
+    
+    h3, h4, h5, p {
+      color: var(--forge-text-primary) !important;
+    }
+  }
+}
+
+// Ensure all section backgrounds are dark
+.td-dark-mode {
+  .blocks-section {
+    background-color: var(--forge-bg-secondary) !important;
+    
+    // Override Docsy's color classes
+    &.color-primary {
+      background-color: var(--forge-bg-tertiary) !important;
+    }
+    
+    &.color-light {
+      background-color: var(--forge-bg-light) !important;
+    }
+    
+    &.color-secondary {
+      background-color: var(--forge-bg-tertiary) !important;
+    }
+    
+    &.color-white {
+      background-color: var(--forge-bg-secondary) !important;
+    }
+    
+    &.color-dark {
+      background-color: var(--forge-bg-primary) !important;
     }
   }
 }
@@ -334,6 +415,54 @@ a {
   
   &:hover {
     text-decoration: none;
+  }
+}
+
+// Universal Dark Theme Overrides - Force ALL bright sections to be dark
+.td-dark-mode {
+  // Any remaining bright backgrounds
+  .container,
+  .row,
+  .col-md-12,
+  .col-lg-12,
+  section,
+  article {
+    background-color: transparent !important;
+  }
+  
+  // Force all text to be light colored
+  h1, h2, h3, h4, h5, h6, p, span, div, li {
+    color: var(--forge-text-primary) !important;
+  }
+  
+  // Ensure all block sections are dark
+  .blocks-section {
+    * {
+      color: var(--forge-text-primary) !important;
+    }
+  }
+  
+  // Fix any remaining light/white sections
+  .bg-light,
+  .bg-white,
+  .bg-primary,
+  .bg-secondary {
+    background-color: var(--forge-bg-secondary) !important;
+    color: var(--forge-text-primary) !important;
+  }
+  
+  // Make sure lead paragraphs are properly styled
+  .lead {
+    color: var(--forge-text-secondary) !important;
+  }
+  
+  // Fix any remaining card-like elements
+  .card-body,
+  .card-header,
+  .card-footer {
+    background-color: var(--forge-bg-tertiary) !important;
+    color: var(--forge-text-primary) !important;
+    border-color: rgba(91, 33, 182, 0.2) !important;
   }
 }
 
