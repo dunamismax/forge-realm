@@ -1,0 +1,296 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+
+# Storybook build outputs
+.out
+.storybook-out
+
+# Temporary folders
+tmp/
+temp/
+.tmp/
+
+# Logs
+logs
+*.log
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+# Linux
+*~
+
+# Windows
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# IDE/Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+.metadata
+.vscode/
+
+# Jest
+coverage/
+.nyc_output/
+
+# Webpack
+.webpack/
+
+# ESLint cache
+.eslintcache
+
+# Prettier
+.prettierignore
+
+# Husky
+.husky/_/
+
+# Build outputs
+dist/
+build/
+out/
+.output/
+
+# Generated files
+generated/
+artifacts/
+
+# Card generation outputs
+output/
+exports/
+prints/
+*.pdf
+
+# Image processing temp files
+processed/
+optimized/
+resized/
+
+# Card artwork working files
+*.psd
+*.ai
+*.sketch
+*.xd
+*.fig
+*.afdesign
+
+# Print test files
+test-prints/
+proof-sheets/
+
+# Development databases
+*.db
+*.sqlite
+*.sqlite3
+data/dev.db
+
+# Lock files (keep package-lock.json for reproducible builds)
+yarn.lock
+pnpm-lock.yaml
+
+# Editor directories and files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Runtime files
+*.pid
+*.seed
+*.pid.lock
+
+# Performance monitoring
+.clinic/
+.0x/
+
+# TypeScript
+*.d.ts.map
+
+# Forge Realm specific
+
+# Card generation cache
+.card-cache/
+.image-cache/
+.template-cache/
+
+# Print optimization files
+.print-cache/
+print-configs/
+
+# Community voting data (use official channels)
+votes-local/
+proposals-draft/
+
+# Test data
+test-cards/
+sample-data/
+fixture-output/
+
+# Backup files
+*.backup
+*.bak
+*.orig
+
+# Archive files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Configuration overrides
+config.local.json
+settings.local.json
+
+# Documentation builds
+docs/build/
+documentation/dist/
+
+# Asset processing
+assets/processed/
+assets/optimized/
+assets/generated/
+
+# Development tools
+.benchmark/
+.profiling/
+
+# Large binary files that shouldn't be in git
+*.tiff
+*.psd
+*.ai
+
+# Sensitive or personal files
+secrets/
+private/
+personal/
+.private/
+
+# macOS
+.AppleDouble
+.LSOverride
+Icon?
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Local development overrides
+docker-compose.override.yml
+.env.override
