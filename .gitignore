@@ -1,224 +1,585 @@
-# Go binaries
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# =============================================================================
+# FORGE REALM - COMPREHENSIVE .GITIGNORE
+# =============================================================================
 
-# Go test files
-*.test
+# =============================================================================
+# HUGO STATIC SITE GENERATOR
+# =============================================================================
 
-# Go coverage files
-*.out
-coverage.txt
-coverage.html
+# Hugo build output
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
 
-# Go build output
-build/
-bin/
-dist/
+# Hugo cache
+/resources/
+/.hugo_build.lock
+
+# Hugo modules
+/go.mod
+/go.sum
+/_vendor/
+
+# =============================================================================
+# NODE.JS / NPM
+# =============================================================================
+
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+.grunt
+
+# Bower dependency directory
+bower_components
+
+# node-waf configuration
+.lock-wscript
+
+# Compiled binary addons
+build/Release
+
+# Dependency directories
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# parcel-bundler cache
+.cache
+.parcel-cache
+
+# Next.js build output
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+dist
+
+# Gatsby files
+.cache/
+public
+
+# Storybook build outputs
+.out
+.storybook-out
 
 # Temporary folders
-tmp/
-temp/
-.tmp/
+.tmp
+.temp
 
-# Logs
-logs
-*.log
+# =============================================================================
+# OPERATING SYSTEMS
+# =============================================================================
 
-# Operating System Files
+# macOS
 .DS_Store
 .DS_Store?
 ._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
 .AppleDouble
 .LSOverride
-
-# Linux
-*~
+.Spotlight-V100
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.DocumentRevisions-V100
+.fseventsd
+.TemporaryItems
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+Icon?
 
 # Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 *.cab
 *.msi
+*.msix
 *.msm
 *.msp
 *.lnk
 
-# IDE/Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
+# Linux
 *~
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-.metadata
+.directory
+.Trash-*
+
+# =============================================================================
+# IDEs AND EDITORS
+# =============================================================================
+
+# Visual Studio Code
 .vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
 
-# Go module cache
-go.sum
-
-# Go vendor directory
-vendor/
-
-# GoLand/IntelliJ
+# IntelliJ IDEA / WebStorm / PhpStorm / etc.
+.idea/
+*.iws
 *.iml
+*.ipr
 
-# Build outputs
-dist/
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+[._]*.s[a-v][a-z]
+!*.svg
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+Sessionx.vim
+.netrwhist
+*~
+tags
+[._]*.un~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Nano
+*.save
+
+# Eclipse
+.metadata
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+.recommenders
+.project
+.externalToolBuilders/
+*.launch
+.pydevproject
+.cproject
+.autotools
+.factorypath
+.buildpath
+.target
+.tern-project
+.texlipse
+.springBeans
+.recommenders/
+.apt_generated/
+.apt_generated_test/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 build/
-out/
-.output/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-# Generated files
-generated/
-artifacts/
+# =============================================================================
+# GAME DEVELOPMENT SPECIFIC
+# =============================================================================
 
-# Card generation outputs
-output/
-exports/
-prints/
-*.pdf
-
-# Image processing temp files
-processed/
-optimized/
-resized/
-
-# Card artwork working files
+# Card artwork source files (keep final exports only)
 *.psd
 *.ai
 *.sketch
 *.xd
 *.fig
 *.afdesign
+*.afphoto
+*.afpub
+
+# Large image formats
+*.tiff
+*.tif
+*.exr
+*.hdr
+
+# Video files
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.webm
+*.mkv
+
+# Audio files  
+*.wav
+*.aiff
+*.flac
+*.m4a
+
+# 3D model files
+*.blend
+*.max
+*.c4d
+*.ma
+*.mb
+
+# Font files
+*.otf
+*.ttf
+*.woff
+*.woff2
+*.eot
+
+# =============================================================================
+# PRINTING AND CARD GENERATION
+# =============================================================================
+
+# Print output directories
+/prints/
+/exports/
+/output/
+/generated-cards/
+/print-ready/
 
 # Print test files
 test-prints/
 proof-sheets/
-
-# Development databases
-*.db
-*.sqlite
-*.sqlite3
-data/dev.db
-
-# Mage build files
-.mage/
-
-# Editor directories and files
-.idea
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
-
-# Runtime files
-*.pid
-*.seed
-*.pid.lock
-
-# Performance monitoring
-.clinic/
-.0x/
-
-# Go workspace file
-go.work
-go.work.sum
-
-# Forge Realm specific
+color-calibration/
 
 # Card generation cache
 .card-cache/
 .image-cache/
 .template-cache/
-
-# Print optimization files
 .print-cache/
-print-configs/
 
-# Community voting data (use official channels)
-votes-local/
-proposals-draft/
+# Print configuration overrides
+print-configs/local/
+printer-profiles/personal/
 
-# Test data
-test-cards/
-sample-data/
-fixture-output/
+# Image processing temporary files
+/processed/
+/optimized/
+/resized/
+/compressed/
+
+# PDF generation temporary files
+*.tmp.pdf
+*.processing.pdf
+
+# =============================================================================
+# DEVELOPMENT AND BUILD
+# =============================================================================
+
+# Build outputs
+/build/
+/dist/
+/out/
+/.output/
+/release/
+
+# Dependency directories
+/vendor/
+
+# Go files
+go.work
+go.work.sum
+
+# Cache directories  
+.cache/
+.tmp/
+.temp/
+
+# Log files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Coverage reports
+coverage/
+.coverage/
+.nyc_output/
+*.lcov
+coverage.html
+coverage.xml
+
+# Test artifacts  
+test-results/
+.jest/
+.mocha/
+
+# Benchmark results
+.benchmark/
+benchmark-results/
+
+# Profiling data
+.profiling/
+*.prof
+
+# =============================================================================
+# DOCUMENTATION AND CONTENT
+# =============================================================================
+
+# Documentation build outputs (Hugo handles this)
+/docs/build/
+/docs/dist/
+/documentation/build/
+
+# Temporary markdown files
+*.tmp.md
+*.draft.md
+
+# Translation files
+*.pot
+*.po~
+
+# Presentation files
+*.key
+*.ppt
+*.pptx
+
+# =============================================================================
+# SECURITY AND SENSITIVE DATA
+# =============================================================================
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Secrets and keys
+secrets/
+private/
+personal/
+.private/
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Configuration overrides
+config.local.json
+config.local.yml
+config.local.yaml
+settings.local.json
+hugo.local.toml
+
+# API keys and tokens
+.secrets/
+api-keys/
+tokens/
+
+# =============================================================================
+# VERSION CONTROL AND COLLABORATION
+# =============================================================================
 
 # Backup files
 *.backup
 *.bak
 *.orig
+*.rej
+*.swp
+*.tmp
 
 # Archive files
 *.zip
+*.tar
 *.tar.gz
+*.tar.bz2
+*.tar.xz
 *.rar
 *.7z
+*.gz
+*.bz2
+*.xz
 
-# Configuration overrides
-config.local.json
-settings.local.json
+# Patch files
+*.patch
+*.diff
 
-# Documentation builds
-docs/build/
-documentation/dist/
+# =============================================================================
+# FORGE REALM PROJECT SPECIFIC
+# =============================================================================
 
-# Asset processing
-assets/processed/
-assets/optimized/
-assets/generated/
+# Community voting data (use official channels only)
+/votes-local/
+/proposals-draft/
+/community-data/
 
-# Development tools
-.benchmark/
-.profiling/
+# Development test data
+/test-cards/
+/sample-data/
+/fixture-output/
+/mock-data/
 
-# Large binary files that shouldn't be in git
-*.tiff
-*.psd
-*.ai
+# Card artwork working directories
+/artwork-wip/
+/designs-in-progress/
+/concept-art/
 
-# Sensitive or personal files
-secrets/
-private/
-personal/
-.private/
+# Playtesting data
+/playtest-results/
+/balance-data/
+/session-logs/
 
-# macOS
-.AppleDouble
-.LSOverride
-Icon?
+# Local card database
+*.db
+*.sqlite
+*.sqlite3
+/data/dev.db
+/data/local.db
+
+# Card image variations
+/variants/
+/alternate-art/
+/foil-versions/
+
+# Print shop files
+/print-shop-ready/
+/professional-printing/
+/vendor-files/
+
+# Marketing and promotional materials
+/marketing-wip/
+/social-media-drafts/
+/press-kit-wip/
+
+# =============================================================================
+# RUNTIME AND TEMPORARY
+# =============================================================================
+
+# Package manager lock files (optional - uncomment if you don't want to track)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Runtime directories
+pids/
+run/
+
+# Process files
+*.pid
+*.seed
+*.pid.lock
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Kubernetes
+*.kubeconfig
+
+# =============================================================================
+# MISCELLANEOUS
+# =============================================================================
 
 # Thumbnails
-._*
+Thumbs.db
 
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-.com.apple.timemachine.donotpresent
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
+# Large files that don't belong in git
+*.iso
+*.dmg
+*.img
 
-# Local development overrides
-docker-compose.override.yml
-.env.override
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Database files
+*.db-journal
+*.db-wal
+*.db-shm
+
+# =============================================================================
+# ALLOW SPECIFIC IMPORTANT FILES
+# =============================================================================
+
+# Allow specific configuration files even if they match patterns above
+!/.vscode/settings.json
+!/.vscode/launch.json
+!/.vscode/tasks.json
+!/docs/**/*.pdf
+!/assets/**/*.pdf
+!/card-templates/**/*.ai
+!/logos/**/*.ai

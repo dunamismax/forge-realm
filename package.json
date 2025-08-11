@@ -1,0 +1,31 @@
+{
+  "name": "forge-realm",
+  "version": "1.0.0",
+  "description": "<p align=\"center\">   <img src=\"https://github.com/dunamismax/images/blob/main/forge-realm/forge-realm-alt.png\" alt=\"Forge Realm - Open Source Trading Card Game\" width=\"500\" /> </p>",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev": "hugo server --buildDrafts",
+    "build": "hugo --minify",
+    "clean": "rm -rf public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dunamismax/forge-realm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dunamismax/forge-realm/issues"
+  },
+  "homepage": "https://github.com/dunamismax/forge-realm#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1"
+  }
+}
