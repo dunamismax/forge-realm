@@ -8,10 +8,10 @@ description: >
 
 <div class="mt-4"></div>
 
-{{< alert title="Complete Card Collection" >}} Browse all Forge Realm cards,
-view high-resolution artwork, and download print-ready files. **Core Set
+{{< callout type="info" >}} **Complete Card Collection** Browse all Forge Realm
+cards, view high-resolution artwork, and download print-ready files. **Core Set
 releasing Q1 2026 (tentative)** featuring complete original artwork and balanced
-gameplay. {{< /alert >}}
+gameplay. {{< /callout >}}
 
 <div class="row align-items-center my-4">
   <div class="col-md-8">
@@ -23,21 +23,11 @@ gameplay. {{< /alert >}}
   </div>
 </div>
 
-{{% blocks/section color="dark" type="row" %}}
-
-{{% blocks/feature icon="fa-star" title="Core Set" url="core/" %}} The
-foundational cards that form the basis of Forge Realm gameplay.
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fa-magic" title="Expansion Sets" url="#expansions" %}}
-Additional cards that introduce new mechanics and strategies.
-{{% /blocks/feature %}}
-
-{{% blocks/feature icon="fa-download" title="Print Files" url="#downloads" %}}
-High-quality print-ready files for home and professional printing.
-{{% /blocks/feature %}}
-
-{{% /blocks/section %}}
+{{< cards >}}
+{{< card link="core/" title="Core Set" subtitle="The foundational cards that form the basis of Forge Realm gameplay." >}}
+{{< card title="Expansion Sets" subtitle="Additional cards that introduce new mechanics and strategies." >}}
+{{< card title="Print Files" subtitle="High-quality print-ready files for home and professional printing." >}}
+{{< /cards >}}
 
 ## Download Options
 
@@ -48,12 +38,10 @@ printing needs:
 - **Individual PNG** - High-resolution images for custom layouts
 - **Print & Play Packages** - Complete starter decks ready to print
 
-{{< alert title="Print Quality" color="info" >}} All files are provided at 300
-DPI with proper bleed margins for professional-quality results. See our
+{{< callout type="info" >}} **Print Quality** All files are provided at 300 DPI
+with proper bleed margins for professional-quality results. See our
 [Printing Guide](/docs/printing/home-printing-guide/) for best practices.
-{{< /alert >}}
-
-{{% blocks/section color="dark" %}}
+{{< /callout >}}
 
 ## How to Get Cards
 
@@ -69,13 +57,11 @@ New cards and sets are regularly added. Join our
 [Discord](https://discord.gg/KQTY8DfY) for announcements about new releases and
 community voting on upcoming cards.
 
-{{% /blocks/section %}}
-
 ---
 
 ## Release Schedule
 
-{{< alert title="Core Set Release" color="info" >}} **Target Release: Q1 2026
+{{< callout type="info" >}} **Core Set Release - Target Release: Q1 2026
 (Tentative)**
 
 The Core Set featuring full original artwork, complete mechanics, and two
@@ -90,7 +76,7 @@ balanced 60-card starter decks is in development with updated milestones:
 design contributions.
 
 [Join our Discord](https://discord.gg/KQTY8DfY) for development updates and
-early preview access. {{< /alert >}}
+early preview access. {{< /callout >}}
 
 ## Expansions {#expansions}
 

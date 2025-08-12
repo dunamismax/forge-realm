@@ -8,12 +8,10 @@ description: >
   Magic-style experience in 40- and 60-card play.
 ---
 
-<div class="mt-4"></div>
-
-{{% pageinfo color="warning" %}} **Complete Rulebook** — Forge Realm is an
-homage to classic Magic: The Gathering that embraces today's best design tech:
-clear interaction, consistent game starts, and decisions that matter every turn.
-{{% /pageinfo %}}
+{{< callout type="warning" >}} **Complete Rulebook** — Forge Realm is an homage
+to classic Magic: The Gathering that embraces today's best design tech: clear
+interaction, consistent game starts, and decisions that matter every turn.
+{{< /callout >}}
 
 ## 1. Core Game Philosophy
 

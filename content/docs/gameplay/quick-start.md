@@ -6,11 +6,8 @@ description: >
   Get started playing Forge Realm quickly with this essential guide.
 ---
 
-<div class="mt-4"></div>
-
-{{% pageinfo color="primary" %}} **Ready to play in 5 minutes?** This guide
-covers everything you need to start playing Forge Realm immediately.
-{{% /pageinfo %}}
+{{< callout type="info" >}} **Ready to play in 5 minutes?** This guide covers
+everything you need to start playing Forge Realm immediately. {{< /callout >}}
 
 Forge Realm is designed for easy print-and-play tabletop sessions. This guide
 will get you playing your first game in minutes.
@@ -69,8 +66,8 @@ Each turn follows this sequence:
 - **Draw**: Draw one card from your deck
 - **Mana production**: Generate mana equal to your current mana sources
 
-{{% alert title="Important" color="warning" %}} The player going first skips the
-draw step on their very first turn only. {{% /alert %}}
+{{< callout type="warning" >}} **Important:** The player going first skips the
+draw step on their very first turn only. {{< /callout >}}
 
 ### 2. Main Phase
 
@@ -254,8 +251,8 @@ Mana is your primary resource:
 - **Defensive options**: Don't always attack
 - **Combat tricks**: Save instant spells for key moments
 
-{{% alert title="Getting Your First Cards" color="info" %}} **Core Set releasing
-Q1 2026!** Until then:
+{{< callout type="info" >}} **Getting Your First Cards - Core Set releasing Q1
+2026!** Until then:
 
 - **Learn the rules** with this guide and practice with friends using
   placeholder cards
@@ -264,7 +261,7 @@ Q1 2026!** Until then:
 - **Prepare to print** by reviewing our
   [Printing Guide](../../printing/home-printing-guide/)
 - **Browse upcoming cards** in our [Card Gallery](/docs/cards/) to plan your
-  first deck {{% /alert %}}
+  first deck {{< /callout >}}
 
 ## Next Steps
 

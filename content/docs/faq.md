@@ -7,11 +7,9 @@ description: >
   involvement.
 ---
 
-<div class="mt-4"></div>
-
-{{< alert title="Frequently Asked Questions" >}} Find answers to the most common
-questions about Forge Realm, from basic gameplay to advanced printing
-techniques. {{< /alert >}}
+{{< callout type="info" >}} **Frequently Asked Questions** - Find answers to the
+most common questions about Forge Realm, from basic gameplay to advanced
+printing techniques. {{< /callout >}}
 
 ## General Questions
 

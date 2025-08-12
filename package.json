@@ -11,7 +11,6 @@
     "build:preview": "hugo --buildDrafts --buildFuture --environment preview",
     "clean": "rm -rf public resources tmp",
     "validate": "hugo config && hugo --quiet --panicOnWarning",
-    "format": "npx prettier --write \"**/*.{md,json,yaml,yml,css,scss,html}\" --ignore-path .gitignore",
     "lint": "npx markdownlint --fix \"content/**/*.md\"",
     "test": "npm run validate && npm run build"
   },
@@ -30,7 +29,6 @@
     "autoprefixer": "^10.4.21",
     "markdownlint-cli": "^0.45.0",
     "postcss": "^8.5.6",
-    "postcss-cli": "^11.0.1",
-    "prettier": "^3.0.0"
+    "postcss-cli": "^11.0.1"
   }
 }

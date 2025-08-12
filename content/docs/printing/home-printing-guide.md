@@ -6,10 +6,8 @@ description: >
   Step-by-step instructions to print high-quality Forge Realm cards at home.
 ---
 
-<div class="mt-4"></div>
-
-{{% pageinfo %}} Print professional-quality Forge Realm cards at home with these
-detailed instructions. {{% /pageinfo %}}
+{{< callout type="info" >}} Print professional-quality Forge Realm cards at home
+with these detailed instructions. {{< /callout >}}
 
 This comprehensive guide will help you print professional-quality Forge Realm
 cards at home with detailed instructions and troubleshooting tips.

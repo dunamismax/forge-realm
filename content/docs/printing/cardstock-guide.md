@@ -6,10 +6,8 @@ description: >
   Choose the right paper for professional-quality cards.
 ---
 
-<div class="mt-4"></div>
-
-{{% pageinfo color="success" %}} The right cardstock makes all the difference in
-card quality and durability. {{% /pageinfo %}}
+{{< callout type="info" >}} The right cardstock makes all the difference in card
+quality and durability. {{< /callout >}}
 
 Choosing the right cardstock is crucial for creating professional-quality Forge
 Realm cards that feel authentic and durable during gameplay.

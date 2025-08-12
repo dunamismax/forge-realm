@@ -7,41 +7,33 @@ description: >
   achievements from the Forge Realm community.
 ---
 
-<div class="mt-4"></div>
-
-{{% pageinfo color="success" %}} **Celebrating Our Community** - Explore the
+{{< callout type="info" >}} **Celebrating Our Community** - Explore the
 incredible creativity, strategic insights, and achievements of Forge Realm
-players worldwide. {{% /pageinfo %}}
+players worldwide. {{< /callout >}}
 
 ## Featured Community Content
 
 ### Player Spotlights
 
-{{% blocks/section color="primary" type="row" %}}
+{{< cards >}}
 
-{{% blocks/feature icon="fa-trophy" title="Tournament Champions" %}} Celebrating
-players who have achieved victory in competitive play and community tournaments.
-{{% /blocks/feature %}}
+{{< card title="Tournament Champions" subtitle="Celebrating players who have achieved victory in competitive play and community tournaments." >}}
 
-{{% blocks/feature icon="fa-star" title="Content Creators" %}} Highlighting
-community members who create videos, guides, and educational content about Forge
-Realm. {{% /blocks/feature %}}
+{{< card title="Content Creators" subtitle="Highlighting community members who create videos, guides, and educational content about Forge Realm." >}}
 
-{{% blocks/feature icon="fa-palette" title="Community Artists" %}} Showcasing
-talented artists who contribute card artwork, fan art, and creative designs to
-the project. {{% /blocks/feature %}}
+{{< card title="Community Artists" subtitle="Showcasing talented artists who contribute card artwork, fan art, and creative designs to the project." >}}
 
-{{% /blocks/section %}}
+{{< /cards >}}
 
 ## Deck Showcases
 
 ### Innovative Deck Designs
 
-{{% alert title="Deck Submission" color="info" %}} **Share Your Creations!**
-Once cards are released in Q1 2026, submit your innovative deck designs to be
-featured in the community showcase. Include your deck list, strategy guide, and
-playtesting results. **We need contributors for card mechanics, artwork, and
-game design - join our Discord to help!** {{% /alert %}}
+{{< callout type="info" >}} **Share Your Creations!** Once cards are released in
+Q1 2026, submit your innovative deck designs to be featured in the community
+showcase. Include your deck list, strategy guide, and playtesting results. **We
+need contributors for card mechanics, artwork, and game design - join our
+Discord to help!** {{< /callout >}}
 
 #### Featured Deck Archetypes
 
@@ -120,8 +112,6 @@ _Coming Q1 2026_: A comprehensive database where community members can:
 
 ### Tournament Highlights
 
-{{% blocks/section color="dark" %}}
-
 #### Upcoming Events
 
 - **Core Set Release Tournament** - Q1 2026
@@ -140,8 +130,6 @@ _Coming Q1 2026_: A comprehensive database where community members can:
   - Low-pressure environment for learning
   - Special formats and variant rules
   - Focus on fun and community building
-
-{{% /blocks/section %}}
 
 ### Community Challenges
 
@@ -165,10 +153,10 @@ _Coming Q1 2026_: A comprehensive database where community members can:
 
 ### Community Testimonials
 
-{{% alert title="Share Your Story" color="success" %}} **We want to hear from
-you!** Share your Forge Realm journey, memorable games, and community
-experiences. Contact us on [Discord](https://discord.gg/KQTY8DfY) to be featured
-in our showcase. {{% /alert %}}
+{{< callout type="info" >}} **We want to hear from you!** Share your Forge Realm
+journey, memorable games, and community experiences. Contact us on
+[Discord](https://discord.gg/KQTY8DfY) to be featured in our showcase.
+{{< /callout >}}
 
 #### Featured Stories
 
@@ -316,9 +304,9 @@ release:
 - **Rules text clarifications** or minor ability adjustments
 - **Format restrictions** for cards that dominate specific play styles
 
-{{% alert title="Community Balance" color="info" %}} **Your Voice Matters!**
-Join our Discord server to participate in balance discussions and help ensure
-Forge Realm remains fun and fair for all players. {{% /alert %}}
+{{< callout type="info" >}} **Your Voice Matters!** Join our Discord server to
+participate in balance discussions and help ensure Forge Realm remains fun and
+fair for all players. {{< /callout >}}
 
 ## Getting Involved
 

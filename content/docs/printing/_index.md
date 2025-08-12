@@ -6,28 +6,18 @@ description: >
   Everything you need to know about printing Forge Realm cards at home.
 ---
 
-<div class="mt-4"></div>
+{{< callout type="info" >}} Learn how to print high-quality Forge Realm cards
+for tabletop play. {{< /callout >}}
 
-{{% pageinfo %}} Learn how to print high-quality Forge Realm cards for tabletop
-play. {{% /pageinfo %}}
+{{< cards >}}
 
-{{% blocks/section color="secondary" type="row" %}}
+{{< card title="Home Printing Guide" link="/docs/printing/home-printing-guide/" subtitle="Step-by-step instructions for printing professional-quality cards at home." >}}
 
-{{% blocks/feature icon="fa-print" title="Home Printing Guide" url="/docs/printing/home-printing-guide/" %}}
-Step-by-step instructions for printing professional-quality cards at home.
-{{% /blocks/feature %}}
+{{< card title="Recommended Printers" link="/docs/printing/recommended-printers/" subtitle="Printer models that work best for card printing, both inkjet and laser." >}}
 
-{{% blocks/feature icon="fa-desktop" title="Recommended Printers" url="/docs/printing/recommended-printers/" %}}
-Printer models that work best for card printing, both inkjet and laser.
-{{% /blocks/feature %}}
+{{< card title="Cardstock Guide" link="/docs/printing/cardstock-guide/" subtitle="Paper types, weights, and finishes for the best card quality." >}}
 
-{{% blocks/feature icon="fa-file-alt" title="Cardstock Guide" url="/docs/printing/cardstock-guide/" %}}
-Paper types, weights, and finishes for the best card quality.
-{{% /blocks/feature %}}
-
-{{% /blocks/section %}}
-
-{{% blocks/section color="dark" %}}
+{{< /cards >}}
 
 ## Print Process Overview
 
@@ -42,4 +32,4 @@ Paper types, weights, and finishes for the best card quality.
 
 All card files are optimized for home printing while maintaining professional
 appearance and durability for regular play. Cards are designed at 300 DPI with
-proper bleed areas for clean cutting. {{% /blocks/section %}}
+proper bleed areas for clean cutting.

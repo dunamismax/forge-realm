@@ -6,10 +6,8 @@ description: >
   Printer models that work well for printing Forge Realm cards.
 ---
 
-<div class="mt-4"></div>
-
-{{% pageinfo color="info" %}} Choose the right printer for high-quality card
-printing at home. {{% /pageinfo %}}
+{{< callout type="info" >}} Choose the right printer for high-quality card
+printing at home. {{< /callout >}}
 
 Choosing the right printer is crucial for producing high-quality Forge Realm
 cards at home. This guide covers recommended models, specifications, and

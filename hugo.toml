@@ -4,62 +4,16 @@ title = 'Forge Realm TCG'
 contentDir = 'content'
 enableEmoji = true
 enableRobotsTXT = true
+enableGitInfo = true
+hasCJKLanguage = false
 
 [module]
   [module.hugoVersion]
     extended = true
     min = "0.146.0"
-
+  replacements = "github.com/imfing/hextra -> ./themes/hextra-theme"
   [[module.imports]]
-    path = "github.com/google/docsy"
-    disable = false
-
-  [[module.imports]]
-    path = "github.com/google/docsy/dependencies"
-    disable = false
-
-[params]
-  github_repo = "https://github.com/dunamismax/forge-realm"
-  github_branch = "main"
-  github_project_repo = "https://github.com/dunamismax/forge-realm"
-
-  # Enable Lunr.js offline search
-  offlineSearch = true
-
-  # Enable syntax highlighting and copy buttons on code blocks with Prism
-  prism_syntax_highlighting = false
-
-  # User interface configuration
-  [params.ui]
-    showLightDarkModeMenu = false
-    sidebar_menu_compact = false
-    sidebar_cache_limit = 10
-    breadcrumb_disable = false
-    sidebar_menu_foldable = true
-
-    # Set to false to disable the About link in the site footer
-    footer_about_enable = true
-
-  # Configure edit page links
-  [params.ui.readingtime]
-    enable = false
-
-  # Footer copyright
-  copyright = "© 2025 Forge Realm TCG. Open source trading card game."
-  privacy_policy = ""
-
-  [params.links]
-    [[params.links.user]]
-      name = "Discord"
-      url = "https://discord.gg/KQTY8DfY"
-      icon = "fab fa-discord"
-      desc = "Community discussions and support"
-    [[params.links.user]]
-      name = "GitHub"
-      url = "https://github.com/dunamismax/forge-realm"
-      icon = "fab fa-github"
-      desc = "Development happens here"
-
+    path = "github.com/imfing/hextra"
 
 [markup]
   [markup.tableOfContents]
@@ -68,18 +22,132 @@ enableRobotsTXT = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-  [markup.goldmark.parser]
-    [markup.goldmark.parser.attribute]
-      block = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$'], ['\[', '\]']]
+          inline = [['\(', '\)']]
+  [markup.highlight]
+    noClasses = false
 
-[menu]
-  [[menu.primary]]
-    name = "Documentation"
-    url = "/docs/"
-    identifier = "docs"
-    weight = 10
+enableInlineShortcodes = true
 
 [outputs]
   home = ["HTML", "RSS"]
   page = ["HTML"]
   section = ["HTML", "RSS"]
+
+[menu]
+  [[menu.main]]
+    identifier = "documentation"
+    name = "Documentation"
+    pageRef = "/docs"
+    weight = 1
+  [[menu.main]]
+    name = "Cards"
+    pageRef = "/docs/cards"
+    weight = 2
+  [[menu.main]]
+    name = "Gameplay"
+    pageRef = "/docs/gameplay"
+    weight = 3
+  [[menu.main]]
+    name = "Printing"
+    pageRef = "/docs/printing"
+    weight = 4
+  [[menu.main]]
+    name = "Search"
+    weight = 5
+    [menu.main.params]
+      type = "search"
+  [[menu.main]]
+    name = "Discord"
+    weight = 6
+    url = "https://discord.gg/KQTY8DfY"
+    [menu.main.params]
+      icon = "discord"
+  [[menu.main]]
+    name = "GitHub"
+    weight = 7
+    url = "https://github.com/dunamismax/forge-realm"
+    [menu.main.params]
+      icon = "github"
+
+  [[menu.sidebar]]
+    identifier = "more"
+    name = "More"
+    weight = 1
+    [menu.sidebar.params]
+      type = "separator"
+  [[menu.sidebar]]
+    identifier = "community-showcase"
+    name = "Community Showcase"
+    pageRef = "/docs/community-showcase"
+    weight = 2
+  [[menu.sidebar]]
+    identifier = "contributing"
+    name = "Contributing"
+    pageRef = "/docs/contributing"
+    weight = 3
+  [[menu.sidebar]]
+    identifier = "code-of-conduct"
+    name = "Code of Conduct"
+    pageRef = "/docs/code-of-conduct"
+    weight = 4
+
+[params]
+  description = "Pure Magic: The Gathering as it was meant to be - focusing on Vintage and Modern's most beloved mechanics with modern enhancements."
+
+  [params.navbar]
+    displayTitle = true
+    displayLogo = true
+    width = "wide"
+    [params.navbar.logo]
+      path = "images/forge-realm-PNG-circular-emblem.webp"
+      dark = "images/forge-realm-PNG-circular-emblem.webp"
+      width = 40
+      height = 40
+
+  [params.theme]
+    default = "dark"
+    displayToggle = true
+
+  [params.footer]
+    enable = true
+    displayCopyright = true
+    displayPoweredBy = true
+    width = "normal"
+
+  displayUpdatedDate = true
+  dateFormat = "January 2, 2006"
+
+  [params.search]
+    enable = true
+    type = "flexsearch"
+    [params.search.flexsearch]
+      index = "content"
+      tokenize = "forward"
+
+  [params.editURL]
+    enable = true
+    base = "https://github.com/dunamismax/forge-realm/edit/main/content"
+
+  [params.toc]
+    displayTags = true
+
+  [params.highlight]
+    [params.highlight.copy]
+      enable = true
+      display = "hover"
+
+  [params.page]
+    width = "normal"
+
+  [params.comments]
+    enable = false
+  
+  copyright = "© 2025 Forge Realm TCG. Open source trading card game."
+  github_repo = "https://github.com/dunamismax/forge-realm"
+  github_branch = "main"
+  github_project_repo = "https://github.com/dunamismax/forge-realm"

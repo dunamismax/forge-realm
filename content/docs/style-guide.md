@@ -82,14 +82,14 @@ $code-color: #bd93f9  // Code syntax
 
 ### Alerts
 
-Use Hugo/Docsy alert shortcodes for important information:
+Use Hextra callout shortcodes for important information:
 
 ```markdown
-{{% alert title="Important" color="warning" %}} Critical information that users
-need to notice. {{% /alert %}}
+{{</* callout type="warning" */>}} **Important:** Critical information that
+users need to notice. {{</* /callout */>}}
 ```
 
-**Colors**: primary, secondary, success, info, warning, danger
+**Types**: info, warning, error
 
 ### Code Blocks
 
@@ -106,14 +106,14 @@ title: "Page Title"
 description: "Page description"
 ```
 
-````
-
 ### Links
+
 - **Internal**: Use relative paths (`/docs/section/`)
 - **External**: Use full URLs with `https://`
 - **Descriptive**: Link text should explain destination
 
 ### Images
+
 - **Format**: WebP preferred, PNG/JPEG fallback
 - **Alt Text**: Descriptive alternative text for accessibility
 - **Sizing**: Responsive, appropriate dimensions
@@ -122,6 +122,7 @@ description: "Page description"
 ## Layout Patterns
 
 ### Page Structure
+
 ```markdown
 ---
 title: "Descriptive Page Title"
@@ -142,7 +143,7 @@ Content organized in logical sections.
 ### Subsection
 
 Detailed information in smaller chunks.
-````
+```
 
 ### Content Organization
 
@@ -238,11 +239,11 @@ date: 2025-01-01
 
 ### Shortcode Usage
 
-Leverage Docsy shortcodes for enhanced layouts:
+Leverage Hextra shortcodes for enhanced layouts:
 
-- `{{%/* alert */%}}` - Important notices
-- `{{%/* blocks/section */%}}` - Structured sections
-- `{{%/* blocks/feature */%}}` - Feature highlights
+- `{{</* callout */>}}` - Important notices and information blocks
+- `{{</* cards */>}}` and `{{</* card */>}}` - Feature highlights and structured
+  content grids
 
 ### Theme Customization
 

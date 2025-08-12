@@ -6,17 +6,11 @@ description: >
   Learn how to contribute to the Forge Realm project.
 ---
 
-<div class="mt-4"></div>
-
-{{< alert title="Welcome Contributors!" >}} Thank you for contributing to Forge
-Realm! This guide covers our development process and community standards.
-{{< /alert >}}
+{{< callout type="info" >}} **Welcome Contributors!** Thank you for contributing
+to Forge Realm! This guide covers our development process and community
+standards. {{< /callout >}}
 
 ## Code of Conduct
-
-<div class="float-end ms-3 mb-3">
-  <img src="/images/forge-realm-PNG-circular-emblem.webp" alt="Forge Realm Emblem" style="max-width: 80px; height: auto;" class="img-fluid">
-</div>
 
 All contributors must follow our [Code of Conduct](/docs/code-of-conduct/).
 
@@ -100,37 +94,17 @@ git remote add upstream https://github.com/dunamismax/forge-realm.git
 
 We welcome contributions in many forms:
 
-{{% blocks/section color="primary" type="row" %}}
+{{< cards >}}
 
-{{% blocks/feature icon="fa-gamepad" title="Game Design" %}}
+{{< card title="Game Design" subtitle="- Card designs and balance proposals\n- New mechanic development\n- Format creation and testing\n- Rules clarification and updates" >}}
 
-- Card designs and balance proposals
-- New mechanic development
-- Format creation and testing
-- Rules clarification and updates {{% /blocks/feature %}}
+{{< card title="Art & Design" subtitle="- Card artwork and illustrations\n- Template design and layout\n- Icon creation and graphics\n- Print template optimization" >}}
 
-{{% blocks/feature icon="fa-palette" title="Art & Design" %}}
+{{< card title="Documentation" subtitle="- Rule clarifications and examples\n- Strategy guides and tutorials\n- Printing guides and troubleshooting\n- Community event documentation" >}}
 
-- Card artwork and illustrations
-- Template design and layout
-- Icon creation and graphics
-- Print template optimization {{% /blocks/feature %}}
+{{< card title="Technical" subtitle="- Website development and improvements\n- Hugo site optimization and features\n- Asset processing and CDN integration\n- Build and deployment automation" >}}
 
-{{% blocks/feature icon="fa-pen" title="Documentation" %}}
-
-- Rule clarifications and examples
-- Strategy guides and tutorials
-- Printing guides and troubleshooting
-- Community event documentation {{% /blocks/feature %}}
-
-{{% blocks/feature icon="fa-code" title="Technical" %}}
-
-- Website development and improvements
-- Hugo site optimization and features
-- Asset processing and CDN integration
-- Build and deployment automation {{% /blocks/feature %}}
-
-{{% /blocks/section %}}
+{{< /cards >}}
 
 ## Review Process
 
@@ -140,8 +114,6 @@ All contributions require:
 2. Documentation review from maintainers
 3. Playtesting for game content changes
 4. Asset quality verification for artwork
-
-{{% blocks/section color="dark" %}}
 
 ## Community Integration
 
@@ -165,13 +137,7 @@ Use GitHub for:
 - Bug reports for website functionality
 - Code contributions and build system improvements
 
-<div class="text-center mt-4">
-  <a class="btn btn-lg btn-primary me-3 mb-4" href="https://discord.gg/KQTY8DfY">
-    Join Discord <i class="fab fa-discord ms-2"></i>
-  </a>
-  <a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/dunamismax/forge-realm">
-    View on GitHub <i class="fab fa-github ms-2"></i>
-  </a>
-</div>
+**Join the Community:**
 
-{{% /blocks/section %}}
+- [Join Discord](https://discord.gg/KQTY8DfY)
+- [View on GitHub](https://github.com/dunamismax/forge-realm)

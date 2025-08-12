@@ -7,9 +7,9 @@ description: >
   experience.
 ---
 
-{{< alert title="Core Set" color="success" >}} The foundational collection of
-Forge Realm cards that establishes the core gameplay mechanics and provides
-everything needed for competitive play. {{< /alert >}}
+{{< callout type="info" >}} **Core Set** - The foundational collection of Forge
+Realm cards that establishes the core gameplay mechanics and provides everything
+needed for competitive play. {{< /callout >}}
 
 ## About the Core Set
 
@@ -24,32 +24,25 @@ effects that form the foundation for all other sets.
 - **Artifacts** - Core utility and mana-fixing artifacts
 - **Enchantments** - Basic ongoing effects and board presence
 
-{{< alert title="Complete Playset" color="info" >}} The Core Set includes 4
+{{< callout type="info" >}} **Complete Playset** - The Core Set includes 4
 copies of each card, providing complete playsets for competitive deck
-construction. {{< /alert >}}
+construction. {{< /callout >}}
 
 ## Card Categories
 
-{{% blocks/section color="primary" type="row" %}}
+{{< cards >}}
 
-{{% blocks/feature icon="fa-dragon" title="Creatures" %}} Essential creatures
-that establish the fundamental creature types and combat mechanics.
-{{% /blocks/feature %}}
+{{< card title="Creatures" subtitle="Essential creatures that establish the fundamental creature types and combat mechanics." >}}
 
-{{% blocks/feature icon="fa-magic" title="Spells" %}} Instant and sorcery spells
-that provide the basic spell effects and interactions. {{% /blocks/feature %}}
+{{< card title="Spells" subtitle="Instant and sorcery spells that provide the basic spell effects and interactions." >}}
 
-{{% blocks/feature icon="fa-gem" title="Artifacts" %}} Utility artifacts and
-mana-producing cards that support deck construction. {{% /blocks/feature %}}
+{{< card title="Artifacts" subtitle="Utility artifacts and mana-producing cards that support deck construction." >}}
 
-{{% blocks/feature icon="fa-crown" title="Enchantments" %}} Ongoing effects that
-modify gameplay and provide strategic depth. {{% /blocks/feature %}}
+{{< card title="Enchantments" subtitle="Ongoing effects that modify gameplay and provide strategic depth." >}}
 
-{{% /blocks/section %}}
+{{< /cards >}}
 
 ## Download Core Set
-
-{{% blocks/section color="dark" %}}
 
 ### Available Formats
 
@@ -65,11 +58,9 @@ modify gameplay and provide strategic depth. {{% /blocks/feature %}}
 - **Bleed**: 0.125" bleed margin included
 - **Format**: CMYK color profile for professional printing
 
-{{< alert title="Q1 2026 Release (Tentative)" color="warning" >}} **Target
-Release: Q1 2026 (Tentative)**
-
-The Core Set featuring full original artwork, complete mechanics, and two
-balanced 60-card starter decks is in development:
+{{< callout type="warning" >}} **Q1 2026 Release (Tentative)** - The Core Set
+featuring full original artwork, complete mechanics, and two balanced 60-card
+starter decks is in development:
 
 - **Q4 2025**: Core mechanics finalization (pure MTG with beloved Vintage/Modern
   mechanics)
@@ -78,9 +69,7 @@ balanced 60-card starter decks is in development:
 
 **We need contributors for mechanics, artwork, and design!** Join our
 [Discord](https://discord.gg/KQTY8DfY) to help make this game a reality.
-{{< /alert >}}
-
-{{% /blocks/section %}}
+{{< /callout >}}
 
 ## Community Involvement
 

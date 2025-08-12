@@ -14,8 +14,8 @@ security updates.
 
 ## Reporting Vulnerabilities
 
-{{% alert title="Important" color="danger" %}} **Do not report security
-vulnerabilities through public GitHub issues.** {{% /alert %}}
+{{< callout type="error" >}} **Important:** Do not report security
+vulnerabilities through public GitHub issues. {{< /callout >}}
 
 ### How to Report
 
