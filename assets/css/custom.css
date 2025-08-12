@@ -55,47 +55,47 @@ body {
   font-weight: 400;
 }
 
-/* Fix text legibility for all content */
-p, div, span, li, td, th {
-  color: var(--text-primary) !important;
-  font-family: var(--font-family);
-}
-
-/* Ensure proper contrast for all text elements */
-.content p, 
-.content div:not([class*="hx-"]), 
-.content span:not([class*="hx-"]),
-.content li,
-main p,
-main div:not([class*="hx-"]),
-main span:not([class*="hx-"]),
-main li,
-article p,
-article div,
-article span,
-article li {
-  color: var(--text-primary) !important;
+/* Base typography without aggressive overrides */
+body {
   font-family: var(--font-family);
   font-size: var(--font-size-base);
   line-height: var(--line-height-base);
 }
 
-/* Specific fixes for common text containers */
-.description,
-.subtitle,
-.text-content,
-.prose {
-  color: var(--text-primary) !important;
+/* Target specific content areas that need color fixes */
+.hx-prose p,
+.hx-prose div,
+.hx-prose li {
+  color: var(--text-primary);
+}
+
+/* Main content area text */
+main .hx-max-w-screen-xl p,
+main .hx-max-w-screen-xl div:not([class*="hx-bg"]):not([class*="hx-border"]),
+main .hx-max-w-screen-xl li {
+  color: var(--text-primary);
+}
+
+/* Ensure content in main sections is visible */
+[data-content] p,
+[data-content] div,
+[data-content] li {
+  color: var(--text-primary);
 }
 
 /* Headings typography */
 h1, h2, h3, h4, h5, h6 {
-  color: var(--text-primary) !important;
   font-family: var(--font-family);
   font-weight: 600;
   line-height: 1.3;
   text-rendering: optimizeLegibility;
   font-display: swap;
+}
+
+/* Ensure headings are visible in content areas */
+main h1, main h2, main h3, main h4, main h5, main h6,
+article h1, article h2, article h3, article h4, article h5, article h6 {
+  color: var(--text-primary);
 }
 
 h1 { font-size: 2.25rem; }
@@ -209,7 +209,7 @@ blockquote,
 .blockquote,
 .callout,
 .alert {
-  color: var(--text-primary) !important;
+  color: var(--text-primary);
 }
 
 /* Links with proper contrast */
@@ -228,7 +228,7 @@ ul, ol {
 }
 
 ul li, ol li {
-  color: var(--text-primary) !important;
+  color: var(--text-primary);
   margin-bottom: 0.5rem;
 }
 
@@ -238,7 +238,7 @@ table {
 }
 
 th, td {
-  color: var(--text-primary) !important;
+  color: var(--text-primary);
   border-color: var(--border-color);
 }
 
@@ -257,27 +257,27 @@ input, textarea, select {
 .hx-text-gray-500,
 .hx-text-gray-600,
 .hx-text-gray-700 {
-  color: var(--text-secondary) !important;
+  color: var(--text-secondary);
 }
 
 /* Feature cards */
 .feature-card p,
 .feature-card span,
 .feature-card div {
-  color: var(--text-primary) !important;
+  color: var(--text-primary);
 }
 
 /* Navigation */
 .nav-link,
 .navbar-nav .nav-link {
-  color: var(--text-primary) !important;
+  color: var(--text-primary);
 }
 
 /* Footer */
 .footer p,
 .footer span,
 .footer div {
-  color: var(--text-secondary) !important;
+  color: var(--text-secondary);
 }
 
 /* Optimize text rendering */
