@@ -321,3 +321,6 @@ a[role="button"] {
   transition: background-color .2s ease, color .2s ease, transform .2s ease;
 }
 a[role="button"]:hover { transform: translateY(-1px); }
+
+/* Hide footer theme toggle */
+.hextra-footer .theme-toggle { display: none !important; }

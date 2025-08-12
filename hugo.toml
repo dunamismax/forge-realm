@@ -116,7 +116,7 @@ enableInlineShortcodes = true
   [params.footer]
     enable = true
     displayCopyright = true
-    displayPoweredBy = true
+    displayPoweredBy = false
     width = "normal"
 
   displayUpdatedDate = true
@@ -147,7 +147,7 @@ enableInlineShortcodes = true
   [params.comments]
     enable = false
   
-  copyright = "© 2025 Forge Realm TCG. Open source trading card game."
+  copyright = "© 2025 Hextra Project."
   github_repo = "https://github.com/dunamismax/forge-realm"
   github_branch = "main"
   github_project_repo = "https://github.com/dunamismax/forge-realm"
