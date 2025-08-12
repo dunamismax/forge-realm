@@ -1,4 +1,7 @@
-/* Forge Realm - Performance & Smooth Transitions */
+/* Forge Realm - Typography & Smooth Transitions */
+
+/* Import Inter font from Cloudflare */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/inter-ui/4.0.2/inter.css');
 
 /* CSS Variables for consistent theming */
 :root {
@@ -6,14 +9,21 @@
   --transition-easing: ease;
   --bg-primary: #ffffff;
   --bg-secondary: #f8fafc;
-  --text-primary: #1f2937;
+  --text-primary: #111827;
+  --text-secondary: #374151;
+  --text-muted: #6b7280;
   --border-color: #e5e7eb;
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --font-size-base: 15px;
+  --line-height-base: 1.6;
 }
 
 .dark {
   --bg-primary: #111;
   --bg-secondary: #1f2937;
   --text-primary: #f9fafb;
+  --text-secondary: #e5e7eb;
+  --text-muted: #9ca3af;
   --border-color: #374151;
 }
 
@@ -26,17 +36,74 @@ a, button, .btn, .hx-btn {
               transform var(--transition-duration) var(--transition-easing);
 }
 
-/* Optimize rendering performance */
+/* Typography and rendering optimization */
 html {
   scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--font-size-base);
 }
 
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  font-display: swap;
+  font-weight: 400;
+}
+
+/* Fix text legibility for all content */
+p, div, span, li, td, th {
+  color: var(--text-primary) !important;
+  font-family: var(--font-family);
+}
+
+/* Ensure proper contrast for all text elements */
+.content p, 
+.content div:not([class*="hx-"]), 
+.content span:not([class*="hx-"]),
+.content li,
+main p,
+main div:not([class*="hx-"]),
+main span:not([class*="hx-"]),
+main li,
+article p,
+article div,
+article span,
+article li {
+  color: var(--text-primary) !important;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+}
+
+/* Specific fixes for common text containers */
+.description,
+.subtitle,
+.text-content,
+.prose {
+  color: var(--text-primary) !important;
+}
+
+/* Headings typography */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary) !important;
+  font-family: var(--font-family);
+  font-weight: 600;
+  line-height: 1.3;
+  text-rendering: optimizeLegibility;
   font-display: swap;
 }
+
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.875rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.125rem; }
+h6 { font-size: 1rem; }
 
 /* Smooth navbar transitions */
 .navbar {
@@ -135,6 +202,82 @@ img {
 /* Performance optimizations */
 .content-wrapper {
   contain: layout style paint;
+}
+
+/* Additional typography fixes */
+blockquote, 
+.blockquote,
+.callout,
+.alert {
+  color: var(--text-primary) !important;
+}
+
+/* Links with proper contrast */
+a {
+  color: hsl(var(--primary-hue) var(--primary-saturation) var(--primary-lightness));
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+  color: var(--text-primary);
+}
+
+ul li, ol li {
+  color: var(--text-primary) !important;
+  margin-bottom: 0.5rem;
+}
+
+/* Tables */
+table {
+  color: var(--text-primary);
+}
+
+th, td {
+  color: var(--text-primary) !important;
+  border-color: var(--border-color);
+}
+
+/* Code blocks */
+code, pre {
+  font-family: 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+/* Form elements */
+input, textarea, select {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+}
+
+/* Ensure Hextra components use proper colors */
+.hx-text-gray-500,
+.hx-text-gray-600,
+.hx-text-gray-700 {
+  color: var(--text-secondary) !important;
+}
+
+/* Feature cards */
+.feature-card p,
+.feature-card span,
+.feature-card div {
+  color: var(--text-primary) !important;
+}
+
+/* Navigation */
+.nav-link,
+.navbar-nav .nav-link {
+  color: var(--text-primary) !important;
+}
+
+/* Footer */
+.footer p,
+.footer span,
+.footer div {
+  color: var(--text-secondary) !important;
 }
 
 /* Optimize text rendering */

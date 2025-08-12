@@ -13,6 +13,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
   <!-- Preload critical resources -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/4.0.2/inter.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
@@ -69,14 +71,27 @@
       background-color: #111;
       color: #f9fafb;
       line-height: 1.6;
-      font-family: system-ui, -apple-system, sans-serif;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-size: 15px;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
     }
     
     body {
       margin: 0;
       padding: 0;
       background-color: #111;
+      color: #f9fafb;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
       transition: opacity 0.2s ease;
+    }
+    
+    /* Ensure all text is readable */
+    p, div, span, li, h1, h2, h3, h4, h5, h6 {
+      color: #f9fafb;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
     }
     
     .dark {
@@ -86,7 +101,20 @@
     
     :not(.dark) {
       --bg-primary: #ffffff;
-      --text-primary: #1f2937;
+      --text-primary: #111827;
+    }
+    
+    :not(.dark) p, 
+    :not(.dark) div, 
+    :not(.dark) span, 
+    :not(.dark) li, 
+    :not(.dark) h1, 
+    :not(.dark) h2, 
+    :not(.dark) h3, 
+    :not(.dark) h4, 
+    :not(.dark) h5, 
+    :not(.dark) h6 {
+      color: #111827;
     }
     
     /* Prevent layout shift */
