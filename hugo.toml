@@ -31,7 +31,7 @@ enableRobotsTXT = true
 
   # User interface configuration
   [params.ui]
-    showLightDarkModeMenu = true
+    showLightDarkModeMenu = false
     sidebar_menu_compact = false
     sidebar_cache_limit = 10
     breadcrumb_disable = false

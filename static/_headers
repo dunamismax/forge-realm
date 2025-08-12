@@ -21,23 +21,18 @@
   Cache-Control: public, max-age=31536000, immutable
   Vary: Accept-Encoding
 
-*.css
+# CSS files - Long-term caching
+/css/*
   Cache-Control: public, max-age=31536000, immutable
   Vary: Accept-Encoding
 
-*.js
+# JavaScript files - Long-term caching  
+/js/*
   Cache-Control: public, max-age=31536000, immutable
   Vary: Accept-Encoding
 
-*.woff2
-  Cache-Control: public, max-age=31536000, immutable
-  Cross-Origin-Resource-Policy: cross-origin
-
-*.woff
-  Cache-Control: public, max-age=31536000, immutable
-  Cross-Origin-Resource-Policy: cross-origin
-
-*.ttf
+# Font files - Long-term caching
+/fonts/*
   Cache-Control: public, max-age=31536000, immutable
   Cross-Origin-Resource-Policy: cross-origin
 
@@ -46,49 +41,12 @@
   Cache-Control: public, max-age=604800
   Vary: Accept-Encoding
 
-# PDF files and downloads - Long-term caching with validation
-*.pdf
-  Cache-Control: public, max-age=2592000
-  Vary: Accept-Encoding
-  Content-Type: application/pdf
-
-# Image optimization
-*.webp
-  Cache-Control: public, max-age=31536000, immutable
-  Vary: Accept-Encoding
-
-*.png
-  Cache-Control: public, max-age=31536000, immutable
-  Vary: Accept-Encoding
-
-*.jpg
-  Cache-Control: public, max-age=31536000, immutable
-  Vary: Accept-Encoding
-
-*.jpeg
-  Cache-Control: public, max-age=31536000, immutable  
-  Vary: Accept-Encoding
-
-*.gif
-  Cache-Control: public, max-age=31536000, immutable
-  Vary: Accept-Encoding
-
-*.svg
-  Cache-Control: public, max-age=31536000, immutable
-  Vary: Accept-Encoding
-  Content-Type: image/svg+xml
-
-# HTML pages - Short-term caching with validation
-*.html
-  Cache-Control: public, max-age=3600, must-revalidate
-  Vary: Accept-Encoding
-
 # Homepage - Very short caching for frequent updates
 /
   Cache-Control: public, max-age=1800, must-revalidate
   Vary: Accept-Encoding
 
-# Documentation pages - Medium caching
+# HTML pages - Short-term caching with validation
 /docs/*
   Cache-Control: public, max-age=7200, must-revalidate
   Vary: Accept-Encoding
