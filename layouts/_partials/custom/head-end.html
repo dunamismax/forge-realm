@@ -1,0 +1,180 @@
+<!-- Smooth page transitions and performance optimizations -->
+<style>
+  /* Prevent white flash during page transitions */
+  html {
+    background-color: var(--bg-color, #111);
+    transition: background-color 0.2s ease;
+  }
+  
+  body {
+    transition: opacity 0.2s ease, transform 0.15s ease;
+  }
+  
+  /* Page transition animations */
+  .page-transition-enter {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  
+  .page-transition-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .page-transition-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .page-transition-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+  
+  /* Loading indicator */
+  .loading-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    z-index: 9999;
+    transition: width 0.3s ease;
+    opacity: 0;
+  }
+  
+  .loading-bar.active {
+    opacity: 1;
+  }
+  
+  /* Smooth hover effects */
+  a {
+    transition: color 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, transform 0.1s ease;
+  }
+  
+  /* Optimize rendering performance */
+  * {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  /* Reduce layout shifts */
+  img, video {
+    height: auto;
+    max-width: 100%;
+  }
+  
+  /* Critical path optimization */
+  .content-container {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+</style>
+
+<!-- Page transition script -->
+<script>
+  (function() {
+    // Set CSS variables for theme colors
+    const setThemeColors = () => {
+      const isDark = document.documentElement.classList.contains('dark');
+      document.documentElement.style.setProperty('--bg-color', isDark ? '#111' : '#ffffff');
+    };
+    
+    // Initialize theme colors
+    setThemeColors();
+    
+    // Update colors when theme changes
+    const observer = new MutationObserver(() => {
+      setThemeColors();
+    });
+    
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class']
+    });
+    
+    // Create loading bar
+    const loadingBar = document.createElement('div');
+    loadingBar.className = 'loading-bar';
+    document.head.appendChild(loadingBar);
+    
+    // Track navigation
+    let isNavigating = false;
+    
+    // Handle link clicks for smooth transitions
+    const handleNavigation = (e) => {
+      const link = e.target.closest('a');
+      if (!link || link.getAttribute('href')?.startsWith('#') || link.target === '_blank' || link.hostname !== window.location.hostname) {
+        return;
+      }
+      
+      e.preventDefault();
+      
+      if (isNavigating) return;
+      isNavigating = true;
+      
+      // Show loading bar
+      loadingBar.classList.add('active');
+      
+      // Animate loading progress
+      let progress = 0;
+      const progressInterval = setInterval(() => {
+        progress += Math.random() * 30;
+        if (progress < 90) {
+          loadingBar.style.width = progress + '%';
+        }
+      }, 100);
+      
+      // Add exit animation
+      document.body.classList.add('page-transition-exit');
+      
+      setTimeout(() => {
+        clearInterval(progressInterval);
+        loadingBar.style.width = '100%';
+        
+        // Navigate to new page
+        window.location.href = link.href;
+      }, 200);
+    };
+    
+    // Handle page load
+    const handlePageLoad = () => {
+      // Complete loading bar
+      const loadingBar = document.querySelector('.loading-bar');
+      if (loadingBar) {
+        loadingBar.style.width = '100%';
+        setTimeout(() => {
+          loadingBar.classList.remove('active');
+          loadingBar.style.width = '0%';
+        }, 200);
+      }
+      
+      // Add enter animation
+      document.body.classList.add('page-transition-enter');
+      
+      requestAnimationFrame(() => {
+        document.body.classList.add('page-transition-enter-active');
+        document.body.classList.remove('page-transition-enter');
+      });
+      
+      isNavigating = false;
+    };
+    
+    // Attach event listeners
+    document.addEventListener('click', handleNavigation);
+    document.addEventListener('DOMContentLoaded', handlePageLoad);
+    
+    // Handle back/forward navigation
+    window.addEventListener('pageshow', handlePageLoad);
+  })();
+</script>
+
+<!-- Preload critical fonts -->
+<link rel="preload" href="/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- Performance hints -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="preconnect" href="//fonts.gstatic.com" crossorigin>

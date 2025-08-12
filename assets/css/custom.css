@@ -1,0 +1,202 @@
+/* Forge Realm - Performance & Smooth Transitions */
+
+/* CSS Variables for consistent theming */
+:root {
+  --transition-duration: 0.2s;
+  --transition-easing: ease;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --text-primary: #1f2937;
+  --border-color: #e5e7eb;
+}
+
+.dark {
+  --bg-primary: #111;
+  --bg-secondary: #1f2937;
+  --text-primary: #f9fafb;
+  --border-color: #374151;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: color var(--transition-duration) var(--transition-easing),
+              background-color var(--transition-duration) var(--transition-easing),
+              border-color var(--transition-duration) var(--transition-easing),
+              box-shadow var(--transition-duration) var(--transition-easing);
+}
+
+/* Optimize rendering performance */
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-display: swap;
+}
+
+/* Smooth navbar transitions */
+.navbar {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: background-color var(--transition-duration) var(--transition-easing),
+              backdrop-filter var(--transition-duration) var(--transition-easing);
+}
+
+/* Enhanced link hover effects */
+a {
+  transition: all 0.15s ease;
+}
+
+a:hover {
+  transform: translateY(-1px);
+}
+
+/* Smooth card hover effects */
+.card, .hx-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover, .hx-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.dark .card:hover, .dark .hx-card:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Sidebar smooth transitions */
+.sidebar {
+  transition: transform var(--transition-duration) var(--transition-easing),
+              opacity var(--transition-duration) var(--transition-easing);
+}
+
+/* Search modal smooth animations */
+.search-modal {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.search-modal.entering {
+  opacity: 0;
+  transform: scale(0.95) translateY(-10px);
+}
+
+.search-modal.entered {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* Theme toggle smooth animation */
+.theme-toggle {
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.05);
+}
+
+/* Loading states */
+.loading {
+  opacity: 0.6;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+/* Improved focus states for accessibility */
+*:focus {
+  outline: 2px solid hsl(var(--primary-hue) var(--primary-saturation) var(--primary-lightness));
+  outline-offset: 2px;
+  transition: outline 0.15s ease;
+}
+
+/* Smooth scrolling for internal links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Optimize image loading */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Hero section smooth animations */
+.hero-section {
+  animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Feature grid staggered animations */
+.feature-grid .feature-card {
+  animation: fadeInUp 0.6s ease both;
+}
+
+.feature-grid .feature-card:nth-child(1) { animation-delay: 0.1s; }
+.feature-grid .feature-card:nth-child(2) { animation-delay: 0.2s; }
+.feature-grid .feature-card:nth-child(3) { animation-delay: 0.3s; }
+.feature-grid .feature-card:nth-child(4) { animation-delay: 0.4s; }
+.feature-grid .feature-card:nth-child(5) { animation-delay: 0.5s; }
+.feature-grid .feature-card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Button hover effects */
+.btn, .hx-btn, button {
+  transition: all 0.15s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover, .hx-btn:hover, button:hover {
+  transform: translateY(-1px);
+}
+
+/* Smooth dropdown animations */
+.dropdown-menu {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform-origin: top;
+}
+
+.dropdown-menu.entering {
+  opacity: 0;
+  transform: scaleY(0.95) translateY(-5px);
+}
+
+.dropdown-menu.entered {
+  opacity: 1;
+  transform: scaleY(1) translateY(0);
+}
+
+/* Performance optimizations */
+.content-wrapper {
+  contain: layout style paint;
+}
+
+/* Optimize text rendering */
+h1, h2, h3, h4, h5, h6 {
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+}
