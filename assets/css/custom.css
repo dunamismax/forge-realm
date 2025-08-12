@@ -17,12 +17,13 @@
   --border-color: #374151;
 }
 
-/* Smooth transitions for all interactive elements */
-* {
+/* Smooth transitions for interactive elements only */
+a, button, .btn, .hx-btn {
   transition: color var(--transition-duration) var(--transition-easing),
               background-color var(--transition-duration) var(--transition-easing),
               border-color var(--transition-duration) var(--transition-easing),
-              box-shadow var(--transition-duration) var(--transition-easing);
+              box-shadow var(--transition-duration) var(--transition-easing),
+              transform var(--transition-duration) var(--transition-easing);
 }
 
 /* Optimize rendering performance */
@@ -46,10 +47,6 @@ body {
 }
 
 /* Enhanced link hover effects */
-a {
-  transition: all 0.15s ease;
-}
-
 a:hover {
   transform: translateY(-1px);
 }
@@ -68,27 +65,6 @@ a:hover {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
-/* Sidebar smooth transitions */
-.sidebar {
-  transition: transform var(--transition-duration) var(--transition-easing),
-              opacity var(--transition-duration) var(--transition-easing);
-}
-
-/* Search modal smooth animations */
-.search-modal {
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.search-modal.entering {
-  opacity: 0;
-  transform: scale(0.95) translateY(-10px);
-}
-
-.search-modal.entered {
-  opacity: 1;
-  transform: scale(1) translateY(0);
-}
-
 /* Theme toggle smooth animation */
 .theme-toggle {
   transition: transform 0.2s ease, background-color 0.2s ease;
@@ -98,23 +74,11 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* Loading states */
-.loading {
-  opacity: 0.6;
-  pointer-events: none;
-  transition: opacity 0.2s ease;
-}
-
 /* Improved focus states for accessibility */
 *:focus {
   outline: 2px solid hsl(var(--primary-hue) var(--primary-saturation) var(--primary-lightness));
   outline-offset: 2px;
   transition: outline 0.15s ease;
-}
-
-/* Smooth scrolling for internal links */
-html {
-  scroll-behavior: smooth;
 }
 
 /* Optimize image loading */
@@ -135,7 +99,7 @@ img {
   }
 }
 
-/* Hero section smooth animations */
+/* Hero section smooth animations - only on initial load */
 .hero-section {
   animation: fadeInUp 0.8s ease 0.2s both;
 }
@@ -151,7 +115,7 @@ img {
   }
 }
 
-/* Feature grid staggered animations */
+/* Feature grid staggered animations - only on initial load */
 .feature-grid .feature-card {
   animation: fadeInUp 0.6s ease both;
 }
@@ -164,30 +128,8 @@ img {
 .feature-grid .feature-card:nth-child(6) { animation-delay: 0.6s; }
 
 /* Button hover effects */
-.btn, .hx-btn, button {
-  transition: all 0.15s ease;
-  position: relative;
-  overflow: hidden;
-}
-
 .btn:hover, .hx-btn:hover, button:hover {
   transform: translateY(-1px);
-}
-
-/* Smooth dropdown animations */
-.dropdown-menu {
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  transform-origin: top;
-}
-
-.dropdown-menu.entering {
-  opacity: 0;
-  transform: scaleY(0.95) translateY(-5px);
-}
-
-.dropdown-menu.entered {
-  opacity: 1;
-  transform: scaleY(1) translateY(0);
 }
 
 /* Performance optimizations */
