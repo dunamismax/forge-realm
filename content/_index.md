@@ -23,7 +23,7 @@ layout: hextra-home
 </div>
 
 <div class="hx:mb-6">
-  <a class="fr-btn fr-btn--primary" href="/docs">Documentation</a>
+  <a class="fr-btn fr-btn--secondary" href="/docs">Documentation</a>
   </div>
 
 <div class="hx:mb-6">
@@ -31,11 +31,11 @@ layout: hextra-home
   </div>
 
 <div class="hx:mb-6">
-  <a class="fr-btn fr-btn--ghost" href="https://discord.gg/KQTY8DfY" target="_blank" rel="noreferrer">Join Discord</a>
+  <a class="fr-btn fr-btn--secondary" href="https://discord.gg/KQTY8DfY" target="_blank" rel="noreferrer">Join Discord</a>
   </div>
 
 <div class="hx:mb-6">
-  <a class="fr-btn fr-btn--ghost" href="https://github.com/dunamismax/forge-realm" target="_blank" rel="noreferrer">View on GitHub</a>
+  <a class="fr-btn fr-btn--secondary" href="https://github.com/dunamismax/forge-realm" target="_blank" rel="noreferrer">View on GitHub</a>
   </div>
 
 <div class="hx:mt-6"></div>
