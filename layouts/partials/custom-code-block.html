@@ -1,320 +1,132 @@
 <!-- Custom Code Block Component -->
 <script>
-document.addEventListener('DOMContentLoaded', function() {
+  document.addEventListener("DOMContentLoaded", function () {
     // Initialize custom code blocks
-    initCustomCodeBlocks();
-});
+    initCustomCodeBlocks()
+  })
 
-function initCustomCodeBlocks() {
+  function initCustomCodeBlocks() {
     // Find all existing code blocks and enhance them
-    const codeBlocks = document.querySelectorAll('pre code, .highlight code, div.code code');
-    
-    codeBlocks.forEach(function(codeEl) {
-        // Skip if already processed
-        if (codeEl.closest('.forge-code-block')) return;
-        
-        // Get the parent pre or div element
-        const parent = codeEl.closest('pre, .highlight, div.code');
-        if (!parent) return;
-        
-        // Create wrapper
-        const wrapper = document.createElement('div');
-        wrapper.className = 'forge-code-block';
-        
-        // Create header with copy button
-        const header = document.createElement('div');
-        header.className = 'forge-code-header';
-        
-        const copyBtn = document.createElement('button');
-        copyBtn.className = 'forge-copy-btn';
-        copyBtn.innerHTML = `
+    const codeBlocks = document.querySelectorAll(
+      "pre code, .highlight code, div.code code"
+    )
+
+    codeBlocks.forEach(function (codeEl) {
+      // Skip if already processed
+      if (codeEl.closest(".forge-code-block")) return
+
+      // Get the parent pre or div element
+      const parent = codeEl.closest("pre, .highlight, div.code")
+      if (!parent) return
+
+      // Create wrapper
+      const wrapper = document.createElement("div")
+      wrapper.className = "forge-code-block"
+
+      // Create header with copy button
+      const header = document.createElement("div")
+      header.className = "forge-code-header"
+
+      const copyBtn = document.createElement("button")
+      copyBtn.className = "forge-copy-btn"
+      copyBtn.innerHTML = `
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                 <path d="m5 15-4-4v9a2 2 0 0 0 2 2h9l-4-4"></path>
             </svg>
             <span>Copy</span>
-        `;
-        copyBtn.setAttribute('aria-label', 'Copy code to clipboard');
-        
-        // Add copy functionality
-        copyBtn.addEventListener('click', function() {
-            const code = codeEl.textContent || codeEl.innerText;
-            
-            if (navigator.clipboard && window.isSecureContext) {
-                // Use modern clipboard API
-                navigator.clipboard.writeText(code).then(function() {
-                    showCopyFeedback(copyBtn, true);
-                }).catch(function() {
-                    fallbackCopy(code, copyBtn);
-                });
-            } else {
-                fallbackCopy(code, copyBtn);
-            }
-        });
-        
-        header.appendChild(copyBtn);
-        
-        // Create content wrapper
-        const content = document.createElement('div');
-        content.className = 'forge-code-content';
-        
-        // Insert wrapper before the original element
-        parent.parentNode.insertBefore(wrapper, parent);
-        
-        // Move the original element into the content wrapper
-        content.appendChild(parent);
-        
-        // Assemble the structure
-        wrapper.appendChild(header);
-        wrapper.appendChild(content);
-        
-        // Ensure the code element has proper styling
-        parent.classList.add('forge-code-pre');
-    });
-}
+        `
+      copyBtn.setAttribute("aria-label", "Copy code to clipboard")
 
-function fallbackCopy(text, button) {
+      // Add copy functionality
+      copyBtn.addEventListener("click", function () {
+        const code = codeEl.textContent || codeEl.innerText
+
+        if (navigator.clipboard && window.isSecureContext) {
+          // Use modern clipboard API
+          navigator.clipboard
+            .writeText(code)
+            .then(function () {
+              showCopyFeedback(copyBtn, true)
+            })
+            .catch(function () {
+              fallbackCopy(code, copyBtn)
+            })
+        } else {
+          fallbackCopy(code, copyBtn)
+        }
+      })
+
+      header.appendChild(copyBtn)
+
+      // Create content wrapper
+      const content = document.createElement("div")
+      content.className = "forge-code-content"
+
+      // Insert wrapper before the original element
+      parent.parentNode.insertBefore(wrapper, parent)
+
+      // Move the original element into the content wrapper
+      content.appendChild(parent)
+
+      // Assemble the structure
+      wrapper.appendChild(header)
+      wrapper.appendChild(content)
+
+      // Ensure the code element has proper styling
+      parent.classList.add("forge-code-pre")
+    })
+  }
+
+  function fallbackCopy(text, button) {
     // Fallback for older browsers
-    const textArea = document.createElement('textarea');
-    textArea.value = text;
-    textArea.style.position = 'fixed';
-    textArea.style.left = '-9999px';
-    textArea.style.top = '-9999px';
-    document.body.appendChild(textArea);
-    textArea.focus();
-    textArea.select();
-    
-    try {
-        const successful = document.execCommand('copy');
-        showCopyFeedback(button, successful);
-    } catch (err) {
-        showCopyFeedback(button, false);
-    }
-    
-    document.body.removeChild(textArea);
-}
+    const textArea = document.createElement("textarea")
+    textArea.value = text
+    textArea.style.position = "fixed"
+    textArea.style.left = "-9999px"
+    textArea.style.top = "-9999px"
+    document.body.appendChild(textArea)
+    textArea.focus()
+    textArea.select()
 
-function showCopyFeedback(button, success) {
-    const originalHtml = button.innerHTML;
-    
+    try {
+      const successful = document.execCommand("copy")
+      showCopyFeedback(button, successful)
+    } catch (err) {
+      showCopyFeedback(button, false)
+    }
+
+    document.body.removeChild(textArea)
+  }
+
+  function showCopyFeedback(button, success) {
+    const originalHtml = button.innerHTML
+
     if (success) {
-        button.innerHTML = `
+      button.innerHTML = `
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <polyline points="20,6 9,17 4,12"></polyline>
             </svg>
             <span>Copied!</span>
-        `;
-        button.classList.add('copied');
+        `
+      button.classList.add("copied")
     } else {
-        button.innerHTML = `
+      button.innerHTML = `
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <circle cx="12" cy="12" r="10"></circle>
                 <line x1="15" y1="9" x2="9" y2="15"></line>
                 <line x1="9" y1="9" x2="15" y2="15"></line>
             </svg>
             <span>Failed</span>
-        `;
-        button.classList.add('failed');
+        `
+      button.classList.add("failed")
     }
-    
-    setTimeout(function() {
-        button.innerHTML = originalHtml;
-        button.classList.remove('copied', 'failed');
-    }, 2000);
-}
+
+    setTimeout(function () {
+      button.innerHTML = originalHtml
+      button.classList.remove("copied", "failed")
+    }, 2000)
+  }
 </script>
 
-<style>
-/* Custom Code Block Styles */
-.forge-code-block {
-    position: relative;
-    margin: 1.5rem 0;
-    border-radius: 8px;
-    border: 1px solid var(--forge-bg-tertiary);
-    background-color: #0d1117;
-    box-shadow: var(--forge-shadow);
-    overflow: hidden;
-    font-family: 'JetBrains Mono', 'Source Code Pro', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
-}
-
-.forge-code-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0.75rem 1rem;
-    background-color: #161b22;
-    border-bottom: 1px solid var(--forge-bg-tertiary);
-}
-
-.forge-copy-btn {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 0.75rem;
-    background-color: transparent;
-    border: 1px solid var(--forge-bg-tertiary);
-    border-radius: 4px;
-    color: var(--forge-text-secondary);
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    user-select: none;
-}
-
-.forge-copy-btn:hover {
-    background-color: var(--forge-bg-tertiary);
-    color: var(--forge-text-primary);
-    border-color: var(--forge-primary);
-}
-
-.forge-copy-btn:active {
-    transform: translateY(1px);
-}
-
-.forge-copy-btn.copied {
-    background-color: rgba(40, 167, 69, 0.15);
-    border-color: #28a745;
-    color: #28a745;
-}
-
-.forge-copy-btn.failed {
-    background-color: rgba(220, 53, 69, 0.15);
-    border-color: #dc3545;
-    color: #dc3545;
-}
-
-.forge-copy-btn svg {
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
-}
-
-.forge-code-content {
-    position: relative;
-}
-
-.forge-code-pre {
-    margin: 0 !important;
-    background-color: #0d1117 !important;
-    border: none !important;
-    border-radius: 0 !important;
-    box-shadow: none !important;
-    font-family: 'JetBrains Mono', 'Source Code Pro', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace !important;
-}
-
-.forge-code-pre code {
-    display: block;
-    padding: 1.25rem 1rem;
-    background: transparent !important;
-    border: none !important;
-    font-family: inherit !important;
-    font-size: 14px !important;
-    line-height: 1.5 !important;
-    color: #e6edf3 !important;
-    overflow-x: auto;
-    white-space: pre;
-}
-
-/* Enhanced syntax highlighting for dark theme */
-.forge-code-block .highlight,
-.forge-code-block .hljs {
-    background: transparent !important;
-}
-
-/* Dark theme syntax colors */
-.forge-code-block .hljs-comment,
-.forge-code-block .hljs-quote {
-    color: #8b949e;
-    font-style: italic;
-}
-
-.forge-code-block .hljs-keyword,
-.forge-code-block .hljs-selector-tag,
-.forge-code-block .hljs-literal,
-.forge-code-block .hljs-doctag,
-.forge-code-block .hljs-title,
-.forge-code-block .hljs-section,
-.forge-code-block .hljs-type,
-.forge-code-block .hljs-selector-id {
-    color: #c77dff;
-    font-weight: 600;
-}
-
-.forge-code-block .hljs-string,
-.forge-code-block .hljs-template-tag,
-.forge-code-block .hljs-template-variable,
-.forge-code-block .hljs-addition {
-    color: #a5d6ff;
-}
-
-.forge-code-block .hljs-number,
-.forge-code-block .hljs-built_in,
-.forge-code-block .hljs-builtin-name,
-.forge-code-block .hljs-variable,
-.forge-code-block .hljs-template-variable,
-.forge-code-block .hljs-type {
-    color: #79c0ff;
-}
-
-.forge-code-block .hljs-function,
-.forge-code-block .hljs-title,
-.forge-code-block .hljs-params {
-    color: #ffd700;
-}
-
-.forge-code-block .hljs-attr,
-.forge-code-block .hljs-attribute {
-    color: #79c0ff;
-}
-
-.forge-code-block .hljs-deletion {
-    background-color: #8b0000;
-    color: #ffdcd7;
-}
-
-.forge-code-block .hljs-addition {
-    background-color: #2d5016;
-    color: #aff5b4;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-    .forge-code-header {
-        padding: 0.5rem 0.75rem;
-    }
-    
-    .forge-copy-btn {
-        padding: 0.4rem 0.6rem;
-        font-size: 11px;
-    }
-    
-    .forge-copy-btn span {
-        display: none;
-    }
-    
-    .forge-code-pre code {
-        padding: 1rem 0.75rem;
-        font-size: 13px;
-    }
-}
-
-/* Ensure proper scrolling on mobile */
-.forge-code-pre code::-webkit-scrollbar {
-    height: 8px;
-}
-
-.forge-code-pre code::-webkit-scrollbar-track {
-    background: #21262d;
-}
-
-.forge-code-pre code::-webkit-scrollbar-thumb {
-    background: var(--forge-bg-tertiary);
-    border-radius: 4px;
-}
-
-.forge-code-pre code::-webkit-scrollbar-thumb:hover {
-    background: var(--forge-primary);
-}
-</style>
+<!-- styles moved to SCSS: assets/scss/_styles_project.scss -->

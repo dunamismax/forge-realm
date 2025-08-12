@@ -7,15 +7,12 @@
   "scripts": {
     "dev": "hugo server --buildDrafts --buildFuture --bind 0.0.0.0 --navigateToChanged",
     "dev:fast": "hugo server --buildDrafts --buildFuture --bind 0.0.0.0 --navigateToChanged --disableFastRender=false",
-    "build": "hugo mod tidy && hugo --minify --environment production",
-    "build:preview": "hugo mod tidy && hugo --buildDrafts --buildFuture --environment staging",
+    "build": "hugo --minify --environment production",
+    "build:preview": "hugo --buildDrafts --buildFuture --environment preview",
     "clean": "rm -rf public resources tmp",
-    "serve": "npm run build && hugo server --environment production --disableFastRender",
-    "cf-pages": "hugo mod tidy && hugo --minify --environment production",
-    "validate": "hugo config && hugo --renderStaticToDisk=false --quiet",
-    "format": "npx prettier --write \"**/*.{md,json,yaml,yml}\" --ignore-path .gitignore",
-    "lint": "npx markdownlint \"content/**/*.md\"",
-    "precommit": "npm run format && npm run lint && npm run validate && npm run build",
+    "validate": "hugo config && hugo --quiet --panicOnWarning",
+    "format": "npx prettier --write \"**/*.{md,json,yaml,yml,css,scss,html}\" --ignore-path .gitignore",
+    "lint": "npx markdownlint --fix \"content/**/*.md\"",
     "test": "npm run validate && npm run build"
   },
   "repository": {

@@ -3,6 +3,39 @@
 // Inspired by old school Magic: The Gathering - dark, mystical, edgy
 //
 
+// -----------------------------------------
+// Mixins and helpers (for DRY styles)
+// -----------------------------------------
+@mixin forge-button($bg) {
+  background-color: $bg !important;
+  border: none !important;
+  box-shadow: var(--forge-shadow) !important;
+  color: white !important;
+  font-weight: 500 !important;
+  transition: all 0.3s ease !important;
+  text-decoration: none !important;
+  border-radius: 6px !important;
+
+  &:hover,
+  &:active,
+  &:focus {
+    transform: translateY(-2px) !important;
+    box-shadow: var(--forge-shadow-hover) !important;
+    background-color: $bg !important;
+    opacity: 0.9 !important;
+    color: white !important;
+    text-decoration: none !important;
+    border: none !important;
+  }
+}
+
+@mixin forge-surface($bg, $border: var(--forge-bg-tertiary)) {
+  background-color: $bg !important;
+  border: 1px solid $border !important;
+  border-radius: 8px;
+  box-shadow: var(--forge-shadow);
+}
+
 // Dark Magic CSS Properties - Much Darker Theme
 :root {
   --forge-primary: #2d1b4e;
@@ -23,16 +56,30 @@
   --forge-shadow: 0 4px 16px rgba(45, 27, 78, 0.15);
   --forge-shadow-hover: 0 8px 32px rgba(45, 27, 78, 0.25);
   --forge-glow: 0 0 20px rgba(45, 27, 78, 0.3);
+
+  /* Design tokens */
+  --forge-radius-sm: 6px;
+  --forge-radius-md: 10px;
+  --forge-radius-lg: 14px;
+  --forge-accent-start: #8b7ab8;
+  --forge-accent-end: #50fa7b;
 }
 
 // Base typography improvements
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.6;
   background-color: var(--forge-bg-primary) !important;
   color: var(--forge-text-primary) !important;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 // Ensure consistent backgrounds across all containers
@@ -42,8 +89,12 @@ body {
 }
 
 // Code typography - Enhanced with proper fallbacks
-code, pre, .highlight {
-  font-family: 'JetBrains Mono', 'Source Code Pro', 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace !important;
+code,
+pre,
+.highlight {
+  font-family:
+    "JetBrains Mono", "Source Code Pro", "SF Mono", Monaco, "Cascadia Code",
+    "Roboto Mono", Consolas, "Courier New", monospace !important;
   font-weight: 400;
   font-feature-settings: "liga" 1;
   font-size: 14px;
@@ -51,11 +102,10 @@ code, pre, .highlight {
 }
 
 /* ===========================
-   Homepage: remove all space above hero
+   Homepage: full-bleed hero
    =========================== */
 body.home,
 body.td-dark-mode.home {
-
   /* Don’t offset for the fixed navbar on the homepage */
   .td-main,
   .td-main > main {
@@ -88,19 +138,17 @@ body.td-dark-mode.home {
   }
 
   /* Prevent top-margin collapse from the first element in the hero */
-  .td-cover :is(h1,h2,h3,p,div,section):first-child,
-  .blocks-cover :is(h1,h2,h3,p,div,section):first-child {
+  .td-cover :is(h1, h2, h3, p, div, section):first-child,
+  .blocks-cover :is(h1, h2, h3, p, div, section):first-child {
     margin-top: 0 !important;
   }
 
-  /* If the cover is set to “full height”, reset it to content height */
-  .td-cover[class*="height-"],
-  .blocks-cover[class*="height-"] {
-    height: auto !important;
-    min-height: 0 !important;
+  /* Full height hero */
+  .td-cover,
+  .blocks-cover {
+    min-height: 100vh !important;
   }
 }
-
 
 // Other pages - normal padding
 .td-main {
@@ -121,52 +169,52 @@ body.td-dark-mode.home {
 }
 
 // Enhanced buttons with dark magic theme - Unified styling for ALL buttons
-.btn-primary,
-.btn.btn-primary {
-  background-color: var(--forge-primary) !important;
-  border: none !important;
-  box-shadow: var(--forge-shadow) !important;
-  color: white !important;
-  font-weight: 500 !important;
-  transition: all 0.3s ease !important;
-  text-decoration: none !important;
-  border-radius: 6px !important;
-
-  &:hover,
-  &:active,
-  &:focus {
-    transform: translateY(-2px) !important;
-    box-shadow: var(--forge-shadow-hover) !important;
-    background-color: var(--forge-primary) !important;
-    opacity: 0.9 !important;
-    color: white !important;
-    text-decoration: none !important;
-    border: none !important;
-  }
+.btn,
+.btn:focus {
+  outline: none !important;
 }
 
+// Primary: gradient border + filled core + soft glow
+.btn-primary,
+.btn.btn-primary {
+  position: relative;
+  border: 2px solid transparent !important;
+  background:
+    linear-gradient(var(--forge-primary), var(--forge-primary)) padding-box,
+    linear-gradient(135deg, var(--forge-accent-start), var(--forge-accent-end))
+      border-box !important;
+  color: #fff !important;
+  box-shadow: 0 6px 20px rgba(80, 250, 123, 0.08);
+  border-radius: var(--forge-radius-sm) !important;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+.btn-primary:hover,
+.btn-primary:active {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(80, 250, 123, 0.15);
+  filter: brightness(1.05);
+}
+
+// Secondary: subtle gradient fill
 .btn-secondary,
 .btn.btn-secondary {
-  background-color: var(--forge-secondary) !important;
-  border: none !important;
-  box-shadow: var(--forge-shadow) !important;
-  color: white !important;
-  font-weight: 500 !important;
-  transition: all 0.3s ease !important;
-  text-decoration: none !important;
-  border-radius: 6px !important;
-
-  &:hover,
-  &:active,
-  &:focus {
-    transform: translateY(-2px) !important;
-    box-shadow: var(--forge-shadow-hover) !important;
-    background-color: var(--forge-secondary) !important;
-    opacity: 0.9 !important;
-    color: white !important;
-    text-decoration: none !important;
-    border: none !important;
-  }
+  background: linear-gradient(135deg, #171226, #2d1b4e) !important;
+  border: 1px solid rgba(199, 125, 255, 0.2) !important;
+  color: #fff !important;
+  border-radius: var(--forge-radius-sm) !important;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+.btn-secondary:hover,
+.btn-secondary:active {
+  transform: translateY(-2px);
+  box-shadow: var(--forge-shadow-hover);
+  filter: brightness(1.04);
 }
 
 // Fix the problematic outline buttons (like GitHub button)
@@ -179,7 +227,7 @@ body.td-dark-mode.home {
   font-weight: 500 !important;
   transition: all 0.3s ease !important;
   text-decoration: none !important;
-  border-radius: 6px !important;
+  border-radius: var(--forge-radius-sm) !important;
 
   &:hover,
   &:active,
@@ -191,6 +239,17 @@ body.td-dark-mode.home {
     color: white !important;
     text-decoration: none !important;
   }
+}
+
+// Focus-visible ring for accessibility
+*:focus-visible,
+.btn:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 3px rgba(80, 250, 123, 0.35) !important;
+  border-color: transparent !important;
 }
 
 // Ensure ALL buttons follow the same theme
@@ -218,7 +277,7 @@ body.td-dark-mode.home {
   }
 }
 
-// Comprehensive Dark Theme - Override ALL bright sections
+// Comprehensive Dark Theme - Override ALL bright sections (scoped)
 .td-dark-mode {
   background-color: var(--forge-bg-primary) !important;
 
@@ -264,8 +323,10 @@ body.td-dark-mode.home {
     transition: all 0.3s ease;
 
     &:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--forge-shadow-hover);
+      transform: translateY(-2px) rotateX(0.5deg) rotateY(0.5deg);
+      box-shadow:
+        var(--forge-shadow-hover),
+        0 0 0 1px rgba(139, 122, 184, 0.15);
     }
   }
 
@@ -292,7 +353,8 @@ body.td-dark-mode.home {
   }
 
   // Code blocks with dark magic theme
-  pre, code {
+  pre,
+  code {
     background-color: #161b22 !important;
     color: var(--forge-text-primary) !important;
     border: 1px solid var(--forge-bg-tertiary);
@@ -367,6 +429,56 @@ body.td-dark-mode.home {
   }
 }
 
+// Global section/background fixes (unscoped to ensure dark theme)
+.bg-white,
+.bg-light {
+  background-color: var(--forge-bg-secondary) !important;
+}
+
+.blocks-section {
+  background-color: var(--forge-bg-secondary) !important;
+
+  &[class*="color-primary"],
+  &[class*="color-secondary"],
+  &[class*="color-light"],
+  &[class*="color-white"] {
+    background-color: var(--forge-bg-tertiary) !important;
+  }
+}
+
+.pageinfo {
+  background-color: var(--forge-bg-tertiary) !important;
+  border-left: 4px solid var(--forge-primary) !important;
+  color: var(--forge-text-primary) !important;
+}
+
+.alert {
+  border: none !important;
+  border-radius: 8px !important;
+  box-shadow: var(--forge-shadow);
+  margin: 1.5rem 0;
+
+  &.alert-info {
+    background-color: rgba(38, 70, 83, 0.15) !important;
+    border-left: 4px solid var(--forge-info) !important;
+  }
+
+  &.alert-success {
+    background-color: rgba(45, 80, 22, 0.15) !important;
+    border-left: 4px solid var(--forge-success) !important;
+  }
+
+  &.alert-warning {
+    background-color: rgba(231, 111, 81, 0.15) !important;
+    border-left: 4px solid var(--forge-warning) !important;
+  }
+
+  &.alert-danger {
+    background-color: rgba(139, 0, 0, 0.15) !important;
+    border-left: 4px solid var(--forge-danger) !important;
+  }
+}
+
 // Feature blocks with dark magic enhancement
 .blocks-feature {
   background-color: var(--forge-bg-secondary) !important;
@@ -388,72 +500,127 @@ body.td-dark-mode.home {
       color: var(--forge-text-primary) !important;
     }
 
-    .fas, .fab {
+    .fas,
+    .fab {
       color: var(--forge-primary);
       font-size: 2.5rem;
       margin-bottom: 1rem;
       text-shadow: 0 0 10px rgba(91, 33, 182, 0.4);
     }
 
-    h3, h4, h5, p {
+    h3,
+    h4,
+    h5,
+    p {
       color: var(--forge-text-primary) !important;
     }
   }
 }
 
-// Ensure all section backgrounds are dark
-.td-dark-mode {
-  .blocks-section {
-    background-color: var(--forge-bg-secondary) !important;
+// Enhanced hero section: rely on Docsy cover image
+.td-cover,
+.blocks-cover {
+  background-color: var(--forge-bg-primary) !important;
+  background-size: cover !important;
+  background-position: top center !important;
+  background-repeat: no-repeat !important;
+  position: relative;
+}
 
-    // Override Docsy's color classes
-    &.color-primary {
-      background-color: var(--forge-bg-tertiary) !important;
-    }
+// Vignette + gradient overlay for hero legibility
+.td-cover::before,
+.blocks-cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      120% 90% at 50% 10%,
+      rgba(13, 17, 23, 0) 0%,
+      rgba(13, 17, 23, 0.35) 55%,
+      rgba(13, 17, 23, 0.75) 100%
+    ),
+    linear-gradient(to bottom, rgba(13, 17, 23, 0.2), rgba(13, 17, 23, 0.6));
+  pointer-events: none;
+  z-index: 0;
+}
 
-    &.color-light {
-      background-color: var(--forge-bg-light) !important;
-    }
+.td-cover > .container,
+.blocks-cover > .container {
+  position: relative;
+  z-index: 1;
+}
 
-    &.color-secondary {
-      background-color: var(--forge-bg-tertiary) !important;
-    }
+// CSS-only parallax helper for covers (opt-in)
+.td-cover.parallax,
+.blocks-cover.parallax {
+  will-change: background-position;
+}
 
-    &.color-white {
-      background-color: var(--forge-bg-secondary) !important;
-    }
-
-    &.color-dark {
-      background-color: var(--forge-bg-primary) !important;
-    }
+@media (min-width: 769px) {
+  .td-cover.parallax,
+  .blocks-cover.parallax {
+    background-attachment: fixed; // smooth parallax effect on desktop
+    transform: translateZ(0); // promote to own layer for smoother scrolling
   }
 }
 
-// Enhanced hero section with dark magic - no gradients
-.blocks-cover {
-  background-color: var(--forge-bg-primary);
-  position: relative;
-  overflow: hidden;
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('/images/forge-realm-main-wide.webp') center/cover;
-    opacity: 0.05;
-    z-index: 0;
-  }
-
-  .container {
-    position: relative;
-    z-index: 2;
+@media (max-width: 768.98px) {
+  /* Mobile Safari compatibility: disable fixed-attachment parallax */
+  .td-cover.parallax,
+  .blocks-cover.parallax {
+    background-attachment: scroll;
   }
 }
 
 // Search enhancements
+// Link underlines with animated accent for non-button links
+a:not(.btn) {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition:
+    color 0.2s ease,
+    background-size 0.2s ease;
+}
+a:not(.btn):hover {
+  color: #c3b8ec;
+  background-size: 100% 2px;
+}
+
+// Navbar glassy treatment
+.td-navbar,
+.navbar {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background: rgba(13, 17, 23, 0.6) !important;
+  border-bottom: 1px solid rgba(48, 54, 61, 0.6) !important;
+}
+.navbar .nav-link {
+  color: var(--forge-text-secondary) !important;
+  transition: color 0.2s ease;
+}
+.navbar .nav-link:hover {
+  color: #c3b8ec !important;
+}
+.navbar .navbar-brand {
+  color: #e6edf3 !important;
+  font-weight: 600;
+}
+
+// Gradient text utility for hero headings
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    var(--forge-accent-start),
+    var(--forge-accent-end)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
 .td-search-input {
   background-color: var(--forge-bg-secondary) !important;
   border: 1px solid var(--forge-bg-tertiary) !important;
@@ -483,9 +650,99 @@ body.td-dark-mode.home {
 }
 
 // Typography scale improvements with minimum 15px
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 600;
   line-height: 1.3;
+}
+
+/* ===========================
+   Delightful animations
+   =========================== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes forge-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes forge-zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(12px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    animation: forge-fade-up 0.6s ease both;
+  }
+}
+
+.hover-lift {
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  &:hover,
+  &:focus-within {
+    transform: translateY(-4px);
+    box-shadow: var(--forge-shadow-hover);
+  }
+}
+
+/* Apply tasteful animations site-wide */
+.card {
+  @extend .hover-lift;
+  animation: forge-zoom-in 0.4s ease both;
+}
+.btn {
+  @extend .hover-lift;
+}
+.pageinfo,
+.alert {
+  animation: forge-fade-up 0.5s ease both;
+}
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
 
 h1 {
@@ -506,12 +763,21 @@ h3 {
 }
 
 // Ensure minimum 15px for all text elements
-p, li, span, div, td, th {
+p,
+li,
+span,
+div,
+td,
+th {
   font-size: 15px;
 }
 
 // Exceptions for intentionally smaller text (12px minimum)
-.small, small, .text-muted, .sidebar-secondary, .breadcrumb {
+.small,
+small,
+.text-muted,
+.sidebar-secondary,
+.breadcrumb {
   font-size: 12px;
 }
 
@@ -541,7 +807,16 @@ a {
   }
 
   // Force all text to be light colored
-  h1, h2, h3, h4, h5, h6, p, span, div, li {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  span,
+  div,
+  li {
     color: var(--forge-text-primary) !important;
   }
 
@@ -651,16 +926,725 @@ body.td-dark-mode {
 
 // Enhanced syntax highlighting - Dark Magic theme
 .highlight {
-  .c, .c1, .cm, .cp, .cs { color: #8b949e; } // Comments
-  .k, .kd, .kn, .kr, .kt { color: #c77dff; } // Keywords
-  .s, .s1, .s2, .se, .sh, .si, .sx { color: #a5d6ff; } // Strings
-  .n, .na, .nb, .nc, .no, .nd, .ni, .ne, .nf, .nl, .nn, .nt, .nv { color: #e6edf3; } // Names
-  .m, .mf, .mh, .mi, .mo { color: #79c0ff; } // Numbers
-  .o, .ow { color: #ff7b72; } // Operators
-  .p { color: #e6edf3; } // Punctuation
-  .gd { background-color: #8b0000; color: #ffdcd7; } // Diff deleted
-  .gi { background-color: #2d5016; color: #aff5b4; } // Diff inserted
-  .gh { color: #c77dff; font-weight: bold; } // Generic heading
-  .gu { color: #c77dff; } // Generic subheading
-  .err { color: #ff7b72; background-color: #8b0000; } // Errors
+  .c,
+  .c1,
+  .cm,
+  .cp,
+  .cs {
+    color: #8b949e;
+  } // Comments
+  .k,
+  .kd,
+  .kn,
+  .kr,
+  .kt {
+    color: #c77dff;
+  } // Keywords
+  .s,
+  .s1,
+  .s2,
+  .se,
+  .sh,
+  .si,
+  .sx {
+    color: #a5d6ff;
+  } // Strings
+  .n,
+  .na,
+  .nb,
+  .nc,
+  .no,
+  .nd,
+  .ni,
+  .ne,
+  .nf,
+  .nl,
+  .nn,
+  .nt,
+  .nv {
+    color: #e6edf3;
+  } // Names
+  .m,
+  .mf,
+  .mh,
+  .mi,
+  .mo {
+    color: #79c0ff;
+  } // Numbers
+  .o,
+  .ow {
+    color: #ff7b72;
+  } // Operators
+  .p {
+    color: #e6edf3;
+  } // Punctuation
+  .gd {
+    background-color: #8b0000;
+    color: #ffdcd7;
+  } // Diff deleted
+  .gi {
+    background-color: #2d5016;
+    color: #aff5b4;
+  } // Diff inserted
+  .gh {
+    color: #c77dff;
+    font-weight: bold;
+  } // Generic heading
+  .gu {
+    color: #c77dff;
+  } // Generic subheading
+  .err {
+    color: #ff7b72;
+    background-color: #8b0000;
+  } // Errors
+}
+
+// -----------------------------------------
+// Centralized styles for custom shortcodes/components
+// -----------------------------------------
+
+// Custom Code Block (moved from inline <style>)
+.forge-code-block {
+  @include forge-surface(var(--forge-bg-primary));
+  font-family:
+    "JetBrains Mono", "Source Code Pro", "SF Mono", Monaco, "Cascadia Code",
+    "Roboto Mono", Consolas, "Courier New", monospace;
+  overflow: hidden;
+}
+
+.forge-code-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  background-color: #161b22;
+  border-bottom: 1px solid var(--forge-bg-tertiary);
+}
+
+.forge-copy-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: transparent;
+  border: 1px solid var(--forge-bg-tertiary);
+  border-radius: 4px;
+  color: var(--forge-text-secondary);
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  user-select: none;
+  &:hover {
+    background-color: var(--forge-bg-tertiary);
+    color: var(--forge-text-primary);
+    border-color: var(--forge-primary);
+  }
+  &:active {
+    transform: translateY(1px);
+  }
+  &.copied {
+    background-color: rgba(40, 167, 69, 0.15);
+    border-color: #28a745;
+    color: #28a745;
+  }
+  &.failed {
+    background-color: rgba(220, 53, 69, 0.15);
+    border-color: #dc3545;
+    color: #dc3545;
+  }
+  svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+  }
+}
+
+.forge-code-content {
+  position: relative;
+}
+.forge-code-pre {
+  margin: 0 !important;
+  background-color: #0d1117 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  font-family:
+    "JetBrains Mono", "Source Code Pro", "SF Mono", Monaco, "Cascadia Code",
+    "Roboto Mono", Consolas, "Courier New", monospace !important;
+}
+.forge-code-pre code {
+  display: block;
+  padding: 1.25rem 1rem;
+  background: transparent !important;
+  border: none !important;
+  font-family: inherit !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  color: #e6edf3 !important;
+  overflow-x: auto;
+  white-space: pre;
+}
+.forge-code-block .highlight,
+.forge-code-block .hljs {
+  background: transparent !important;
+}
+.forge-code-block .hljs-comment,
+.forge-code-block .hljs-quote {
+  color: #8b949e;
+  font-style: italic;
+}
+.forge-code-block .hljs-keyword,
+.forge-code-block .hljs-selector-tag,
+.forge-code-block .hljs-literal,
+.forge-code-block .hljs-doctag,
+.forge-code-block .hljs-title,
+.forge-code-block .hljs-section,
+.forge-code-block .hljs-type,
+.forge-code-block .hljs-selector-id {
+  color: #c77dff;
+  font-weight: 600;
+}
+.forge-code-block .hljs-string,
+.forge-code-block .hljs-template-tag,
+.forge-code-block .hljs-template-variable,
+.forge-code-block .hljs-addition {
+  color: #a5d6ff;
+}
+.forge-code-block .hljs-number,
+.forge-code-block .hljs-built_in,
+.forge-code-block .hljs-builtin-name,
+.forge-code-block .hljs-variable,
+.forge-code-block .hljs-template-variable,
+.forge-code-block .hljs-type {
+  color: #79c0ff;
+}
+.forge-code-block .hljs-function,
+.forge-code-block .hljs-title,
+.forge-code-block .hljs-params {
+  color: #ffd700;
+}
+.forge-code-block .hljs-attr,
+.forge-code-block .hljs-attribute {
+  color: #79c0ff;
+}
+.forge-code-block .hljs-deletion {
+  background-color: #8b0000;
+  color: #ffdcd7;
+}
+.forge-code-block .hljs-addition {
+  background-color: #2d5016;
+  color: #aff5b4;
+}
+
+@media (max-width: 768px) {
+  .forge-code-header {
+    padding: 0.5rem 0.75rem;
+  }
+  .forge-copy-btn {
+    padding: 0.4rem 0.6rem;
+    font-size: 11px;
+  }
+  .forge-copy-btn span {
+    display: none;
+  }
+  .forge-code-pre code {
+    padding: 1rem 0.75rem;
+    font-size: 13px;
+  }
+}
+
+.forge-code-pre code::-webkit-scrollbar {
+  height: 8px;
+}
+.forge-code-pre code::-webkit-scrollbar-track {
+  background: #21262d;
+}
+.forge-code-pre code::-webkit-scrollbar-thumb {
+  background: var(--forge-bg-tertiary);
+  border-radius: 4px;
+}
+.forge-code-pre code::-webkit-scrollbar-thumb:hover {
+  background: var(--forge-primary);
+}
+
+// Card Preview shortcode
+.card-preview-container {
+  display: inline-block;
+  margin: 1rem;
+  max-width: 250px;
+}
+.card-preview {
+  @include forge-surface(var(--forge-bg-secondary));
+  border-width: 2px !important;
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.card-preview:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--forge-shadow-hover);
+}
+.card-preview .card-header {
+  padding: 8px 12px;
+  background: linear-gradient(90deg, #1a0f2e, #2d1b4e);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-preview .card-name {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 0;
+  flex-grow: 1;
+}
+.card-preview .card-cost {
+  background: var(--forge-warning);
+  color: #000;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-left: 8px;
+}
+.card-preview .card-image {
+  height: 120px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-preview .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-preview .card-image-placeholder {
+  height: 120px;
+  background: var(--forge-bg-tertiary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--forge-text-secondary);
+  font-size: 0.8rem;
+}
+.card-preview .card-image-placeholder i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.card-preview .card-info {
+  padding: 12px;
+}
+.card-preview .card-type {
+  font-size: 0.8rem;
+  color: var(--forge-text-secondary);
+  font-style: italic;
+  margin: 0 0 8px 0;
+}
+.card-preview .card-description {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.card-preview .card-description p {
+  margin: 0;
+}
+.card-preview .card-stats {
+  display: flex;
+  justify-content: flex-end;
+}
+.card-preview .power-toughness {
+  background: var(--forge-success);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+// Community Highlight shortcode
+.community-highlight {
+  @include forge-surface(var(--forge-bg-secondary));
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.community-highlight:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--forge-shadow-hover);
+}
+.highlight-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.highlight-avatar {
+  flex-shrink: 0;
+}
+.highlight-avatar img,
+.avatar-placeholder {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.avatar-placeholder {
+  background: linear-gradient(135deg, #1a0f2e, #2d1b4e);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.highlight-info {
+  flex-grow: 1;
+}
+.highlight-name {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  color: var(--forge-text-primary);
+  font-weight: 600;
+}
+.highlight-role {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--forge-primary);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+.highlight-discord {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--forge-text-secondary);
+  font-family: monospace;
+}
+.highlight-achievement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0.5rem;
+  background: linear-gradient(135deg, #b8572a, #ff8f4f);
+  border-radius: 8px;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 500;
+  min-width: 80px;
+}
+.highlight-achievement i {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+.highlight-quote {
+  position: relative;
+  padding: 1rem 1.5rem;
+  background: rgba(45, 27, 78, 0.15);
+  border-left: 4px solid var(--forge-primary);
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  line-height: 1.6;
+}
+.quote-icon {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--forge-primary);
+  opacity: 0.7;
+}
+.highlight-quote p {
+  margin: 0;
+  padding-left: 1rem;
+  color: var(--forge-text-primary);
+}
+
+// Deck List shortcode
+.deck-list-container {
+  @include forge-surface(var(--forge-bg-secondary));
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+.deck-header {
+  padding: 1rem;
+  background: linear-gradient(135deg, #161b22, #21262d);
+  border-bottom: 1px solid var(--forge-bg-tertiary);
+  border-radius: 8px 8px 0 0;
+}
+.deck-title {
+  margin: 0 0 0.5rem 0;
+  color: var(--forge-text-primary);
+  font-size: 1.25rem;
+}
+.deck-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.deck-format {
+  background: var(--forge-primary);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.deck-author {
+  color: var(--forge-text-secondary);
+  font-style: italic;
+}
+.deck-colors {
+  display: flex;
+  gap: 4px;
+}
+.color-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+}
+.color-fire {
+  background: #dc3545;
+  color: white;
+}
+.color-water {
+  background: #007bff;
+  color: white;
+}
+.color-earth {
+  background: #28a745;
+  color: white;
+}
+.color-air {
+  background: #17a2b8;
+  color: white;
+}
+.color-spirit {
+  background: #ffc107;
+  color: #000;
+}
+.color-colorless {
+  background: #6c757d;
+  color: white;
+}
+.deck-strategy {
+  padding: 1rem;
+  background: #161b22;
+  border-bottom: 1px solid var(--forge-bg-tertiary);
+}
+.deck-strategy h4 {
+  margin: 0 0 0.5rem 0;
+  color: var(--forge-text-primary);
+  font-size: 1rem;
+}
+.deck-strategy p {
+  margin: 0;
+  color: var(--forge-text-secondary);
+  line-height: 1.5;
+}
+.deck-content {
+  padding: 1rem;
+}
+.deck-content h4 {
+  color: var(--forge-text-primary);
+  font-size: 1rem;
+  margin: 1rem 0 0.5rem 0;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid var(--forge-bg-tertiary);
+}
+.deck-content h4:first-child {
+  margin-top: 0;
+}
+.deck-content ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+.deck-content li {
+  margin: 0.25rem 0;
+  font-size: 0.95rem;
+}
+.deck-actions {
+  padding: 1rem;
+  background: #161b22;
+  border-top: 1px solid var(--forge-bg-tertiary);
+  border-radius: 0 0 8px 8px;
+  display: flex;
+  gap: 0.5rem;
+}
+.deck-actions .btn {
+  font-size: 0.85rem;
+}
+
+// Subtle icon nudge on hover for CTA buttons
+.btn i {
+  transition: transform 0.15s ease;
+}
+.btn:hover i {
+  transform: translateX(2px);
+}
+
+@media (max-width: 768px) {
+  .community-highlight {
+    padding: 1rem;
+  }
+  .highlight-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  .highlight-achievement {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+    min-width: auto;
+  }
+  .highlight-achievement i {
+    margin-bottom: 0;
+    font-size: 1rem;
+  }
+  .highlight-quote {
+    padding: 0.75rem 1rem;
+  }
+  .highlight-quote p {
+    padding-left: 0.75rem;
+  }
+
+  .deck-meta {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  .deck-actions {
+    flex-direction: column;
+  }
+}
+
+// Progress Timeline shortcode
+.progress-timeline {
+  margin: 1.5rem 0;
+  position: relative;
+}
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+.timeline-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 30px;
+  width: 2px;
+  height: calc(100% + 1rem);
+  background-color: var(--forge-bg-tertiary);
+  z-index: 1;
+}
+.timeline-item.completed:not(:last-child)::after {
+  background-color: var(--forge-success);
+}
+.timeline-item.active:not(:last-child)::after {
+  background-color: var(--forge-warning);
+}
+.timeline-marker {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+.timeline-item.completed .timeline-marker {
+  background-color: var(--forge-success);
+  color: white;
+  border: 2px solid var(--forge-success);
+}
+.timeline-item.active .timeline-marker {
+  background-color: var(--forge-warning);
+  color: #000;
+  border: 2px solid var(--forge-warning);
+  animation: pulse 2s infinite;
+}
+.timeline-item.pending .timeline-marker {
+  background-color: #161b22;
+  color: var(--forge-text-secondary);
+  border: 2px solid var(--forge-bg-tertiary);
+}
+.timeline-content {
+  flex-grow: 1;
+  padding: 0.5rem 0;
+}
+.timeline-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+.timeline-item.completed .timeline-text {
+  color: var(--forge-text-primary);
+}
+.timeline-item.active .timeline-text {
+  color: var(--forge-text-primary);
+  font-weight: 500;
+}
+.timeline-item.pending .timeline-text {
+  color: var(--forge-text-secondary);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(184, 87, 42, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(184, 87, 42, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(184, 87, 42, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline-marker {
+    width: 24px;
+    height: 24px;
+    font-size: 0.7rem;
+    margin-right: 0.75rem;
+  }
+  .timeline-item:not(:last-child)::after {
+    left: 11px;
+    top: 24px;
+  }
+  .timeline-text {
+    font-size: 0.9rem;
+  }
 }

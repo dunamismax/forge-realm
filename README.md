@@ -119,6 +119,27 @@ to learn how to get involved in:
 - Developer tools and automation
 - Performance and accessibility
 
+## Development
+
+- Custom theme variables live in `assets/scss/_variables_project.scss`.
+- All custom styles (including shortcode UI) are centralized in
+  `assets/scss/_styles_project.scss`.
+- Inline `<style>` blocks were removed from templates in favor of SCSS for
+  maintainability and DRYness.
+
+### Design and Theming Quick Guide
+
+- Tokens: Use CSS variables `--forge-*` (colors, shadows, radii) and SCSS vars
+  in `_variables_project.scss`.
+- Buttons: Primary uses gradient border + soft glow; secondary is a subtle
+  gradient. Both respond to `:focus-visible` with an accessible ring.
+- Navbar/Hero: Glassy navbar with blur; hero gets an overlay vignette for
+  consistent legibility over cover images.
+- Links: Non-button links get animated underlines; icons in buttons nudge on
+  hover for micro‑interaction.
+- Motion: On‑scroll reveals and zoom‑in are disabled under
+  `prefers-reduced-motion`.
+
 ## License
 
 - **Game Content**: Creative Commons BY-SA 4.0 - Freely usable with attribution
@@ -132,3 +153,7 @@ See [LICENSE](LICENSE) for complete terms.
 **Ready to play? We'll be there soon!** Visit
 **[forge-realm.com](https://forge-realm.com)** and join our
 [Discord](https://discord.gg/KQTY8DfY) to join us on this journey!
+
+---
+
+<!-- Deployment handled by Cloudflare Pages build (hugo). No GitHub Actions. -->

@@ -3,25 +3,22 @@ title: "Forge Realm"
 linkTitle: "Forge Realm"
 ---
 
-{{< blocks/cover title="" image_anchor="top" height="full" color="dark" >}}
+{{< blocks/cover title="" image="/images/forge-realm-main-wide.webp" image_anchor="top" height="full" color="dark" class="parallax" >}}
 
-<div class="mx-auto">
-  <img src="/images/forge-realm-main-wide.webp" alt="Forge Realm TCG" class="img-fluid mb-4" style="max-width: 800px; width: 100%;">
-</div>
-<a class="btn btn-lg btn-primary me-3 mb-4" href="/docs/">
+<a class="btn btn-lg btn-primary me-3 mb-4 reveal-on-scroll" href="/docs/">
   Documentation <i class="fas fa-book ms-2"></i>
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="/docs/cards/">
+<a class="btn btn-lg btn-secondary me-3 mb-4 reveal-on-scroll" href="/docs/cards/">
   Browse Cards <i class="fas fa-clone ms-2"></i>
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://discord.gg/KQTY8DfY">
+<a class="btn btn-lg btn-secondary me-3 mb-4 reveal-on-scroll" href="https://discord.gg/KQTY8DfY">
   <i class="fab fa-discord me-2"></i>Join Discord
 </a>
-<a class="btn btn-lg btn-secondary me-3 mb-4" href="https://github.com/dunamismax/forge-realm">
+<a class="btn btn-lg btn-secondary me-3 mb-4 reveal-on-scroll" href="https://github.com/dunamismax/forge-realm">
   <i class="fab fa-github me-2"></i>View on GitHub
 </a>
-<p class="lead mt-5">Pure Magic: The Gathering as it was meant to be - focusing on Vintage and Modern's most beloved mechanics with modern enhancements like Ward, double-faced cards, and strategic token gameplay. Built with complete transparency, community governance, and unlimited print-and-play access for all players.</p>
-<div class="mx-auto">
+<p class="lead mt-5 reveal-on-scroll">Pure Magic: The Gathering as it was meant to be - focusing on Vintage and Modern's most beloved mechanics with modern enhancements like Ward, double-faced cards, and strategic token gameplay. Built with complete transparency, community governance, and unlimited print-and-play access for all players.</p>
+<div class="mx-auto reveal-on-scroll">
   <p class="lead"><strong>Core Set launching Q1 2026 (tentative)</strong> • Join our <a href="https://discord.gg/KQTY8DfY">Discord</a> - we need contributors for mechanics, artwork, and design!</p>
 </div>
 {{< /blocks/cover >}}

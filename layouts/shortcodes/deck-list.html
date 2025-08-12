@@ -1,9 +1,6 @@
-{{- $title := .Get "title" -}}
-{{- $format := .Get "format" -}}
-{{- $author := .Get "author" -}}
-{{- $colors := .Get "colors" -}}
-{{- $strategy := .Get "strategy" -}}
-{{- $content := .Inner -}}
+{{- $title := .Get "title" -}} {{- $format := .Get "format" -}} {{- $author :=
+.Get "author" -}} {{- $colors := .Get "colors" -}} {{- $strategy := .Get
+"strategy" -}} {{- $content := .Inner -}}
 
 <div class="deck-list-container">
   <div class="deck-header">
@@ -11,210 +8,75 @@
     <div class="deck-meta">
       {{ if $format }}
       <span class="deck-format">{{ $format }}</span>
-      {{ end }}
-      {{ if $author }}
+      {{ end }} {{ if $author }}
       <span class="deck-author">by {{ $author }}</span>
-      {{ end }}
-      {{ if $colors }}
+      {{ end }} {{ if $colors }}
       <div class="deck-colors">
         {{ range split $colors "," }}
-        <span class="color-indicator color-{{ . | lower | strings.TrimSpace }}">{{ . | strings.TrimSpace }}</span>
+        <span class="color-indicator color-{{ . | lower | strings.TrimSpace }}"
+          >{{ . | strings.TrimSpace }}</span
+        >
         {{ end }}
       </div>
       {{ end }}
     </div>
   </div>
-  
+
   {{ if $strategy }}
   <div class="deck-strategy">
     <h4>Strategy</h4>
     <p>{{ $strategy }}</p>
   </div>
   {{ end }}
-  
-  <div class="deck-content">
-    {{ $content | markdownify }}
-  </div>
-  
+
+  <div class="deck-content">{{ $content | markdownify }}</div>
+
   <div class="deck-actions">
     <button class="btn btn-outline-primary btn-sm" onclick="copyDeckList(this)">
       <i class="fa fa-copy"></i> Copy Deck List
     </button>
-    <button class="btn btn-outline-secondary btn-sm" onclick="exportDeckList(this)">
+    <button
+      class="btn btn-outline-secondary btn-sm"
+      onclick="exportDeckList(this)"
+    >
       <i class="fa fa-download"></i> Export
     </button>
   </div>
 </div>
 
-<style>
-.deck-list-container {
-  border: 1px solid #dee2e6;
-  border-radius: 8px;
-  margin: 1rem 0;
-  background: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.deck-header {
-  padding: 1rem;
-  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-  border-bottom: 1px solid #dee2e6;
-  border-radius: 8px 8px 0 0;
-}
-
-.deck-title {
-  margin: 0 0 0.5rem 0;
-  color: #495057;
-  font-size: 1.25rem;
-}
-
-.deck-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
-  font-size: 0.9rem;
-}
-
-.deck-format {
-  background: #007bff;
-  color: white;
-  padding: 2px 8px;
-  border-radius: 4px;
-  font-weight: 500;
-}
-
-.deck-author {
-  color: #6c757d;
-  font-style: italic;
-}
-
-.deck-colors {
-  display: flex;
-  gap: 4px;
-}
-
-.color-indicator {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10px;
-  font-weight: bold;
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
-}
-
-.color-fire { background: #dc3545; color: white; }
-.color-water { background: #007bff; color: white; }
-.color-earth { background: #28a745; color: white; }
-.color-air { background: #17a2b8; color: white; }
-.color-spirit { background: #ffc107; color: #000; }
-.color-colorless { background: #6c757d; color: white; }
-
-.deck-strategy {
-  padding: 1rem;
-  background: #f8f9fa;
-  border-bottom: 1px solid #dee2e6;
-}
-
-.deck-strategy h4 {
-  margin: 0 0 0.5rem 0;
-  color: #495057;
-  font-size: 1rem;
-}
-
-.deck-strategy p {
-  margin: 0;
-  color: #6c757d;
-  line-height: 1.5;
-}
-
-.deck-content {
-  padding: 1rem;
-}
-
-.deck-content h4 {
-  color: #495057;
-  font-size: 1rem;
-  margin: 1rem 0 0.5rem 0;
-  padding-bottom: 0.25rem;
-  border-bottom: 1px solid #dee2e6;
-}
-
-.deck-content h4:first-child {
-  margin-top: 0;
-}
-
-.deck-content ul {
-  margin: 0;
-  padding-left: 1.5rem;
-}
-
-.deck-content li {
-  margin: 0.25rem 0;
-  font-size: 0.95rem;
-}
-
-.deck-actions {
-  padding: 1rem;
-  background: #f8f9fa;
-  border-top: 1px solid #dee2e6;
-  border-radius: 0 0 8px 8px;
-  display: flex;
-  gap: 0.5rem;
-}
-
-.deck-actions .btn {
-  font-size: 0.85rem;
-}
-
-@media (max-width: 768px) {
-  .deck-meta {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-  
-  .deck-actions {
-    flex-direction: column;
-  }
-}
-</style>
+<!-- styles moved to SCSS: assets/scss/_styles_project.scss -->
 
 <script>
-function copyDeckList(button) {
-  const container = button.closest('.deck-list-container');
-  const content = container.querySelector('.deck-content');
-  const text = content.innerText;
-  
-  navigator.clipboard.writeText(text).then(() => {
-    const originalText = button.innerHTML;
-    button.innerHTML = '<i class="fa fa-check"></i> Copied!';
-    button.classList.add('btn-success');
-    button.classList.remove('btn-outline-primary');
-    
-    setTimeout(() => {
-      button.innerHTML = originalText;
-      button.classList.remove('btn-success');
-      button.classList.add('btn-outline-primary');
-    }, 2000);
-  });
-}
+  function copyDeckList(button) {
+    const container = button.closest(".deck-list-container")
+    const content = container.querySelector(".deck-content")
+    const text = content.innerText
 
-function exportDeckList(button) {
-  const container = button.closest('.deck-list-container');
-  const title = container.querySelector('.deck-title').innerText;
-  const content = container.querySelector('.deck-content').innerText;
-  
-  const blob = new Blob([content], { type: 'text/plain' });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement('a');
-  a.href = url;
-  a.download = `${title.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.txt`;
-  a.click();
-  URL.revokeObjectURL(url);
-}
+    navigator.clipboard.writeText(text).then(() => {
+      const originalText = button.innerHTML
+      button.innerHTML = '<i class="fa fa-check"></i> Copied!'
+      button.classList.add("btn-success")
+      button.classList.remove("btn-outline-primary")
+
+      setTimeout(() => {
+        button.innerHTML = originalText
+        button.classList.remove("btn-success")
+        button.classList.add("btn-outline-primary")
+      }, 2000)
+    })
+  }
+
+  function exportDeckList(button) {
+    const container = button.closest(".deck-list-container")
+    const title = container.querySelector(".deck-title").innerText
+    const content = container.querySelector(".deck-content").innerText
+
+    const blob = new Blob([content], { type: "text/plain" })
+    const url = URL.createObjectURL(blob)
+    const a = document.createElement("a")
+    a.href = url
+    a.download = `${title.replace(/[^a-z0-9]/gi, "_").toLowerCase()}.txt`
+    a.click()
+    URL.revokeObjectURL(url)
+  }
 </script>
