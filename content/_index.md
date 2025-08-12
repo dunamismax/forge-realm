@@ -10,8 +10,8 @@ layout: hextra-home
   {{< icon name="arrow-circle-right" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
 
-<div class="hx:mt-6 hx:mb-6">
-<img src="/images/forge-realm-main-wide.webp" alt="Forge Realm TCG" style="max-width: 800px;" class="hx:w-full hx:mx-auto hx:rounded-lg hx:shadow-lg" />
+<div class="hx:mt-6 hx:mb-6 hx:text-center">
+<img src="/images/forge-realm-main-wide.webp" alt="Forge Realm TCG" style="max-width: 600px;" class="hx:mx-auto hx:rounded-lg hx:shadow-lg" />
 </div>
 
 <div class="hx:mt-6 hx:mb-6">
