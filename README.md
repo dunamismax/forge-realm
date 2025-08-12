@@ -2,13 +2,9 @@
   <img src="static/images/forge-realm-main-wide.webp" alt="Forge Realm - Open Source Trading Card Game" width="600" />
 </p>
 
-# Forge Realm TCG - Open Source Magic: The Gathering
+# Forge Realm TCG - Classic Magic. Community Powered.
 
-**Pure MTG as God intended** - Forge Realm TCG is a fully open-source Magic: The
-Gathering experience centered around Vintage and Modern formats. Built on
-principles of transparent development, community governance, and unrestricted
-access, we're preserving the magic of classic MTG where strategy matters more
-than your wallet and the community shapes every decision.
+**The future of Magic's past** - Forge Realm preserves Magic's strategic depth through open-source development. Built on Legacy and Vintage foundations with community-driven evolution, we're democratizing access to the classic Magic experience where strategy matters more than your wallet.
 
 [![Play Now](https://img.shields.io/badge/Play_Now-forge--realm.com-50fa7b?style=for-the-badge&labelColor=0b0b0b)](https://forge-realm.com)
 [![Join Discord](https://img.shields.io/badge/Join_Discord-Community-8839ef?style=for-the-badge&labelColor=0b0b0b)](https://discord.gg/KQTY8DfY)
@@ -18,12 +14,7 @@ than your wallet and the community shapes every decision.
 
 ## **Core Set Launch: Tentative Q1 2026**
 
-The inaugural card set featuring full original artwork, complete mechanics, and
-balanced 60-card starter decks is in active development. This pure Magic: The
-Gathering experience embraces the beloved mechanics from Vintage and Modern -
-including Ward, double-faced cards, predefined tokens (Clue, Food, Map), and
-selective alternative costs like Bargain. **Join our Discord - we need
-contributors for card mechanics, artwork, and game design!**
+The inaugural card set featuring full original artwork, complete mechanics, and balanced starter decks is in active development. Built on Legacy and Vintage foundations with carefully chosen enhancements that honor Magic's classic design principles. **Join our Discord - we need contributors for card mechanics, artwork, and game design!**
 
 ---
 
@@ -32,9 +23,8 @@ contributors for card mechanics, artwork, and game design!**
 ### **For Players**
 
 - **Always Free** - Print any card, build any deck, no Reserved List nonsense
-- **Pure MTG Experience** - Classic Magic mechanics without corporate
-  interference
-- **Vintage & Modern Focus** - The most strategic and beloved formats
+- **Classic Magic Experience** - Legacy and Vintage mechanics without corporate interference
+- **Legacy & Vintage Focus** - The most strategic and enduring formats
 - **Global Access** - Play anywhere with just a printer and some friends
 
 ### **For the Community**
@@ -84,7 +74,7 @@ where:
 | $200+ Modern decks        | Print-and-play for $20     |
 | Hasbro profit focus       | Pure gameplay focus        |
 | Closed development        | Transparent process        |
-| Standard format pushing   | Vintage/Modern emphasis    |
+| Standard format pushing   | Legacy/Vintage emphasis    |
 
 ---
 

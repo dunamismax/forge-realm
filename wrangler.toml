@@ -1,7 +1,0 @@
-name = "forge-realm"
-
-[vars]
-
-# Using Pages deploy, the build output is the Hugo "public" dir
-pages_build_output_dir = "public"
-

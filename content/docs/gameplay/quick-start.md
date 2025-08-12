@@ -92,7 +92,7 @@ This is where most of the action happens:
 Forge Realm uses five distinct mana types, each representing different magical philosophies:
 
 - <span class="mana-green">**Green Mana**</span> - Nature, growth, and life force
-- <span class="mana-blue">**Blue Mana**</span> - Knowledge, logic, and manipulation 
+- <span class="mana-blue">**Blue Mana**</span> - Knowledge, logic, and manipulation
 - <span class="mana-white">**White Mana**</span> - Order, protection, and healing
 - <span class="mana-red">**Red Mana**</span> - Passion, destruction, and chaos
 - <span class="mana-black">**Black Mana**</span> - Power, ambition, and sacrifice
