@@ -74,27 +74,6 @@ enableInlineShortcodes = true
     [menu.main.params]
       icon = "github"
 
-  [[menu.sidebar]]
-    identifier = "more"
-    name = "More"
-    weight = 1
-    [menu.sidebar.params]
-      type = "separator"
-  [[menu.sidebar]]
-    identifier = "community-showcase"
-    name = "Community Showcase"
-    pageRef = "/docs/community-showcase"
-    weight = 2
-  [[menu.sidebar]]
-    identifier = "contributing"
-    name = "Contributing"
-    pageRef = "/docs/contributing"
-    weight = 3
-  [[menu.sidebar]]
-    identifier = "code-of-conduct"
-    name = "Code of Conduct"
-    pageRef = "/docs/code-of-conduct"
-    weight = 4
 
 [params]
   description = "Pure Magic: The Gathering as it was meant to be - focusing on Vintage and Modern's most beloved mechanics with modern enhancements."

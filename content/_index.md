@@ -11,6 +11,10 @@ layout: hextra-home
 {{< /hextra/hero-badge >}}
 
 <div class="hx:mt-6 hx:mb-6">
+<img src="/images/forge-realm-main-wide.webp" alt="Forge Realm TCG" class="hx:w-full hx:max-w-4xl hx:mx-auto hx:rounded-lg hx:shadow-lg" />
+</div>
+
+<div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
   Forge Realm TCG&nbsp;<br class="hx:sm:block hx:hidden" />Pure Magic as it was meant to be
 {{< /hextra/hero-headline >}}
@@ -22,21 +26,12 @@ layout: hextra-home
 {{< /hextra/hero-subtitle >}}
 </div>
 
-<div class="hx:mb-6">
+<div class="hx:mb-6 hx:flex hx:flex-wrap hx:gap-4 hx:justify-center hx:md:justify-start">
   <a class="fr-btn fr-btn--secondary" href="/docs">Documentation</a>
-  </div>
-
-<div class="hx:mb-6">
   <a class="fr-btn fr-btn--secondary" href="/docs/cards">Browse Cards</a>
-  </div>
-
-<div class="hx:mb-6">
   <a class="fr-btn fr-btn--secondary" href="https://discord.gg/KQTY8DfY" target="_blank" rel="noreferrer">Join Discord</a>
-  </div>
-
-<div class="hx:mb-6">
   <a class="fr-btn fr-btn--secondary" href="https://github.com/dunamismax/forge-realm" target="_blank" rel="noreferrer">View on GitHub</a>
-  </div>
+</div>
 
 <div class="hx:mt-6"></div>
 
@@ -72,6 +67,8 @@ layout: hextra-home
     icon="users"
   >}}
 {{< /hextra/feature-grid >}}
+
+<div class="hx:mt-12"></div>
 
 ## Why Forge Realm is Different
 

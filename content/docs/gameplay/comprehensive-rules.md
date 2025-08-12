@@ -102,11 +102,13 @@ Cards function according to their type and timing:
 
 ### 3.2 Mana Colors (Five-Color Magic System)
 
-- **Fire** (Red): Aggression, direct damage, haste, chaos
-- **Water** (Blue): Card draw, counter magic, knowledge, trickery
-- **Earth** (Green): Growth, acceleration, large creatures, resilience
-- **Air** (White): Protection, efficiency, order, small-army tactics
-- **Shadow** (Black): Removal, recursion, discard, life-for-power exchanges
+The five colors of mana each represent distinct philosophies and playstyles:
+
+- <span class="mana-red">**Red Mana**</span>: Aggression, direct damage, haste, chaos
+- <span class="mana-blue">**Blue Mana**</span>: Card draw, counter magic, knowledge, trickery
+- <span class="mana-green">**Green Mana**</span>: Growth, acceleration, large creatures, resilience
+- <span class="mana-white">**White Mana**</span>: Protection, efficiency, order, small-army tactics
+- <span class="mana-black">**Black Mana**</span>: Removal, recursion, discard, life-for-power exchanges
 - **Colorless**: Often from artifacts; flexible but costlier or with drawbacks
 
 ### 3.3 Strategic Resource Decisions

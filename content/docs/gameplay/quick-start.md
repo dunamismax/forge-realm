@@ -87,6 +87,16 @@ This is where most of the action happens:
 - **Mana types**: Different cards may require specific mana colors
 - **Banking mana**: Unspent mana carries over between phases (but not turns)
 
+##### The Five Mana Colors
+
+Forge Realm uses five distinct mana types, each representing different magical philosophies:
+
+- <span class="mana-green">**Green Mana**</span> - Nature, growth, and life force
+- <span class="mana-blue">**Blue Mana**</span> - Knowledge, logic, and manipulation 
+- <span class="mana-white">**White Mana**</span> - Order, protection, and healing
+- <span class="mana-red">**Red Mana**</span> - Passion, destruction, and chaos
+- <span class="mana-black">**Black Mana**</span> - Power, ambition, and sacrifice
+
 ### 3. Combat Phase
 
 Attack your opponent with creatures:
