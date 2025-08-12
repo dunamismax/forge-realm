@@ -15,7 +15,7 @@ Realm. {{< /callout >}}
 
 {{< card title="Complete Rules" link="/docs/gameplay/comprehensive-rules/" subtitle="Detailed mechanics and advanced interactions for competitive play." >}}
 
-{{< card title="Game Formats" link="/docs/gameplay/formats/" subtitle="Different ways to play: Standard, Legacy, Draft, and Casual formats." >}}
+{{< card title="Game Formats" link="/docs/gameplay/formats/" subtitle="Different ways to play: Legacy, Vintage, Draft, and Casual formats." >}}
 
 {{< /cards >}}
 

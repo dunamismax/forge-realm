@@ -16,13 +16,13 @@ layout: hextra-home
 
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
-  Forge Realm TCG&nbsp;<br class="hx:sm:block hx:hidden" />Pure Magic as it was meant to be
+  Forge Realm TCG&nbsp;<br class="hx:sm:block hx:hidden" />Classic Magic. Community Powered.
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx:mb-12">
 {{< hextra/hero-subtitle >}}
-  Focusing on Vintage and Modern's most beloved mechanics&nbsp;<br class="hx:sm:block hx:hidden" />with modern enhancements like Ward, double-faced cards, and strategic token gameplay
+  Built on Legacy and Vintage foundations&nbsp;<br class="hx:sm:block hx:hidden" />with carefully chosen enhancements and community-driven evolution
 {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -70,13 +70,10 @@ layout: hextra-home
 
 <div class="hx:mt-12"></div>
 
-## Why Forge Realm is Different
+## The Future of Magic
 
-Forge Realm is revolutionizing Magic: The Gathering by democratizing access and
-eliminating corporate gatekeeping. Our mission: to preserve and share Magic's
-strategic depth and magical gameplay experience with complete transparency,
-ensuring the community always comes first.
+Forge Realm preserves Magic's golden age while democratizing access through open-source development. We champion the strategic depth and timeless mechanics that made Magic legendary, free from corporate restrictions and artificial scarcity.
 
-**Core Set launching Q1 2026 (tentative)** • Join our
-[Discord](https://discord.gg/KQTY8DfY) - we need contributors for mechanics,
-artwork, and design!
+Built on Legacy and Vintage's proven foundation, enhanced only where the community votes for meaningful improvement. No chase rares. No gatekeeping. Just pure strategic gameplay.
+
+**Core Set launching Q1 2026** • Join our [Discord](https://discord.gg/KQTY8DfY) to shape the game's evolution through mechanics design, artwork, and playtesting.

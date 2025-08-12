@@ -3,35 +3,33 @@ title: "Comprehensive Rules"
 linkTitle: "Rules"
 weight: 20
 description: >
-  Complete rules for Forge Realm's vintage-inspired gameplay system—now refined
-  with modern, player-loved mechanics for the smoothest, most strategic 1v1
-  Magic-style experience in 40- and 60-card play.
+  Complete rules for Forge Realm's Legacy and Vintage-inspired gameplay system.
+  Classic Magic foundations with carefully chosen enhancements for strategic
+  depth and competitive balance.
 ---
 
-{{< callout type="warning" >}} **Complete Rulebook** — Forge Realm is an homage
-to classic Magic: The Gathering that embraces today's best design tech: clear
-interaction, consistent game starts, and decisions that matter every turn.
-{{< /callout >}}
+{{< callout type="warning" >}} **Complete Rulebook** — Forge Realm preserves
+the strategic depth of Magic's golden age. Built on Legacy and Vintage
+foundations with community-approved enhancements that honor the game's classic
+design principles. {{< /callout >}}
 
 ## 1. Core Game Philosophy
 
-### 1.1 Vintage Design Philosophy
+### 1.1 Legacy and Vintage Foundation
 
 **Core Design Principles:**
 
-- 60-card constructed decks with 4-copy limit (40-card "Blitz" variant
-  supported)
-- 20 starting life and 7-card opening hands using the **London Mulligan**
+- **Deck size**: Minimum 60 cards with 4-copy limit per card name
+- **Sideboard**: Exactly 15 cards for competitive play
+- **Starting life**: 20 life and 7-card opening hands using the **London Mulligan**
 - Five-color mana system with color identity and splash tension
 - Instants, sorceries, stack-based interaction, and priority sequencing
 - Turn structure with two main phases and a robust combat step
 - Strategic resource tradeoffs each turn (tempo vs. cards vs. life total)
-- **Modern tech adopted:** Ward (evergreen defense), double-faced cards
-  (transform/land-modal), predefined tokens (Clue, Food, Map), and selective
-  alternative costs (Bargain)
-- **Power safety rails:** No Discover; Treasure generation throttled; Plot
-  limited to one plotted spell cast per turn; Companion uses the "pay 3 to hand"
-  rule
+- **Vintage mechanics**: Storm, Delve, Cascade with appropriate power level management
+- **Legacy staples**: Classic keywords and interactions that define eternal formats
+- **Selected enhancements**: Ward (defensive keyword), double-faced cards, and predefined tokens where they improve gameplay
+- **Power management**: Restricted list for Vintage format; careful curation of powerful effects
 - Dark fantasy aesthetic with mature themes and an emphasis on
   imagination-driven play
 
@@ -263,14 +261,12 @@ Players make classic decisions with modern smoothing:
 
 ## 8. Deck Construction
 
-### 8.1 Basic Requirements (MTG Standard)
+### 8.1 Basic Requirements (Legacy/Vintage Standard)
 
-- **Constructed (Classic)**: Minimum **60** cards (no maximum); 4-copy limit per
-  card name (basic lands excepted)
-- **Blitz (40-card variant)**: Minimum **40** cards; 4-copy limit per card name
-  (basic lands excepted)
-- **Sideboard** (optional for match play): Up to **15** cards
-- **1v1 default**: All rules assume head-to-head play
+- **Constructed**: Minimum **60** cards (no maximum); 4-copy limit per card name (basic lands excepted)
+- **Sideboard**: Exactly **15** cards for tournament play
+- **Limited formats**: Minimum **40** cards for Draft and Sealed
+- **Default format**: 2-player head-to-head games with 20 starting life
 
 ### 8.2 Strategic Considerations
 
@@ -283,10 +279,10 @@ Players make classic decisions with modern smoothing:
 
 ### 8.3 Format Variations
 
-- **Constructed**: Build from your collection with the current legality list
-- **Limited**: Draft or sealed (40-card decks recommended)
-- **Blitz**: Faster 40-card format tuned for best-of-one or rapid matches
-- **Classic**: Full 60-card strategic format with sideboards and longer games
+- **Legacy**: All Forge Realm cards legal; no rotation
+- **Vintage**: All cards legal with restricted list (1 copy maximum)
+- **Limited**: Draft or Sealed (40-card minimum, 20 starting life)
+- **Casual**: House rules and custom variants encouraged
 
 ## 9. Winning Strategy Principles
 
@@ -356,10 +352,7 @@ Mulligan (draw 7 each time, then put cards on bottom equal to number of
 mulligans taken) **Card Uses**: Cast normally, use alternative costs (e.g.,
 Bargain), or set aside then cast later (Plot—**max one plotted cast per turn**)
 **Smoothing**: Clues (draw), Maps/Explore (card quality & growth), Food (+3
-life) **Victory**: Reduce opponent to 0 life or deck them out **Guardrails**: No
-Discover; Treasure throttled; Companion uses updated rule; modern DFC/cascade
-handling **Strategic Depth**: Constant resource allocation decisions every turn;
-Ward and stack play keep interaction meaningful
+life) **Victory**: Reduce opponent to 0 life or deck them out **Format**: 60+ card decks, 15-card sideboard, 20 starting life **Strategic Depth**: Constant resource allocation decisions every turn; Legacy-style interaction with careful power level management
 
 ---
 

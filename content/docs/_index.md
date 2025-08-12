@@ -19,17 +19,14 @@ covering gameplay rules, printing guides, and contribution information.
 
 ## What is Forge Realm?
 
-Forge Realm TCG is a fully open-source trading card game built for tabletop
-play. The project focuses on democratizing trading card games through
-transparent development, community governance, unrestricted print-and-play
-access, and no artificial scarcity.
+Forge Realm TCG preserves Magic's strategic depth through open-source development. Built on Legacy and Vintage foundations, it delivers the classic Magic experience without corporate gatekeeping, artificial scarcity, or access barriers.
 
 ## Core Principles
 
-- **Complete transparency** – all decisions made publicly
-- **Democratic governance** – community votes drive direction
-- **Free accessibility** – print-and-play for everyone
-- **No artificial scarcity** – all cards available to all players
+- **Complete transparency** – all decisions made publicly with full community visibility
+- **Democratic governance** – community votes determine game evolution and balance changes  
+- **Universal access** – unrestricted print-and-play for everyone
+- **No artificial scarcity** – every card available to every player
 
 {{< cards >}}
 {{< card link="/docs/gameplay/" title="Getting Started" subtitle="Learn the rules and start playing Forge Realm in minutes." >}}

@@ -62,8 +62,8 @@ construction. {{< /callout >}}
 featuring full original artwork, complete mechanics, and two balanced 60-card
 starter decks is in development:
 
-- **Q4 2025**: Core mechanics finalization (pure MTG with beloved Vintage/Modern
-  mechanics)
+- **Q4 2025**: Core mechanics finalization (classic MTG built on Legacy/Vintage
+  foundations)
 - **Q1 2026**: Complete original artwork and final balance testing
 - **Q1 2026**: Full Core Set release with two starter decks
 

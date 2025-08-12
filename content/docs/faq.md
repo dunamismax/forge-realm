@@ -42,15 +42,14 @@ You only pay for:
 The Core Set and initial card collection are targeted for release in **Q1 2026
 (tentative)**. This timeline allows for comprehensive community testing, full
 original artwork completion, and thorough game balance validation of our pure
-Magic: The Gathering experience with beloved mechanics from Vintage and Modern
-formats.
+Magic: The Gathering experience built on Legacy and Vintage foundations.
 
 ## Gameplay Questions
 
 ### How long does a typical game take?
 
 - **Quick matches**: 15-20 minutes
-- **Standard games**: 30-45 minutes
+- **Legacy games**: 30-45 minutes
 - **Tournament games**: 45-60 minutes
 
 Game length varies based on format, player experience, and deck complexity.
@@ -59,7 +58,7 @@ Game length varies based on format, player experience, and deck complexity.
 
 Forge Realm supports:
 
-- **2 players** (standard competitive format)
+- **2 players** (primary competitive format)
 - **3-4 players** (multiplayer variant rules)
 - **6-8 players** (team-based formats)
 
@@ -70,7 +69,7 @@ Most formats are designed for 2-player competitive play.
 - **Core audience**: Ages 13 and up
 - **Simplified rules**: Can be adapted for ages 10+
 - **Strategic depth**: Appeals to adults and competitive players
-- **Learning curve**: Comparable to other modern card games
+- **Learning curve**: Comparable to classic trading card games
 
 ### Do I need to memorize all the rules before playing?
 
