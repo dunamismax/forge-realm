@@ -8,9 +8,8 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo %}}
-Explore different ways to play Forge Realm, from competitive tournaments to casual kitchen table games.
-{{% /pageinfo %}}
+{{% pageinfo %}} Explore different ways to play Forge Realm, from competitive
+tournaments to casual kitchen table games. {{% /pageinfo %}}
 
 Forge Realm supports multiple play styles to suit different groups.
 
@@ -29,7 +28,7 @@ Forge Realm supports multiple play styles to suit different groups.
 - Players draft cards from booster packs and build decks on the fly.
 - Great for events and introducing new sets.
 
-## Casual  
+## Casual
 
 - House rules and custom cards encouraged.
 - Perfect for testing new mechanics or teaching new adventurers.

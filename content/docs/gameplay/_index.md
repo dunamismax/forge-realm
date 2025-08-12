@@ -8,8 +8,7 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo %}}
-Everything you need to know about playing Forge Realm.
+{{% pageinfo %}} Everything you need to know about playing Forge Realm.
 {{% /pageinfo %}}
 
 {{% blocks/section color="primary" type="row" %}}
@@ -33,7 +32,8 @@ Different ways to play: Standard, Legacy, Draft, and Casual formats.
 ## Ready to Play?
 
 1. **Learn**: Read the [Quick Start Guide](quick-start/) (5 minutes)
-2. **Print**: Follow the [Printing Guide](/docs/printing/home-printing-guide/) to create cards
+2. **Print**: Follow the [Printing Guide](/docs/printing/home-printing-guide/)
+   to create cards
 3. **Play**: Gather 2+ players and start your first game!
-4. **Join**: Connect with the community on [Discord](https://discord.gg/KQTY8DfY)
-{{% /blocks/section %}}
+4. **Join**: Connect with the community on
+   [Discord](https://discord.gg/KQTY8DfY) {{% /blocks/section %}}

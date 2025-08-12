@@ -8,8 +8,8 @@ description: >
 
 <div class="mt-4"></div>
 
-{{< alert title="Welcome Contributors!" >}}
-Thank you for contributing to Forge Realm! This guide covers our development process and community standards.
+{{< alert title="Welcome Contributors!" >}} Thank you for contributing to Forge
+Realm! This guide covers our development process and community standards.
 {{< /alert >}}
 
 ## Code of Conduct
@@ -32,7 +32,8 @@ All contributors must follow our [Code of Conduct](/docs/code-of-conduct/).
 
 ### Website Development Setup
 
-This repository contains the Hugo static site for [forge-realm.com](https://forge-realm.com).
+This repository contains the Hugo static site for
+[forge-realm.com](https://forge-realm.com).
 
 ```bash
 # Fork and clone
@@ -106,32 +107,28 @@ We welcome contributions in many forms:
 - Card designs and balance proposals
 - New mechanic development
 - Format creation and testing
-- Rules clarification and updates
-{{% /blocks/feature %}}
+- Rules clarification and updates {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-palette" title="Art & Design" %}}
 
 - Card artwork and illustrations
 - Template design and layout
 - Icon creation and graphics
-- Print template optimization
-{{% /blocks/feature %}}
+- Print template optimization {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-pen" title="Documentation" %}}
 
 - Rule clarifications and examples
 - Strategy guides and tutorials
 - Printing guides and troubleshooting
-- Community event documentation
-{{% /blocks/feature %}}
+- Community event documentation {{% /blocks/feature %}}
 
 {{% blocks/feature icon="fa-code" title="Technical" %}}
 
 - Website development and improvements
 - Hugo site optimization and features
 - Asset processing and CDN integration
-- Build and deployment automation
-{{% /blocks/feature %}}
+- Build and deployment automation {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
 

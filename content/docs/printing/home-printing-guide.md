@@ -8,11 +8,11 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo %}}
-Print professional-quality Forge Realm cards at home with these detailed instructions.
-{{% /pageinfo %}}
+{{% pageinfo %}} Print professional-quality Forge Realm cards at home with these
+detailed instructions. {{% /pageinfo %}}
 
-This comprehensive guide will help you print professional-quality Forge Realm cards at home with detailed instructions and troubleshooting tips.
+This comprehensive guide will help you print professional-quality Forge Realm
+cards at home with detailed instructions and troubleshooting tips.
 
 ## Prerequisites
 
@@ -241,13 +241,13 @@ This comprehensive guide will help you print professional-quality Forge Realm ca
 
 ### Common Print Quality Issues
 
-| Issue | Possible Causes | Solutions |
-|-------|----------------|----------|
-| Blurry text | Low DPI setting, printer alignment | Increase quality, run alignment utility |
-| Color banding | Low ink, dirty heads | Replace cartridges, clean print heads |
-| Smudging | Wet ink, wrong paper setting | Increase drying time, adjust paper type |
-| Paper jams | Thick paper, overloading | Use manual feed, reduce batch size |
-| Uneven colors | Old cartridges, wrong profile | Replace cartridges, check color settings |
+| Issue         | Possible Causes                    | Solutions                                |
+| ------------- | ---------------------------------- | ---------------------------------------- |
+| Blurry text   | Low DPI setting, printer alignment | Increase quality, run alignment utility  |
+| Color banding | Low ink, dirty heads               | Replace cartridges, clean print heads    |
+| Smudging      | Wet ink, wrong paper setting       | Increase drying time, adjust paper type  |
+| Paper jams    | Thick paper, overloading           | Use manual feed, reduce batch size       |
+| Uneven colors | Old cartridges, wrong profile      | Replace cartridges, check color settings |
 
 ### Hardware-Specific Issues
 
@@ -267,7 +267,8 @@ This comprehensive guide will help you print professional-quality Forge Realm ca
 
 ### Getting Help
 
-- **Join our [Discord server](https://discord.gg/KQTY8DfY)** for real-time support
+- **Join our [Discord server](https://discord.gg/KQTY8DfY)** for real-time
+  support
 - **Share photos** of your print results for feedback
 - **Ask specific questions** about your printer model
 - **Browse the printing channel** for community tips
@@ -285,4 +286,6 @@ This comprehensive guide will help you print professional-quality Forge Realm ca
 - **Quality testing**: Participate in paper and printer evaluations
 - **Tutorial creation**: Help improve documentation with your experience
 
-For additional support and community tips, visit our [Discord server](https://discord.gg/KQTY8DfY) where experienced printers share their knowledge and help troubleshoot specific issues.
+For additional support and community tips, visit our
+[Discord server](https://discord.gg/KQTY8DfY) where experienced printers share
+their knowledge and help troubleshoot specific issues.

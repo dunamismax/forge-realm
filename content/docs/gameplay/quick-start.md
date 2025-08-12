@@ -8,11 +8,12 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo color="primary" %}}
-**Ready to play in 5 minutes?** This guide covers everything you need to start playing Forge Realm immediately.
+{{% pageinfo color="primary" %}} **Ready to play in 5 minutes?** This guide
+covers everything you need to start playing Forge Realm immediately.
 {{% /pageinfo %}}
 
-Forge Realm is designed for easy print-and-play tabletop sessions. This guide will get you playing your first game in minutes.
+Forge Realm is designed for easy print-and-play tabletop sessions. This guide
+will get you playing your first game in minutes.
 
 ## What You Need
 
@@ -33,9 +34,11 @@ Forge Realm is designed for easy print-and-play tabletop sessions. This guide wi
 
 ## Game Overview
 
-Forge Realm is a strategic card game where players use **mana** (the game's resource system) to summon creatures, cast spells, and defeat their opponent.
+Forge Realm is a strategic card game where players use **mana** (the game's
+resource system) to summon creatures, cast spells, and defeat their opponent.
 
-**Goal**: Reduce your opponent's life from 20 to 0, or make them run out of cards.
+**Goal**: Reduce your opponent's life from 20 to 0, or make them run out of
+cards.
 
 ## Pre-Game Setup
 
@@ -50,9 +53,11 @@ Forge Realm is a strategic card game where players use **mana** (the game's reso
 1. **Shuffle**: Both players shuffle their decks thoroughly
 2. **Determine first player**: Flip a coin or roll dice
 3. **Draw opening hand**: Each player draws 7 cards
-4. **Mulligan option**: Players may shuffle their hand back and draw 6 cards instead (once per player)
+4. **Mulligan option**: Players may shuffle their hand back and draw 6 cards
+   instead (once per player)
 5. **Set life totals**: Both players start at 20 life
-6. **Begin**: The first player starts their turn (but skips their first draw step)
+6. **Begin**: The first player starts their turn (but skips their first draw
+   step)
 
 ## Turn Structure
 
@@ -64,9 +69,8 @@ Each turn follows this sequence:
 - **Draw**: Draw one card from your deck
 - **Mana production**: Generate mana equal to your current mana sources
 
-{{% alert title="Important" color="warning" %}}
-The player going first skips the draw step on their very first turn only.
-{{% /alert %}}
+{{% alert title="Important" color="warning" %}} The player going first skips the
+draw step on their very first turn only. {{% /alert %}}
 
 ### 2. Main Phase
 
@@ -101,8 +105,10 @@ Attack your opponent with creatures:
 
 - **Attacking**: Tap creatures to attack (they can't block)
 - **Blocking**: Untapped creatures can block attacking creatures
-- **Damage**: Attacking creatures deal damage to blockers or the defending player
-- **Creature death**: Creatures die when damage equals or exceeds their toughness
+- **Damage**: Attacking creatures deal damage to blockers or the defending
+  player
+- **Creature death**: Creatures die when damage equals or exceeds their
+  toughness
 
 ### 4. End Phase
 
@@ -248,41 +254,54 @@ Mana is your primary resource:
 - **Defensive options**: Don't always attack
 - **Combat tricks**: Save instant spells for key moments
 
-{{% alert title="Getting Your First Cards" color="info" %}}
-**Core Set releasing Q1 2026!** Until then:
+{{% alert title="Getting Your First Cards" color="info" %}} **Core Set releasing
+Q1 2026!** Until then:
 
-- **Learn the rules** with this guide and practice with friends using placeholder cards
-- **Join the community** on [Discord](https://discord.gg/KQTY8DfY) for early playtesting opportunities
-- **Prepare to print** by reviewing our [Printing Guide](../../printing/home-printing-guide/)
-- **Browse upcoming cards** in our [Card Gallery](/docs/cards/) to plan your first deck
-{{% /alert %}}
+- **Learn the rules** with this guide and practice with friends using
+  placeholder cards
+- **Join the community** on [Discord](https://discord.gg/KQTY8DfY) for early
+  playtesting opportunities
+- **Prepare to print** by reviewing our
+  [Printing Guide](../../printing/home-printing-guide/)
+- **Browse upcoming cards** in our [Card Gallery](/docs/cards/) to plan your
+  first deck {{% /alert %}}
 
 ## Next Steps
 
 ### Deepen Your Knowledge
 
-- **[Comprehensive Rules](../comprehensive-rules/)**: Complete rulebook with advanced mechanics and detailed interactions
-- **[Game Formats](../formats/)**: Different ways to play including competitive and casual variants
-- **[FAQ Section](/docs/faq/)**: Answers to common questions about gameplay and rules
+- **[Comprehensive Rules](../comprehensive-rules/)**: Complete rulebook with
+  advanced mechanics and detailed interactions
+- **[Game Formats](../formats/)**: Different ways to play including competitive
+  and casual variants
+- **[FAQ Section](/docs/faq/)**: Answers to common questions about gameplay and
+  rules
 
 ### Prepare for Play
 
-- **[Card Gallery](/docs/cards/)**: Browse upcoming cards and plan your first deck
-- **[Printing Guides](/docs/printing/)**: Everything you need to print professional-quality cards
-- **[Community Showcase](/docs/community-showcase/)**: See what other players are creating and playing
+- **[Card Gallery](/docs/cards/)**: Browse upcoming cards and plan your first
+  deck
+- **[Printing Guides](/docs/printing/)**: Everything you need to print
+  professional-quality cards
+- **[Community Showcase](/docs/community-showcase/)**: See what other players
+  are creating and playing
 
 ### Connect with Players
 
-- **[Discord Community](https://discord.gg/KQTY8DfY)**: Real-time chat, strategy discussions, and early playtesting
+- **[Discord Community](https://discord.gg/KQTY8DfY)**: Real-time chat, strategy
+  discussions, and early playtesting
 - **Local gaming groups**: Introduce Forge Realm to your existing playgroup
 - **Tournament preparation**: Get ready for organized play when cards release
 
 ### Contributing
 
-- **[Contributing Guide](/docs/contributing/)**: Help shape the game through design feedback and testing
+- **[Contributing Guide](/docs/contributing/)**: Help shape the game through
+  design feedback and testing
 - **Playtesting**: Participate in balance testing and provide feedback
 - **Content creation**: Share strategies, deck lists, and gameplay videos
 
 ---
 
-**Ready to dive deeper?** The [Comprehensive Rules](../comprehensive-rules/) provide complete details on all game mechanics, card interactions, and tournament-level play requirements.
+**Ready to dive deeper?** The [Comprehensive Rules](../comprehensive-rules/)
+provide complete details on all game mechanics, card interactions, and
+tournament-level play requirements.

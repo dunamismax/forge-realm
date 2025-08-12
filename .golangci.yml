@@ -1,4 +1,4 @@
-version: "2"
+version: '2'
 
 # Linters configuration
 linters:
@@ -40,10 +40,10 @@ linters:
     - nolintlint
   disable:
     # Disable overly strict linters for game development context
-    - exhaustruct  # Too strict for configuration structs
-    - varnamelen   # Short variable names are fine in limited scopes
-    - ireturn      # Interface returns are sometimes necessary
-    - wsl          # Whitespace linter can be too opinionated
+    - exhaustruct # Too strict for configuration structs
+    - varnamelen # Short variable names are fine in limited scopes
+    - ireturn # Interface returns are sometimes necessary
+    - wsl # Whitespace linter can be too opinionated
 
 # Run configuration
 run:
@@ -78,23 +78,23 @@ linters-settings:
     excludes:
       - G404 # Use of weak random number generator is OK for non-crypto uses
       - G501 # Blacklisted import crypto/md5: weak cryptographic primitive (OK for non-security hashing)
-  
+
   goconst:
     min-len: 3
     min-occurrences: 3
     ignore-tests: true
     ignore-calls: true
-  
+
   gocyclo:
     min-complexity: 15
-  
+
   nestif:
     min-complexity: 5
-  
+
   funlen:
     lines: 80
     statements: 50
-  
+
   misspell:
     locale: US
     ignore-words:
@@ -104,7 +104,7 @@ linters-settings:
       - gameplay
       - cardstock
       - rulebook
-  
+
   gocritic:
     enabled-tags:
       - diagnostic
@@ -116,26 +116,26 @@ linters-settings:
       - whyNoLint
       - hugeParam
       - rangeValCopy
-  
+
   goimports:
     local-prefixes: github.com/dunamismax/forge-realm
-  
+
   gci:
     sections:
       - standard
       - default
       - prefix(github.com/dunamismax/forge-realm)
     skip-generated: true
-  
+
   revive:
     rules:
       - name: exported
-        disabled: true  # We use other linters for this
+        disabled: true # We use other linters for this
       - name: package-comments
-        disabled: true  # Not always needed for small packages
+        disabled: true # Not always needed for small packages
       - name: line-length-limit
         arguments: [120]
-  
+
   wrapcheck:
     ignoreSigs:
       - .Errorf(
@@ -147,12 +147,12 @@ linters-settings:
     ignorePackageGlobs:
       - github.com/pkg/errors
       - github.com/magefile/mage/*
-  
+
   errorlint:
     errorf: true
     asserts: true
     comparison: true
-  
+
   dupl:
     threshold: 100
 
@@ -160,9 +160,9 @@ linters-settings:
 issues:
   max-issues-per-linter: 0
   max-same-issues: 0
-  new: false  # Show all issues, not just new ones
-  fix: false  # Don't auto-fix issues
-  
+  new: false # Show all issues, not just new ones
+  fix: false # Don't auto-fix issues
+
   # Exclude specific issues
   exclude-rules:
     # Exclude some linters from running on tests files
@@ -175,42 +175,42 @@ issues:
         - goconst
         - funlen
         - nestif
-    
+
     # Exclude some issues in main.go (entry point)
     - path: main\.go
       linters:
-        - gochecknoinits  # Init functions are OK in main
-        - funlen          # Main function can be longer
-    
+        - gochecknoinits # Init functions are OK in main
+        - funlen # Main function can be longer
+
     # Exclude some issues in magefile.go (build script)
     - path: magefile\.go
       linters:
-        - gochecknoinits  # Init functions are OK in magefiles
-        - funlen          # Build functions can be longer
-        - gocyclo         # Build logic can be complex
-        - nestif          # Build conditionals can be nested
-    
+        - gochecknoinits # Init functions are OK in magefiles
+        - funlen # Build functions can be longer
+        - gocyclo # Build logic can be complex
+        - nestif # Build conditionals can be nested
+
     # Exclude magic number checks for common HTTP/port values
-    - text: "Magic number: (200|400|401|403|404|500|429|8080|3000|443|80)"
+    - text: 'Magic number: (200|400|401|403|404|500|429|8080|3000|443|80)'
       linters:
         - gomnd
         - goconst
-    
+
     # Exclude magic number checks for common game values
-    - text: "Magic number: (60|120|300|600|7|20|40)"
+    - text: 'Magic number: (60|120|300|600|7|20|40)'
       linters:
         - gomnd
         - goconst
-    
+
     # Allow TODO comments in early development
-    - text: "Line contains TODO"
+    - text: 'Line contains TODO'
       linters:
         - godox
-  
+
   # Global exclusions
   exclude:
     # Allow blank imports for Go 1.24 embedding
-    - "blank-imports"
+    - 'blank-imports'
 
 # Output configuration
 output:

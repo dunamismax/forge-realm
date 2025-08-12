@@ -8,11 +8,11 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo color="success" %}}
-The right cardstock makes all the difference in card quality and durability.
-{{% /pageinfo %}}
+{{% pageinfo color="success" %}} The right cardstock makes all the difference in
+card quality and durability. {{% /pageinfo %}}
 
-Choosing the right cardstock is crucial for creating professional-quality Forge Realm cards that feel authentic and durable during gameplay.
+Choosing the right cardstock is crucial for creating professional-quality Forge
+Realm cards that feel authentic and durable during gameplay.
 
 ## Understanding Cardstock Specifications
 
@@ -36,7 +36,8 @@ GSM measures paper weight and directly affects card feel and durability:
 
 #### Matte Finish
 
-- **Advantages**: Reduces glare, easy to read in any lighting, less fingerprint-prone
+- **Advantages**: Reduces glare, easy to read in any lighting, less
+  fingerprint-prone
 - **Best for**: Text-heavy cards, competitive play, indoor gaming
 - **Considerations**: Colors may appear slightly muted
 
@@ -256,4 +257,5 @@ Regular community testing reveals:
 - **Matte finishes preferred for gameplay**
 - **300 GSM sweet spot for feel vs. printability**
 
-Join our [Discord server](https://discord.gg/KQTY8DfY) to share your cardstock experiences and get recommendations based on your specific printer and location.
+Join our [Discord server](https://discord.gg/KQTY8DfY) to share your cardstock
+experiences and get recommendations based on your specific printer and location.

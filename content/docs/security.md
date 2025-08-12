@@ -3,18 +3,19 @@ title: "Security Policy"
 linkTitle: "Security"
 weight: 60
 description: >
-  Security vulnerability reporting and security measures for the Forge Realm project.
+  Security vulnerability reporting and security measures for the Forge Realm
+  project.
 ---
 
 ## Supported Versions
 
-Only the latest version of the website is actively maintained and receives security updates.
+Only the latest version of the website is actively maintained and receives
+security updates.
 
 ## Reporting Vulnerabilities
 
-{{% alert title="Important" color="danger" %}}
-**Do not report security vulnerabilities through public GitHub issues.**
-{{% /alert %}}
+{{% alert title="Important" color="danger" %}} **Do not report security
+vulnerabilities through public GitHub issues.** {{% /alert %}}
 
 ### How to Report
 
@@ -74,7 +75,8 @@ Only the latest version of the website is actively maintained and receives secur
 
 ## Recognition
 
-We appreciate security researchers who help keep our community safe. Responsible disclosure will be acknowledged in our security advisories.
+We appreciate security researchers who help keep our community safe. Responsible
+disclosure will be acknowledged in our security advisories.
 
 ---
 

@@ -3,14 +3,14 @@ title: "Documentation"
 linkTitle: "Documentation"
 weight: 10
 description: >
-  Complete documentation for Forge Realm, covering gameplay rules, printing guides, and contribution information.
+  Complete documentation for Forge Realm, covering gameplay rules, printing
+  guides, and contribution information.
 ---
 
 <div class="mt-4"></div>
 
-{{% pageinfo %}}
-This is the complete documentation for Forge Realm, covering gameplay rules, printing guides, and contribution information.
-{{% /pageinfo %}}
+{{% pageinfo %}} This is the complete documentation for Forge Realm, covering
+gameplay rules, printing guides, and contribution information. {{% /pageinfo %}}
 
 <div class="text-center my-4">
   <img src="/images/forge-realm-PNG-circular-emblem.webp" alt="Forge Realm Emblem" style="max-width: 200px; height: auto;" class="img-fluid">
@@ -18,7 +18,10 @@ This is the complete documentation for Forge Realm, covering gameplay rules, pri
 
 ## What is Forge Realm?
 
-Forge Realm TCG is a fully open-source trading card game built for tabletop play. The project focuses on democratizing trading card games through transparent development, community governance, unrestricted print-and-play access, and no artificial scarcity.
+Forge Realm TCG is a fully open-source trading card game built for tabletop
+play. The project focuses on democratizing trading card games through
+transparent development, community governance, unrestricted print-and-play
+access, and no artificial scarcity.
 
 ## Core Principles
 

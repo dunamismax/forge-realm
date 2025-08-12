@@ -8,11 +8,12 @@ description: >
 
 <div class="mt-4"></div>
 
-{{% pageinfo color="info" %}}
-Choose the right printer for high-quality card printing at home.
-{{% /pageinfo %}}
+{{% pageinfo color="info" %}} Choose the right printer for high-quality card
+printing at home. {{% /pageinfo %}}
 
-Choosing the right printer is crucial for producing high-quality Forge Realm cards at home. This guide covers recommended models, specifications, and detailed setup instructions.
+Choosing the right printer is crucial for producing high-quality Forge Realm
+cards at home. This guide covers recommended models, specifications, and
+detailed setup instructions.
 
 ## Printer Technology Comparison
 
@@ -369,4 +370,7 @@ For comparison, professional services offer:
 - **New card formats** might require different capabilities
 - **Community standards** may evolve with technology
 
-For specific printer recommendations based on your budget, location, and printing volume, join our [Discord server](https://discord.gg/KQTY8DfY) where community members share their experiences and help newcomers choose the right equipment.
+For specific printer recommendations based on your budget, location, and
+printing volume, join our [Discord server](https://discord.gg/KQTY8DfY) where
+community members share their experiences and help newcomers choose the right
+equipment.

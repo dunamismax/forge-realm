@@ -3,32 +3,37 @@ title: "Frequently Asked Questions"
 linkTitle: "FAQ"
 weight: 50
 description: >
-  Common questions about Forge Realm gameplay, printing, and community involvement.
+  Common questions about Forge Realm gameplay, printing, and community
+  involvement.
 ---
 
 <div class="mt-4"></div>
 
-{{< alert title="Frequently Asked Questions" >}}
-Find answers to the most common questions about Forge Realm, from basic gameplay to advanced printing techniques.
-{{< /alert >}}
+{{< alert title="Frequently Asked Questions" >}} Find answers to the most common
+questions about Forge Realm, from basic gameplay to advanced printing
+techniques. {{< /alert >}}
 
 ## General Questions
 
 ### What is Forge Realm?
 
-Forge Realm is a fully open-source Magic: The Gathering experience designed for tabletop play. Unlike corporate MTG, our project focuses on complete transparency, community-driven development, and unrestricted print-and-play access for everyone.
+Forge Realm is a fully open-source Magic: The Gathering experience designed for
+tabletop play. Unlike corporate MTG, our project focuses on complete
+transparency, community-driven development, and unrestricted print-and-play
+access for everyone.
 
 ### How is Forge Realm different from other card games?
 
-**Complete Transparency**: All decisions are made publicly with full community visibility
-**Democratic Governance**: Community votes drive game development direction
-**No Artificial Scarcity**: All cards are available to all players
-**Free Access**: Print-and-play with no restrictions or paywalls
-**Open Source**: Game rules, artwork, and development process are completely open
+**Complete Transparency**: All decisions are made publicly with full community
+visibility **Democratic Governance**: Community votes drive game development
+direction **No Artificial Scarcity**: All cards are available to all players
+**Free Access**: Print-and-play with no restrictions or paywalls **Open
+Source**: Game rules, artwork, and development process are completely open
 
 ### Is Forge Realm really free?
 
-Yes! The game rules, card designs, and all digital assets are freely available. You only pay for:
+Yes! The game rules, card designs, and all digital assets are freely available.
+You only pay for:
 
 - Paper and ink for printing cards at home
 - Optional premium materials (special cardstock, sleeves)
@@ -36,14 +41,18 @@ Yes! The game rules, card designs, and all digital assets are freely available. 
 
 ### When will the first cards be released?
 
-The Core Set and initial card collection are targeted for release in **Q1 2026 (tentative)**. This timeline allows for comprehensive community testing, full original artwork completion, and thorough game balance validation of our pure Magic: The Gathering experience with beloved mechanics from Vintage and Modern formats.
+The Core Set and initial card collection are targeted for release in **Q1 2026
+(tentative)**. This timeline allows for comprehensive community testing, full
+original artwork completion, and thorough game balance validation of our pure
+Magic: The Gathering experience with beloved mechanics from Vintage and Modern
+formats.
 
 ## Gameplay Questions
 
 ### How long does a typical game take?
 
 - **Quick matches**: 15-20 minutes
-- **Standard games**: 30-45 minutes  
+- **Standard games**: 30-45 minutes
 - **Tournament games**: 45-60 minutes
 
 Game length varies based on format, player experience, and deck complexity.
@@ -67,11 +76,15 @@ Most formats are designed for 2-player competitive play.
 
 ### Do I need to memorize all the rules before playing?
 
-No! Start with our [Quick Start Guide](/docs/gameplay/quick-start/) which covers basic gameplay. The [Comprehensive Rules](/docs/gameplay/comprehensive-rules/) are available for reference during games.
+No! Start with our [Quick Start Guide](/docs/gameplay/quick-start/) which covers
+basic gameplay. The [Comprehensive Rules](/docs/gameplay/comprehensive-rules/)
+are available for reference during games.
 
 ### Can I play online or digitally?
 
-Currently, Forge Realm is designed for physical tabletop play. Digital implementations may be developed by the community in the future, but our focus is on the print-and-play experience.
+Currently, Forge Realm is designed for physical tabletop play. Digital
+implementations may be developed by the community in the future, but our focus
+is on the print-and-play experience.
 
 ## Printing and Cards
 
@@ -84,7 +97,8 @@ Currently, Forge Realm is designed for physical tabletop play. Digital implement
 - Cutting tools (paper cutter, craft knife, or scissors)
 - Card sleeves for protection
 
-See our [Home Printing Guide](/docs/printing/home-printing-guide/) for detailed instructions.
+See our [Home Printing Guide](/docs/printing/home-printing-guide/) for detailed
+instructions.
 
 ### How much does it cost to print a complete deck?
 
@@ -102,7 +116,8 @@ See our [Home Printing Guide](/docs/printing/home-printing-guide/) for detailed 
 - **Mid-range**: Epson EcoTank ET-2850 or Brother HL-L3290CDW
 - **Premium**: Canon PIXMA Pro-200 or Epson EcoTank Pro ET-5850
 
-See our [Recommended Printers](/docs/printing/recommended-printers/) guide for detailed comparisons.
+See our [Recommended Printers](/docs/printing/recommended-printers/) guide for
+detailed comparisons.
 
 ### What paper works best for cards?
 
@@ -112,7 +127,8 @@ See our [Recommended Printers](/docs/printing/recommended-printers/) guide for d
 - **Finish**: Matte (reduces glare, good for gameplay)
 - **Brands**: Neenah, Hammermill, Georgia-Pacific
 
-Check our [Cardstock Guide](/docs/printing/cardstock-guide/) for comprehensive paper recommendations.
+Check our [Cardstock Guide](/docs/printing/cardstock-guide/) for comprehensive
+paper recommendations.
 
 ### Can I print cards at a local print shop?
 
@@ -135,20 +151,20 @@ Durability depends on cardstock quality, printing method, and handling.
 
 ### Can I sell printed cards?
 
-**Personal use**: Print freely for personal and friend group play
-**Commercial use**: Contact us before any commercial activity
-**Tournament use**: Check with tournament organizers
-**Community events**: Generally encouraged for local play groups
+**Personal use**: Print freely for personal and friend group play **Commercial
+use**: Contact us before any commercial activity **Tournament use**: Check with
+tournament organizers **Community events**: Generally encouraged for local play
+groups
 
 ## Community and Development
 
 ### How can I contribute to the game?
 
 **Game Design**: Join discussions on [Discord](https://discord.gg/KQTY8DfY)
-**Artwork**: Submit card art and design concepts
-**Playtesting**: Test new cards and provide feedback  
-**Documentation**: Help improve guides and rules
-**Website**: Contribute to the Hugo website on [GitHub](https://github.com/dunamismax/forge-realm)
+**Artwork**: Submit card art and design concepts **Playtesting**: Test new cards
+and provide feedback  
+**Documentation**: Help improve guides and rules **Website**: Contribute to the
+Hugo website on [GitHub](https://github.com/dunamismax/forge-realm)
 
 See our [Contributing Guide](/docs/contributing/) for complete details.
 
@@ -201,7 +217,8 @@ Absolutely! Card suggestions are welcome through:
 
 ### What resolution are the card images?
 
-All cards are provided at **300 DPI** minimum resolution, ensuring professional print quality at standard card size (63mm × 88mm).
+All cards are provided at **300 DPI** minimum resolution, ensuring professional
+print quality at standard card size (63mm × 88mm).
 
 ### Can I modify the card designs?
 
@@ -214,16 +231,16 @@ Under Creative Commons BY-SA 4.0:
 
 ### How do I report bugs or issues with cards?
 
-**Game balance issues**: Discuss on Discord or GitHub
-**Printing problems**: Community troubleshooting on Discord
-**Website issues**: Report on [GitHub Issues](https://github.com/dunamismax/forge-realm/issues)
-**Rule clarifications**: Ask in Discord rules channel
+**Game balance issues**: Discuss on Discord or GitHub **Printing problems**:
+Community troubleshooting on Discord **Website issues**: Report on
+[GitHub Issues](https://github.com/dunamismax/forge-realm/issues) **Rule
+clarifications**: Ask in Discord rules channel
 
 ### Is there a mobile app?
 
 Currently no official mobile app exists. The project focuses on:
 
-- **Physical gameplay** as primary experience  
+- **Physical gameplay** as primary experience
 - **Web-based resources** for rules and cards
 - **Community apps** may be developed by volunteers
 - **Digital tools** for deck building may be added later
@@ -235,7 +252,7 @@ Currently no official mobile app exists. The project focuses on:
 **Common solutions**:
 
 - **Use manual feed tray** instead of main tray
-- **Reduce batch size** to 5-10 sheets maximum  
+- **Reduce batch size** to 5-10 sheets maximum
 - **Check paper thickness settings** in printer driver
 - **Clean paper pickup rollers** if feeding inconsistently
 - **Try different cardstock** if problems persist
@@ -261,9 +278,9 @@ Currently no official mobile app exists. The project focuses on:
 ### Where can I get help with specific issues?
 
 **Discord community**: Real-time help from experienced community members
-**GitHub Issues**: Technical problems with files or website
-**Printing channel**: Dedicated support for printing questions
-**Rules channel**: Gameplay and rule clarification questions
+**GitHub Issues**: Technical problems with files or website **Printing
+channel**: Dedicated support for printing questions **Rules channel**: Gameplay
+and rule clarification questions
 
 ## Getting Started
 
@@ -271,8 +288,10 @@ Currently no official mobile app exists. The project focuses on:
 
 **Recommended path**:
 
-1. **Read the [Quick Start Guide](/docs/gameplay/quick-start/)** to learn basic rules
-2. **Join our [Discord server](https://discord.gg/KQTY8DfY)** for community support
+1. **Read the [Quick Start Guide](/docs/gameplay/quick-start/)** to learn basic
+   rules
+2. **Join our [Discord server](https://discord.gg/KQTY8DfY)** for community
+   support
 3. **Download starter deck files** when available (Q1 2026)
 4. **Print a small test batch** to try the process
 5. **Find local players** or introduce friends to the game
@@ -298,4 +317,6 @@ Currently no official mobile app exists. The project focuses on:
 
 ---
 
-**Still have questions?** Join our [Discord community](https://discord.gg/KQTY8DfY) where experienced players and developers are happy to help with any questions not covered here.
+**Still have questions?** Join our
+[Discord community](https://discord.gg/KQTY8DfY) where experienced players and
+developers are happy to help with any questions not covered here.

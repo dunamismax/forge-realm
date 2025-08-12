@@ -75,7 +75,7 @@ $code-color: #bd93f9  // Code syntax
 
 - One H1 per page maximum
 - Logical heading hierarchy (no skipping levels)
-- Use **bold** for emphasis, *italic* for subtle emphasis
+- Use **bold** for emphasis, _italic_ for subtle emphasis
 - `Code formatting` for technical terms and commands
 
 ## Components
@@ -85,9 +85,8 @@ $code-color: #bd93f9  // Code syntax
 Use Hugo/Docsy alert shortcodes for important information:
 
 ```markdown
-{{% alert title="Important" color="warning" %}}
-Critical information that users need to notice.
-{{% /alert %}}
+{{% alert title="Important" color="warning" %}} Critical information that users
+need to notice. {{% /alert %}}
 ```
 
 **Colors**: primary, secondary, success, info, warning, danger
@@ -96,17 +95,18 @@ Critical information that users need to notice.
 
 Always specify language for syntax highlighting:
 
-```markdown
+````markdown
 ```bash
 npm run dev
 ```
+````
 
 ```yaml
 title: "Page Title"
 description: "Page description"
 ```
 
-```
+````
 
 ### Links
 - **Internal**: Use relative paths (`/docs/section/`)
@@ -142,7 +142,7 @@ Content organized in logical sections.
 ### Subsection
 
 Detailed information in smaller chunks.
-```
+````
 
 ### Content Organization
 
@@ -231,8 +231,7 @@ title: "Human Readable Title"
 linkTitle: "Nav Title"
 weight: 10
 description: >
-  Multi-line descriptions for better
-  readability in source files.
+  Multi-line descriptions for better readability in source files.
 date: 2025-01-01
 ---
 ```
@@ -253,4 +252,5 @@ Leverage Docsy shortcodes for enhanced layouts:
 
 ---
 
-This style guide ensures consistent, accessible, and performant user experiences across all Forge Realm documentation and website content.
+This style guide ensures consistent, accessible, and performant user experiences
+across all Forge Realm documentation and website content.

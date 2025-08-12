@@ -8,7 +8,9 @@ description: >
 
 ## Our Commitment
 
-The Forge Realm TCG community provides a harassment-free environment for everyone, regardless of background or experience. We focus on collaborative game development and maintaining a welcoming space for all contributors.
+The Forge Realm TCG community provides a harassment-free environment for
+everyone, regardless of background or experience. We focus on collaborative game
+development and maintaining a welcoming space for all contributors.
 
 ## Community Standards
 
@@ -49,12 +51,15 @@ All reports handled with discretion and confidentiality.
 
 ## Appeals
 
-Appeals can be submitted to <appeals@forge-realm.com> within 30 days. Independent review by governance committee within 14 days.
+Appeals can be submitted to <appeals@forge-realm.com> within 30 days.
+Independent review by governance committee within 14 days.
 
 ## Scope
 
-This applies to all project spaces: GitHub, Discord, website, events, and when representing the community publicly.
+This applies to all project spaces: GitHub, Discord, website, events, and when
+representing the community publicly.
 
 ---
 
-*Adapted from [Contributor Covenant 2.1](https://www.contributor-covenant.org) with game development community modifications.*
+_Adapted from [Contributor Covenant 2.1](https://www.contributor-covenant.org)
+with game development community modifications._

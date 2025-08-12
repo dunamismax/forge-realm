@@ -2,7 +2,7 @@
 # Validates HTML structure and links in the generated site
 
 # Directory containing the built site
-DirectoryPath: "public"
+DirectoryPath: 'public'
 
 # Check external links (can be slow, disable for faster local testing)
 CheckExternalLinks: true
@@ -10,30 +10,30 @@ CheckExternalLinks: true
 # Ignore these URLs (e.g., requires auth, rate limited, etc.)
 IgnoreURLs:
   # Discord invite links (frequently change)
-  - "https://discord.gg/*"
+  - 'https://discord.gg/*'
   # External social media that may block bots
-  - "https://twitter.com/*"
-  - "https://facebook.com/*"
+  - 'https://twitter.com/*'
+  - 'https://facebook.com/*'
   # Localhost links in development
-  - "http://localhost:*"
-  - "http://127.0.0.1:*"
+  - 'http://localhost:*'
+  - 'http://127.0.0.1:*'
 
 # Ignore these patterns
 IgnorePatterns:
   # Hugo development server links
-  - "http://localhost"
-  - "//localhost"
+  - 'http://localhost'
+  - '//localhost'
 
 # Don't check these file extensions
 IgnoreExtensions:
-  - ".png"
-  - ".jpg"
-  - ".jpeg" 
-  - ".gif"
-  - ".webp"
-  - ".svg"
-  - ".ico"
-  - ".pdf"
+  - '.png'
+  - '.jpg'
+  - '.jpeg'
+  - '.gif'
+  - '.webp'
+  - '.svg'
+  - '.ico'
+  - '.pdf'
 
 # HTML validation options
 CheckDoctype: true
@@ -41,7 +41,7 @@ CheckHtml: true
 CheckFavicon: true
 CheckMeta: true
 
-# Link checking options  
+# Link checking options
 CheckLinks: true
 CheckImages: true
 CheckScripts: true
@@ -53,16 +53,16 @@ CheckAltText: true
 
 # Performance related
 HTTPCache:
-  MaxAge: 3600  # Cache external link checks for 1 hour
+  MaxAge: 3600 # Cache external link checks for 1 hour
 
 # Concurrent requests (be respectful to external sites)
-ExternalTimeout: 30  # 30 second timeout for external links
-HTTPConcurrencyLevel: 6  # Max 6 concurrent requests
+ExternalTimeout: 30 # 30 second timeout for external links
+HTTPConcurrencyLevel: 6 # Max 6 concurrent requests
 
 # Output options
-LogLevel: 2  # 0=silent, 1=errors, 2=warnings, 3=info
-OutputFormat: "text"  # text, json, or junit
+LogLevel: 2 # 0=silent, 1=errors, 2=warnings, 3=info
+OutputFormat: 'text' # text, json, or junit
 
 # Report settings
 VerboseOutput: false
-ShowAllResults: false  # Only show problems, not all checks
+ShowAllResults: false # Only show problems, not all checks

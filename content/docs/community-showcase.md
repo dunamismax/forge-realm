@@ -3,14 +3,15 @@ title: "Community Showcase"
 linkTitle: "Community Showcase"
 weight: 40
 description: >
-  Discover amazing community creations, deck lists, strategies, and player achievements from the Forge Realm community.
+  Discover amazing community creations, deck lists, strategies, and player
+  achievements from the Forge Realm community.
 ---
 
 <div class="mt-4"></div>
 
-{{% pageinfo color="success" %}}
-**Celebrating Our Community** - Explore the incredible creativity, strategic insights, and achievements of Forge Realm players worldwide.
-{{% /pageinfo %}}
+{{% pageinfo color="success" %}} **Celebrating Our Community** - Explore the
+incredible creativity, strategic insights, and achievements of Forge Realm
+players worldwide. {{% /pageinfo %}}
 
 ## Featured Community Content
 
@@ -18,17 +19,17 @@ description: >
 
 {{% blocks/section color="primary" type="row" %}}
 
-{{% blocks/feature icon="fa-trophy" title="Tournament Champions" %}}
-Celebrating players who have achieved victory in competitive play and community tournaments.
+{{% blocks/feature icon="fa-trophy" title="Tournament Champions" %}} Celebrating
+players who have achieved victory in competitive play and community tournaments.
 {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-star" title="Content Creators" %}}
-Highlighting community members who create videos, guides, and educational content about Forge Realm.
-{{% /blocks/feature %}}
+{{% blocks/feature icon="fa-star" title="Content Creators" %}} Highlighting
+community members who create videos, guides, and educational content about Forge
+Realm. {{% /blocks/feature %}}
 
-{{% blocks/feature icon="fa-palette" title="Community Artists" %}}
-Showcasing talented artists who contribute card artwork, fan art, and creative designs to the project.
-{{% /blocks/feature %}}
+{{% blocks/feature icon="fa-palette" title="Community Artists" %}} Showcasing
+talented artists who contribute card artwork, fan art, and creative designs to
+the project. {{% /blocks/feature %}}
 
 {{% /blocks/section %}}
 
@@ -36,9 +37,11 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 ### Innovative Deck Designs
 
-{{% alert title="Deck Submission" color="info" %}}
-**Share Your Creations!** Once cards are released in Q1 2026, submit your innovative deck designs to be featured in the community showcase. Include your deck list, strategy guide, and playtesting results. **We need contributors for card mechanics, artwork, and game design - join our Discord to help!**
-{{% /alert %}}
+{{% alert title="Deck Submission" color="info" %}} **Share Your Creations!**
+Once cards are released in Q1 2026, submit your innovative deck designs to be
+featured in the community showcase. Include your deck list, strategy guide, and
+playtesting results. **We need contributors for card mechanics, artwork, and
+game design - join our Discord to help!** {{% /alert %}}
 
 #### Featured Deck Archetypes
 
@@ -68,7 +71,7 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 ### Community Deck Database
 
-*Coming Q1 2026*: A comprehensive database where community members can:
+_Coming Q1 2026_: A comprehensive database where community members can:
 
 - **Submit deck lists** with detailed descriptions
 - **Rate and review** other players' creations
@@ -82,31 +85,31 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 #### Beginner Guides
 
-- **"Your First Deck"** by TODO *(coming soon)*
+- **"Your First Deck"** by TODO _(coming soon)_
   - Step-by-step deck building for new players
   - Budget-friendly card recommendations
   - Common mistakes to avoid
 
-- **"Understanding the Stack"** by TODO *(coming soon)*
+- **"Understanding the Stack"** by TODO _(coming soon)_
   - Advanced timing and priority concepts
   - Complex interaction examples
   - Tournament-level play insights
 
 #### Advanced Strategy
 
-- **"Essence Management Mastery"** by TODO *(coming soon)*
+- **"Essence Management Mastery"** by TODO _(coming soon)_
   - Optimizing resource allocation
   - Curve construction principles
   - Multi-format considerations
 
-- **"Combat Math and Decision Trees"** by TODO *(coming soon)*
+- **"Combat Math and Decision Trees"** by TODO _(coming soon)_
   - Calculating damage and trade values
   - When to attack vs. block
   - Combat trick timing
 
 ### Meta Analysis Reports
 
-**Monthly Meta Reviews** *(starting Q2 2026)*
+**Monthly Meta Reviews** _(starting Q2 2026)_
 
 - Popular deck archetypes and win rates
 - Format balance assessments
@@ -144,9 +147,11 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 #### Creative Challenges
 
-- **Deck Building Contests**: Create decks around specific themes or restrictions
+- **Deck Building Contests**: Create decks around specific themes or
+  restrictions
 - **Card Design Competitions**: Submit ideas for future card designs
-- **Art Contests**: Create fan art, alternate card designs, or promotional materials
+- **Art Contests**: Create fan art, alternate card designs, or promotional
+  materials
 - **Strategy Articles**: Write guides and analysis pieces for other players
 
 #### Gameplay Achievements
@@ -160,13 +165,15 @@ Showcasing talented artists who contribute card artwork, fan art, and creative d
 
 ### Community Testimonials
 
-{{% alert title="Share Your Story" color="success" %}}
-**We want to hear from you!** Share your Forge Realm journey, memorable games, and community experiences. Contact us on [Discord](https://discord.gg/KQTY8DfY) to be featured in our showcase.
-{{% /alert %}}
+{{% alert title="Share Your Story" color="success" %}} **We want to hear from
+you!** Share your Forge Realm journey, memorable games, and community
+experiences. Contact us on [Discord](https://discord.gg/KQTY8DfY) to be featured
+in our showcase. {{% /alert %}}
 
 #### Featured Stories
 
-TODO: Community member stories will be featured here once we have submissions after the Q1 2026 release.
+TODO: Community member stories will be featured here once we have submissions
+after the Q1 2026 release.
 
 **"From Casual to Competitive"**
 
@@ -174,7 +181,7 @@ TODO: Community member stories will be featured here once we have submissions af
 - Challenges overcome and lessons learned
 - Advice for other aspiring competitive players
 
-**"Building a Local Community"**  
+**"Building a Local Community"**
 
 - How one player introduced Forge Realm to their local game store
 - Growing from solo play to regular group meetings
@@ -190,7 +197,7 @@ TODO: Community member stories will be featured here once we have submissions af
 
 #### Global Reach
 
-- **Players from 25+ countries** *(projected by end of 2026)*
+- **Players from 25+ countries** _(projected by end of 2026)_
 - **Multiple language communities** with translation projects
 - **Regional tournaments** and local play groups
 - **Cultural card variants** celebrating different traditions
@@ -199,8 +206,10 @@ TODO: Community member stories will be featured here once we have submissions af
 
 - **Translation Initiative**: Community-driven translations of cards and rules
 - **Regional Formats**: Local variations and house rules
-- **Cultural Celebrations**: Special events honoring different cultures and traditions
-- **Educational Outreach**: Teaching Forge Realm in schools and community centers
+- **Cultural Celebrations**: Special events honoring different cultures and
+  traditions
+- **Educational Outreach**: Teaching Forge Realm in schools and community
+  centers
 
 ## Content Creator Hub
 
@@ -208,7 +217,7 @@ TODO: Community member stories will be featured here once we have submissions af
 
 #### YouTube Creators
 
-*Launching alongside card release in Q1 2026*
+_Launching alongside card release in Q1 2026_
 
 - **Gameplay Videos**: Tournament matches and casual play sessions
 - **Deck Tech Breakdowns**: Detailed analysis of successful strategies
@@ -281,17 +290,20 @@ The community regularly develops new ways to play Forge Realm:
 - **Community Voting**: Major decisions made by player consensus
 - **Proposal System**: Structured process for suggesting changes
 - **Discussion Forums**: Open debate about game direction
-- **Card Balance Updates**: Community can propose and vote on card balance changes through Discord
+- **Card Balance Updates**: Community can propose and vote on card balance
+  changes through Discord
 - **Transparency**: All development decisions made publicly
 
 ### Community-Driven Card Balance
 
-The Forge Realm community has the power to modify and balance cards after release:
+The Forge Realm community has the power to modify and balance cards after
+release:
 
 #### Balance Proposal Process
 
 1. **Issue Identification**: Players identify problematic cards through gameplay
-2. **Discord Discussion**: Community discusses balance concerns in #balance-discussion
+2. **Discord Discussion**: Community discusses balance concerns in
+   #balance-discussion
 3. **Formal Proposal**: Submit detailed balance proposals with reasoning
 4. **Community Review**: Open discussion period for feedback and refinement
 5. **Voting Period**: Community votes on proposed changes
@@ -304,9 +316,9 @@ The Forge Realm community has the power to modify and balance cards after releas
 - **Rules text clarifications** or minor ability adjustments
 - **Format restrictions** for cards that dominate specific play styles
 
-{{% alert title="Community Balance" color="info" %}}
-**Your Voice Matters!** Join our Discord server to participate in balance discussions and help ensure Forge Realm remains fun and fair for all players.
-{{% /alert %}}
+{{% alert title="Community Balance" color="info" %}} **Your Voice Matters!**
+Join our Discord server to participate in balance discussions and help ensure
+Forge Realm remains fun and fair for all players. {{% /alert %}}
 
 ## Getting Involved
 
@@ -314,7 +326,8 @@ The Forge Realm community has the power to modify and balance cards after releas
 
 #### For New Players
 
-1. **Join the [Discord](https://discord.gg/KQTY8DfY)** to connect with the community
+1. **Join the [Discord](https://discord.gg/KQTY8DfY)** to connect with the
+   community
 2. **Learn the game** with our [Quick Start Guide](/docs/gameplay/quick-start/)
 3. **Prepare for launch** by studying card previews and planning your first deck
 4. **Find local players** or organize a playgroup in your area
@@ -322,7 +335,7 @@ The Forge Realm community has the power to modify and balance cards after releas
 #### For Experienced Players
 
 1. **Share your expertise** by helping new players learn
-2. **Create content** like deck guides, strategy articles, or videos  
+2. **Create content** like deck guides, strategy articles, or videos
 3. **Participate in tournaments** and competitive events
 4. **Contribute to development** through playtesting and feedback
 
@@ -345,8 +358,12 @@ The Forge Realm community has the power to modify and balance cards after releas
 
 #### Code of Conduct
 
-All community members are expected to follow our [Code of Conduct](../../../CODE_OF_CONDUCT.md), which promotes a positive, inclusive environment for everyone to enjoy Forge Realm.
+All community members are expected to follow our
+[Code of Conduct](../../../CODE_OF_CONDUCT.md), which promotes a positive,
+inclusive environment for everyone to enjoy Forge Realm.
 
 ---
 
-**Ready to be part of the community?** Join our [Discord server](https://discord.gg/KQTY8DfY) today to connect with players, share your creations, and help shape the future of Forge Realm together!
+**Ready to be part of the community?** Join our
+[Discord server](https://discord.gg/KQTY8DfY) today to connect with players,
+share your creations, and help shape the future of Forge Realm together!
