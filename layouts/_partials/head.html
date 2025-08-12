@@ -64,39 +64,10 @@
     <link href="{{ $customCss.RelPermalink }}" rel="stylesheet" />
   {{- end }}
 
-  <!-- Critical CSS for preventing flash -->
+  <!-- Minimal critical CSS (avoid overriding theme colors) -->
   <style>
-    /* Critical path CSS - inline for immediate rendering */
-    html {
-      background-color: #111;
-      color: #f9fafb;
-      line-height: 1.6;
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      font-size: 15px;
-      text-rendering: optimizeLegibility;
-      -webkit-font-smoothing: antialiased;
-    }
-    
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #111;
-      color: #f9fafb;
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      font-size: 15px;
-      line-height: 1.6;
-      transition: opacity 0.2s ease;
-    }
-    
-    .dark {
-      --bg-primary: #111;
-      --text-primary: #f9fafb;
-    }
-    
-    :not(.dark) {
-      --bg-primary: #ffffff;
-      --text-primary: #111827;
-    }
+    /* Reset margins to prevent layout jumps before CSS loads */
+    html, body { margin: 0; padding: 0; }
     
     /* Prevent layout shift */
     img, video {

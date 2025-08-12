@@ -23,20 +23,20 @@ layout: hextra-home
 </div>
 
 <div class="hx:mb-6">
-{{< hextra/hero-button text="Documentation" link="docs" >}}
-</div>
+  <a class="fr-btn fr-btn--primary" href="/docs">Documentation</a>
+  </div>
 
 <div class="hx:mb-6">
-{{< hextra/hero-button text="Browse Cards" link="docs/cards" style="secondary" >}}
-</div>
+  <a class="fr-btn fr-btn--secondary" href="/docs/cards">Browse Cards</a>
+  </div>
 
 <div class="hx:mb-6">
-{{< hextra/hero-button text="Join Discord" link="https://discord.gg/KQTY8DfY" style="secondary" >}}
-</div>
+  <a class="fr-btn fr-btn--ghost" href="https://discord.gg/KQTY8DfY" target="_blank" rel="noreferrer">Join Discord</a>
+  </div>
 
 <div class="hx:mb-6">
-{{< hextra/hero-button text="View on GitHub" link="https://github.com/dunamismax/forge-realm" style="secondary" >}}
-</div>
+  <a class="fr-btn fr-btn--ghost" href="https://github.com/dunamismax/forge-realm" target="_blank" rel="noreferrer">View on GitHub</a>
+  </div>
 
 <div class="hx:mt-6"></div>
 

@@ -1,9 +1,9 @@
-/* Forge Realm - Typography & Smooth Transitions */
+/* Forge Realm - Typography & Smooth Transitions (refined) */
 
-/* Import Inter font from Cloudflare */
+/* Optional font import (kept but non-blocking) */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/inter-ui/4.0.2/inter.css');
 
-/* CSS Variables for consistent theming */
+/* CSS Variables for consistent theming (non-invasive) */
 :root {
   --transition-duration: 0.2s;
   --transition-easing: ease;
@@ -55,74 +55,9 @@ body {
   font-weight: 400;
 }
 
-/* Base typography without aggressive overrides */
-body {
-  font-family: var(--font-family);
-  font-size: var(--font-size-base);
-  line-height: var(--line-height-base);
-}
-
-/* Target specific content areas that need color fixes */
-.hx-prose p,
-.hx-prose div,
-.hx-prose li {
+/* Scope gentle text adjustments to prose/content only */
+.hx-prose :where(p, li, span, div) {
   color: var(--text-primary);
-}
-
-/* Main content area text */
-main .hx-max-w-screen-xl p,
-main .hx-max-w-screen-xl div:not([class*="hx-bg"]):not([class*="hx-border"]),
-main .hx-max-w-screen-xl li {
-  color: var(--text-primary);
-}
-
-/* Ensure content in main sections is visible */
-[data-content] p,
-[data-content] div,
-[data-content] li {
-  color: var(--text-primary);
-}
-
-/* Fix list items specifically */
-main li,
-article li,
-.content li,
-ul li,
-ol li {
-  color: var(--text-primary) !important;
-}
-
-/* Fix specific problem areas */
-main ul,
-main ol,
-article ul,
-article ol,
-.content ul,
-.content ol {
-  color: var(--text-primary);
-}
-
-main ul li,
-main ol li,
-article ul li,
-article ol li,
-.content ul li,
-.content ol li {
-  color: var(--text-primary) !important;
-}
-
-/* Target Hextra's content wrapper */
-.hx-nextra-content p,
-.hx-nextra-content li,
-.hx-nextra-content div {
-  color: var(--text-primary) !important;
-}
-
-/* Generic content fixes for markdown content */
-.markdown-body p,
-.markdown-body li,
-.markdown-body div {
-  color: var(--text-primary) !important;
 }
 
 /* Headings typography */
@@ -135,8 +70,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Ensure headings are visible in content areas */
-main h1, main h2, main h3, main h4, main h5, main h6,
-article h1, article h2, article h3, article h4, article h5, article h6 {
+main :where(h1, h2, h3, h4, h5, h6),
+article :where(h1, h2, h3, h4, h5, h6) {
   color: var(--text-primary);
 }
 
@@ -236,41 +171,12 @@ img {
 .feature-grid .feature-card:nth-child(5) { animation-delay: 0.5s; }
 .feature-grid .feature-card:nth-child(6) { animation-delay: 0.6s; }
 
-/* Button hover effects and visibility */
-.btn:hover, .hx-btn:hover, button:hover {
+/* Button hover effects */
+.btn:hover, .hx-btn:hover, button:hover, a[role="button"]:hover {
   transform: translateY(-1px);
 }
 
-/* Fix button text visibility */
-.hx-btn,
-.btn,
-button,
-.hero-button,
-.hx-hero-button {
-  color: white !important;
-}
-
-.hx-btn:hover,
-.btn:hover,
-button:hover,
-.hero-button:hover,
-.hx-hero-button:hover {
-  color: white !important;
-}
-
-/* Ensure primary buttons have good contrast */
-.hx-btn-primary,
-.btn-primary {
-  background-color: hsl(var(--primary-hue) var(--primary-saturation) var(--primary-lightness));
-  color: white !important;
-}
-
-/* Secondary buttons */
-.hx-btn-secondary,
-.btn-secondary {
-  color: var(--text-primary) !important;
-  border-color: var(--border-color);
-}
+/* Respect theme-provided button colors; no global overrides here. */
 
 /* Performance optimizations */
 .content-wrapper {
@@ -285,35 +191,23 @@ blockquote,
   color: var(--text-primary);
 }
 
-/* Links with proper contrast */
-a {
+/* Do not override all anchors; scope link styling to content areas only */
+.hx-prose a {
   color: hsl(var(--primary-hue) var(--primary-saturation) var(--primary-lightness));
-  text-decoration: none;
+  text-decoration: underline;
 }
-
-a:hover {
+.hx-prose a:hover {
+  color: var(--hx-color-primary-700, hsl(var(--primary-hue) var(--primary-saturation) calc(var(--primary-lightness) - 7%)));
   text-decoration: underline;
 }
 
-/* Lists */
-ul, ol {
-  color: var(--text-primary);
-}
+/* Lists inside prose */
+.hx-prose :where(ul, ol) { color: var(--text-primary); }
+.hx-prose :where(ul li, ol li) { color: var(--text-primary); margin-bottom: 0.5rem; }
 
-ul li, ol li {
-  color: var(--text-primary);
-  margin-bottom: 0.5rem;
-}
-
-/* Tables */
-table {
-  color: var(--text-primary);
-}
-
-th, td {
-  color: var(--text-primary);
-  border-color: var(--border-color);
-}
+/* Tables (content) */
+.hx-prose table { color: var(--text-primary); }
+.hx-prose :where(th, td) { color: var(--text-primary); border-color: var(--border-color); }
 
 /* Code blocks */
 code, pre {
@@ -326,12 +220,7 @@ input, textarea, select {
   font-size: var(--font-size-base);
 }
 
-/* Ensure Hextra components use proper colors */
-.hx-text-gray-500,
-.hx-text-gray-600,
-.hx-text-gray-700 {
-  color: var(--text-secondary);
-}
+/* Do not override Hextra utility text classes globally */
 
 /* Feature cards */
 .feature-card p,
@@ -353,20 +242,82 @@ input, textarea, select {
   color: var(--text-secondary);
 }
 
-/* Comprehensive text visibility fix - catch all remaining issues */
-main *:not([class*="hx-bg"]):not([class*="hx-border"]):not(button):not(.btn):not(.hx-btn),
-article *:not([class*="hx-bg"]):not([class*="hx-border"]):not(button):not(.btn):not(.hx-btn) {
-  color: var(--text-primary) !important;
-}
+/* Avoid global catch-all color overrides to preserve theme contrast */
 
-/* Specifically target common text elements */
-p, li, span:not([class*="hx-"]), div:not([class*="hx-bg"]):not([class*="hx-border"]) {
-  color: var(--text-primary) !important;
+/* Light-mode search dropdown contrast fix */
+html:not(.dark) .search-results,
+html:not(.dark) .search-results :where(li, a, p, span, div) {
+  color: #1f2937 !important; /* gray-800 for readability on white */
 }
+html:not(.dark) .search-results { background-color: #ffffff; border-color: #e5e7eb; }
+html:not(.dark) .search-results a:hover { background-color: rgba(0,0,0,0.03); }
 
-/* Optimize text rendering */
-h1, h2, h3, h4, h5, h6 {
-  text-rendering: optimizeLegibility;
-  font-display: swap;
-  color: var(--text-primary) !important;
+/* Minimal button utility classes for consistent CTAs */
+.fr-btn {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease, transform .2s ease;
 }
+.fr-btn--primary {
+  background-color: var(--hx-color-primary-600, hsl(var(--primary-hue) var(--primary-saturation) var(--primary-lightness)));
+  color: #fff;
+}
+.fr-btn--primary:hover { background-color: var(--hx-color-primary-700, hsl(var(--primary-hue) var(--primary-saturation) calc(var(--primary-lightness) - 7%))); transform: translateY(-1px); }
+.fr-btn--secondary {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+.fr-btn--secondary:hover { background-color: rgba(0,0,0,0.03); }
+.dark .fr-btn--secondary:hover { background-color: rgba(255,255,255,0.06); }
+.fr-btn--ghost {
+  background-color: transparent;
+  color: var(--hx-color-primary-600, hsl(var(--primary-hue) var(--primary-saturation) var(--primary-lightness)));
+}
+.fr-btn--ghost:hover { background-color: rgba(0,0,0,0.03); }
+.dark .fr-btn--ghost:hover { background-color: rgba(255,255,255,0.06); }
+
+/* CTA compatibility: unify existing theme-styled anchors to fr-btn look */
+/* Primary-like anchors using Hextra utility classes */
+a.hx\:bg-primary-600,
+a.hx\:bg-primary-700,
+a.hx\:bg-primary-600.hx\:hover\:bg-primary-700:hover,
+a.hx\:bg-primary-600.hx\:focus\:ring-4:focus {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff;
+  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+a.hx\:bg-primary-600:hover,
+a.hx\:bg-primary-700:hover { transform: translateY(-1px); }
+
+/* Secondary-like anchors: rounded, padded, no primary bg */
+a.hx\:rounded-full.hx\:px-6.hx\:py-3:not([class*="hx:bg-"]) {
+  display: inline-block;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  text-align: center;
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  transition: background-color .2s ease, color .2s ease, box-shadow .2s ease, transform .2s ease;
+}
+a.hx\:rounded-full.hx\:px-6.hx\:py-3:not([class*="hx:bg-"]):hover { background-color: rgba(0,0,0,0.03); transform: translateY(-1px); }
+.dark a.hx\:rounded-full.hx\:px-6.hx\:py-3:not([class*="hx:bg-"]):hover { background-color: rgba(255,255,255,0.06); }
+
+/* Generic role=button anchors (content/UI) */
+a[role="button"] {
+  display: inline-block;
+  padding: 0.625rem 1rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color .2s ease, color .2s ease, transform .2s ease;
+}
+a[role="button"]:hover { transform: translateY(-1px); }
