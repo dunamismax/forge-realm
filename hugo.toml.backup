@@ -1,0 +1,85 @@
+baseURL = 'https://forge-realm.com'
+languageCode = 'en-us'
+title = 'Forge Realm TCG'
+contentDir = 'content'
+enableEmoji = true
+enableRobotsTXT = true
+
+[module]
+  [module.hugoVersion]
+    extended = true
+    min = "0.146.0"
+
+  [[module.imports]]
+    path = "github.com/google/docsy"
+    disable = false
+
+  [[module.imports]]
+    path = "github.com/google/docsy/dependencies"
+    disable = false
+
+[params]
+  github_repo = "https://github.com/dunamismax/forge-realm"
+  github_branch = "main"
+  github_project_repo = "https://github.com/dunamismax/forge-realm"
+
+  # Enable Lunr.js offline search
+  offlineSearch = true
+
+  # Enable syntax highlighting and copy buttons on code blocks with Prism
+  prism_syntax_highlighting = false
+
+  # User interface configuration
+  [params.ui]
+    showLightDarkModeMenu = false
+    sidebar_menu_compact = false
+    sidebar_cache_limit = 10
+    breadcrumb_disable = false
+    sidebar_menu_foldable = true
+
+    # Set to false to disable the About link in the site footer
+    footer_about_enable = true
+
+  # Configure edit page links
+  [params.ui.readingtime]
+    enable = false
+
+  # Footer copyright
+  copyright = "© 2025 Forge Realm TCG. Open source trading card game."
+  privacy_policy = ""
+
+  [params.links]
+    [[params.links.user]]
+      name = "Discord"
+      url = "https://discord.gg/KQTY8DfY"
+      icon = "fab fa-discord"
+      desc = "Community discussions and support"
+    [[params.links.user]]
+      name = "GitHub"
+      url = "https://github.com/dunamismax/forge-realm"
+      icon = "fab fa-github"
+      desc = "Development happens here"
+
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 3
+    startLevel = 1
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.goldmark.parser]
+    [markup.goldmark.parser.attribute]
+      block = true
+
+[menu]
+  [[menu.primary]]
+    name = "Documentation"
+    url = "/docs/"
+    identifier = "docs"
+    weight = 10
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+  section = ["HTML", "RSS"]
