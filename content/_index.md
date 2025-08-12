@@ -28,7 +28,6 @@ layout: hextra-home
 
 <div class="hx:mb-6 hx:flex hx:flex-wrap hx:gap-4 hx:justify-center hx:md:justify-start">
   <a class="fr-btn fr-btn--secondary" href="/docs">Documentation</a>
-  <a class="fr-btn fr-btn--secondary" href="/docs/cards">Browse Cards</a>
   <a class="fr-btn fr-btn--secondary" href="https://discord.gg/KQTY8DfY" target="_blank" rel="noreferrer">Join Discord</a>
   <a class="fr-btn fr-btn--secondary" href="https://github.com/dunamismax/forge-realm" target="_blank" rel="noreferrer">View on GitHub</a>
 </div>
