@@ -83,6 +83,48 @@ main .hx-max-w-screen-xl li {
   color: var(--text-primary);
 }
 
+/* Fix list items specifically */
+main li,
+article li,
+.content li,
+ul li,
+ol li {
+  color: var(--text-primary) !important;
+}
+
+/* Fix specific problem areas */
+main ul,
+main ol,
+article ul,
+article ol,
+.content ul,
+.content ol {
+  color: var(--text-primary);
+}
+
+main ul li,
+main ol li,
+article ul li,
+article ol li,
+.content ul li,
+.content ol li {
+  color: var(--text-primary) !important;
+}
+
+/* Target Hextra's content wrapper */
+.hx-nextra-content p,
+.hx-nextra-content li,
+.hx-nextra-content div {
+  color: var(--text-primary) !important;
+}
+
+/* Generic content fixes for markdown content */
+.markdown-body p,
+.markdown-body li,
+.markdown-body div {
+  color: var(--text-primary) !important;
+}
+
 /* Headings typography */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-family);
@@ -194,9 +236,40 @@ img {
 .feature-grid .feature-card:nth-child(5) { animation-delay: 0.5s; }
 .feature-grid .feature-card:nth-child(6) { animation-delay: 0.6s; }
 
-/* Button hover effects */
+/* Button hover effects and visibility */
 .btn:hover, .hx-btn:hover, button:hover {
   transform: translateY(-1px);
+}
+
+/* Fix button text visibility */
+.hx-btn,
+.btn,
+button,
+.hero-button,
+.hx-hero-button {
+  color: white !important;
+}
+
+.hx-btn:hover,
+.btn:hover,
+button:hover,
+.hero-button:hover,
+.hx-hero-button:hover {
+  color: white !important;
+}
+
+/* Ensure primary buttons have good contrast */
+.hx-btn-primary,
+.btn-primary {
+  background-color: hsl(var(--primary-hue) var(--primary-saturation) var(--primary-lightness));
+  color: white !important;
+}
+
+/* Secondary buttons */
+.hx-btn-secondary,
+.btn-secondary {
+  color: var(--text-primary) !important;
+  border-color: var(--border-color);
 }
 
 /* Performance optimizations */
@@ -280,8 +353,20 @@ input, textarea, select {
   color: var(--text-secondary);
 }
 
+/* Comprehensive text visibility fix - catch all remaining issues */
+main *:not([class*="hx-bg"]):not([class*="hx-border"]):not(button):not(.btn):not(.hx-btn),
+article *:not([class*="hx-bg"]):not([class*="hx-border"]):not(button):not(.btn):not(.hx-btn) {
+  color: var(--text-primary) !important;
+}
+
+/* Specifically target common text elements */
+p, li, span:not([class*="hx-"]), div:not([class*="hx-bg"]):not([class*="hx-border"]) {
+  color: var(--text-primary) !important;
+}
+
 /* Optimize text rendering */
 h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
   font-display: swap;
+  color: var(--text-primary) !important;
 }
