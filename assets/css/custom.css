@@ -93,12 +93,30 @@ h4 { font-size: 1.25rem; }
 h5 { font-size: 1.125rem; }
 h6 { font-size: 1rem; }
 
-/* Smooth navbar transitions */
+/* Smooth navbar transitions and increased height */
 .navbar {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   transition: background-color var(--transition-duration) var(--transition-easing),
               backdrop-filter var(--transition-duration) var(--transition-easing);
+  min-height: 80px !important;
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+
+/* Ensure navbar content is properly centered with increased height */
+.hextra-navbar-container {
+  min-height: 80px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* Adjust navbar brand/logo container for larger logo */
+.navbar-brand,
+.hextra-navbar-logo {
+  display: flex !important;
+  align-items: center !important;
+  height: 80px !important;
 }
 
 /* Enhanced link hover effects */
