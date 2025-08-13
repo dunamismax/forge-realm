@@ -1,358 +1,221 @@
 ---
-title: "Comprehensive Rules"
+title: "Comprehensive Rules (Ideal Magic)"
 linkTitle: "Rules"
 weight: 20
 description: >
-  Complete rules for Forge Realm's Legacy and Vintage-inspired gameplay system.
-  Classic Magic foundations with carefully chosen enhancements for strategic
-  depth and competitive balance.
+The definitive rules for the Ideal Magic format: classic Magic foundations,
+modern paper-friendly design, evergreen interaction, and beloved mechanics
+that maximize agency and minimize bookkeeping.
 ---
 
-{{< callout type="warning" >}} **Complete Rulebook** — Forge Realm preserves
-the strategic depth of Magic's golden age. Built on Legacy and Vintage
-foundations with community-approved enhancements that honor the game's classic
-design principles. {{< /callout >}}
+{{< callout type="warning" >}}
+**Complete Rulebook — Ideal Magic**
+This format keeps the soul of Magic while cutting logistically messy and
+format-warping mechanics. Expect board-first games, clear interaction, and
+decisions that matter every turn.
+{{< /callout >}}
 
-## 1. Core Game Philosophy
+# 1. Core Game Philosophy
 
-### 1.1 Legacy and Vintage Foundation
+## 1.1 Foundations
 
-**Core Design Principles:**
+* **Deck size**: Minimum 60 cards (no maximum). Four-copy limit per card name (basic lands excepted).
+* **Sideboard**: Up to 15 cards in competitive play.
+* **Starting life**: 20. **Opening hands**: London Mulligan.
+* **Five-color mana system** and the traditional color pie remain intact.
+* **The stack** and priority rules operate as in classic Magic.
+* **Turn structure**: beginning, two main phases, combat, end—see §4.
+* **Interaction-first**: Removal and counterplay are broad and accessible. **Ward** replaces most uses of Hexproof at lower rarities.
+* **Complexity guardrails**: No game states that persist after the last relevant permanent leaves the battlefield. Tracking uses dice or counters on objects you can see.
 
-- **Deck size**: Minimum 60 cards with 4-copy limit per card name
-- **Sideboard**: Exactly 15 cards for competitive play
-- **Starting life**: 20 life and 7-card opening hands using the **London Mulligan**
-- Five-color mana system with color identity and splash tension
-- Instants, sorceries, stack-based interaction, and priority sequencing
-- Turn structure with two main phases and a robust combat step
-- Strategic resource tradeoffs each turn (tempo vs. cards vs. life total)
-- **Vintage mechanics**: Storm, Delve, Cascade with appropriate power level management
-- **Legacy staples**: Classic keywords and interactions that define eternal formats
-- **Selected enhancements**: Ward (defensive keyword), double-faced cards, and predefined tokens where they improve gameplay
-- **Power management**: Restricted list for Vintage format; careful curation of powerful effects
-- Dark fantasy aesthetic with mature themes and an emphasis on
-  imagination-driven play
+## 1.2 Victory Conditions
 
-### 1.2 Victory Conditions
+* Reduce an opponent from 20 life to 0; or
+* An opponent attempts to draw from an empty library.
 
-- **Primary**: Reduce opponent from 20 life to 0
-- **Secondary**: Opponent attempts to draw from an empty library
-- **Game Length**: 15–45 minutes depending on format and skill level
+# 2. Game Objects and Card Types
 
-## 2. Card Types and Classic System
+## 2.1 Spells and Timing
 
-### 2.1 Traditional Card Functions
+* **Casting**: Pay costs, choose modes/targets, put the spell on the stack.
+* **Resolution**: Last-in, first-out. If a spell/ability is countered or all targets become illegal, it doesn’t resolve.
+* **Nonpermanents** (instants/sorceries) go to their owner’s graveyard after resolving unless a mechanic says otherwise.
 
-Cards function according to their type and timing:
+## 2.2 Card Types
 
-#### 2.1.1 Play for Effect
+* **Instants**: Cast any time you have priority.
+* **Sorceries**: Cast during your main phase when the stack is empty.
+* **Creatures**: Have power/toughness; can attack and block; damage wears off at cleanup.
+* **Artifacts**/**Enchantments**: Ongoing effects on the battlefield.
+* **Sagas**: Enchantments with lore counters that add chapters as they enter and at your precombat main phase (see §6.2).
+* **Lands**: Special permanents that produce mana; you may play one land per turn as a special action.
+* **Double-Faced Cards (DFCs)**: Allowed (transforming/modal), **but no Day/Night** tracking (see §7).
 
-- Cast the card by paying its mana cost
-- Follow normal timing restrictions for the card's type
-- Resolve all effects; non-permanents go to the graveyard after resolving
+*(Planeswalkers are allowed at your table’s discretion; if used, apply the current comprehensive rules for loyalty abilities and combat targeting.)*
 
-#### 2.1.2 Alternative Costs & Set-Aside Casting
+# 3. Mana System
 
-- Some cards offer alternative costs (e.g., **Bargain**: sacrifice an
-  artifact/enchantment/token as you cast)
-- Certain mechanics let you pay now and cast later (e.g., **Plot** places a card
-  aside; you may cast a single plotted card you control each turn without paying
-  its mana cost)
-- These choices create resource tension without introducing unchecked "free
-  spell" chains
+## 3.1 Generating and Using Mana
 
-#### 2.1.3 Instant-Speed Response
+* **Lands** are the default mana source; artifacts/creatures may produce mana; spells/abilities can create temporary mana.
+* **Mana pool empties** at the end of each step and phase. No mana burn.
 
-- Instants and activated abilities can be used whenever you have priority
-- The stack resolves last-in, first-out
-- Skillful timing and resource management are central to interaction
+## 3.2 Colors
 
-### 2.2 Card Categories
+* **White**: order, efficiency, small-army tactics.
+* **Blue**: draw, permission, manipulation.
+* **Black**: removal, recursion, resource exchange.
+* **Red**: aggression, direct damage, short bursts.
+* **Green**: growth, big creatures, natural resilience.
+* **Colorless**: flexible, often with rate/tension costs.
 
-#### 2.2.1 Spell Cards (Classic MTG)
+## 3.3 Smoothing
 
-- **Instants**: May be cast any time you have priority
-- **Sorceries**: Cast only during your main phases when the stack is empty
-- Both go to the graveyard after resolving
+* Smoothing is **baked in** via **Scry/Surveil**, **light Cycling**, and **Investigate (Clues)**. These appear broadly across sets to reduce non-games.
 
-#### 2.2.2 Permanent Cards
-
-- **Creatures**: Attack, block, and use abilities; track power/toughness and
-  damage
-- **Enchantments**: Ongoing effects; includes puzzle-like **Cases** that "solve"
-  to upgrade their effect
-- **Artifacts & Equipment**: Utility, mana, and gear; Equipment attach to
-  creatures and remain if the creature dies
-- **Lands**: Primary mana sources; some double-faced cards may enter as lands
-- **Double-Faced Cards (DFCs/MDFCs)**: Cards with two faces (e.g., transforming
-  permanents or spell/land modalities); use the rules text on the face that is
-  currently up
-
-## 3. Mana System (Classic Magic)
-
-### 3.1 Mana Generation
-
-- **Land system**: Play one land per turn as the default source of mana
-- **Artifacts/creatures**: May produce mana as abilities
-- **Spells/abilities**: Can generate temporary mana
-- **Pool management**: Mana empties at the end of each step and phase (no mana
-  burn)
-
-### 3.2 Mana Colors (Five-Color Magic System)
-
-The five colors of mana each represent distinct philosophies and playstyles:
-
-- <span class="mana-red">**Red Mana**</span>: Aggression, direct damage, haste, chaos
-- <span class="mana-blue">**Blue Mana**</span>: Card draw, counter magic, knowledge, trickery
-- <span class="mana-green">**Green Mana**</span>: Growth, acceleration, large creatures, resilience
-- <span class="mana-white">**White Mana**</span>: Protection, efficiency, order, small-army tactics
-- <span class="mana-black">**Black Mana**</span>: Removal, recursion, discard, life-for-power exchanges
-- **Colorless**: Often from artifacts; flexible but costlier or with drawbacks
-
-### 3.3 Strategic Resource Decisions
-
-Players make classic decisions with modern smoothing:
-
-- Which lands to play and when; sequencing for color/fetch basics
-- How to commit limited mana each turn to pressure or hold-up
-- Curve management and color commitments
-- **Smoothing tools**: **Clues** (Investigate) to draw; **Maps** (Explore) to
-  improve card quality; **Food** to buffer life totals
-
-## 4. Turn Structure (MTG-Based)
-
-### 4.1 Phase Order
+# 4. Turn Structure
 
 1. **Beginning Phase**
-   - Untap all permanents
-   - Upkeep: resolve "at the beginning of upkeep" effects
-   - Draw: active player draws a card
-
-2. **Main Phase 1**
-   - Play a land (once per turn)
-   - Cast spells (creatures, enchantments, artifacts, sorceries)
-   - Activate abilities
-
+   a) **Untap** → b) **Upkeep** (resolve “at the beginning of upkeep”) → c) **Draw** (active player draws a card)
+2. **Precombat Main**
+   Cast spells, play a land (once/turn), activate abilities.
 3. **Combat Phase**
-   - Declare attackers (tap to attack unless they have vigilance)
-   - Defender declares blockers; assign and deal combat damage
-   - Combat abilities and keywords apply (first strike, trample, etc.)
+   a) **Beginning of combat** → b) **Declare attackers** (tap, unless vigilance) →
+   c) **Declare blockers** (defender assigns; attacker orders damage among multiple blockers) →
+   d) **Combat damage** (first strike/double strike modify timing) →
+   e) **End of combat**
+4. **Postcombat Main**
+5. **End Step / Cleanup**
+   Resolve “at the beginning of end step” triggers → discard to hand size (7) → remove damage, end “until end of turn” effects.
 
-4. **Main Phase 2**
-   - Additional main phase after combat
-   - Cast remaining spells or activate abilities
+**Priority**: Active player gets priority first in each step/phase; pass priority to move forward.
 
-5. **End Phase**
-   - "End step" triggers resolve
-   - Discard to maximum hand size (7) if necessary
-   - Cleanup
+# 5. Combat
 
-### 4.2 Strategic Timing
+## 5.1 Core Rules
 
-- **Instant speed**: Respond to spells, abilities, and combat steps
-- **Stack system**: Last-in-first-out resolution
-- **Priority**: Active player receives priority first each step/phase
+* Attack players or planeswalkers. Creatures must be untapped and not affected by summoning sickness unless they have **haste**.
+* Multiple blockers are allowed; attacking player orders damage among them.
 
-## 5. Enhanced Combat System
+## 5.2 Evergreen Combat Abilities
 
-### 5.1 Combat Declaration
+* **First strike / Double strike / Deathtouch / Lifelink / Menace / Reach / Trample / Vigilance.**
+* **Ward — N**: When this permanent becomes the target of an opponent’s spell or ability, counter it unless that player pays the Ward cost.
 
-- **Attackers**: Tap eligible creatures to attack the opponent or planeswalkers
-  (if present in custom sets)
-- **Attack triggers**: Abilities may trigger on attacking, blocking, or dealing
-  damage
+# 6. Mechanics Used in Ideal Magic
 
-### 5.2 Defense Options
+## 6.1 Evergreen / Near-Evergreen
 
-#### 5.2.1 Creature Blocking (MTG standard)
+* **Scry N**: Look at that many cards from the top of your library; put any number on the bottom and the rest on top in any order.
+* **Surveil N**: Look at that many, then put any number into your graveyard and the rest back on top in any order.
+* **Ward — N / \[cost]**: See §5.2.
 
-- Assign untapped creatures as blockers
-- Multiple blockers per attacker are allowed; attacking player orders damage
-  assignment
+## 6.2 “Glue Suite” (frequently reused)
 
-#### 5.2.2 Instant-Speed Defense (Classic Magic)
+* **Kicker \[cost]**: You may pay the kicker cost as you cast this spell for an additional effect or upgrade. *(Multi-kicker is allowed when a set calls for it.)*
+* **Cycling \[cost]**: \[cost], Discard this card: Draw a card.
+* **Flashback \[cost]**: You may cast this card from your graveyard for its flashback cost, then exile it.
+* **Foretell**: During your turn, pay {2} to exile this card from your hand face down. Cast it on a later turn for its foretell cost.
+* **Adventure**: A creature card with an alternate instant/sorcery face you may cast first; after the Adventure resolves, you may later cast the creature from exile.
+* **Investigate**: Create a **Clue** token with “{2}, Sacrifice this artifact: Draw a card.”
+* **Landfall**: An ability triggers whenever a land enters the battlefield under your control.
+* **Sagas**: Enter with a lore counter, then add one at the start of your precombat main phase; resolve the chapter abilities as counters are added. Sacrifice after the final chapter unless the card says otherwise.
 
-- Protect creatures or yourself with instants and abilities
-- Counterspells, removal, and combat tricks reshape outcomes in real time
+## 6.3 Supported “Lesser-Known” Mechanics
 
-### 5.3 Combat Abilities (Vintage + Modern Highlights)
+* **Rebound**: If you cast this spell from your hand, as it resolves, exile it. At the beginning of your next upkeep, you may cast the card from exile without paying its mana cost.
+* **Surge \[cost]**: You may cast this spell for its surge cost if you or a teammate has cast another spell this turn.
+* **Raid**: Abilities with Raid check if you attacked with a creature this turn.
+* **Buyback \[cost]** *(fenced)*: As you cast this instant or sorcery, you may pay its buyback cost. If you do, as it resolves, put it into your hand instead of your graveyard.
+  **Policy**: Appears at higher rarity with conservative rates; no repeatable hard-lock patterns.
+* **Emerge \[cost]** *(curated clusters only)*: You may cast this creature by sacrificing a creature and paying the emerge cost **reduced by the sacrificed creature’s mana value**.
 
-- **First strike / Double strike / Deathtouch / Lifelink / Menace / Reach**
-- **Trample**: Excess damage carries to the defending player/planeswalker
-- **Vigilance**: Doesn't tap to attack
-- **Ward**: When this permanent becomes the target of an opponent's spell or
-  ability, they must pay the listed cost or the spell/ability is countered
-- Legacy keywords like **Flanking**, **Banding**, and **Rampage** may appear in
-  curated cubes for nostalgia but are not core to new designs
+## 6.4 Occasional “Quest” Enchantments
 
-### 5.4 Damage Resolution
+* **Quest** (designation, not a keyword): Enchantments that gain counters when you meet listed conditions and pay off at a threshold. Use clear triggers and visible counters only.
 
-- Combat damage is assigned and dealt simultaneously (first strike/double strike
-  modify this)
-- Damage assignment order matters when multiple blockers are involved
-- Excess damage carries over only if the attacker has trample
+# 7. Excluded or Modified Mechanics (Format Policy)
 
-## 6. Artifact and Equipment System (Classic Magic)
+**Banned/Excluded from Ideal Magic card pool**
 
-### 6.1 Equipment Basics
+* **Day/Night (daybound/nightbound)** — persistent global tracking not tied to visible objects.
+* **Companion** — extra, consistent opening resource outside deck structure.
+* **Cipher** — clarity and repetition issues.
+* **Dungeons / Venture into the Dungeon** — off-board mini-game with low interactivity.
+* **Cumulative Upkeep** — escalating bookkeeping.
+* **Storm** and other “count spells this turn” abuse patterns.
+* **Dredge**, and broadly **“free engine”** mechanics that convert zones to repeated free cards/mana.
 
-- **Permanents**: Equipment remain on the battlefield when cast
-- **Attach**: Pay equip costs to attach to your creatures
-- **Persistence**: Equipment stay in play if the creature dies
-- **Activated abilities**: Many Equipment and artifacts have activated abilities
+**Constrained usage**
 
-### 6.2 Equipment Types
+* **Buyback** — allowed only per §6.3 policy.
+* **Emerge** — only in small, playtested clusters; no mass-availability.
+* **Hexproof** — appears sparingly at higher rarities; **Ward** is the default resilience knob.
 
-- **Weapons**: Increase power and grant combat abilities
-- **Armor**: Increase toughness and provide protection-like effects
-- **Artifacts**: Utility, card flow, and mana production
-- **Magical items**: Grant keywords or triggered effects
+*(Mechanics not listed above may appear as rare cameos if they don’t violate the philosophy or tracking rules. When in doubt, cut it.)*
 
-### 6.3 Strategic Equipment Use
+# 8. Deck Construction and Formats
 
-- **Reliable value**: Equipment provide repeatable effects over time
-- **Investment**: Balances tempo loss now for long-term advantage
-- **Synergy**: Interacts with sacrifice, tokens, and warded threats
-- **Allocation**: Weigh equip costs vs. holding up interaction
+## 8.1 Defaults
 
-## 7. Advanced Mechanics and Keywords
+* **Constructed**: 60+ cards; up to 15-card sideboard; 20 life.
+* **Limited** (Draft/Sealed): 40+ cards; basic lands as needed.
+* **Matches**: Best-of-three by default; London Mulligan.
 
-### 7.1 MTG-Inspired Keywords (Evergreen)
+## 8.2 Archetype Rails (for Limited & Cube builders)
 
-- **Flying**: Can only be blocked by creatures with flying or reach
-- **Trample**: Excess damage carries over to defender
-- **Haste**: Can attack and tap the turn it enters
-- **Vigilance**: Doesn't tap to attack
-- **Ward**: Opponents must pay the listed cost to target or their spell/ability
-  is countered
-- **Menace / Reach / First strike / Deathtouch / Lifelink**: Modern combat
-  staples that define interaction and racing
+Color pairs lean on a mix of these pillars:
 
-### 7.2 Vintage- and Power-Inspired Mechanics (Curated)
+* **Spells-matter** (prowess-style triggers),
+* **Go-wide tokens** (with clean payoff knobs),
+* **Graveyard value** (Flashback/Disturb-style recursion),
+* **Landfall midrange**,
+* **Artifacts/Clues value**,
+* **Tempo** (Raid/Surge pressure).
 
-- **Storm**: Counts spells cast this turn; allowed but curated for power (use
-  tournament restriction if needed)
-- **Delve**: Exiles cards from graveyard to reduce costs; permitted but
-  carefully curated
-- **Cascade**: Reveals until you cast a cheaper spell; uses the modern rules
-  that prevent unintended interactions with double-faced cards
-- **Companion**: Uses the updated rule (pay 3 mana to put into hand)
-- **Treasure**: Single-shot Treasure is common; **repeatable Treasure** is
-  throttled/restricted to avoid "extra Moxen"
-- **Investigate / Clue**: Token artifact with "2, Sacrifice: Draw a card"
-- **Explore / Map**: Look at the top card; keep or bin, then optionally grow
-  (creatures) or improve card quality (Maps)
-- **Food**: Token artifact with "2, Sacrifice: You gain 3 life" for pacing and
-  racing
-- **Cases**: Enchantments with a condition to "solve" and upgrade their ongoing
-  effect
-- **Plot**: You may pay now and cast the plotted spell later **(limit: you may
-  cast only one plotted spell each turn)**
+# 9. Tournament Procedures
 
-### 7.3 Unique Hybrid Keywords (Forge Realm Originals)
+## 9.1 Match Structure
 
-- **Adaptable**: Cards with mode-like choices that favor flexibility over raw
-  rate
-- **Resonance**: Gets stronger when multiple cards share a trait in your
-  graveyard
-- **Tactical**: Grants bonuses based on board state thresholds (e.g., number of
-  creatures, artifacts, or clues)
-- **Momentum**: Builds counters or effects the longer it remains in play
+* Best-of-three; typical round length 45 minutes.
+* Present the same deck after each match; sideboarding between games.
 
-## 8. Deck Construction
+## 9.2 Priority & Communication
 
-### 8.1 Basic Requirements (Legacy/Vintage Standard)
+* Announce and pass priority clearly, especially around combat steps.
+* Reveal choices and face-down/face-up information as required (e.g., Foretell, Adventure exile).
+* Track counters with visible dice/counters; keep tokens distinct and labeled (Clues, etc.).
 
-- **Constructed**: Minimum **60** cards (no maximum); 4-copy limit per card name (basic lands excepted)
-- **Sideboard**: Exactly **15** cards for tournament play
-- **Limited formats**: Minimum **40** cards for Draft and Sealed
-- **Default format**: 2-player head-to-head games with 20 starting life
+## 9.3 Rules Enforcement & Governance
 
-### 8.2 Strategic Considerations
+* **Banlist**: See §7. (Storm, Dredge, Companion, Cipher, Dungeons, Day/Night, Cumulative Upkeep are not legal.)
+* **Complexity policy**: Avoid mechanics that require hidden or off-board tracking or that persist without a visible permanent.
+* **Rate policy** (dev guidance): Removal must be broadly playable; Ward replaces most hexproof at low rarities; smoothing (Scry/Surveil/Cycling/Clues) is common.
+* **Updates**: Publish changelogs for any additions (e.g., cameo mechanics) and for emergency bans if a loop violates the “no free engines” rule.
 
-- **Mana curve**: Balance early plays with impactful top-end
-- **Land base**: Support color commitments and utility lands
-- **Interaction suite**: Reserve slots for removal and counterplay
-- **Win conditions**: Have a clear path to end the game
-- **Token/alt-cost support**: If you run Bargain, Clues, Maps, or Food, include
-  generators and payoffs deliberately
+# 10. Glossary (Selected)
 
-### 8.3 Format Variations
-
-- **Legacy**: All Forge Realm cards legal; no rotation
-- **Vintage**: All cards legal with restricted list (1 copy maximum)
-- **Limited**: Draft or Sealed (40-card minimum, 20 starting life)
-- **Casual**: House rules and custom variants encouraged
-
-## 9. Winning Strategy Principles
-
-### 9.1 Resource Management Mastery
-
-- **Card advantage**: Trade resources smartly; use Clues and Cases to keep cards
-  flowing
-- **Mana efficiency**: Curve out or hold up interaction as the matchup demands
-- **Hand size**: Sequence to maximize your London Mulligan keeps
-- **Equipment value**: Convert time into inevitability
-
-### 9.2 Tempo and Pressure
-
-- **Early aggression**: Punish stumbles while respecting Ward and instant-speed
-  tricks
-- **Board presence**: Translate resources into threats and leverage Explore/Map
-  to hit land drops
-- **Defensive timing**: Weigh removal vs. racing; Food can swing races by
-  multiple turns
-- **Finishing**: Close before opponents can unlock solved Cases or banked Plot
-  cards
-
-### 9.3 Adaptation and Response
-
-- **Read the role**: Know when you're beatdown or control
-- **Flexible lines**: Leave outs with modal/DFCs and adaptable effects
-- **Stack dexterity**: Force awkward shields-down windows
-- **Combat tricks**: Use Ward taxes and timing to strand opposing spells
-
-## 10. Tournament and Competitive Play
-
-### 10.1 Match Structure
-
-- **Best of three** is standard
-- **Round length**: 45 minutes typical
-- **Sideboard**: Up to 15 cards; present the same deck after each match
-- London Mulligan is used for all games
-
-### 10.2 Rules Enforcement
-
-- **Priority**: Announce and pass priority clearly
-- **Card identification**: Reveal choices and face-up/face-down statuses as
-  required
-- **Sequencing**: Follow turn structure and stack rules precisely
-- **Sportsmanship**: Respectful, competitive play is expected
-
-### 10.3 Community Governance
-
-- **Balance policy (guardrails)**:
-  - **No Discover** cards or effects
-  - **Treasure throttle**: Repeatable Treasure makers are restricted or
-    disallowed; single-shot Treasure is fine
-  - **Plot limit**: Each player may cast **one** plotted spell per turn
-  - **Companion**: Uses the updated "pay 3 to hand" rule
-  - **DFC/Cascade compliance**: Use modern rules for double-faced interactions
-
-- **Open development**: Transparent updates and public changelogs
-- **Player feedback**: Community input guides curation and restrictions
-- **Fair access**: Open resources allow everyone to play
+* **Active player**: The player whose turn it is.
+* **Counter (marker)**: A physical marker placed on a permanent (e.g., +1/+1, lore, quest). Removing the permanent removes its counters.
+* **Dies**: Is put into a graveyard from the battlefield.
+* **Exile**: The out-of-play zone; cards specify when/how they can be cast from exile (e.g., Adventure, Rebound, Foretell).
+* **Target**: A legal object or player chosen when casting a spell or activating an ability.
+* **Ward**: See §5.2.
+* **Clue**: Artifact token with “{2}, Sacrifice this artifact: Draw a card.”
 
 ---
 
-## Quick Reference Summary
+## Quick Reference
 
-**Turn Order**: Beginning → Main 1 → Combat → Main 2 → End **Mulligan**: London
-Mulligan (draw 7 each time, then put cards on bottom equal to number of
-mulligans taken) **Card Uses**: Cast normally, use alternative costs (e.g.,
-Bargain), or set aside then cast later (Plot—**max one plotted cast per turn**)
-**Smoothing**: Clues (draw), Maps/Explore (card quality & growth), Food (+3
-life) **Victory**: Reduce opponent to 0 life or deck them out **Format**: 60+ card decks, 15-card sideboard, 20 starting life **Strategic Depth**: Constant resource allocation decisions every turn; Legacy-style interaction with careful power level management
+* **Turn order**: Beginning → Main 1 → Combat → Main 2 → End
+* **Mulligan**: London Mulligan (draw 7 each time; bottom cards equal to mulligans taken)
+* **Play a land**: Once per turn, during your main phases when the stack is empty
+* **Evergreen smoothing**: Scry/Surveil; light Cycling; Investigate (Clues)
+* **Core mechanics you’ll see often**: Kicker, Cycling, Flashback, Foretell, Adventure, Landfall, Sagas, Investigate
+* **Supported extras**: Rebound, Surge, Raid; carefully-costed Buyback; small Emerge clusters
+* **Hard NOs**: Storm, Dredge, Companion, Cipher, Dungeons/Venture, Day/Night, Cumulative Upkeep, “free” engines
+* **Resilience**: Ward is the default; Hexproof is rare
+* **Win**: Reduce to 0 life or deck the opponent
 
 ---
 

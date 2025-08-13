@@ -3,13 +3,13 @@ title: "Recommended Printers"
 linkTitle: "Printers"
 weight: 20
 description: >
-  Printer models that work well for printing Forge Realm cards.
+  Printer models that work well for printing Ideal Magic cards.
 ---
 
 {{< callout type="info" >}} Choose the right printer for high-quality card
 printing at home. {{< /callout >}}
 
-Choosing the right printer is crucial for producing high-quality Forge Realm
+Choosing the right printer is crucial for producing high-quality Ideal Magic
 cards at home. This guide covers recommended models, specifications, and
 detailed setup instructions.
 

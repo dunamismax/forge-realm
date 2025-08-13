@@ -80,7 +80,7 @@ main, article, section, div {
   --navbar-height: 4rem;
   --menu-height: 3.75rem; /* 60px */
   
-  /* Forge Realm Design System */
+  /* Ideal Magic Design System */
   --fr-timing-fast: 0.15s;
   --fr-timing-normal: 0.25s;
   --fr-timing-slow: 0.4s;
@@ -135,5 +135,5 @@ main, article, section, div {
 @import "./components/jupyter.css";
 @import "./components/badge.css";
 @import "./components/toc.css";
-@import "./components/forge-realm.css";
+@import "./components/ideal-magic.css";
 @import "./components/spa-optimizations.css";

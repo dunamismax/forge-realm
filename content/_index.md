@@ -1,5 +1,5 @@
 ---
-title: Forge Realm TCG
+title: Ideal Magic TCG
 layout: hextra-home
 ---
 
@@ -11,12 +11,12 @@ layout: hextra-home
 {{< /hextra/hero-badge >}}
 
 <div class="hx:mt-6 hx:mb-6 hx:text-center">
-<img src="/images/forge-realm-main-wide.webp" alt="Forge Realm TCG" style="max-width: 475px;" class="hx:mx-auto hx:rounded-lg hx:shadow-lg" />
+<img src="/images/ideal-magic-main-wide.webp" alt="Ideal Magic TCG" style="max-width: 475px;" class="hx:mx-auto hx:rounded-lg hx:shadow-lg" />
 </div>
 
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
-  Forge Realm TCG&nbsp;<br class="hx:sm:block hx:hidden" />Classic Magic. Community Powered.
+  Ideal Magic TCG&nbsp;<br class="hx:sm:block hx:hidden" />Classic Magic. Community Powered.
 {{< /hextra/hero-headline >}}
 </div>
 
@@ -29,7 +29,7 @@ layout: hextra-home
 <div class="hx:mb-6 hx:flex hx:flex-wrap hx:gap-4 hx:justify-center hx:md:justify-start">
   <a class="fr-btn fr-btn--secondary" href="/docs">Documentation</a>
   <a class="fr-btn fr-btn--secondary" href="https://discord.gg/KQTY8DfY" target="_blank" rel="noreferrer">Join Discord</a>
-  <a class="fr-btn fr-btn--secondary" href="https://github.com/dunamismax/forge-realm" target="_blank" rel="noreferrer">View on GitHub</a>
+  <a class="fr-btn fr-btn--secondary" href="https://github.com/dunamismax/ideal-magic" target="_blank" rel="noreferrer">View on GitHub</a>
 </div>
 
 <div class="hx:mt-6"></div>
@@ -71,7 +71,7 @@ layout: hextra-home
 
 ## The Future of Magic
 
-Forge Realm preserves Magic's golden age while democratizing access through open-source development. We champion the strategic depth and timeless mechanics that made Magic legendary, free from corporate restrictions and artificial scarcity.
+Ideal Magic preserves Magic's golden age while democratizing access through open-source development. We champion the strategic depth and timeless mechanics that made Magic legendary, free from corporate restrictions and artificial scarcity.
 
 Built on Legacy and Vintage's proven foundation, enhanced only where the community votes for meaningful improvement. No chase rares. No gatekeeping. Just pure strategic gameplay.
 

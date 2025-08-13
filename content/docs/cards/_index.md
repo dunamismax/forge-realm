@@ -3,12 +3,12 @@ title: "Card Gallery"
 linkTitle: "Cards"
 weight: 20
 description: >
-  Browse, view, and download all Forge Realm cards for printing and play.
+  Browse, view, and download all Ideal Magic cards for printing and play.
 ---
 
 <div class="mt-4"></div>
 
-{{< callout type="info" >}} **Complete Card Collection** Browse all Forge Realm
+{{< callout type="info" >}} **Complete Card Collection** Browse all Ideal Magic
 cards, view high-resolution artwork, and download print-ready files. **Core Set
 releasing Q1 2026 (tentative)** featuring complete original artwork and balanced
 gameplay. {{< /callout >}}
@@ -16,15 +16,15 @@ gameplay. {{< /callout >}}
 <div class="row align-items-center my-4">
   <div class="col-md-8">
     <h2>Card Sets</h2>
-    <p class="lead">Forge Realm cards are organized by set, with each set containing thematically linked cards and mechanics.</p>
+    <p class="lead">Ideal Magic cards are organized by set, with each set containing thematically linked cards and mechanics.</p>
   </div>
   <div class="col-md-4 text-center">
-    <img src="/images/forge-realm-alt-square.webp" alt="Forge Realm Card Art" style="max-width: 200px; height: auto;" class="img-fluid rounded">
+    <img src="/images/ideal-magic-alt-square.webp" alt="Ideal Magic Card Art" style="max-width: 200px; height: auto;" class="img-fluid rounded">
   </div>
 </div>
 
 {{< cards >}}
-{{< card link="core/" title="Core Set" subtitle="The foundational cards that form the basis of Forge Realm gameplay." >}}
+{{< card link="core/" title="Core Set" subtitle="The foundational cards that form the basis of Ideal Magic gameplay." >}}
 {{< card title="Expansion Sets" subtitle="Additional cards that introduce new mechanics and strategies." >}}
 {{< card title="Print Files" subtitle="High-quality print-ready files for home and professional printing." >}}
 {{< /cards >}}

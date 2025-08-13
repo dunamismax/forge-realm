@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forge Realm - Offline</title>
+    <title>Ideal Magic - Offline</title>
     <style>
         :root {
             --bg-primary: #ffffff;
@@ -268,7 +268,7 @@
         // Check for cached pages and update the list
         if ('caches' in window) {
             caches.keys().then(cacheNames => {
-                const cacheName = cacheNames.find(name => name.includes('forge-realm'));
+                const cacheName = cacheNames.find(name => name.includes('ideal-magic'));
                 if (cacheName) {
                     caches.open(cacheName).then(cache => {
                         cache.keys().then(requests => {

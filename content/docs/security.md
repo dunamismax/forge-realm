@@ -3,7 +3,7 @@ title: "Security Policy"
 linkTitle: "Security"
 weight: 60
 description: >
-  Security vulnerability reporting and security measures for the Forge Realm
+  Security vulnerability reporting and security measures for the Ideal Magic
   project.
 ---
 
@@ -19,7 +19,7 @@ vulnerabilities through public GitHub issues. {{< /callout >}}
 
 ### How to Report
 
-**Email**: <dunamismax@forge-realm.com>
+**Email**: <dunamismax@ideal-magic.com>
 
 **Include:**
 
@@ -80,4 +80,4 @@ disclosure will be acknowledged in our security advisories.
 
 ---
 
-**Contact**: <dunamismax@forge-realm.com>
+**Contact**: <dunamismax@ideal-magic.com>

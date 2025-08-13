@@ -1,4 +1,4 @@
-// Forge Realm - Enhanced Performance & UX System
+// Ideal Magic - Enhanced Performance & UX System
 class ForgeRealmEnhancer {
   constructor() {
     this.init();
@@ -30,7 +30,7 @@ class ForgeRealmEnhancer {
 
   preloadCriticalResources() {
     const criticalResources = [
-      '/images/forge-realm-PNG-circular-emblem.webp',
+      '/images/ideal-magic-PNG-circular-emblem.webp',
       '/favicon.ico'
     ];
 

@@ -3,24 +3,24 @@ title: "Frequently Asked Questions"
 linkTitle: "FAQ"
 weight: 50
 description: >
-  Common questions about Forge Realm gameplay, printing, and community
+  Common questions about Ideal Magic gameplay, printing, and community
   involvement.
 ---
 
 {{< callout type="info" >}} **Frequently Asked Questions** - Find answers to the
-most common questions about Forge Realm, from basic gameplay to advanced
+most common questions about Ideal Magic, from basic gameplay to advanced
 printing techniques. {{< /callout >}}
 
 ## General Questions
 
-### What is Forge Realm?
+### What is Ideal Magic?
 
-Forge Realm is a fully open-source Magic: The Gathering experience designed for
+Ideal Magic is a fully open-source Magic: The Gathering experience designed for
 tabletop play. Unlike corporate MTG, our project focuses on complete
 transparency, community-driven development, and unrestricted print-and-play
 access for everyone.
 
-### How is Forge Realm different from other card games?
+### How is Ideal Magic different from other card games?
 
 **Complete Transparency**: All decisions are made publicly with full community
 visibility **Democratic Governance**: Community votes drive game development
@@ -28,7 +28,7 @@ direction **No Artificial Scarcity**: All cards are available to all players
 **Free Access**: Print-and-play with no restrictions or paywalls **Open
 Source**: Game rules, artwork, and development process are completely open
 
-### Is Forge Realm really free?
+### Is Ideal Magic really free?
 
 Yes! The game rules, card designs, and all digital assets are freely available.
 You only pay for:
@@ -56,7 +56,7 @@ Game length varies based on format, player experience, and deck complexity.
 
 ### How many players can play?
 
-Forge Realm supports:
+Ideal Magic supports:
 
 - **2 players** (primary competitive format)
 - **3-4 players** (multiplayer variant rules)
@@ -64,7 +64,7 @@ Forge Realm supports:
 
 Most formats are designed for 2-player competitive play.
 
-### What age group is Forge Realm designed for?
+### What age group is Ideal Magic designed for?
 
 - **Core audience**: Ages 13 and up
 - **Simplified rules**: Can be adapted for ages 10+
@@ -79,7 +79,7 @@ are available for reference during games.
 
 ### Can I play online or digitally?
 
-Currently, Forge Realm is designed for physical tabletop play. Digital
+Currently, Ideal Magic is designed for physical tabletop play. Digital
 implementations may be developed by the community in the future, but our focus
 is on the print-and-play experience.
 
@@ -161,7 +161,7 @@ groups
 **Artwork**: Submit card art and design concepts **Playtesting**: Test new cards
 and provide feedback  
 **Documentation**: Help improve guides and rules **Website**: Contribute to the
-Hugo website on [GitHub](https://github.com/dunamismax/forge-realm)
+Hugo website on [GitHub](https://github.com/dunamismax/ideal-magic)
 
 See our [Contributing Guide](/docs/contributing/) for complete details.
 
@@ -230,7 +230,7 @@ Under Creative Commons BY-SA 4.0:
 
 **Game balance issues**: Discuss on Discord or GitHub **Printing problems**:
 Community troubleshooting on Discord **Website issues**: Report on
-[GitHub Issues](https://github.com/dunamismax/forge-realm/issues) **Rule
+[GitHub Issues](https://github.com/dunamismax/ideal-magic/issues) **Rule
 clarifications**: Ask in Discord rules channel
 
 ### Is there a mobile app?
@@ -307,7 +307,7 @@ and rule clarification questions
 **Finding players**:
 
 - **Discord server**: Connect with global community
-- **Local game stores**: Ask about Forge Realm interest
+- **Local game stores**: Ask about Ideal Magic interest
 - **Gaming meetups**: Introduce the game to existing groups
 - **Online forums**: Board game and TCG communities
 - **Social media**: Share your interest and find local players

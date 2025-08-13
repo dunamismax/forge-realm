@@ -1,9 +1,9 @@
 {
-  "name": "forge-realm",
+  "name": "ideal-magic",
   "version": "8.4",
-  "description": "Hugo website for Forge Realm - Open Source Trading Card Game",
+  "description": "Hugo website for Ideal Magic - Open Source Trading Card Game",
   "main": "index.js",
-  "homepage": "https://github.com/dunamismax/forge-realm#readme",
+  "homepage": "https://github.com/dunamismax/ideal-magic#readme",
   "scripts": {
     "dev": "hugo server --buildDrafts --buildFuture --bind 0.0.0.0 --navigateToChanged",
     "dev:fast": "hugo server --buildDrafts --buildFuture --bind 0.0.0.0 --navigateToChanged --disableFastRender=false",
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dunamismax/forge-realm.git"
+    "url": "git+https://github.com/dunamismax/ideal-magic.git"
   },
   "keywords": [],
-  "author": "dunamismax@forge-realm.com",
+  "author": "dunamismax@ideal-magic.com",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/dunamismax/forge-realm/issues"
+    "url": "https://github.com/dunamismax/ideal-magic/issues"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",

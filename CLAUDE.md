@@ -1,7 +1,7 @@
-# Forge Realm TCG - Claude Agent Instructions
+# Ideal Magic TCG - Claude Agent Instructions
 
 ## 🎯 **Project Overview**
-Forge Realm is a custom Magic: The Gathering trading card game website built with Hugo and a **heavily customized Hextra theme**. This is NOT a standard theme installation - it's a forked and personalized theme that should be modified directly as needed.
+Ideal Magic is a custom Magic: The Gathering trading card game website built with Hugo and a **heavily customized Hextra theme**. This is NOT a standard theme installation - it's a forked and personalized theme that should be modified directly as needed.
 
 ## 🔧 **Critical Instructions for AI Agents**
 
@@ -18,7 +18,7 @@ This theme is intended to evolve and adapt as the website grows. Direct modifica
 
 ### **Key Directories**
 ```
-forge-realm/
+ideal-magic/
 ├── content/                     # Hugo content (Markdown files)
 ├── layouts/                     # Custom layout overrides
 │   └── partials/custom/         # Custom partial templates
@@ -51,7 +51,7 @@ forge-realm/
 
 ### **Performance Enhancements**
 - **Service Worker** for offline support (`/static/sw.js`)
-- **Enhanced JavaScript system** (`/assets/js/forge-realm-enhanced.js`)
+- **Enhanced JavaScript system** (`/assets/js/ideal-magic-enhanced.js`)
 - **Progressive Web App** features with custom manifest
 - **Optimized image loading** and lazy loading
 - **Critical CSS inlining** for mobile performance
@@ -84,7 +84,7 @@ forge-realm/
   displayTitle = true
   displayLogo = true
   [params.navbar.logo]
-    path = "images/forge-realm-PNG-circular-emblem.webp"
+    path = "images/ideal-magic-PNG-circular-emblem.webp"
     width = 80
     height = 80
 ```
@@ -211,9 +211,9 @@ forge-realm/
 ## 📞 **Support Information**
 
 ### **External Links**
-- **GitHub Repository**: https://github.com/dunamismax/forge-realm
+- **GitHub Repository**: https://github.com/dunamismax/ideal-magic
 - **Discord Community**: https://discord.gg/KQTY8DfY
-- **Live Website**: https://forge-realm.com
+- **Live Website**: https://ideal-magic.com
 
 ### **Technical Stack**
 - **Static Site Generator**: Hugo (v0.146.0+)

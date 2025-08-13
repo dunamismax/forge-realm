@@ -3,10 +3,10 @@ title: "Style Guide"
 linkTitle: "Style Guide"
 weight: 70
 description: >
-  Design system and component guidelines for Forge Realm website development.
+  Design system and component guidelines for Ideal Magic website development.
 ---
 
-Design system and component guidelines for Forge Realm website development.
+Design system and component guidelines for Ideal Magic website development.
 
 ## Design Principles
 
@@ -254,4 +254,4 @@ Leverage Hextra shortcodes for enhanced layouts:
 ---
 
 This style guide ensures consistent, accessible, and performant user experiences
-across all Forge Realm documentation and website content.
+across all Ideal Magic documentation and website content.

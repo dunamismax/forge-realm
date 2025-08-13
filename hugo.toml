@@ -1,6 +1,6 @@
-baseURL = 'https://forge-realm.com'
+baseURL = 'https://ideal-magic.com'
 languageCode = 'en-us'
-title = 'Forge Realm TCG'
+title = 'Ideal Magic TCG'
 contentDir = 'content'
 enableEmoji = true
 enableRobotsTXT = true
@@ -70,7 +70,7 @@ enableInlineShortcodes = true
   [[menu.main]]
     name = "GitHub"
     weight = 7
-    url = "https://github.com/dunamismax/forge-realm"
+    url = "https://github.com/dunamismax/ideal-magic"
     [menu.main.params]
       icon = "github"
 
@@ -83,8 +83,8 @@ enableInlineShortcodes = true
     displayLogo = true
     width = "wide"
     [params.navbar.logo]
-      path = "images/forge-realm-PNG-circular-emblem.webp"
-      dark = "images/forge-realm-PNG-circular-emblem.webp"
+      path = "images/ideal-magic-PNG-circular-emblem.webp"
+      dark = "images/ideal-magic-PNG-circular-emblem.webp"
       width = 80
       height = 80
 
@@ -110,7 +110,7 @@ enableInlineShortcodes = true
 
   [params.editURL]
     enable = false
-    base = "https://github.com/dunamismax/forge-realm/edit/main/content"
+    base = "https://github.com/dunamismax/ideal-magic/edit/main/content"
 
   [params.toc]
     displayTags = true
@@ -126,7 +126,7 @@ enableInlineShortcodes = true
   [params.comments]
     enable = false
   
-  copyright = "© 2025 Forge Realm."
-  github_repo = "https://github.com/dunamismax/forge-realm"
+  copyright = "© 2025 Ideal Magic."
+  github_repo = "https://github.com/dunamismax/ideal-magic"
   github_branch = "main"
-  github_project_repo = "https://github.com/dunamismax/forge-realm"
+  github_project_repo = "https://github.com/dunamismax/ideal-magic"

@@ -1,314 +1,239 @@
 ---
-title: "Quick Start Guide"
+title: "Quick Start Guide (Ideal Magic)"
 linkTitle: "Quick Start"
 weight: 10
 description: >
-  Get started playing Forge Realm quickly with this essential guide.
+Get playing in minutes with this streamlined guide for Ideal Magic—
+classic foundations, modern paper-friendly upgrades, and beloved mechanics
+that maximize agency and minimize bookkeeping
 ---
 
-{{< callout type="info" >}} **Ready to play in 5 minutes?** This guide covers
-everything you need to start playing Forge Realm immediately. {{< /callout >}}
+{{< callout type="info" >}}
+**Ready to play in 5 minutes?** This guide gets you from table setup to your first
+turn quickly, aligned with the Ideal Magic ruleset.
+{{< /callout >}}
 
-Forge Realm is designed for easy print-and-play tabletop sessions. This guide
-will get you playing your first game in minutes.
+Ideal Magic is built for easy print-and-play sessions and smooth paper tracking.
 
 ## What You Need
 
 ### Essential Components
 
-- **Decks**: Each player needs a 60-card deck
-- **Life tracking**: Pen and paper, or d20 dice (start at 20 life)
-- **Mana counters**: Tokens, coins, or dice to track mana
-- **Effect markers**: Small tokens for temporary effects
-- **Play area**: Table space for cards and tokens
+* **Decks**: Each player needs a **60+ card deck**
+* **Life tracking**: Pen & paper or a d20 (start at **20 life**)
+* **Counters & tokens**: Dice or markers for **+1/+1**, **lore** (Sagas), and **Quest** counters; tokens for **Clues**
+* **Play area**: Table space for lands, battlefield, graveyard, and exile
 
 ### Optional but Helpful
 
-- **Card sleeves**: Protect printed cards from wear
-- **Dice**: d6 or d20 for random effects and life tracking
-- **Reference sheet**: Quick rules summary (see below)
-- **Timer**: For tournament or timed casual games
+* **Card sleeves** to protect prints
+* **Extra dice** for Ward taxes, temporary effects, and turn markers
+* **Reference sheet**: Use the Quick Reference at the end
+* **Timer** for events (typical round: \~45 minutes)
+
+---
 
 ## Game Overview
 
-Forge Realm is a strategic card game where players use **mana** (the game's
-resource system) to summon creatures, cast spells, and defeat their opponent.
+Spend **mana** to cast spells, develop your board, and win via combat and smart interaction.
+**Goal**: Reduce your opponent from **20** life to **0**, or have them attempt to draw from an empty library.
 
-**Goal**: Reduce your opponent's life from 20 to 0, or make them run out of
-cards.
+---
 
 ## Pre-Game Setup
 
 ### Deck Requirements
 
-- **Minimum 60 cards** (no maximum)
-- **Maximum 4 copies** of any single card
-- **Any combination** of card types (creatures, spells, artifacts, enchantments)
+* **Constructed**: Minimum **60** cards (no maximum); up to **4 copies** of any one card name (basics excepted)
 
 ### Starting the Game
 
-1. **Shuffle**: Both players shuffle their decks thoroughly
-2. **Determine first player**: Flip a coin or roll dice
-3. **Draw opening hand**: Each player draws 7 cards
-4. **Mulligan option**: Players may shuffle their hand back and draw 6 cards
-   instead (once per player)
-5. **Set life totals**: Both players start at 20 life
-6. **Begin**: The first player starts their turn (but skips their first draw
-   step)
+1. **Shuffle** both decks thoroughly.
+2. **Decide first**: Randomize (die roll/coin flip), then winner chooses to play or draw.
+3. **Draw opening hands**: Each player draws **7**.
+4. **Mulligans — London Mulligan**: You may mulligan any number of times. Each time, draw 7, then **put a number of cards equal to mulligans taken on the bottom** of your library in any order.
+5. **Set life totals**: Both players start at **20**.
+6. **First turn**: The player who goes first **skips their first draw step** only.
 
-## Turn Structure
+---
 
-Each turn follows this sequence:
+## Turn Structure (at a glance)
 
-### 1. Beginning Phase
+1. **Beginning Phase**
 
-- **Untap**: Untap all your tapped cards
-- **Draw**: Draw one card from your deck
-- **Mana production**: Generate mana equal to your current mana sources
+   * **Untap** → **Upkeep** (resolve “at the beginning of upkeep” triggers) → **Draw**
+2. **Precombat Main**
 
-{{< callout type="warning" >}} **Important:** The player going first skips the
-draw step on their very first turn only. {{< /callout >}}
+   * Play **one land** (per turn), cast spells, activate abilities
+3. **Combat Phase**
 
-### 2. Main Phase
+   * **Begin combat** → **Declare attackers** → **Declare blockers** → **Combat damage** → **End combat**
+4. **Postcombat Main**
+5. **End Step / Cleanup**
 
-This is where most of the action happens:
+   * “At end step” triggers → discard to hand size (**7**) → remove damage, end “until end of turn” effects
 
-#### Playing Cards
+**Priority & the Stack**: The active player gets priority first in each step/phase. Spells/abilities resolve **last-in, first-out**.
 
-- **Pay mana costs**: Spend mana to play cards from your hand
-- **Summon creatures**: Put creature cards onto the battlefield
-- **Cast spells**: Play instant or sorcery spells for immediate effects
-- **Play artifacts/enchantments**: Put permanent effects into play
+---
 
-#### Mana System
+## Playing the Game
 
-- **Mana sources**: Some cards provide ongoing mana generation
-- **Spending mana**: Use accumulated mana to pay for card costs
-- **Mana types**: Different cards may require specific mana colors
-- **Banking mana**: Unspent mana carries over between phases (but not turns)
+### Lands and Mana (no bookkeeping traps)
 
-##### The Five Mana Colors
+* **Play a land** during your main phase when the stack is empty (max one/turn).
+* **Add mana** by **tapping** lands (and some artifacts/creatures). You add mana **only when you activate a mana ability**—there is **no automatic mana generation**.
+* **Mana empties** at the **end of each step and phase** (no carrying over).
+* Different spells require specific **colors** of mana (W/U/B/R/G); colorless is flexible but often less efficient.
 
-Forge Realm uses five distinct mana types, each representing different magical philosophies:
+### Casting Cards
 
-- <span class="mana-green">**Green Mana**</span> - Nature, growth, and life force
-- <span class="mana-blue">**Blue Mana**</span> - Knowledge, logic, and manipulation
-- <span class="mana-white">**White Mana**</span> - Order, protection, and healing
-- <span class="mana-red">**Red Mana**</span> - Passion, destruction, and chaos
-- <span class="mana-black">**Black Mana**</span> - Power, ambition, and sacrifice
+* **Creatures/Artifacts/Enchantments/Sagas**: Cast in your main phases (stack empty).
+* **Instants**: Any time you have priority.
+* **Sorceries**: Your main phases, stack empty.
+* After an instant or sorcery resolves, it goes to your **graveyard** (unless it says otherwise).
 
-### 3. Combat Phase
+### Combat Basics
 
-Attack your opponent with creatures:
+* **Attacking**: Tap your creatures to attack (unless they have vigilance).
+* **Blocking**: Defending player assigns blockers; the attacker then sets the **damage order** if multiple blockers.
+* **Damage**: Simultaneous (first strike/double strike change timing). **Trample** lets excess damage hit the defending player/planeswalker.
+* **Ward**: If a permanent has **Ward — cost**, opponents must pay that cost to target it or the spell/ability is **countered**.
 
-#### Combat Steps
+---
 
-1. **Declare attackers**: Choose which creatures attack
-2. **Declare blockers**: Defending player assigns blockers
-3. **Resolve combat**: Calculate damage and apply effects
-4. **Damage resolution**: Apply damage to creatures and players
+## The Ideal “Glue Suite” You’ll See Often
 
-#### Combat Rules
+These popular, paper-clean mechanics appear frequently:
 
-- **Attacking**: Tap creatures to attack (they can't block)
-- **Blocking**: Untapped creatures can block attacking creatures
-- **Damage**: Attacking creatures deal damage to blockers or the defending
-  player
-- **Creature death**: Creatures die when damage equals or exceeds their
-  toughness
+* **Scry N** / **Surveil N** — Smooth draws (top-deck filtering or graveyard selection).
+* **Cycling \[cost]** — Discard to draw a card.
+* **Kicker \[cost]** — Pay more for an upgraded effect.
+* **Flashback \[cost]** — Cast from your graveyard, then exile it.
+* **Foretell** — Pay {2} to set aside now; cast later for its foretell cost.
+* **Adventure** — Cast the spell side first, then later cast the creature from exile.
+* **Investigate** — Create a **Clue**: “{2}, Sacrifice: Draw a card.”
+* **Landfall** — Triggers when a land enters under your control.
+* **Sagas** — Add a lore counter as they enter and each precombat main; resolve that chapter’s effect.
 
-### 4. End Phase
+**Also supported (appears regularly but in controlled doses):**
+**Rebound**, **Surge**, **Raid**; **Buyback** (rare, conservatively costed); **Emerge** (small curated clusters).
 
-- **Resolve end-of-turn effects**: Handle any "at end of turn" abilities
-- **Hand size**: If you have more than 7 cards, discard down to 7
-- **Pass turn**: The other player begins their turn
+{{< callout type="warning" >}}
+**Not used in Ideal Magic**: Day/Night, Companion, Cipher, Venture/Dungeons, Cumulative Upkeep, Storm, Dredge, and other “free engine” loops. If a card references these, treat it as **not legal** in this format.
+{{< /callout >}}
 
-## Key Concepts
+---
 
-### Mana Management
+## Key Concepts (fast fundamentals)
 
-Mana is your primary resource:
+### Mana & Efficiency
 
-- **Generation**: Played from specific cards or abilities
-- **Spending**: Used to pay costs for spells and abilities
-- **Efficiency**: Balancing mana production with powerful effects
-- **Timing**: Some abilities require mana to be spent at specific times
+* Plan land drops and colors early.
+* Tap only what you need; remember that mana **empties each step/phase**.
+* Use Scry/Surveil/Cycling/Clues to avoid mana screw/flood.
 
-### Card Types
+### Card Types (quick)
 
-#### Creatures
+* **Lands**: Your main mana sources.
+* **Creatures**: Attack, block, use abilities; have **power/toughness**.
+* **Instants/Sorceries**: One-time effects (instants at any time; sorceries only on your turn, main phase, stack empty).
+* **Artifacts/Enchantments/Sagas**: Ongoing effects; Sagas tick with lore counters.
 
-- **Combat**: Can attack and block
-- **Stats**: Power (attack damage) and toughness (damage needed to destroy)
-- **Abilities**: Many have special powers or effects
-- **Summoning**: Generally cost mana to put into play
+### Interaction & Timing
 
-#### Spells
+* Hold up instants for combat tricks or counterplay.
+* **Ward** taxes opponents’ targeted interaction—bait it or pay it.
+* Learn common windows: end step, after blocks, and shields-down moments.
 
-- **Instants**: Can be played any time you could take an action
-- **Sorceries**: Can only be played during your main phase
-- **Effects**: Immediate impact, then go to discard pile
+---
 
-#### Permanents
+## Sample Turn Walkthroughs
 
-- **Artifacts**: Equipment, tools, or magical items
-- **Enchantments**: Ongoing magical effects
-- **Persistence**: Remain in play until destroyed or removed
+**Turn 1 (on the play)**
 
-### Combat Mechanics
+1. **Beginning**: Untap (nothing), **no draw** (first turn on the play).
+2. **Main**: Play a land. Tap it to cast a **1-mana creature**.
+3. **Combat**: None (summoning sickness).
+4. **End**: Pass. *(Cards in hand: 6; Life: 20.)*
 
-#### Basic Combat
+**Turn 3 (showing smoothing & tempo)**
 
-1. **Choose attackers**: Select which creatures attack
-2. **Opponent blocks**: Defending player assigns blockers
-3. **Calculate damage**: Compare power vs. toughness
-4. **Apply results**: Damage carries over to players if unblocked
+1. **Beginning**: Untap, Upkeep (resolve triggers), Draw.
+2. **Main**: Play a land (Landfall trigger, if any). Cast a **Foretell** spell face-down for {2}; then cast a **2-drop**.
+3. **Combat**: Attack with your 1-drop; opponent blocks—use an **instant** to win combat.
+4. **End**: If you Investigated this turn, you may keep the **Clue** for later or crack it on a future turn when you can spare {2}.
 
-#### Advanced Combat
+---
 
-- **Multiple blockers**: One attacker can be blocked by multiple creatures
-- **Damage assignment**: Attacking player chooses how to distribute damage
-- **Combat abilities**: Some creatures have special combat powers
-- **Combat tricks**: Instant spells can change combat outcomes
+## Winning the Game
 
-## Winning Conditions
+* **Primary**: Reduce your opponent to **0 life** (combat/spells/abilities).
+* **Secondary**: Opponent tries to draw from an **empty library**.
+* Some cards may have alternate wins; follow their text.
 
-### Primary Victory
+---
 
-- **Reduce opponent to 0 life**: Most common win condition
-- **Deal damage**: Through combat, spells, or abilities
+## Common Beginner Pitfalls (and fixes)
 
-### Secondary Victory
+* **Too few lands/smoothing** → Add lands, **Cycling**, **Scry/Surveil**, or **Clues**.
+* **All top-end** → Include impactful **2s/3s** to affect the board earlier.
+* **Ignoring interaction** → Pack removal/counterplay; respect **Ward** costs.
+* **Forgetting the stack** → Remember: last-in, first-out; pass priority clearly.
+* **Floating mana across phases** → You **can’t**; mana empties each step/phase.
 
-- **Opponent draws from empty deck**: They lose immediately
-- **Special card effects**: Some cards provide alternate win conditions
-
-## Common Beginner Mistakes
-
-### Deck Building
-
-- **Too many expensive cards**: Include cheap, early-game options
-- **No mana sources**: Ensure adequate mana generation
-- **Unfocused strategy**: Build around a clear game plan
-
-### Gameplay
-
-- **Poor mana management**: Don't overspend early
-- **Ignoring card advantage**: Consider long-term resources
-- **Predictable play**: Vary your strategies
-- **Forgetting abilities**: Read cards carefully and use all available effects
-
-## Sample Turn Walkthrough
-
-**Turn 1 Example:**
-
-1. **Beginning**: Untap (nothing tapped), draw card, generate mana
-2. **Main Phase**: Play a mana-generating artifact for 1 mana
-3. **Combat**: No creatures to attack with
-4. **End**: Pass turn (hand: 6 cards, life: 20, mana: 0)
-
-**Turn 3 Example:**
-
-1. **Beginning**: Untap artifact, draw card, generate 2 mana
-2. **Main Phase**: Play a 3-mana creature, leaving 1 mana
-3. **Combat**: Creature was just played, can't attack yet
-4. **End**: Pass turn (hand: 5 cards, life: 20, mana: 1)
+---
 
 ## Quick Reference
 
 ### Turn Order
 
-1. Beginning (untap, draw, generate mana)
-2. Main phase (play cards, use abilities)
-3. Combat (attack with creatures)
-4. End (cleanup effects, pass turn)
+**Beginning (Untap → Upkeep → Draw)** → **Main 1** → **Combat** → **Main 2** → **End**
 
-### Essential Rules
+### Essentials
 
-- **Starting life**: 20
-- **Starting hand**: 7 cards (6 if mulligan)
-- **Deck minimum**: 60 cards
-- **Max copies**: 4 per card
-- **Hand limit**: 7 cards (discard excess at end of turn)
+* **Start**: 20 life, **7-card** hand
+* **Mulligan**: **London** (draw 7 each time; bottom cards equal to mulligans taken)
+* **Deck**: 60+ cards; up to 4 copies/card name
+* **Hand size**: Max 7 at end step (discard down)
+* **Lands per turn**: 1
+* **Mana**: Added by tapping; **empties** at end of each step/phase
 
 ### Timing
 
-- **Sorceries**: Only during your main phase
-- **Instants**: Any time you have priority
-- **Creatures**: Only during your main phase
-- **Abilities**: Check the card for timing restrictions
+* **Sorceries/Creatures/most Permanents**: Your main phase, stack empty
+* **Instants**: Any time you have priority
+* **Abilities**: As written; mana abilities don’t use the stack
 
-## Strategy Tips for New Players
+### Mechanics You’ll See Often
 
-### Deck Building Basics
+**Kicker, Cycling, Flashback, Foretell, Adventure, Landfall, Sagas, Investigate**
+Plus **Rebound, Surge, Raid** (with conservative **Buyback** and small **Emerge** clusters)
 
-- **Mana curve**: Include cards of various mana costs
-- **Win condition**: Have a clear plan for victory
-- **Consistency**: Include multiple copies of key cards
-- **Balance**: Mix creatures, spells, and utility cards
+{{< callout type="info" >}}
+**Getting Your First Games In**
 
-### Early Game Strategy
-
-- **Develop mana**: Prioritize mana generation early
-- **Board presence**: Play creatures to apply pressure
-- **Card advantage**: Don't waste cards unnecessarily
-- **Flexibility**: Keep some options in hand
-
-### Combat Strategy
-
-- **Value trades**: Exchange creatures favorably
-- **Timing attacks**: Choose when to be aggressive
-- **Defensive options**: Don't always attack
-- **Combat tricks**: Save instant spells for key moments
-
-{{< callout type="info" >}} **Getting Your First Cards - Core Set releasing Q1
-2026!** Until then:
-
-- **Learn the rules** with this guide and practice with friends using
-  placeholder cards
-- **Join the community** on [Discord](https://discord.gg/KQTY8DfY) for early
-  playtesting opportunities
-- **Prepare to print** by reviewing our
-  [Printing Guide](../../printing/home-printing-guide/)
-- **Browse upcoming cards** in our [Card Gallery](/docs/cards/) to plan your
-  first deck {{< /callout >}}
+* Learn with proxy prints and this guide.
+* Join the community on **Discord** for rules help and playtests.
+* Use our **Printing Guides** and **Card Gallery** when you’re ready to upgrade.
+  {{< /callout >}}
 
 ## Next Steps
 
 ### Deepen Your Knowledge
 
-- **[Comprehensive Rules](../comprehensive-rules/)**: Complete rulebook with
-  advanced mechanics and detailed interactions
-- **[Game Formats](../formats/)**: Different ways to play including competitive
-  and casual variants
-- **[FAQ Section](/docs/faq/)**: Answers to common questions about gameplay and
-  rules
+* **[Comprehensive Rules](../comprehensive-rules/)** — Full rules and policy
+* **[Game Formats](../formats/)** — Ways to play (Constructed, Limited, Cube)
+* **[FAQ](/docs/faq/)** — Common questions
 
 ### Prepare for Play
 
-- **[Card Gallery](/docs/cards/)**: Browse upcoming cards and plan your first
-  deck
-- **[Printing Guides](/docs/printing/)**: Everything you need to print
-  professional-quality cards
-- **[Community Showcase](/docs/community-showcase/)**: See what other players
-  are creating and playing
+* **[Card Gallery](/docs/cards/)** — Browse and plan decks
+* **[Printing Guides](/docs/printing/)** — From home prints to premium
+* **[Community Showcase](/docs/community-showcase/)** — Decks and builds
 
-### Connect with Players
+### Connect
 
-- **[Discord Community](https://discord.gg/KQTY8DfY)**: Real-time chat, strategy
-  discussions, and early playtesting
-- **Local gaming groups**: Introduce Forge Realm to your existing playgroup
-- **Tournament preparation**: Get ready for organized play when cards release
-
-### Contributing
-
-- **[Contributing Guide](/docs/contributing/)**: Help shape the game through
-  design feedback and testing
-- **Playtesting**: Participate in balance testing and provide feedback
-- **Content creation**: Share strategies, deck lists, and gameplay videos
-
----
-
-**Ready to dive deeper?** The [Comprehensive Rules](../comprehensive-rules/)
-provide complete details on all game mechanics, card interactions, and
-tournament-level play requirements.
+* **[Discord](https://discord.gg/KQTY8DfY)** — Strategy, LFG, judging help
+* **Local groups** — Bring Ideal Magic to your play night
+* **Event prep** — Best-of-three, \~45-minute rounds, London Mulligan

@@ -3,12 +3,12 @@ title: "Code of Conduct"
 linkTitle: "Code of Conduct"
 weight: 20
 description: >
-  Community standards and enforcement guidelines for the Forge Realm project.
+  Community standards and enforcement guidelines for the Ideal Magic project.
 ---
 
 ## Our Commitment
 
-The Forge Realm TCG community provides a harassment-free environment for
+The Ideal Magic TCG community provides a harassment-free environment for
 everyone, regardless of background or experience. We focus on collaborative game
 development and maintaining a welcoming space for all contributors.
 
@@ -43,7 +43,7 @@ Community leaders will take appropriate action for violations:
 
 Report violations to:
 
-- **Primary**: <dunamismax@forge-realm.com>
+- **Primary**: <dunamismax@ideal-magic.com>
 - **Discord**: Direct message to @Moderator role members
 - **GitHub**: Use "Code of Conduct Violation" issue template
 
@@ -51,7 +51,7 @@ All reports handled with discretion and confidentiality.
 
 ## Appeals
 
-Appeals can be submitted to <appeals@forge-realm.com> within 30 days.
+Appeals can be submitted to <appeals@ideal-magic.com> within 30 days.
 Independent review by governance committee within 14 days.
 
 ## Scope

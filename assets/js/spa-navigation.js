@@ -1,5 +1,5 @@
 /**
- * Simple Page Transitions for Forge Realm
+ * Simple Page Transitions for Ideal Magic
  * Provides smooth transitions without interfering with Hugo's navigation
  */
 

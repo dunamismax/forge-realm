@@ -1,6 +1,6 @@
 {
-    "name": "Forge Realm TCG",
-    "short_name": "Forge Realm",
+    "name": "Ideal Magic TCG",
+    "short_name": "Ideal Magic",
     "description": "Classic Magic. Community Powered. Enhanced digital trading card game experience.",
     "icons": [
         {
@@ -19,7 +19,7 @@
             "type": "image/png"
         },
         {
-            "src": "/images/forge-realm-PNG-circular-emblem.webp",
+            "src": "/images/ideal-magic-PNG-circular-emblem.webp",
             "sizes": "512x512",
             "type": "image/webp",
             "purpose": "any maskable"

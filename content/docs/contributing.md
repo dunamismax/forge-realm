@@ -3,11 +3,11 @@ title: "Contributing Guide"
 linkTitle: "Contributing"
 weight: 80
 description: >
-  Learn how to contribute to the Forge Realm project.
+  Learn how to contribute to the Ideal Magic project.
 ---
 
 {{< callout type="info" >}} **Welcome Contributors!** Thank you for contributing
-to Forge Realm! This guide covers our development process and community
+to Ideal Magic! This guide covers our development process and community
 standards. {{< /callout >}}
 
 ## Code of Conduct
@@ -27,13 +27,13 @@ All contributors must follow our [Code of Conduct](/docs/code-of-conduct/).
 ### Website Development Setup
 
 This repository contains the Hugo static site for
-[forge-realm.com](https://forge-realm.com).
+[ideal-magic.com](https://ideal-magic.com).
 
 ```bash
 # Fork and clone
-git clone https://github.com/your-username/forge-realm.git
-cd forge-realm
-git remote add upstream https://github.com/dunamismax/forge-realm.git
+git clone https://github.com/your-username/ideal-magic.git
+cd ideal-magic
+git remote add upstream https://github.com/dunamismax/ideal-magic.git
 
 # Install dependencies and start (for website development)
 npm install
@@ -44,18 +44,18 @@ npm run dev
 
 ```bash
 # Fork and clone
-git clone https://github.com/your-username/forge-realm.git
-cd forge-realm
+git clone https://github.com/your-username/ideal-magic.git
+cd ideal-magic
 
 # Add upstream remote
-git remote add upstream https://github.com/dunamismax/forge-realm.git
+git remote add upstream https://github.com/dunamismax/ideal-magic.git
 ```
 
 ## Contribution Workflow
 
 ### Website Development Workflow
 
-1. **Create Branch**: `git checkout -b forge-realm/your-improvement`
+1. **Create Branch**: `git checkout -b ideal-magic/your-improvement`
 2. **Make Changes**: Edit content, styles, or templates
 3. **Test Locally**: `npm run dev` and `npm run build`
 4. **Submit PR**: Clear description with screenshots for visual changes
@@ -140,4 +140,4 @@ Use GitHub for:
 **Join the Community:**
 
 - [Join Discord](https://discord.gg/KQTY8DfY)
-- [View on GitHub](https://github.com/dunamismax/forge-realm)
+- [View on GitHub](https://github.com/dunamismax/ideal-magic)

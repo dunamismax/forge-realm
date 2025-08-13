@@ -3,7 +3,7 @@ title: "Core Set"
 linkTitle: "Core Set"
 weight: 10
 description: >
-  The foundational cards of Forge Realm, providing the essential gameplay
+  The foundational cards of Ideal Magic, providing the essential gameplay
   experience.
 ---
 
@@ -13,7 +13,7 @@ needed for competitive play. {{< /callout >}}
 
 ## About the Core Set
 
-The Core Set contains the fundamental cards that define Forge Realm's gameplay
+The Core Set contains the fundamental cards that define Ideal Magic's gameplay
 experience. These cards establish the basic mechanics, creature types, and spell
 effects that form the foundation for all other sets.
 

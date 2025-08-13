@@ -3,13 +3,13 @@ title: "Home Printing Guide"
 linkTitle: "Home Printing"
 weight: 10
 description: >
-  Step-by-step instructions to print high-quality Forge Realm cards at home.
+  Step-by-step instructions to print high-quality Ideal Magic cards at home.
 ---
 
-{{< callout type="info" >}} Print professional-quality Forge Realm cards at home
+{{< callout type="info" >}} Print professional-quality Ideal Magic cards at home
 with these detailed instructions. {{< /callout >}}
 
-This comprehensive guide will help you print professional-quality Forge Realm
+This comprehensive guide will help you print professional-quality Ideal Magic
 cards at home with detailed instructions and troubleshooting tips.
 
 ## Prerequisites

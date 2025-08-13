@@ -1,4 +1,4 @@
-// Forge Realm - Lightning Fast SPA Navigation System
+// Ideal Magic - Lightning Fast SPA Navigation System
 class ForgeRealmSPA {
   constructor() {
     this.cache = new Map();

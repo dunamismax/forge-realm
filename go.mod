@@ -1,4 +1,4 @@
-module github.com/dunamismax/forge-realm
+module github.com/dunamismax/ideal-magic
 
 go 1.24.6
 

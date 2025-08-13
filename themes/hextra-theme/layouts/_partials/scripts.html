@@ -1,5 +1,5 @@
-{{/* Forge Realm SPA System - Load first for instant performance */}}
-{{ $spa := resources.Get "js/forge-realm-spa.js" | resources.Minify }}
+{{/* Ideal Magic SPA System - Load first for instant performance */}}
+{{ $spa := resources.Get "js/ideal-magic-spa.js" | resources.Minify }}
 <script src="{{ $spa.RelPermalink }}" defer></script>
 
 {{/* Core scripts (theme, menu, tabs, etc.) */}}
@@ -14,5 +14,5 @@
 {{- end -}}
 
 {{/* Enhanced JavaScript - Load after SPA for compatibility */}}
-{{ $enhanced := resources.Get "js/forge-realm-enhanced.js" | resources.Minify }}
+{{ $enhanced := resources.Get "js/ideal-magic-enhanced.js" | resources.Minify }}
 <script src="{{ $enhanced.RelPermalink }}" defer></script>

@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="static/images/forge-realm-main-wide.webp" alt="Forge Realm - Open Source Trading Card Game" width="600" />
+  <img src="static/images/ideal-magic-main-wide.webp" alt="Ideal Magic - Open Source Trading Card Game" width="600" />
 </p>
 
-# Forge Realm TCG - Classic Magic. Community Powered.
+# Ideal Magic TCG - Classic Magic. Community Powered.
 
-**The future of Magic's past** - Forge Realm preserves Magic's strategic depth through open-source development. Built on Legacy and Vintage foundations with community-driven evolution, we're democratizing access to the classic Magic experience where strategy matters more than your wallet.
+**The future of Magic's past** - Ideal Magic preserves Magic's strategic depth through open-source development. Built on Legacy and Vintage foundations with community-driven evolution, we're democratizing access to the classic Magic experience where strategy matters more than your wallet.
 
-[![Play Now](https://img.shields.io/badge/Play_Now-forge--realm.com-50fa7b?style=for-the-badge&labelColor=0b0b0b)](https://forge-realm.com)
+[![Play Now](https://img.shields.io/badge/Play_Now-forge--realm.com-50fa7b?style=for-the-badge&labelColor=0b0b0b)](https://ideal-magic.com)
 [![Join Discord](https://img.shields.io/badge/Join_Discord-Community-8839ef?style=for-the-badge&labelColor=0b0b0b)](https://discord.gg/KQTY8DfY)
 [![License](https://img.shields.io/badge/License-CC_BY--SA_4.0-a6e3a1?style=for-the-badge&labelColor=0b0b0b)](LICENSE)
 
@@ -18,7 +18,7 @@ The inaugural card set featuring full original artwork, complete mechanics, and 
 
 ---
 
-## **Why Forge Realm?**
+## **Why Ideal Magic?**
 
 ### **For Players**
 
@@ -39,8 +39,8 @@ The inaugural card set featuring full original artwork, complete mechanics, and 
 ## **Start Playing in 4 Steps**
 
 ```sh
-1. Learn the Rules     → forge-realm.com/docs/gameplay/quick-start/
-2. Print Your Cards    → forge-realm.com/docs/printing/
+1. Learn the Rules     → ideal-magic.com/docs/gameplay/quick-start/
+2. Print Your Cards    → ideal-magic.com/docs/printing/
 3. Join Our Community  → discord.gg/KQTY8DfY
 4. Find Opponents      → Play with Discord community
 ```
@@ -55,7 +55,7 @@ The inaugural card set featuring full original artwork, complete mechanics, and 
 generations.**
 
 We believe that Magic's incredible gameplay shouldn't be locked behind corporate
-paywalls or artificial scarcity. Forge Realm represents a return to pure Magic
+paywalls or artificial scarcity. Ideal Magic represents a return to pure Magic
 where:
 
 - **Players control the game**, not Hasbro shareholders
@@ -68,7 +68,7 @@ where:
 
 ## **What Makes Us Different**
 
-| Corporate MTG             | Forge Realm MTG            |
+| Corporate MTG             | Ideal Magic MTG            |
 | ------------------------- | -------------------------- |
 | Reserved List gatekeeping | All cards freely available |
 | $200+ Modern decks        | Print-and-play for $20     |
@@ -80,19 +80,19 @@ where:
 
 ## **Join the Revolution**
 
-**[Visit forge-realm.com](https://forge-realm.com)** - Complete documentation,
+**[Visit ideal-magic.com](https://ideal-magic.com)** - Complete documentation,
 rules, and everything you need to play
 
 **[Join our Discord](https://discord.gg/KQTY8DfY)** - Active community of
 players, designers, and contributors shaping the game's future
 
-**Contact**: [dunamismax@forge-realm.com](mailto:dunamismax@forge-realm.com) -
+**Contact**: [dunamismax@ideal-magic.com](mailto:dunamismax@ideal-magic.com) -
 Questions? Ideas? Let's talk!
 
 ## Contributing
 
 Contributions are welcome! Visit the
-[Contributing Guide](https://forge-realm.com/docs/contributing/) on our website
+[Contributing Guide](https://ideal-magic.com/docs/contributing/) on our website
 to learn how to get involved in:
 
 ### Game Development
@@ -141,7 +141,7 @@ See [LICENSE](LICENSE) for complete terms.
 ---
 
 **Ready to play? We'll be there soon!** Visit
-**[forge-realm.com](https://forge-realm.com)** and join our
+**[ideal-magic.com](https://ideal-magic.com)** and join our
 [Discord](https://discord.gg/KQTY8DfY) to join us on this journey!
 
 ---

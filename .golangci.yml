@@ -69,7 +69,7 @@ formatters:
   gofumpt:
     extra-rules: true
   goimports:
-    local-prefixes: github.com/dunamismax/forge-realm
+    local-prefixes: github.com/dunamismax/ideal-magic
 
 # Linter-specific settings
 linters-settings:
@@ -118,13 +118,13 @@ linters-settings:
       - rangeValCopy
 
   goimports:
-    local-prefixes: github.com/dunamismax/forge-realm
+    local-prefixes: github.com/dunamismax/ideal-magic
 
   gci:
     sections:
       - standard
       - default
-      - prefix(github.com/dunamismax/forge-realm)
+      - prefix(github.com/dunamismax/ideal-magic)
     skip-generated: true
 
   revive:

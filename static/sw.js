@@ -1,5 +1,5 @@
-// Forge Realm Service Worker - SPA-Optimized Performance
-const CACHE_NAME = 'forge-realm-spa-v2.0';
+// Ideal Magic Service Worker - SPA-Optimized Performance
+const CACHE_NAME = 'ideal-magic-spa-v2.0';
 const OFFLINE_PAGE = '/offline.html';
 
 // Assets to cache immediately for SPA performance
@@ -9,12 +9,12 @@ const CRITICAL_ASSETS = [
   '/docs/cards/',
   '/docs/gameplay/',
   '/docs/printing/',
-  '/images/forge-realm-PNG-circular-emblem.webp',
+  '/images/ideal-magic-PNG-circular-emblem.webp',
   '/favicon.ico',
   '/manifest.json',
   // SPA-specific assets
-  '/assets/js/forge-realm-spa.min.js',
-  '/assets/js/forge-realm-enhanced.min.js',
+  '/assets/js/ideal-magic-spa.min.js',
+  '/assets/js/ideal-magic-enhanced.min.js',
   '/assets/css/compiled/main.css'
 ];
 
@@ -203,7 +203,7 @@ async function getOfflineFallback(request) {
       <!DOCTYPE html>
       <html>
       <head>
-        <title>Forge Realm - Offline</title>
+        <title>Ideal Magic - Offline</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
           body { 
@@ -224,7 +224,7 @@ async function getOfflineFallback(request) {
         </style>
       </head>
       <body>
-        <img src="/images/forge-realm-PNG-circular-emblem.webp" alt="Forge Realm" class="logo">
+        <img src="/images/ideal-magic-PNG-circular-emblem.webp" alt="Ideal Magic" class="logo">
         <h1>You're Offline</h1>
         <div class="mana-colors"></div>
         <p>No internet connection detected. Some cached pages may still be available.</p>
@@ -276,7 +276,7 @@ self.addEventListener('push', (event) => {
   const data = event.data.json();
   const options = {
     body: data.body,
-    icon: '/images/forge-realm-PNG-circular-emblem.webp',
+    icon: '/images/ideal-magic-PNG-circular-emblem.webp',
     badge: '/favicon.ico',
     vibrate: [100, 50, 100],
     data: {
@@ -285,7 +285,7 @@ self.addEventListener('push', (event) => {
     actions: [
       {
         action: 'open',
-        title: 'Open Forge Realm'
+        title: 'Open Ideal Magic'
       }
     ]
   };

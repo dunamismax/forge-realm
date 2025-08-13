@@ -3,10 +3,10 @@ title: "Printing"
 linkTitle: "Printing"
 weight: 20
 description: >
-  Everything you need to know about printing Forge Realm cards at home.
+  Everything you need to know about printing Ideal Magic cards at home.
 ---
 
-{{< callout type="info" >}} Learn how to print high-quality Forge Realm cards
+{{< callout type="info" >}} Learn how to print high-quality Ideal Magic cards
 for tabletop play. {{< /callout >}}
 
 {{< cards >}}

@@ -4,11 +4,11 @@ linkTitle: "Community Showcase"
 weight: 40
 description: >
   Discover amazing community creations, deck lists, strategies, and player
-  achievements from the Forge Realm community.
+  achievements from the Ideal Magic community.
 ---
 
 {{< callout type="info" >}} **Celebrating Our Community** - Explore the
-incredible creativity, strategic insights, and achievements of Forge Realm
+incredible creativity, strategic insights, and achievements of Ideal Magic
 players worldwide. {{< /callout >}}
 
 ## Featured Community Content
@@ -19,7 +19,7 @@ players worldwide. {{< /callout >}}
 
 {{< card title="Tournament Champions" subtitle="Celebrating players who have achieved victory in competitive play and community tournaments." >}}
 
-{{< card title="Content Creators" subtitle="Highlighting community members who create videos, guides, and educational content about Forge Realm." >}}
+{{< card title="Content Creators" subtitle="Highlighting community members who create videos, guides, and educational content about Ideal Magic." >}}
 
 {{< card title="Community Artists" subtitle="Showcasing talented artists who contribute card artwork, fan art, and creative designs to the project." >}}
 
@@ -153,7 +153,7 @@ _Coming Q1 2026_: A comprehensive database where community members can:
 
 ### Community Testimonials
 
-{{< callout type="info" >}} **We want to hear from you!** Share your Forge Realm
+{{< callout type="info" >}} **We want to hear from you!** Share your Ideal Magic
 journey, memorable games, and community experiences. Contact us on
 [Discord](https://discord.gg/KQTY8DfY) to be featured in our showcase.
 {{< /callout >}}
@@ -171,7 +171,7 @@ after the Q1 2026 release.
 
 **"Building a Local Community"**
 
-- How one player introduced Forge Realm to their local game store
+- How one player introduced Ideal Magic to their local game store
 - Growing from solo play to regular group meetings
 - Tips for organizing local events and tournaments
 
@@ -196,7 +196,7 @@ after the Q1 2026 release.
 - **Regional Formats**: Local variations and house rules
 - **Cultural Celebrations**: Special events honoring different cultures and
   traditions
-- **Educational Outreach**: Teaching Forge Realm in schools and community
+- **Educational Outreach**: Teaching Ideal Magic in schools and community
   centers
 
 ## Content Creator Hub
@@ -248,7 +248,7 @@ _Launching alongside card release in Q1 2026_
 
 #### Player-Created Formats
 
-The community regularly develops new ways to play Forge Realm:
+The community regularly develops new ways to play Ideal Magic:
 
 - **Sealed League**: Limited format using randomized card pools
 - **Highlander**: Singleton format with only one copy of each card
@@ -284,7 +284,7 @@ The community regularly develops new ways to play Forge Realm:
 
 ### Community-Driven Card Balance
 
-The Forge Realm community has the power to modify and balance cards after
+The Ideal Magic community has the power to modify and balance cards after
 release:
 
 #### Balance Proposal Process
@@ -305,7 +305,7 @@ release:
 - **Format restrictions** for cards that dominate specific play styles
 
 {{< callout type="info" >}} **Your Voice Matters!** Join our Discord server to
-participate in balance discussions and help ensure Forge Realm remains fun and
+participate in balance discussions and help ensure Ideal Magic remains fun and
 fair for all players. {{< /callout >}}
 
 ## Getting Involved
@@ -348,10 +348,10 @@ fair for all players. {{< /callout >}}
 
 All community members are expected to follow our
 [Code of Conduct](../../../CODE_OF_CONDUCT.md), which promotes a positive,
-inclusive environment for everyone to enjoy Forge Realm.
+inclusive environment for everyone to enjoy Ideal Magic.
 
 ---
 
 **Ready to be part of the community?** Join our
 [Discord server](https://discord.gg/KQTY8DfY) today to connect with players,
-share your creations, and help shape the future of Forge Realm together!
+share your creations, and help shape the future of Ideal Magic together!
