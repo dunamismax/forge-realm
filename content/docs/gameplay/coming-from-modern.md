@@ -60,7 +60,7 @@ Coming from Modern, you understand eternal format appeal: diverse strategies, po
 
 ## Your Favorite Modern Strategies in Ideal Magic
 
-### ✅ Strategies That Translate Directly
+### Strategies That Translate Directly
 
 **Aggro strategies you know:**
 
@@ -83,7 +83,7 @@ Coming from Modern, you understand eternal format appeal: diverse strategies, po
 - **Tap-out control** → Sagas and Ward creatures for proactive control
 - **Prison-lite** → Resource denial without oppressive locks
 
-### ❌ Modern Strategies Excluded (and Why)
+### Modern Strategies Excluded (and Why)
 
 **Oppressive elements completely removed:**
 

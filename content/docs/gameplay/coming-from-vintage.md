@@ -60,7 +60,7 @@ Coming from Vintage, you represent Magic's highest level of technical play. You 
 
 ## Your Vintage Skills in Ideal Magic
 
-### ✅ Advanced Skills That Transfer
+### Advanced Skills That Transfer
 
 **Stack mastery you've developed:**
 
@@ -83,7 +83,7 @@ Coming from Vintage, you represent Magic's highest level of technical play. You 
 - **Advanced mulligan theory** and hand evaluation
 - **Time management** in high-pressure situations
 
-### ❌ Vintage Elements Excluded (and Why)
+### Vintage Elements Excluded (and Why)
 
 **Degenerate elements completely removed:**
 

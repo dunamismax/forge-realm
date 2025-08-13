@@ -59,7 +59,7 @@ Coming from Standard, you already understand competitive Magic's core elements. 
 
 ## Your Favorite Standard Mechanics in Ideal Magic
 
-### ✅ Mechanics You Know from Recent Standard
+### Mechanics You Know from Recent Standard
 
 **Core mechanics that define Ideal Magic:**
 
@@ -83,7 +83,7 @@ Coming from Standard, you already understand competitive Magic's core elements. 
 - **Surge** - Oath of the Gatewatch cooperation
 - **Raid** - Tarkir aggro rewards
 
-### ❌ Mechanics Excluded (and Why You'll Thank Us)
+### Mechanics Excluded (and Why You'll Thank Us)
 
 **Standard headaches completely removed:**
 

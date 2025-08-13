@@ -57,7 +57,7 @@ Coming from Commander, you already understand Magic's core appeal: interactive g
 
 ## Your Favorite Commander Mechanics in Ideal Magic
 
-### ✅ Mechanics You'll Recognize and Love
+### Mechanics You'll Recognize and Love
 
 **The beloved "glue suite" that appears frequently:**
 
@@ -76,7 +76,7 @@ Coming from Commander, you already understand Magic's core appeal: interactive g
 - **Raid** - Aggressive payoffs for combat
 - **Buyback** (rare) - Powerful but conservatively costed
 
-### ❌ Mechanics Removed (and Why)
+### Mechanics Removed (and Why)
 
 **Say goodbye to these Commander headaches:**
 

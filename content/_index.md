@@ -28,6 +28,7 @@ layout: hextra-home
 
 <div class="hx:mb-6 hx:flex hx:flex-wrap hx:gap-4 hx:justify-center hx:md:justify-start">
   <a class="fr-btn fr-btn--secondary" href="/docs">Documentation</a>
+  <a class="fr-btn fr-btn--secondary" href="https://ideal-magic.com/docs/gameplay/coming-from-commander/">Coming from Commander?</a>
   <a class="fr-btn fr-btn--secondary" href="https://discord.gg/KQTY8DfY" target="_blank" rel="noreferrer">Join Discord</a>
   <a class="fr-btn fr-btn--secondary" href="https://github.com/dunamismax/ideal-magic" target="_blank" rel="noreferrer">View on GitHub</a>
 </div>
