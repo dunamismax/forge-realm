@@ -143,11 +143,8 @@ class ForgeRealmEnhancer {
   }
 
   toggleMobileMenu(menu, isClosing) {
-    menu.style.transition = 'transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.3s ease';
-    
     if (isClosing) {
-      menu.style.transform = 'translateX(-100%)';
-      menu.style.opacity = '0';
+      menu.classList.remove('show');
       setTimeout(() => {
         menu.classList.add('hx:hidden');
         menu.style.display = 'none';
@@ -155,12 +152,9 @@ class ForgeRealmEnhancer {
     } else {
       menu.classList.remove('hx:hidden');
       menu.style.display = 'block';
-      menu.style.transform = 'translateX(-100%)';
-      menu.style.opacity = '0';
       
       requestAnimationFrame(() => {
-        menu.style.transform = 'translateX(0)';
-        menu.style.opacity = '1';
+        menu.classList.add('show');
       });
     }
   }
