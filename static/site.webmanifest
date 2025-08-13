@@ -1,7 +1,7 @@
 {
     "name": "Forge Realm TCG",
     "short_name": "Forge Realm",
-    "description": "Classic Magic. Community Powered.",
+    "description": "Classic Magic. Community Powered. Enhanced digital trading card game experience.",
     "icons": [
         {
             "src": "/favicon-16x16.png",
@@ -17,10 +17,43 @@
             "src": "/apple-touch-icon.png",
             "sizes": "180x180",
             "type": "image/png"
+        },
+        {
+            "src": "/images/forge-realm-PNG-circular-emblem.webp",
+            "sizes": "512x512",
+            "type": "image/webp",
+            "purpose": "any maskable"
         }
     ],
-    "theme_color": "#50fa7b",
-    "background_color": "#0b0b0b",
+    "theme_color": "#3E2977",
+    "background_color": "#ffffff",
     "display": "standalone",
-    "start_url": "/"
+    "start_url": "/",
+    "scope": "/",
+    "orientation": "portrait-primary",
+    "categories": ["games", "entertainment", "trading"],
+    "shortcuts": [
+        {
+            "name": "Card Database",
+            "short_name": "Cards",
+            "description": "Browse the complete card database",
+            "url": "/docs/cards/",
+            "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32" }]
+        },
+        {
+            "name": "Gameplay Rules",
+            "short_name": "Rules",
+            "description": "Learn the game rules and formats",
+            "url": "/docs/gameplay/",
+            "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32" }]
+        },
+        {
+            "name": "Printing Guide",
+            "short_name": "Print",
+            "description": "Guide to printing your own cards",
+            "url": "/docs/printing/",
+            "icons": [{ "src": "/favicon-32x32.png", "sizes": "32x32" }]
+        }
+    ],
+    "prefer_related_applications": false
 }

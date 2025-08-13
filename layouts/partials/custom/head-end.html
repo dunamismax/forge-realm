@@ -24,87 +24,236 @@
 <link rel="prefetch" href="/docs/gameplay/">
 <link rel="prefetch" href="/docs/cards/">
 
-<!-- Service worker registration for offline support (future enhancement) -->
+<!-- Enhanced Forge Realm Performance & UX System -->
+{{ $enhancedJS := resources.Get "js/forge-realm-enhanced.js" | minify }}
+<script src="{{ $enhancedJS.RelPermalink }}"></script>
+
+<!-- Service Worker Registration -->
 <script>
-  if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
-    // Register service worker for caching (when implemented)
-    // navigator.serviceWorker.register('/sw.js');
+  if ('serviceWorker' in navigator && (window.location.protocol === 'https:' || window.location.hostname === 'localhost')) {
+    navigator.serviceWorker.register('/sw.js')
+      .then((registration) => {
+        console.log('Service Worker registered:', registration.scope);
+        
+        // Update service worker when new version available
+        registration.addEventListener('updatefound', () => {
+          const newWorker = registration.installing;
+          newWorker.addEventListener('statechange', () => {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              // Show update notification
+              showUpdateNotification();
+            }
+          });
+        });
+      })
+      .catch((error) => {
+        console.warn('Service Worker registration failed:', error);
+      });
+  }
+  
+  function showUpdateNotification() {
+    const notification = document.createElement('div');
+    notification.style.cssText = `
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background: var(--accent-primary, #3E2977);
+      color: white;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      z-index: 10000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      font-size: 0.875rem;
+      max-width: 300px;
+    `;
+    notification.innerHTML = `
+      <div>New version available!</div>
+      <button onclick="location.reload()" style="background: rgba(255,255,255,0.2); border: none; color: white; padding: 0.25rem 0.5rem; border-radius: 0.25rem; margin-top: 0.5rem; cursor: pointer;">Update</button>
+      <button onclick="this.parentElement.remove()" style="background: none; border: none; color: white; float: right; cursor: pointer; font-size: 1.2rem; line-height: 1;">×</button>
+    `;
+    document.body.appendChild(notification);
+    
+    // Auto-hide after 10 seconds
+    setTimeout(() => notification.remove(), 10000);
   }
 </script>
 
-<!-- Mobile optimization script -->
+<!-- PWA Manifest -->
+<link rel="manifest" href="/site.webmanifest">
+
+<!-- Advanced Performance Monitoring -->
 <script>
-  // Disable zoom on form inputs (iOS)
-  document.addEventListener('DOMContentLoaded', function() {
-    const viewport = document.querySelector('meta[name="viewport"]');
-    if (viewport) {
-      viewport.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
-    }
-    
-    // Prevent 300ms click delay on mobile
-    let touchStartTime = 0;
-    document.addEventListener('touchstart', function() {
-      touchStartTime = Date.now();
-    });
-    
-    document.addEventListener('touchend', function(e) {
-      if (Date.now() - touchStartTime < 300) {
-        e.preventDefault();
-        e.target.click();
+  // Web Vitals monitoring
+  if ('PerformanceObserver' in window) {
+    // Largest Contentful Paint
+    new PerformanceObserver((list) => {
+      for (const entry of list.getEntries()) {
+        if (entry.startTime < 2500) {
+          console.log('LCP (Good):', entry.startTime);
+        } else if (entry.startTime < 4000) {
+          console.log('LCP (Needs Improvement):', entry.startTime);
+        } else {
+          console.log('LCP (Poor):', entry.startTime);
+        }
       }
-    });
-  });
+    }).observe({entryTypes: ['largest-contentful-paint']});
+    
+    // First Input Delay
+    new PerformanceObserver((list) => {
+      for (const entry of list.getEntries()) {
+        const fid = entry.processingStart - entry.startTime;
+        if (fid < 100) {
+          console.log('FID (Good):', fid);
+        } else if (fid < 300) {
+          console.log('FID (Needs Improvement):', fid);
+        } else {
+          console.log('FID (Poor):', fid);
+        }
+      }
+    }).observe({entryTypes: ['first-input']});
+    
+    // Cumulative Layout Shift
+    let clsValue = 0;
+    new PerformanceObserver((list) => {
+      for (const entry of list.getEntries()) {
+        if (!entry.hadRecentInput) {
+          clsValue += entry.value;
+        }
+      }
+      
+      if (clsValue < 0.1) {
+        console.log('CLS (Good):', clsValue);
+      } else if (clsValue < 0.25) {
+        console.log('CLS (Needs Improvement):', clsValue);
+      } else {
+        console.log('CLS (Poor):', clsValue);
+      }
+    }).observe({entryTypes: ['layout-shift']});
+  }
 </script>
 
-<!-- Critical CSS inlining for mobile -->
+<!-- Critical CSS for Performance -->
 <style>
-  /* Critical above-the-fold styles for mobile */
-  @media (max-width: 480px) {
-    .nav-container {
-      min-height: 60px;
-      background: rgba(11, 11, 11, 0.95);
-      backdrop-filter: blur(12px);
-    }
-    
-    .nav-container nav {
-      height: 60px;
-      padding: 0.5rem 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    
-    .navbar-brand img {
-      width: 40px;
-      height: 40px;
-    }
-    
-    /* Hide search immediately on mobile */
-    .nav-container nav [class*="search"],
-    .nav-container nav input[type="search"],
-    .hextra-search {
-      display: none;
-    }
-    
-    .hero-section {
-      padding: 2rem 1rem;
-      text-align: center;
+  /* Critical above-the-fold styles */
+  .nav-container,
+  nav.hextra-max-navbar-width {
+    height: var(--nav-height-mobile, 4rem);
+    min-height: var(--nav-height-mobile, 4rem);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  /* Apply navigation classes immediately */
+  nav.hextra-max-navbar-width {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  }
+  
+  nav .hx\:flex.hx\:items-center.hx\:hover\:opacity-75 {
+    display: flex !important;
+    align-items: center !important;
+    margin-right: auto !important;
+    transition: opacity 0.15s ease;
+  }
+  
+  nav .hx\:flex.hx\:items-center.hx\:hover\:opacity-75:hover {
+    opacity: 0.8;
+  }
+  
+  nav .hx\:flex.hx\:items-center.hx\:hover\:opacity-75 img {
+    width: 2.75rem !important;
+    height: 2.75rem !important;
+    margin-right: 0.5rem !important;
+    border-radius: 0.5rem;
+  }
+  
+  nav .hx\:flex.hx\:items-center.hx\:hover\:opacity-75 span {
+    font-size: 1.125rem !important;
+    font-weight: 700 !important;
+    white-space: nowrap;
+    color: var(--text-primary);
+  }
+  
+  nav a.hx\:p-2.hx\:text-current {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-width: 2.75rem !important;
+    min-height: 2.75rem !important;
+    padding: 0.5rem !important;
+    border-radius: 0.5rem;
+    transition: all 0.15s ease;
+    color: var(--text-secondary);
+  }
+  
+  nav a.hx\:p-2.hx\:text-current:hover {
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    transform: translateY(-1px);
+  }
+  
+  /* Hide non-essential elements on mobile */
+  @media (max-width: 1023px) {
+    nav [title*="Search"],
+    nav a[href*="search"],
+    nav .search-input,
+    nav input[type="search"],
+    nav a.hx\:text-sm:not([class*="hx:p-2"]) {
+      display: none !important;
     }
   }
   
-  @media (max-width: 375px) {
-    .nav-container {
-      min-height: 55px;
+  @media (min-width: 480px) {
+    .nav-container,
+    nav.hextra-max-navbar-width {
+      height: var(--nav-height-tablet, 4.5rem);
+      min-height: var(--nav-height-tablet, 4.5rem);
+      padding: 0 1.5rem;
     }
     
-    .nav-container nav {
-      height: 55px;
-      padding: 0.25rem 0.75rem;
+    nav .hx\:flex.hx\:items-center.hx\:hover\:opacity-75 img {
+      width: 3.125rem !important;
+      height: 3.125rem !important;
     }
     
-    .navbar-brand img {
-      width: 35px;
-      height: 35px;
+    nav .hx\:flex.hx\:items-center.hx\:hover\:opacity-75 span {
+      font-size: 1.25rem !important;
     }
+  }
+  
+  @media (min-width: 1024px) {
+    .nav-container,
+    nav.hextra-max-navbar-width {
+      height: var(--nav-height-desktop, 6.25rem);
+      min-height: var(--nav-height-desktop, 6.25rem);
+      padding: 0 2rem;
+    }
+    
+    nav .hx\:flex.hx\:items-center.hx\:hover\:opacity-75 img {
+      width: 5rem !important;
+      height: 5rem !important;
+    }
+    
+    nav .hx\:flex.hx\:items-center.hx\:hover\:opacity-75 span {
+      font-size: 1.5rem !important;
+    }
+  }
+  
+  /* Performance optimizations */
+  .hero-section {
+    contain: layout style paint;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  /* Anti-flash styling */
+  html, body {
+    background-color: var(--bg-primary, #ffffff);
+  }
+  
+  .dark html, .dark body {
+    background-color: var(--bg-primary, #111827);
   }
 </style>
