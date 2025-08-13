@@ -30,6 +30,33 @@ body {
   --primary-lightness: 50%;
   --navbar-height: 4rem;
   --menu-height: 3.75rem; /* 60px */
+  
+  /* Forge Realm Design System */
+  --fr-timing-fast: 0.15s;
+  --fr-timing-normal: 0.25s;
+  --fr-timing-slow: 0.4s;
+  --fr-easing-standard: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --fr-easing-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  
+  /* MTG Mana Colors */
+  --fr-mana-green: #006533;
+  --fr-mana-blue: #264490;
+  --fr-mana-white: #E49506;
+  --fr-mana-red: #7E011E;
+  --fr-mana-black: #420161;
+  
+  /* Theme Colors */
+  --fr-accent-primary: #3E2977;
+  --fr-accent-secondary: #70281A;
+  
+  /* Typography */
+  --fr-font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --fr-font-family-mono: 'JetBrains Mono', 'SF Mono', Consolas, 'Liberation Mono', Menlo, monospace;
+  
+  /* Responsive Navigation Heights */
+  --fr-nav-height-mobile: 3.5rem;
+  --fr-nav-height-tablet: 4rem;
+  --fr-nav-height-desktop: 5rem;
 }
 
 .dark {
@@ -51,3 +78,4 @@ body {
 @import "./components/jupyter.css";
 @import "./components/badge.css";
 @import "./components/toc.css";
+@import "./components/forge-realm.css";

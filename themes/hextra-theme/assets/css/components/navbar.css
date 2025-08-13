@@ -1,14 +1,83 @@
+/* Enhanced navigation with responsive design */
 nav {
+  height: var(--fr-nav-height-mobile);
+  transition: all var(--fr-timing-normal) var(--fr-easing-standard);
+  
   .search-wrapper {
     @apply hx:hidden hx:md:inline-block;
   }
 }
 
+/* Responsive navigation heights */
+@media (min-width: 480px) {
+  nav {
+    height: var(--fr-nav-height-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    height: var(--fr-nav-height-desktop);
+  }
+}
+
+/* Enhanced backdrop filter with smooth transitions */
 @supports (
   (-webkit-backdrop-filter: blur(1px)) or (backdrop-filter: blur(1px))
 ) {
   .nav-container-blur {
     @apply hx:backdrop-blur-md hx:bg-white/[.85] hx:dark:bg-dark/80!;
+    transition: background-color var(--fr-timing-normal) var(--fr-easing-standard),
+                backdrop-filter var(--fr-timing-normal) var(--fr-easing-standard);
+  }
+}
+
+/* Navigation brand enhancements */
+.hextra-navbar-logo {
+  transition: opacity var(--fr-timing-fast) var(--fr-easing-standard);
+}
+
+.hextra-navbar-logo:hover {
+  opacity: 0.8;
+}
+
+/* Navigation links with better touch targets */
+nav a {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+  border-radius: 0.5rem;
+  transition: all var(--fr-timing-fast) var(--fr-easing-standard);
+}
+
+nav a:hover {
+  transform: translateY(-1px);
+}
+
+/* Mobile menu improvements */
+@media (max-width: 1023px) {
+  .hextra-nav-menu-items {
+    position: fixed;
+    top: var(--fr-nav-height-mobile);
+    left: 0;
+    right: 0;
+    background: var(--color-dark);
+    border-top: 1px solid rgb(55 65 81 / 0.3);
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: transform var(--fr-timing-normal) var(--fr-easing-standard);
+    overflow-y: auto;
+    max-height: calc(100vh - var(--fr-nav-height-mobile));
+  }
+  
+  .hextra-nav-menu-items.show {
+    transform: translateY(0);
+  }
+  
+  @media (min-width: 480px) {
+    .hextra-nav-menu-items {
+      top: var(--fr-nav-height-tablet);
+      max-height: calc(100vh - var(--fr-nav-height-tablet));
+    }
   }
 }
 

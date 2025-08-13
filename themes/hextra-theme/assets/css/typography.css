@@ -1,3 +1,24 @@
+/* Font imports for enhanced typography */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/inter-ui/4.0.2/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+/* Enhanced typography optimizations */
+html {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--fr-font-family);
+  font-display: swap;
+}
+
+/* Code elements use JetBrains Mono */
+code, pre, kbd {
+  font-family: var(--fr-font-family-mono) !important;
+}
+
 .content {
   :where(h1):not(:where([class~=not-prose],[class~=not-prose] *)) {
     @apply hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100;

@@ -1,0 +1,208 @@
+/* Forge Realm - Enhanced Theme Components */
+
+/* === PERFORMANCE OPTIMIZATIONS === */
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Performance containment */
+.content-wrapper {
+  contain: layout style paint;
+}
+
+/* === MTG MANA COLOR SYSTEM === */
+.mana-green { color: var(--fr-mana-green); }
+.mana-blue { color: var(--fr-mana-blue); }
+.mana-white { color: var(--fr-mana-white); }
+.mana-red { color: var(--fr-mana-red); }
+.mana-black { color: var(--fr-mana-black); }
+
+.mana-green-bg { background-color: var(--fr-mana-green); }
+.mana-blue-bg { background-color: var(--fr-mana-blue); }
+.mana-white-bg { background-color: var(--fr-mana-white); }
+.mana-red-bg { background-color: var(--fr-mana-red); }
+.mana-black-bg { background-color: var(--fr-mana-black); }
+
+/* === ENHANCED INTERACTIVE ELEMENTS === */
+/* Enhanced link hover effects */
+a:hover {
+  @apply hx:no-underline;
+  transform: translateY(-1px);
+  transition: all var(--fr-timing-fast) var(--fr-easing-standard);
+}
+
+/* Smooth card hover effects */
+.hx\\:shadow:hover {
+  transform: translateY(-2px);
+  @apply hx:shadow-xl;
+}
+
+/* Button hover effects */
+button:hover,
+.hx\\:bg-primary-600:hover,
+[role="button"]:hover {
+  transform: translateY(-1px);
+}
+
+/* === ROUNDED CORNERS SYSTEM === */
+a, button, input, textarea, select,
+.hx\\:rounded-lg,
+.search-results {
+  @apply hx:rounded-lg!;
+}
+
+/* === MOBILE OPTIMIZATIONS === */
+@media (max-width: 768px) {
+  /* Touch-optimized targets */
+  a, button {
+    min-height: 2.75rem;
+    min-width: 2.75rem;
+    @apply hx:inline-flex hx:items-center hx:justify-center;
+  }
+  
+  /* Disable animations on mobile for performance */
+  .hero-section,
+  .feature-grid .feature-card {
+    animation: none;
+  }
+  
+  /* Mobile-optimized spacing */
+  .hx\\:px-6 {
+    @apply hx:px-4!;
+  }
+  
+  .hx\\:py-3 {
+    @apply hx:py-2!;
+  }
+}
+
+/* === UTILITY CLASSES === */
+/* Button utility classes */
+.fr-btn {
+  @apply hx:inline-block hx:px-5 hx:py-3 hx:rounded-full hx:font-medium hx:text-center;
+  transition: all var(--fr-timing-fast) var(--fr-easing-standard);
+}
+
+.fr-btn--primary {
+  @apply hx:bg-primary-600 hx:text-white;
+}
+
+.fr-btn--primary:hover {
+  @apply hx:bg-primary-700;
+  transform: translateY(-1px);
+}
+
+.fr-btn--secondary {
+  @apply hx:bg-transparent hx:border hx:border-gray-300 hx:text-gray-700 hx:dark:border-gray-600 hx:dark:text-gray-300;
+}
+
+.fr-btn--secondary:hover {
+  @apply hx:bg-gray-50 hx:dark:bg-gray-800;
+  transform: translateY(-1px);
+}
+
+/* Grid system */
+.fr-grid {
+  @apply hx:grid hx:gap-6;
+}
+
+.fr-grid--cols-1 { @apply hx:grid-cols-1; }
+.fr-grid--cols-2 { @apply hx:grid-cols-1 hx:md:grid-cols-2; }
+.fr-grid--cols-3 { @apply hx:grid-cols-1 hx:md:grid-cols-2 hx:lg:grid-cols-3; }
+.fr-grid--cols-4 { @apply hx:grid-cols-1 hx:md:grid-cols-2 hx:lg:grid-cols-4; }
+
+/* Flexbox utilities */
+.fr-flex {
+  @apply hx:flex hx:gap-4;
+}
+
+.fr-flex--center {
+  @apply hx:items-center hx:justify-center;
+}
+
+.fr-flex--between {
+  @apply hx:justify-between;
+}
+
+/* === FEATURE ENHANCEMENTS === */
+/* Feature cards with mana color accents */
+.feature-card:nth-child(1) {
+  border-left: 4px solid var(--fr-mana-green);
+}
+.feature-card:nth-child(2) {
+  border-left: 4px solid var(--fr-mana-blue);
+}
+.feature-card:nth-child(3) {
+  border-left: 4px solid var(--fr-mana-white);
+}
+.feature-card:nth-child(4) {
+  border-left: 4px solid var(--fr-mana-red);
+}
+.feature-card:nth-child(5) {
+  border-left: 4px solid var(--fr-mana-black);
+}
+
+/* Hero section enhancement */
+.hero-section {
+  background: linear-gradient(135deg, 
+    rgba(0, 101, 51, 0.05), 
+    rgba(36, 68, 144, 0.05), 
+    rgba(228, 149, 6, 0.05), 
+    rgba(126, 1, 30, 0.05), 
+    rgba(66, 1, 97, 0.05));
+}
+
+/* === DISABLED FEATURES === */
+/* Hide theme toggle in footer */
+.hextra-footer .theme-toggle {
+  @apply hx:hidden!;
+}
+
+/* Hide back to top button */
+#backToTop {
+  @apply hx:hidden!;
+}
+
+/* === ACCESSIBILITY IMPROVEMENTS === */
+/* Focus states */
+*:focus {
+  @apply hx:outline-2 hx:outline-primary-500 hx:outline-offset-2;
+  transition: outline var(--fr-timing-fast) var(--fr-easing-standard);
+}
+
+/* High contrast support */
+@media (prefers-contrast: high) {
+  .hx\\:text-gray-600 {
+    @apply hx:text-gray-900 hx:dark:text-gray-100!;
+  }
+  
+  .hx\\:border-gray-200 {
+    @apply hx:border-gray-900 hx:dark:border-gray-100!;
+  }
+}
+
+/* === PERFORMANCE HINTS === */
+.fr-will-change-transform {
+  will-change: transform;
+}
+
+.fr-will-change-opacity {
+  will-change: opacity;
+}
+
+.fr-contain-layout {
+  contain: layout;
+}
+
+.fr-mobile-optimized {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
