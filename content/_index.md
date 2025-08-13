@@ -10,9 +10,6 @@ layout: hextra-home
   {{< icon name="arrow-circle-right" attributes="height=14" >}}
 {{< /hextra/hero-badge >}}
 
-<div class="hx:mt-6 hx:mb-6 hx:text-center">
-<img src="/images/ideal-magic-main.webp" alt="Ideal Magic" style="max-width: 475px;" class="hx:mx-auto hx:rounded-lg hx:shadow-lg" />
-</div>
 
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
