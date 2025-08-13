@@ -79,8 +79,8 @@ enableInlineShortcodes = true
     displayLogo = true
     width = "wide"
     [params.navbar.logo]
-      path = "images/ideal-magic-PNG-circular-emblem.webp"
-      dark = "images/ideal-magic-PNG-circular-emblem.webp"
+      path = "images/ideal-magic-circular-emblem.webp"
+      dark = "images/ideal-magic-circular-emblem.webp"
       width = 80
       height = 80
 

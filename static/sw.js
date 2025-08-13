@@ -9,7 +9,7 @@ const CRITICAL_ASSETS = [
   '/docs/cards/',
   '/docs/gameplay/',
   '/docs/printing/',
-  '/images/ideal-magic-PNG-circular-emblem.webp',
+  '/images/ideal-magic-circular-emblem.webp',
   '/favicon.ico',
   '/manifest.json',
   // SPA-specific assets
@@ -224,7 +224,7 @@ async function getOfflineFallback(request) {
         </style>
       </head>
       <body>
-        <img src="/images/ideal-magic-PNG-circular-emblem.webp" alt="Ideal Magic" class="logo">
+        <img src="/images/ideal-magic-circular-emblem.webp" alt="Ideal Magic" class="logo">
         <h1>You're Offline</h1>
         <div class="mana-colors"></div>
         <p>No internet connection detected. Some cached pages may still be available.</p>
@@ -276,7 +276,7 @@ self.addEventListener('push', (event) => {
   const data = event.data.json();
   const options = {
     body: data.body,
-    icon: '/images/ideal-magic-PNG-circular-emblem.webp',
+    icon: '/images/ideal-magic-circular-emblem.webp',
     badge: '/favicon.ico',
     vibrate: [100, 50, 100],
     data: {

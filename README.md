@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="static/images/ideal-magic-main-wide.webp" alt="Ideal Magic - The Perfect MTG Experience" width="600" />
+  <img src="static/images/ideal-magic-main.webp" alt="Ideal Magic - The Perfect MTG Experience" width="600" />
 </p>
 
 # Ideal Magic - The Perfect MTG Experience

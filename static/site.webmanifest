@@ -19,7 +19,7 @@
             "type": "image/png"
         },
         {
-            "src": "/images/ideal-magic-PNG-circular-emblem.webp",
+            "src": "/images/ideal-magic-circular-emblem.webp",
             "sizes": "512x512",
             "type": "image/webp",
             "purpose": "any maskable"

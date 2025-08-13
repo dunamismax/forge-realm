@@ -14,7 +14,7 @@ covering gameplay rules, printing guides, and contribution information.
 {{< /callout >}}
 
 <div class="text-center my-4">
-  <img src="/images/ideal-magic-PNG-circular-emblem.webp" alt="Ideal Magic Emblem" style="max-width: 200px; height: auto;" class="img-fluid">
+  <img src="/images/ideal-magic-circular-emblem.webp" alt="Ideal Magic Emblem" style="max-width: 200px; height: auto;" class="img-fluid">
 </div>
 
 ## What is Ideal Magic?

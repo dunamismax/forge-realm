@@ -151,7 +151,7 @@ ideal-magic/
   displayTitle = true
   displayLogo = true
   [params.navbar.logo]
-    path = "images/ideal-magic-PNG-circular-emblem.webp"
+    path = "images/ideal-magic-circular-emblem.webp"
     width = 80
     height = 80
 ```

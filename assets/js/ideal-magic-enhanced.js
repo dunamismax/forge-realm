@@ -30,7 +30,7 @@ class IdealMagicEnhancer {
 
   preloadCriticalResources() {
     const criticalResources = [
-      '/images/ideal-magic-PNG-circular-emblem.webp',
+      '/images/ideal-magic-circular-emblem.webp',
       '/favicon.ico'
     ];
 
