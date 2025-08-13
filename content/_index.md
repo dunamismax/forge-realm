@@ -67,7 +67,11 @@ layout: hextra-home
 
 <div class="hx:mt-12"></div>
 
+<div class="hx:max-w-screen-lg hx:mx-auto hx:text-center">
+
 ## Magic at Its Absolute Best
+
+<div class="hx:text-gray-500 dark:hx:text-gray-400 hx:mt-6 hx:text-xl hx:leading-7">
 
 You start at twenty life with the London Mulligan, and the game meets you halfway: scry, surveil, cycling, and clues smooth rough draws without erasing variance. Lands remain the heartbeat—one a turn, tap for color, plan your curve—and the color pie still shapes every story you tell.
 
@@ -76,3 +80,7 @@ Interaction is honest and ever-present. **Ward, not hexproof**, is the default s
 We built this from the beloved **"glue suite"**—**Kicker, Cycling, Flashback, Foretell, Adventure, Landfall, Sagas, Investigate**—plus **Rebound, Surge, and Raid** that celebrate perfect turns without breaking them. We cut the mechanics that asked you to track ghosts or broke the pace: **Storm, Dredge, Companion, Day/Night, Dungeons, Cipher, Cumulative Upkeep**.
 
 **This is Magic as it was meant to be**—familiar, but lighter in the hand. The best parts aren't rare moments—they're the default state of play. Join our [Discord](https://discord.gg/DvHRY8h3rs) to experience it yourself.
+
+</div>
+
+</div>
