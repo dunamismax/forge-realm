@@ -90,7 +90,7 @@ enableInlineShortcodes = true
 
   [params.theme]
     default = "dark"
-    displayToggle = true
+    displayToggle = false
 
   [params.footer]
     enable = true

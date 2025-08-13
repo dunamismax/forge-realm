@@ -480,13 +480,7 @@ class ForgeRealmEnhancer {
 
   keyboardShortcuts() {
     document.addEventListener('keydown', (e) => {
-      // Theme toggle with 't'
-      if (e.key === 't' && !e.metaKey && !e.ctrlKey && !e.altKey) {
-        if (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
-          const themeToggle = document.querySelector('.theme-toggle, [data-theme-toggle]');
-          if (themeToggle) themeToggle.click();
-        }
-      }
+      // Theme toggle disabled - using fixed dark theme
       
       // Navigation with arrow keys
       if (e.key === 'ArrowLeft' && e.altKey) {
@@ -500,14 +494,13 @@ class ForgeRealmEnhancer {
 
   contextualHelp() {
     // Add help indicators to complex UI elements
-    document.querySelectorAll('.search-input, .theme-toggle').forEach(element => {
+    document.querySelectorAll('.search-input').forEach(element => {
       element.setAttribute('data-tooltip', this.getHelpText(element));
     });
   }
 
   getHelpText(element) {
     if (element.matches('.search-input')) return 'Press Cmd/Ctrl+K to focus search';
-    if (element.matches('.theme-toggle')) return 'Press T to toggle theme';
     return '';
   }
 
