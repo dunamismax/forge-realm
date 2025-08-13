@@ -426,6 +426,9 @@ a[role="button"]:hover { transform: translateY(-1px); }
 /* Hide footer theme toggle */
 .hextra-footer .theme-toggle { display: none !important; }
 
+/* Hide scroll to top button in TOC */
+#backToTop { display: none !important; }
+
 /* Rounded corners for all interactive elements */
 a, button, .btn, .hx-btn, input, textarea, select,
 .nav-link, .navbar-nav .nav-link,

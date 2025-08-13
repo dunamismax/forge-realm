@@ -109,7 +109,7 @@ enableInlineShortcodes = true
       tokenize = "forward"
 
   [params.editURL]
-    enable = true
+    enable = false
     base = "https://github.com/dunamismax/forge-realm/edit/main/content"
 
   [params.toc]
