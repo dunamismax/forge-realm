@@ -71,15 +71,15 @@ layout: hextra-home
 
 ## Magic at Its Absolute Best
 
-<div class="hx:text-gray-500 dark:hx:text-gray-400 hx:mt-6 hx:text-xl hx:leading-7">
+<div class="hx:text-gray-500 dark:hx:text-gray-400 hx:mt-6 hx:text-lg hx:leading-8 hx:space-y-6">
 
-You start at twenty life with the London Mulligan, and the game meets you halfway: scry, surveil, cycling, and clues smooth rough draws without erasing variance. Lands remain the heartbeat—one a turn, tap for color, plan your curve—and the color pie still shapes every story you tell.
+<p>You start at twenty life with the London Mulligan, and the game meets you halfway: scry, surveil, cycling, and clues smooth rough draws without erasing variance. Lands remain the heartbeat—one a turn, tap for color, plan your curve—and the color pie still shapes every story you tell.</p>
 
-Interaction is honest and ever-present. **Ward, not hexproof**, is the default shield: a small toll that invites real counterplay rather than shutting it off. Play is board-first and paper-friendly—every moving part lives where you can see it.
+<p>Interaction is honest and ever-present. <strong>Ward, not hexproof</strong>, is the default shield: a small toll that invites real counterplay rather than shutting it off. Play is board-first and paper-friendly—every moving part lives where you can see it.</p>
 
-We built this from the beloved **"glue suite"**—**Kicker, Cycling, Flashback, Foretell, Adventure, Landfall, Sagas, Investigate**—plus **Rebound, Surge, and Raid** that celebrate perfect turns without breaking them. We cut the mechanics that asked you to track ghosts or broke the pace: **Storm, Dredge, Companion, Day/Night, Dungeons, Cipher, Cumulative Upkeep**.
+<p>We built this from the beloved <strong>"glue suite"</strong>—<strong>Kicker, Cycling, Flashback, Foretell, Adventure, Landfall, Sagas, Investigate</strong>—plus <strong>Rebound, Surge, and Raid</strong> that celebrate perfect turns without breaking them. We cut the mechanics that asked you to track ghosts or broke the pace: <strong>Storm, Dredge, Companion, Day/Night, Dungeons, Cipher, Cumulative Upkeep</strong>.</p>
 
-**This is Magic as it was meant to be**—familiar, but lighter in the hand. The best parts aren't rare moments—they're the default state of play. Join our [Discord](https://discord.gg/DvHRY8h3rs) to experience it yourself.
+<p><strong>This is Magic as it was meant to be</strong>—familiar, but lighter in the hand. The best parts aren't rare moments—they're the default state of play. Join our <a href="https://discord.gg/DvHRY8h3rs" class="hx:text-primary-500 hover:hx:text-primary-400 hx:transition-colors">Discord</a> to experience it yourself.</p>
 
 </div>
 
