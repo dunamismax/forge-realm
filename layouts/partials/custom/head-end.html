@@ -1,0 +1,84 @@
+<!-- Custom performance optimizations -->
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#50fa7b">
+<meta name="msapplication-navbutton-color" content="#50fa7b">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- Preload critical assets -->
+<link rel="preload" href="/images/forge-realm-PNG-circular-emblem.webp" as="image" type="image/webp">
+<link rel="preload" href="/favicon.ico" as="image" type="image/x-icon">
+
+<!-- DNS prefetch for external resources -->
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="dns-prefetch" href="//discord.gg">
+<link rel="dns-prefetch" href="//github.com">
+
+<!-- Preconnect for critical external resources -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+
+<!-- Resource hints for performance -->
+<link rel="prefetch" href="/docs/">
+<link rel="prefetch" href="/docs/gameplay/">
+<link rel="prefetch" href="/docs/cards/">
+
+<!-- Service worker registration for offline support (future enhancement) -->
+<script>
+  if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
+    // Register service worker for caching (when implemented)
+    // navigator.serviceWorker.register('/sw.js');
+  }
+</script>
+
+<!-- Mobile optimization script -->
+<script>
+  // Disable zoom on form inputs (iOS)
+  document.addEventListener('DOMContentLoaded', function() {
+    const viewport = document.querySelector('meta[name="viewport"]');
+    if (viewport) {
+      viewport.content = 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no';
+    }
+    
+    // Prevent 300ms click delay on mobile
+    let touchStartTime = 0;
+    document.addEventListener('touchstart', function() {
+      touchStartTime = Date.now();
+    });
+    
+    document.addEventListener('touchend', function(e) {
+      if (Date.now() - touchStartTime < 300) {
+        e.preventDefault();
+        e.target.click();
+      }
+    });
+  });
+</script>
+
+<!-- Critical CSS inlining for mobile -->
+<style>
+  /* Critical above-the-fold styles for mobile */
+  @media (max-width: 768px) {
+    .nav-container {
+      min-height: 70px;
+      background: rgba(11, 11, 11, 0.95);
+      backdrop-filter: blur(12px);
+    }
+    
+    .nav-container nav {
+      height: 70px;
+      padding: 0.75rem 1rem;
+    }
+    
+    .navbar-brand img {
+      width: 50px;
+      height: 50px;
+    }
+    
+    .hero-section {
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+  }
+</style>

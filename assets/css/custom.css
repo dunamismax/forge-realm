@@ -436,10 +436,133 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Mobile-First Responsive Design */
+
+/* Mobile Portrait (320px - 480px) */
+@media (max-width: 480px) {
+  /* Fix header for mobile */
+  .nav-container nav,
+  nav.hextra-max-navbar-width {
+    height: 70px !important;
+    min-height: 70px !important;
+    padding: 0.75rem 1rem !important;
+  }
+  
+  .nav-container {
+    min-height: 70px !important;
+  }
+  
+  /* Scale down logo for mobile */
+  .navbar-brand img,
+  .hextra-navbar-logo img {
+    width: 50px !important;
+    height: 50px !important;
+    max-width: 50px !important;
+    max-height: 50px !important;
+  }
+  
+  /* Adjust navbar brand container */
+  .navbar-brand,
+  .hextra-navbar-logo,
+  .nav-container nav .navbar-title {
+    min-height: 70px !important;
+    height: 70px !important;
+  }
+  
+  /* Mobile navigation improvements */
+  .hextra-nav-menu-toggle {
+    padding: 0.5rem !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Better mobile typography */
+  .navbar-title h1,
+  .navbar-title .title {
+    font-size: 1.2rem !important;
+    margin-left: 0.5rem;
+  }
+  
+  /* Hero section mobile optimization */
+  .hx\:mt-6 {
+    margin-top: 1rem !important;
+  }
+  
+  .hx\:mb-6 {
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Mobile button sizing */
+  .fr-btn, .hx-btn, a[role="button"] {
+    padding: 0.625rem 1rem !important;
+    font-size: 0.875rem !important;
+    margin: 0.25rem !important;
+  }
+  
+  /* Mobile text sizing */
+  h1 { font-size: 1.875rem !important; }
+  h2 { font-size: 1.5rem !important; }
+  h3 { font-size: 1.25rem !important; }
+  
+  /* Feature cards mobile layout */
+  .hx\:grid-cols-2,
+  .hx\:grid-cols-3 {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Mobile spacing */
+  .hx\:px-6 {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Search mobile optimization */
+  .search-input {
+    width: 100% !important;
+    max-width: none !important;
+  }
+}
+
+/* Mobile Landscape and Small Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Slightly larger header for landscape */
+  .nav-container nav,
+  nav.hextra-max-navbar-width {
+    height: 80px !important;
+    min-height: 80px !important;
+    padding: 1rem 1.5rem !important;
+  }
+  
+  .nav-container {
+    min-height: 80px !important;
+  }
+  
+  /* Medium logo size for landscape */
+  .navbar-brand img,
+  .hextra-navbar-logo img {
+    width: 60px !important;
+    height: 60px !important;
+    max-width: 60px !important;
+    max-height: 60px !important;
+  }
+  
+  .navbar-brand,
+  .hextra-navbar-logo,
+  .nav-container nav .navbar-title {
+    min-height: 80px !important;
+    height: 80px !important;
+  }
+  
+  /* Two-column layout for feature cards */
+  .hx\:grid-cols-3 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
 /* Anti-flash styles for mobile */
 @media (max-width: 768px) {
   html, body {
     background-color: var(--bg-primary) !important;
+    overflow-x: hidden !important;
   }
   
   .dark html, .dark body {
@@ -449,6 +572,226 @@ body {
   /* Prevent flash during navigation */
   .page-transition {
     transition: opacity 0.2s ease-in-out;
+  }
+  
+  /* Mobile performance optimizations */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Reduce motion on mobile for performance */
+  .hero-section,
+  .feature-grid .feature-card {
+    animation: none !important;
+  }
+  
+  /* Mobile touch targets */
+  a, button, .btn, .hx-btn {
+    min-height: 44px !important;
+    min-width: 44px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  /* Mobile navigation menu */
+  .hextra-nav-menu-items {
+    position: fixed !important;
+    top: 70px !important;
+    left: 0 !important;
+    right: 0 !important;
+    max-height: calc(100vh - 70px) !important;
+    background: var(--bg-primary) !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* Mobile search improvements */
+  .search-results {
+    position: fixed !important;
+    top: 70px !important;
+    left: 1rem !important;
+    right: 1rem !important;
+    max-height: calc(100vh - 90px) !important;
+    z-index: 50 !important;
+  }
+  
+  /* Mobile sidebar improvements */
+  .sidebar {
+    transform: translateX(-100%) !important;
+    transition: transform 0.3s ease !important;
+    position: fixed !important;
+    top: 70px !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    width: 280px !important;
+    z-index: 40 !important;
+    background: var(--bg-primary) !important;
+    border-right: 1px solid var(--border-color) !important;
+  }
+  
+  .sidebar.open {
+    transform: translateX(0) !important;
+  }
+  
+  /* Mobile content area adjustments */
+  .content-wrapper {
+    margin-left: 0 !important;
+    padding: 1rem !important;
+  }
+  
+  /* Mobile hero section improvements */
+  .hero-section {
+    padding: 2rem 1rem !important;
+    text-align: center !important;
+  }
+  
+  .hero-section img {
+    max-width: 90% !important;
+    height: auto !important;
+  }
+  
+  /* Mobile feature grid improvements */
+  .feature-grid {
+    gap: 1rem !important;
+    padding: 1rem !important;
+  }
+  
+  .feature-card {
+    padding: 1.5rem 1rem !important;
+    margin-bottom: 1rem !important;
+  }
+  
+  /* Mobile footer improvements */
+  .footer {
+    padding: 2rem 1rem !important;
+    text-align: center !important;
+  }
+  
+  .footer .flex {
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+}
+
+/* Additional Mobile Performance and UX Improvements */
+
+/* Improve text readability on mobile */
+@media (max-width: 768px) {
+  /* Better line heights for mobile reading */
+  p, li, span {
+    line-height: 1.6 !important;
+  }
+  
+  /* Improved mobile table handling */
+  table {
+    width: 100% !important;
+    display: block !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+  }
+  
+  /* Mobile-friendly code blocks */
+  pre, code {
+    font-size: 0.875rem !important;
+    overflow-x: auto !important;
+    max-width: 100% !important;
+  }
+  
+  /* Mobile form improvements */
+  input, textarea, select {
+    width: 100% !important;
+    padding: 0.75rem !important;
+    font-size: 1rem !important;
+    border-radius: 8px !important;
+  }
+  
+  /* Mobile modal/dialog improvements */
+  .modal, .dialog {
+    margin: 1rem !important;
+    max-width: calc(100vw - 2rem) !important;
+    max-height: calc(100vh - 2rem) !important;
+  }
+}
+
+/* Mobile Performance Optimizations */
+@media (max-width: 768px) {
+  /* Optimize images for mobile */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    loading: lazy;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+  
+  /* Hero image specific mobile optimization */
+  .hero-section img,
+  img[src*="forge-realm-main-wide"] {
+    width: 100% !important;
+    max-width: 400px !important;
+    height: auto !important;
+  }
+  
+  /* Logo optimization for mobile */
+  .navbar-brand img,
+  .hextra-navbar-logo img,
+  img[src*="circular-emblem"] {
+    image-rendering: auto !important;
+    will-change: transform !important;
+  }
+  
+  /* Reduce background complexity on mobile */
+  .hero-section {
+    background: linear-gradient(135deg, 
+      rgba(0, 101, 51, 0.02), 
+      rgba(36, 68, 144, 0.02), 
+      rgba(228, 149, 6, 0.02)) !important;
+  }
+  
+  /* Optimize scrolling performance */
+  html {
+    -webkit-overflow-scrolling: touch !important;
+    scroll-behavior: smooth !important;
+  }
+  
+  /* Reduce paint and layout thrashing */
+  .nav-container,
+  .hero-section,
+  .feature-grid,
+  .footer {
+    will-change: auto !important;
+    contain: layout style paint !important;
+  }
+  
+  /* Optimize touch interactions */
+  a, button, .btn, .hx-btn {
+    -webkit-touch-callout: none !important;
+    -webkit-user-select: none !important;
+    user-select: none !important;
+    touch-action: manipulation !important;
+  }
+  
+  /* Reduce animation complexity on mobile */
+  * {
+    animation-fill-mode: both !important;
+    animation-iteration-count: 1 !important;
+  }
+  
+  /* Battery and CPU optimization */
+  .feature-card,
+  .card,
+  .hx-card {
+    transform: none !important;
+    transition: none !important;
+  }
+  
+  .feature-card:hover,
+  .card:hover,
+  .hx-card:hover {
+    transform: none !important;
+    box-shadow: none !important;
   }
 }
 
@@ -507,3 +850,114 @@ body {
 .nav-link[href*="printing"] { border-bottom: 2px solid var(--mana-white); }
 .nav-link[href*="community"] { border-bottom: 2px solid var(--mana-red); }
 .nav-link[href*="contributing"] { border-bottom: 2px solid var(--mana-black); }
+
+/* Comprehensive Responsive Breakpoints */
+
+/* Extra Small Devices (320px - 375px) */
+@media (max-width: 375px) {
+  .nav-container nav {
+    padding: 0.5rem 0.75rem !important;
+  }
+  
+  .navbar-brand img {
+    width: 45px !important;
+    height: 45px !important;
+  }
+  
+  .navbar-title h1 {
+    font-size: 1.1rem !important;
+  }
+  
+  .hero-section {
+    padding: 1.5rem 0.75rem !important;
+  }
+  
+  .fr-btn {
+    padding: 0.5rem 0.875rem !important;
+    font-size: 0.8rem !important;
+  }
+  
+  h1 { font-size: 1.625rem !important; }
+  h2 { font-size: 1.375rem !important; }
+}
+
+/* Large Mobile/Small Tablet (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-container nav {
+    height: 90px !important;
+    min-height: 90px !important;
+    padding: 1.25rem 2rem !important;
+  }
+  
+  .nav-container {
+    min-height: 90px !important;
+  }
+  
+  .navbar-brand img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  
+  .navbar-brand,
+  .hextra-navbar-logo,
+  .nav-container nav .navbar-title {
+    min-height: 90px !important;
+    height: 90px !important;
+  }
+  
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1.5rem !important;
+  }
+}
+
+/* Desktop and larger (1025px+) - ensure our desktop styles work */
+@media (min-width: 1025px) {
+  .nav-container nav,
+  nav.hextra-max-navbar-width {
+    height: 100px !important;
+    min-height: 100px !important;
+    padding: 1.5rem !important;
+  }
+  
+  .navbar-brand img,
+  .hextra-navbar-logo img {
+    width: 80px !important;
+    height: 80px !important;
+  }
+  
+  .feature-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 2rem !important;
+  }
+}
+
+/* High DPI/Retina Display Optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .navbar-brand img,
+  .hextra-navbar-logo img {
+    image-rendering: -webkit-optimize-contrast !important;
+    image-rendering: crisp-edges !important;
+  }
+  
+  .hero-section img {
+    image-rendering: auto !important;
+  }
+}
+
+/* Dark mode mobile-specific adjustments */
+@media (max-width: 768px) and (prefers-color-scheme: dark) {
+  .nav-container {
+    background: rgba(17, 17, 17, 0.95) !important;
+  }
+  
+  .hextra-nav-menu-items {
+    background: #111 !important;
+    border-top: 1px solid #333 !important;
+  }
+  
+  .search-results {
+    background: #111 !important;
+    border: 1px solid #333 !important;
+  }
+}
