@@ -19,18 +19,19 @@ covering gameplay rules, printing guides, and contribution information.
 
 ## What is Ideal Magic?
 
-Ideal Magic TCG preserves Magic's strategic depth through open-source development. Built on Legacy and Vintage foundations, it delivers the classic Magic experience without corporate gatekeeping, artificial scarcity, or access barriers.
+It's the Magic you remember at its best—sharp, interactive, and endlessly replayable—refined until every decision feels clean in the hand and vivid on the table. The rules step out of the way. The drama stays.
 
-## Core Principles
+You start at twenty life with the London Mulligan, and the game meets you halfway: scry, surveil, cycling, and clues smooth rough draws without erasing variance. Lands remain the heartbeat—one a turn, tap for color, plan your curve—and the color pie still shapes every story you tell.
 
-- **Complete transparency** – all decisions made publicly with full community visibility
-- **Democratic governance** – community votes determine game evolution and balance changes  
-- **Universal access** – unrestricted print-and-play for everyone
-- **No artificial scarcity** – every card available to every player
+## Core Philosophy
+
+- **The beloved "glue suite"** – Kicker, Cycling, Flashback, Foretell, Adventure, Landfall, Sagas, Investigate—mechanics that make choices sing
+- **No sand in the gears** – Storm, Dredge, Companion, Day/Night, and off-board tracking mechanics have been cut completely  
+- **Board-first & paper-friendly** – every moving part lives where you can see it: counters on permanents, tokens on the battlefield
+- **Ward over Hexproof** – interaction with a fair tax, not a wall; choices over bookkeeping, complexity in decisions not administration
 
 {{< cards >}}
 {{< card link="/docs/gameplay/" title="Getting Started" subtitle="Learn the rules and start playing Ideal Magic in minutes." >}}
-{{< card link="/docs/cards/" title="Card Gallery" subtitle="Browse all cards, view artwork, and download print-ready files." >}}
-{{< card link="/docs/printing/" title="Print at Home" subtitle="Complete guides for printing professional-quality cards at home." >}}
-{{< card link="/docs/contributing/" title="Get Involved" subtitle="Join our community and help shape the future of Ideal Magic." >}}
+{{< card link="/docs/printing/" title="Proxy Printing" subtitle="Complete guides for printing professional-quality proxies for playtesting." >}}
+{{< card link="/docs/contributing/" title="Get Involved" subtitle="Join our community and help curate the perfect Magic format." >}}
 {{< /cards >}}

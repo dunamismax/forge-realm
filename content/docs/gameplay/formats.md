@@ -31,7 +31,7 @@ Rules §7).
 
 ### Ideal Constructed (Default)
 
-* **Card pool**: All cards released for Ideal Magic that comply with the banlist/policy.
+* **Card pool**: All Magic: The Gathering cards that are legal in Ideal Magic format and comply with the banlist/policy.
 * **Rotation**: **None**. Build and refine indefinitely.
 * **Design intent**: Healthy metagame where the “glue suite” (Kicker, Cycling, Flashback, Foretell, Adventure, Landfall, Sagas, Investigate) plus Rebound/Surge/Raid drive agency and interaction.
 * **Governance**: Central updates may add or remove cards from legality to preserve format health; Buyback/Emerge appear only under policy constraints.

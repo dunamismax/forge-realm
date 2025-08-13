@@ -3,255 +3,233 @@ title: "Style Guide"
 linkTitle: "Style Guide"
 weight: 70
 description: >
-  Design system and component guidelines for Ideal Magic website development.
+  Design system and content guidelines for the Ideal Magic website—
+  showcasing Magic: The Gathering at its absolute best.
 ---
 
-Design system and component guidelines for Ideal Magic website development.
+Design system and content guidelines for showcasing **Magic at its best** through the Ideal Magic website.
 
-## Design Principles
+## **Ideal Magic Philosophy**
 
-### Core Values
+### **Core Principles**
 
-- **Clarity** - Clean, readable content organization
-- **Accessibility** - WCAG AA compliance for all users
-- **Consistency** - Unified visual language across all pages
-- **Performance** - Fast loading, optimized assets
+- **Magic at its best** - Every element reflects the perfect MTG experience
+- **Board-first clarity** - Information is visible and accessible
+- **Ward over Hexproof** - Interaction with fair barriers, not walls
+- **Familiar, lighter in hand** - Refined experience without unnecessary complexity
 
-### Visual Identity
+### **Content Voice**
 
-- **Dark Theme Default** - Professional, gaming-focused aesthetic
-- **High Contrast** - Excellent readability on all backgrounds
-- **Minimal** - Focus on content over decoration
-- **Modern** - Contemporary web design patterns
+Use the established Ideal Magic terminology:
 
-## Color Palette
+- "The beloved glue suite"
+- "No sand in the gears"
+- "Every decision feels clean in the hand and vivid on the table"
+- "20 life, London Mulligan"
 
-### Brand Colors
+## **Visual Design**
 
-```scss
-$primary:   #50fa7b  // Forge neon green
-$secondary: #8839ef  // Deep mauve purple
-$success:   #a6e3a1  // Soft green
-$info:      #88c0d0  // Icy blue
-$warning:   #fe640b  // Peachy amber
-$danger:    #d20f39  // Deep crimson
+### **Dark Theme Foundation**
+
+- **Default mode**: Dark theme only (no toggle)
+- **MTG-inspired**: Mana colors throughout design
+- **High contrast**: Excellent readability for gameplay focus
+- **Performance-first**: Optimized for mobile and PWA
+
+### **Mana Color System**
+
+```css
+--mana-green: #006533;   /* Primary accent */
+--mana-blue: #264490;    /* Information */
+--mana-white: #E49506;   /* Warnings */
+--mana-red: #7E011E;     /* Alerts */
+--mana-black: #420161;   /* Dark accents */
 ```
 
-### Surface Colors
+### **Typography**
 
-```scss
-$dark:      #0b0b0b  // Main background
-$body-bg:   #0b0b0b  // Page background
-$card-bg:   #2e3440  // Card/panel background
-$border:    #434c5e  // UI borders
-```
+- **Primary**: Inter (clean, readable)
+- **Code**: JetBrains Mono (developer-friendly)
+- **Scale**: Mobile-first, responsive sizing
+- **Hierarchy**: Clear heading structure for gameplay rules
 
-### Text Colors
+## **Content Guidelines**
 
-```scss
-$body-color: #cdd6f4  // Primary text
-$light:      #e5e9f0  // Light text/headings
-$code-color: #bd93f9  // Code syntax
-```
+### **Writing Style**
 
-## Typography
+- **Concise and direct** - Respect players' time
+- **Gameplay-focused** - Emphasize the perfect MTG experience
+- **Accessible** - Clear to both new and experienced players
+- **Vision-aligned** - Use Ideal Magic terminology consistently
 
-### Font Stack
+### **Content Types**
 
-- **Primary**: Roboto (Google Fonts)
-- **Fallback**: system-ui, -apple-system, sans-serif
-- **Code**: Monaco, 'Cascadia Code', monospace
+**Gameplay Rules** (CANONICAL):
 
-### Scale
+- Preserve exact wording and structure
+- Only modify for obvious errors
+- Maintain the established format and terminology
 
-- **H1**: 2.5rem (40px) - Page titles only
-- **H2**: 2rem (32px) - Major sections
-- **H3**: 1.5rem (24px) - Subsections
-- **H4**: 1.25rem (20px) - Minor headings
-- **Body**: 1rem (16px) - Standard text
-- **Small**: 0.875rem (14px) - Captions, metadata
+**General Documentation**:
 
-### Usage Rules
+- Emphasize the "perfect MTG experience"
+- Use established Ideal Magic phrases
+- Focus on board-first, paper-friendly gameplay
+- Highlight the beloved mechanics and banned problematic ones
 
-- One H1 per page maximum
-- Logical heading hierarchy (no skipping levels)
-- Use **bold** for emphasis, _italic_ for subtle emphasis
-- `Code formatting` for technical terms and commands
+### **Technical Content**
 
-## Components
+- **Accurate**: Test all procedures
+- **Complete**: Include necessary context
+- **Examples**: Provide working code samples
+- **Current**: Keep versions up to date
 
-### Alerts
+## **Components & Layout**
 
-Use Hextra callout shortcodes for important information:
+### **Hugo Shortcodes**
 
 ```markdown
-{{</* callout type="warning" */>}} **Important:** Critical information that
-users need to notice. {{</* /callout */>}}
+{{</* callout type="info" */>}}
+Core Ideal Magic information blocks
+{{</* /callout */>}}
+
+{{</* cards */>}}
+{{</* card title="Feature" subtitle="Description" */>}}
+{{</* /cards */>}}
 ```
 
-**Types**: info, warning, error
-
-### Code Blocks
+### **Code Blocks**
 
 Always specify language for syntax highlighting:
 
 ````markdown
 ```bash
-npm run dev
+hugo server --port 1313
 ```
 ````
 
-```yaml
-title: "Page Title"
-description: "Page description"
+### **Links & Navigation**
+
+- **Internal**: Relative paths (`/docs/gameplay/`)
+- **External**: Full URLs with proper attribution
+- **Descriptive**: Clear destination context
+
+## **Mobile-First Design**
+
+### **Responsive Breakpoints**
+
+- **Mobile**: < 480px (3.5rem nav height)
+- **Tablet**: 480px - 1024px (4rem nav height)  
+- **Desktop**: > 1024px (5rem nav height)
+
+### **Touch Optimization**
+
+- **Minimum targets**: 44px (2.75rem)
+- **Gesture support**: Smooth interactions
+- **Readable text**: Appropriate sizing across devices
+
+## **Performance Standards**
+
+### **Core Web Vitals**
+
+- **LCP**: < 2.5s (gameplay rule pages load quickly)
+- **FID**: < 100ms (responsive interaction)
+- **CLS**: < 0.1 (stable layout during loading)
+
+### **Optimization Features**
+
+- **Service Worker**: Offline gameplay rules access
+- **SPA Navigation**: Lightning-fast page transitions
+- **Image optimization**: WebP format, lazy loading
+- **Critical CSS**: Mobile performance priority
+
+## **MTG-Specific Elements**
+
+### **Content Structure**
+
+```
+/docs/gameplay/     # CANONICAL rules (rarely modify)
+/docs/printing/     # Print-and-play guides
+/docs/             # General documentation
 ```
 
-### Links
+### **Terminology Standards**
 
-- **Internal**: Use relative paths (`/docs/section/`)
-- **External**: Use full URLs with `https://`
-- **Descriptive**: Link text should explain destination
+**Always use**: Ideal Magic established terms
+**Avoid**: Corporate/political messaging
+**Focus**: Perfect gameplay experience
 
-### Images
+### **Visual Elements**
 
-- **Format**: WebP preferred, PNG/JPEG fallback
-- **Alt Text**: Descriptive alternative text for accessibility
-- **Sizing**: Responsive, appropriate dimensions
-- **Loading**: Lazy loading for non-critical images
+- **Mana symbols**: Consistent color usage
+- **Card references**: Clear formatting
+- **Mechanics**: Proper capitalization and explanation
 
-## Layout Patterns
+## **Technical Implementation**
 
-### Page Structure
+### **Theme Customization**
 
-```markdown
+**Direct modification approach**:
+
+- Modify `/themes/hextra-theme/` files directly
+- No CSS workarounds or overrides
+- Theme is designed to be customized
+
+### **File Organization**
+
+```
+assets/js/ideal-magic-enhanced.js  # Performance & UX
+assets/js/ideal-magic-spa.js       # SPA navigation
+themes/hextra-theme/               # Customized theme
+```
+
+### **Hugo Configuration**
+
+```toml
+[params]
+  description = "It's the Magic you remember at its best..."
+[params.theme]
+  default = "dark"
+  displayToggle = false
+```
+
+## **Accessibility**
+
+### **Requirements**
+
+- **Contrast**: 4.5:1 minimum for text
+- **Focus**: Visible indicators on all interactive elements
+- **Navigation**: Logical heading structure
+- **Alt text**: Descriptive for all content images
+
+### **Testing Standards**
+
+- Keyboard navigation functional
+- Screen reader compatibility
+- Lighthouse 90+ accessibility score
+- Color blindness considerations
+
+## **Frontmatter Standards**
+
+```yaml
 ---
 title: "Descriptive Page Title"
 linkTitle: "Short Nav Title"
 weight: 10
 description: >
-  Clear description for SEO and navigation.
----
-
-# Page Title (matches frontmatter)
-
-Brief introduction paragraph.
-
-## Major Section
-
-Content organized in logical sections.
-
-### Subsection
-
-Detailed information in smaller chunks.
-```
-
-### Content Organization
-
-- **Scannable**: Use headings, lists, short paragraphs
-- **Progressive**: Basic info first, details later
-- **Actionable**: Include clear next steps
-- **Linked**: Connect related content
-
-### Navigation
-
-- **Breadcrumbs**: Enabled by default
-- **Sidebar**: Auto-generated from content structure
-- **Weights**: Use frontmatter weight for ordering
-- **Menu**: Keep navigation hierarchies shallow
-
-## Accessibility Guidelines
-
-### Requirements
-
-- **Contrast**: 4.5:1 minimum for normal text
-- **Focus**: Visible focus indicators on all interactive elements
-- **Headings**: Logical structure for screen readers
-- **Images**: Descriptive alt text for all content images
-- **Links**: Descriptive link text (avoid "click here")
-
-### Testing
-
-- **Keyboard**: All functionality accessible via keyboard
-- **Screen Reader**: Test with NVDA, JAWS, or VoiceOver
-- **Lighthouse**: Achieve 90+ accessibility score
-- **Color**: Test with color blindness simulators
-
-## Performance Standards
-
-### Loading Targets
-
-- **LCP**: < 2.5 seconds (Largest Contentful Paint)
-- **FID**: < 100ms (First Input Delay)
-- **CLS**: < 0.1 (Cumulative Layout Shift)
-
-### Optimization
-
-- **Images**: Compressed, appropriate formats and sizes
-- **CSS**: Minified, critical path optimization
-- **JavaScript**: Minimized, deferred non-critical scripts
-- **Fonts**: Preload critical fonts, use font-display: swap
-
-## Content Guidelines
-
-### Writing Style
-
-- **Concise**: Clear, direct language
-- **Consistent**: Unified terminology and tone
-- **Helpful**: Focus on user needs and goals
-- **Inclusive**: Welcoming to all skill levels
-
-### Technical Content
-
-- **Accurate**: Test all code examples and procedures
-- **Current**: Keep versions and links up to date
-- **Complete**: Include all necessary context
-- **Examples**: Provide practical, working examples
-
-## File Organization
-
-### Naming Conventions
-
-- **Content**: `lowercase-with-hyphens.md`
-- **Images**: `descriptive-name.webp`
-- **Directories**: `lowercase/logical-grouping/`
-
-### Structure
-
-- **Logical**: Group related content together
-- **Shallow**: Avoid deep nested hierarchies
-- **Predictable**: Consistent patterns across sections
-- **SEO-friendly**: Clean, descriptive URLs
-
-## Hugo/Docsy Specific
-
-### Frontmatter Standards
-
-```yaml
----
-title: "Human Readable Title"
-linkTitle: "Nav Title"
-weight: 10
-description: >
-  Multi-line descriptions for better readability in source files.
-date: 2025-01-01
+  Clear description emphasizing the Ideal Magic experience.
 ---
 ```
 
-### Shortcode Usage
+### **Weight Guidelines**
 
-Leverage Hextra shortcodes for enhanced layouts:
-
-- `{{</* callout */>}}` - Important notices and information blocks
-- `{{</* cards */>}}` and `{{</* card */>}}` - Feature highlights and structured
-  content grids
-
-### Theme Customization
-
-- **Partials**: Override in `layouts/partials/`
-- **SCSS**: Customize in `assets/scss/_variables_project.scss`
-- **Templates**: Extend default layouts when needed
+- **Gameplay**: 10-30 (highest priority)
+- **Printing**: 40-60
+- **General docs**: 70-90
+- **Meta pages**: 100+
 
 ---
 
-This style guide ensures consistent, accessible, and performant user experiences
-across all Ideal Magic documentation and website content.
+This style guide ensures the Ideal Magic website perfectly reflects the vision: **Magic at its absolute best**, with every element supporting the board-first, paper-friendly, perfect MTG experience.
+
+**"Shuffle up. Every line you see is a line you can play."**

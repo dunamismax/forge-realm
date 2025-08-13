@@ -9,8 +9,8 @@ description: >
 {{< callout type="info" >}} The right cardstock makes all the difference in card
 quality and durability. {{< /callout >}}
 
-Choosing the right cardstock is crucial for creating professional-quality Forge
-Realm cards that feel authentic and durable during gameplay.
+Choosing the right cardstock is crucial for creating professional-quality Magic
+proxies that feel authentic and durable during Ideal Magic gameplay.
 
 ## Understanding Cardstock Specifications
 

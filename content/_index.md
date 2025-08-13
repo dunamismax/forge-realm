@@ -1,5 +1,5 @@
 ---
-title: Ideal Magic TCG
+title: Ideal Magic
 layout: hextra-home
 ---
 
@@ -11,18 +11,18 @@ layout: hextra-home
 {{< /hextra/hero-badge >}}
 
 <div class="hx:mt-6 hx:mb-6 hx:text-center">
-<img src="/images/ideal-magic-main-wide.webp" alt="Ideal Magic TCG" style="max-width: 475px;" class="hx:mx-auto hx:rounded-lg hx:shadow-lg" />
+<img src="/images/ideal-magic-main-wide.webp" alt="Ideal Magic" style="max-width: 475px;" class="hx:mx-auto hx:rounded-lg hx:shadow-lg" />
 </div>
 
 <div class="hx:mt-6 hx:mb-6">
 {{< hextra/hero-headline >}}
-  Ideal Magic TCG&nbsp;<br class="hx:sm:block hx:hidden" />Classic Magic. Community Powered.
+  Ideal Magic&nbsp;<br class="hx:sm:block hx:hidden" />The Perfect MTG Experience
 {{< /hextra/hero-headline >}}
 </div>
 
 <div class="hx:mb-12">
 {{< hextra/hero-subtitle >}}
-  Built on Legacy and Vintage foundations&nbsp;<br class="hx:sm:block hx:hidden" />with carefully chosen enhancements and community-driven evolution
+  It's the Magic you remember at its best—sharp, interactive, and endlessly replayable—&nbsp;<br class="hx:sm:block hx:hidden" />refined until every decision feels clean in the hand and vivid on the table
 {{< /hextra/hero-subtitle >}}
 </div>
 
@@ -36,43 +36,45 @@ layout: hextra-home
 
 {{< hextra/feature-grid >}}
   {{< hextra/feature-card
-    title="Complete Transparency"
-    subtitle="All decisions made publicly with full community visibility. No hidden agenda, no surprise changes."
-    icon="eye"
+    title="The Beloved Glue Suite"
+    subtitle="Kicker, Cycling, Flashback, Foretell, Adventure, Landfall, Sagas, and Investigate—mechanics that make choices sing."
+    icon="star"
   >}}
   {{< hextra/feature-card
-    title="Democratic Governance"
-    subtitle="Community votes drive the direction of game development. Your voice matters in shaping the game."
-    icon="check-circle"
+    title="No Sand in the Gears"
+    subtitle="Storm, Dredge, Companion, Day/Night, and off-board tracking mechanics have been cut completely."
+    icon="shield-check"
   >}}
   {{< hextra/feature-card
-    title="Free Accessibility"
-    subtitle="Print-and-play access for everyone, no restrictions. High-resolution files available for home printing."
-    icon="download"
-  >}}
-  {{< hextra/feature-card
-    title="No Artificial Scarcity"
-    subtitle="All cards available to all players. No chase rares, no limited editions, just balanced gameplay."
+    title="Board-First & Paper-Friendly"
+    subtitle="Every moving part lives where you can see it—counters on permanents, tokens on the battlefield."
     icon="cube"
   >}}
   {{< hextra/feature-card
-    title="Open Source Design"
-    subtitle="Card designs, rules, and development process are all open source. Contribute to the game's evolution."
-    icon="code"
+    title="Ward Over Hexproof"
+    subtitle="Interaction with a fair tax, not a wall. Choices over bookkeeping, complexity in decisions not administration."
+    icon="scale"
   >}}
   {{< hextra/feature-card
-    title="Community Driven"
-    subtitle="Join our Discord community to participate in playtesting, provide feedback, and help shape the game."
+    title="Familiar, Lighter in Hand"
+    subtitle="The air between turns is clearer, the edges safer, the middle richer. The soul stays, the sand goes."
+    icon="heart"
+  >}}
+  {{< hextra/feature-card
+    title="20 Life, London Mulligan"
+    subtitle="Classic Magic foundations with smoothing baked in—scry, surveil, cycling, and clues reduce non-games."
     icon="users"
   >}}
 {{< /hextra/feature-grid >}}
 
 <div class="hx:mt-12"></div>
 
-## The Future of Magic
+## Magic at Its Absolute Best
 
-Ideal Magic preserves Magic's golden age while democratizing access through open-source development. We champion the strategic depth and timeless mechanics that made Magic legendary, free from corporate restrictions and artificial scarcity.
+You start at twenty life with the London Mulligan, and the game meets you halfway: scry, surveil, cycling, and clues smooth rough draws without erasing variance. Lands remain the heartbeat—one a turn, tap for color, plan your curve—and the color pie still shapes every story you tell.
 
-Built on Legacy and Vintage's proven foundation, enhanced only where the community votes for meaningful improvement. No chase rares. No gatekeeping. Just pure strategic gameplay.
+Interaction is honest and ever-present. **Ward, not hexproof**, is the default shield: a small toll that invites real counterplay rather than shutting it off. Play is board-first and paper-friendly—every moving part lives where you can see it.
 
-**Core Set launching Q1 2026** • Join our [Discord](https://discord.gg/KQTY8DfY) to shape the game's evolution through mechanics design, artwork, and playtesting.
+We built this from the beloved **"glue suite"**—**Kicker, Cycling, Flashback, Foretell, Adventure, Landfall, Sagas, Investigate**—plus **Rebound, Surge, and Raid** that celebrate perfect turns without breaking them. We cut the mechanics that asked you to track ghosts or broke the pace: **Storm, Dredge, Companion, Day/Night, Dungeons, Cipher, Cumulative Upkeep**.
+
+**This is Magic as it was meant to be**—familiar, but lighter in the hand. The best parts aren't rare moments—they're the default state of play. Join our [Discord](https://discord.gg/KQTY8DfY) to experience it yourself.

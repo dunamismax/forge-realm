@@ -15,44 +15,34 @@ printing techniques. {{< /callout >}}
 
 ### What is Ideal Magic?
 
-Ideal Magic is a fully open-source Magic: The Gathering experience designed for
-tabletop play. Unlike corporate MTG, our project focuses on complete
-transparency, community-driven development, and unrestricted print-and-play
-access for everyone.
+Ideal Magic is the perfect Magic: The Gathering experience—a carefully curated format that features only the best mechanics from Magic's history while completely removing the problematic ones. This is Magic as it was meant to be: pure, balanced, and focused on interactive gameplay.
 
-### How is Ideal Magic different from other card games?
+### How is Ideal Magic different from regular Magic?
 
-**Complete Transparency**: All decisions are made publicly with full community
-visibility **Democratic Governance**: Community votes drive game development
-direction **No Artificial Scarcity**: All cards are available to all players
-**Free Access**: Print-and-play with no restrictions or paywalls **Open
-Source**: Game rules, artwork, and development process are completely open
+**Best mechanics only**: Features beloved mechanics like Kicker, Cycling, Flashback, Adventure, Landfall, and Sagas while completely banning Storm, Dredge, Companion, Day/Night, and other format-warping mechanics. **Board-first gameplay**: Emphasizes interactive, visible game states with low bookkeeping and no hidden tracking. **Perfect balance**: Community-curated card pool ensures optimal gameplay without oppressive strategies. **Pure MTG experience**: Classic Magic foundations with modern paper-friendly design.
 
 ### Is Ideal Magic really free?
 
-Yes! The game rules, card designs, and all digital assets are freely available.
-You only pay for:
+Yes! The format rules and guidelines are completely free.
+You only pay for actual Magic cards from your preferred vendor, or optionally:
 
-- Paper and ink for printing cards at home
+- Paper and ink for printing proxies for playtesting
 - Optional premium materials (special cardstock, sleeves)
-- Professional printing services (if you choose to use them)
+- Professional printing services for proxy cards
 
-### When will the first cards be released?
+### When will cards be available?
 
-The Core Set and initial card collection are targeted for release in **Q1 2026
-(tentative)**. This timeline allows for comprehensive community testing, full
-original artwork completion, and thorough game balance validation of our pure
-Magic: The Gathering experience built on Legacy and Vintage foundations.
+Ideal Magic is a **format and philosophy** rather than new cards. The community is currently curating the perfect card pool from Magic's existing history, featuring only the best and most balanced cards with our approved mechanics. Join our Discord to participate in the curation process and help build the ultimate Magic experience.
 
 ## Gameplay Questions
 
 ### How long does a typical game take?
 
-- **Quick matches**: 15-20 minutes
-- **Legacy games**: 30-45 minutes
-- **Tournament games**: 45-60 minutes
+- **Casual games**: 20-30 minutes
+- **Competitive games**: 30-45 minutes
+- **Best-of-three matches**: 45-60 minutes
 
-Game length varies based on format, player experience, and deck complexity.
+Game length is optimized by removing slow, grindy mechanics while keeping interactive gameplay.
 
 ### How many players can play?
 
@@ -79,13 +69,11 @@ are available for reference during games.
 
 ### Can I play online or digitally?
 
-Currently, Ideal Magic is designed for physical tabletop play. Digital
-implementations may be developed by the community in the future, but our focus
-is on the print-and-play experience.
+Ideal Magic can be played on any platform that supports Magic: The Gathering, as it uses existing Magic cards. Our community maintains lists of legal cards for online platforms like Magic Online, Arena (when applicable), and Cockatrice. However, our focus is on optimizing the physical tabletop experience.
 
 ## Printing and Cards
 
-### What do I need to start printing cards?
+### What do I need to start printing proxies for playtesting?
 
 **Essential items**:
 
@@ -94,16 +82,16 @@ is on the print-and-play experience.
 - Cutting tools (paper cutter, craft knife, or scissors)
 - Card sleeves for protection
 
-See our [Home Printing Guide](/docs/printing/home-printing-guide/) for detailed
+See our [Proxy Printing Guide](/docs/printing/home-printing-guide/) for detailed
 instructions.
 
-### How much does it cost to print a complete deck?
+### How much does it cost to print proxy cards for playtesting?
 
-**Estimated costs** (60-card deck):
+**Estimated costs** (60-card deck proxies):
 
-- **Budget printing**: $15-25 including paper and ink
-- **Premium printing**: $25-40 with high-quality materials
-- **Professional printing**: $40-80 depending on quantity and options
+- **Budget proxies**: $15-25 including paper and ink
+- **Premium proxies**: $25-40 with high-quality materials
+- **Professional proxy printing**: $40-80 depending on quantity and options
 
 ### What printer should I buy?
 
@@ -116,7 +104,7 @@ instructions.
 See our [Recommended Printers](/docs/printing/recommended-printers/) guide for
 detailed comparisons.
 
-### What paper works best for cards?
+### What paper works best for proxy cards?
 
 **Recommended specifications**:
 
@@ -127,16 +115,16 @@ detailed comparisons.
 Check our [Cardstock Guide](/docs/printing/cardstock-guide/) for comprehensive
 paper recommendations.
 
-### Can I print cards at a local print shop?
+### Can I print proxies at a local print shop?
 
-Yes! Many local print shops can produce high-quality cards:
+Yes! Many local print shops can produce high-quality proxy cards:
 
-- **Bring PDF files** optimized for commercial printing
+- **Bring proxy PDF files** optimized for commercial printing
 - **Specify paper requirements** (300 GSM cardstock)
 - **Request cutting services** for professional edges
 - **Compare costs** with home printing for your quantity
 
-### How durable are printed cards?
+### How durable are printed proxy cards?
 
 With proper materials and care:
 
@@ -146,89 +134,89 @@ With proper materials and care:
 
 Durability depends on cardstock quality, printing method, and handling.
 
-### Can I sell printed cards?
+### Can I sell printed proxy cards?
 
-**Personal use**: Print freely for personal and friend group play **Commercial
-use**: Contact us before any commercial activity **Tournament use**: Check with
-tournament organizers **Community events**: Generally encouraged for local play
-groups
+**Personal use**: Print proxies freely for personal playtesting and casual play
+**Commercial use**: Not recommended - always direct players to purchase official Magic cards
+**Tournament use**: Check with tournament organizers about proxy policies
+**Community events**: Proxies encouraged for local playtesting groups
 
 ## Community and Development
 
-### How can I contribute to the game?
+### How can I contribute to the format?
 
-**Game Design**: Join discussions on [Discord](https://discord.gg/KQTY8DfY)
-**Artwork**: Submit card art and design concepts **Playtesting**: Test new cards
-and provide feedback  
+**Format Curation**: Join discussions on [Discord](https://discord.gg/KQTY8DfY)
+**Balance Analysis**: Help analyze format health and card interactions **Playtesting**: Test format changes and provide feedback  
 **Documentation**: Help improve guides and rules **Website**: Contribute to the
 Hugo website on [GitHub](https://github.com/dunamismax/ideal-magic)
 
 See our [Contributing Guide](/docs/contributing/) for complete details.
 
-### How are game decisions made?
+### How are format decisions made?
 
 1. **Community Discussion**: Ideas discussed openly on Discord
-2. **Proposal Phase**: Formal proposals created for major changes
-3. **Community Vote**: Democratic voting process for direction
+2. **Proposal Phase**: Formal proposals created for card legality changes
+3. **Community Vote**: Democratic voting process for format direction
 4. **Implementation**: Changes made based on community consensus
-5. **Testing**: Community playtesting validates changes
+5. **Testing**: Community playtesting validates format changes
 
-### Can I suggest new cards or mechanics?
+### Can I suggest cards for inclusion or exclusion?
 
-Absolutely! Card suggestions are welcome through:
+Absolutely! Card legality suggestions are welcome through:
 
-- **Discord discussions** in design channels
-- **Formal proposals** for significant additions
-- **Community polls** for gauging interest
+- **Discord discussions** in format channels
+- **Formal proposals** for significant card changes
+- **Community polls** for gauging format health
 - **Playtesting sessions** for validation
 
 ### Who owns the intellectual property?
 
-- **Game Content**: Creative Commons BY-SA 4.0 license
+- **Format Rules**: Creative Commons BY-SA 4.0 license
 - **Documentation**: Apache License 2.0
 - **Community contributions**: Contributors retain attribution rights
-- **Open source**: All content remains freely available
+- **Magic Cards**: Wizards of the Coast owns all Magic: The Gathering intellectual property
 
-### How do you prevent power creep?
+### How do you prevent power creep in the format?
 
-- **Community oversight**: All cards reviewed by community
-- **Playtesting requirements**: Extensive testing before approval
+- **Community curation**: All card inclusions reviewed by community
+- **Playtesting requirements**: Extensive testing before format changes
 - **Balance philosophy**: Fun and interaction prioritized over raw power
-- **Regular review**: Periodic evaluation of game balance
-- **Democratic process**: Community can vote to modify problematic cards
+- **Regular review**: Periodic evaluation of format health
+- **Democratic process**: Community can vote to ban or unban cards
 
 ## Technical Questions
 
-### What file formats are cards available in?
+### What file formats are available for proxies?
 
-**Print-ready formats**:
+**Proxy resources**:
 
-- **PDF sheets**: Arranged for efficient printing
-- **Individual PNGs**: High-resolution images for custom layouts
-- **Print-and-play PDFs**: Complete decks ready to print
+- **Legal card lists**: Text files for various platforms (MTGO, Cockatrice, etc.)
+- **Proxy templates**: High-resolution templates for custom proxy creation
+- **Deck lists**: Optimized decklists featuring legal cards
 
-**Source formats** (for designers):
+**Platform formats**:
 
-- **Vector files**: Scalable artwork sources
-- **Template files**: For creating custom cards
+- **MTGO files**: Deck files for Magic Online
+- **Cockatrice XML**: Files for free online Magic play
+- **Text lists**: Simple card lists for any platform
 
-### What resolution are the card images?
+### What about proxy printing quality?
 
-All cards are provided at **300 DPI** minimum resolution, ensuring professional
-print quality at standard card size (63mm × 88mm).
+Proxy resources are provided at **300 DPI** minimum resolution, ensuring professional
+print quality at standard card size (63mm × 88mm) for playtesting purposes.
 
-### Can I modify the card designs?
+### Can I modify proxy templates?
 
 Under Creative Commons BY-SA 4.0:
 
-- **Personal modifications**: Freely allowed
-- **Custom variants**: Encouraged for house rules
+- **Personal modifications**: Freely allowed for personal playtesting
+- **Custom variants**: Encouraged for house rules and testing
 - **Sharing requirements**: Modified versions must use same license
 - **Attribution**: Credit original creators
 
-### How do I report bugs or issues with cards?
+### How do I report format issues or problems?
 
-**Game balance issues**: Discuss on Discord or GitHub **Printing problems**:
+**Format balance issues**: Discuss on Discord or GitHub **Proxy printing problems**:
 Community troubleshooting on Discord **Website issues**: Report on
 [GitHub Issues](https://github.com/dunamismax/ideal-magic/issues) **Rule
 clarifications**: Ask in Discord rules channel
@@ -238,9 +226,9 @@ clarifications**: Ask in Discord rules channel
 Currently no official mobile app exists. The project focuses on:
 
 - **Physical gameplay** as primary experience
-- **Web-based resources** for rules and cards
-- **Community apps** may be developed by volunteers
-- **Digital tools** for deck building may be added later
+- **Web-based resources** for rules and format information
+- **Community tools** may be developed by volunteers
+- **Digital platforms** support existing Magic tools (MTGO, Cockatrice, etc.)
 
 ## Troubleshooting
 
@@ -285,21 +273,20 @@ and rule clarification questions
 
 **Recommended path**:
 
-1. **Read the [Quick Start Guide](/docs/gameplay/quick-start/)** to learn basic
-   rules
+1. **Read the [Quick Start Guide](/docs/gameplay/quick-start/)** to learn the format rules
 2. **Join our [Discord server](https://discord.gg/KQTY8DfY)** for community
    support
-3. **Download starter deck files** when available (Q1 2026)
-4. **Print a small test batch** to try the process
-5. **Find local players** or introduce friends to the game
+3. **Get legal card lists** from our format resources
+4. **Build decks** using only legal cards and approved mechanics
+5. **Find local players** or introduce friends to the format
 
 ### What's the minimum I need to get started?
 
 **Basic requirements**:
 
-- **Rulebook**: Free download from our website
-- **Starter deck**: Two balanced 60-card decks available Q1 2026
-- **Basic printing**: Even office paper works for initial testing
+- **Format rules**: Free download from our website
+- **Legal cards**: Purchase Magic cards or print proxies for testing
+- **Basic deck**: 60-card deck using only legal cards and approved mechanics
 - **Opponents**: Friends or local gaming community
 
 ### How do I find other players?
@@ -309,7 +296,7 @@ and rule clarification questions
 - **Discord server**: Connect with global community
 - **Local game stores**: Ask about Ideal Magic interest
 - **Gaming meetups**: Introduce the game to existing groups
-- **Online forums**: Board game and TCG communities
+- **Online forums**: Board game and Magic communities
 - **Social media**: Share your interest and find local players
 
 ---

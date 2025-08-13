@@ -8,9 +8,9 @@ description: >
 
 ## Our Commitment
 
-The Ideal Magic TCG community provides a harassment-free environment for
-everyone, regardless of background or experience. We focus on collaborative game
-development and maintaining a welcoming space for all contributors.
+The Ideal Magic community provides a harassment-free environment for
+everyone, regardless of background or experience. We focus on collaborative format
+curation and maintaining a welcoming space for all contributors.
 
 ## Community Standards
 
@@ -62,4 +62,4 @@ representing the community publicly.
 ---
 
 _Adapted from [Contributor Covenant 2.1](https://www.contributor-covenant.org)
-with game development community modifications._
+with format community modifications._

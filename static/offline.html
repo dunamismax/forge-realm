@@ -226,7 +226,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="logo">FR</div>
+        <div class="logo">IM</div>
         
         <h1>You're Offline</h1>
         <p class="subtitle">No internet connection detected</p>
@@ -240,10 +240,10 @@
         
         <div class="actions">
             <button class="btn btn-primary" onclick="location.reload()">
-                🔄 Try Again
+                Try Again
             </button>
             <a href="/" class="btn btn-secondary">
-                🏠 Go Home
+                Go Home
             </a>
         </div>
         
@@ -253,13 +253,13 @@
         </div>
         
         <div class="cached-pages">
-            <h2>📚 Available Cached Pages</h2>
+            <h2>Available Cached Pages</h2>
             <ul id="cached-list">
-                <li><a href="/">🏠 Home</a></li>
-                <li><a href="/docs/">📖 Documentation</a></li>
-                <li><a href="/docs/cards/">🃏 Card Database</a></li>
-                <li><a href="/docs/gameplay/">🎮 Gameplay Rules</a></li>
-                <li><a href="/docs/printing/">🖨️ Printing Guide</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/docs/">Documentation</a></li>
+                <li><a href="/docs/cards/">Card Database</a></li>
+                <li><a href="/docs/gameplay/">Gameplay Rules</a></li>
+                <li><a href="/docs/printing/">Printing Guide</a></li>
             </ul>
         </div>
     </div>
@@ -279,12 +279,12 @@
                             
                             const list = document.getElementById('cached-list');
                             list.innerHTML = cachedUrls.map(path => {
-                                const name = path === '/' ? '🏠 Home' : 
-                                           path.includes('/cards') ? '🃏 Cards' :
-                                           path.includes('/gameplay') ? '🎮 Gameplay' :
-                                           path.includes('/printing') ? '🖨️ Printing' :
-                                           path.includes('/docs') ? '📖 Documentation' :
-                                           `📄 ${path.split('/').pop() || 'Page'}`;
+                                const name = path === '/' ? 'Home' : 
+                                           path.includes('/cards') ? 'Cards' :
+                                           path.includes('/gameplay') ? 'Gameplay' :
+                                           path.includes('/printing') ? 'Printing' :
+                                           path.includes('/docs') ? 'Documentation' :
+                                           `${path.split('/').pop() || 'Page'}`;
                                 return `<li><a href="${path}">${name}</a></li>`;
                             }).join('');
                         });
@@ -303,13 +303,13 @@
                 statusIndicator.style.backgroundColor = '#10b981';
                 statusIndicator.style.animation = 'none';
                 statusText.textContent = 'Connection Status: Online';
-                tryAgainBtn.textContent = '✅ Connected - Reload';
+                tryAgainBtn.textContent = 'Connected - Reload';
                 tryAgainBtn.style.backgroundColor = '#10b981';
             } else {
                 statusIndicator.style.backgroundColor = '#ef4444';
                 statusIndicator.style.animation = 'pulse 2s infinite';
                 statusText.textContent = 'Connection Status: Offline';
-                tryAgainBtn.textContent = '🔄 Try Again';
+                tryAgainBtn.textContent = 'Try Again';
                 tryAgainBtn.style.backgroundColor = 'var(--accent-primary)';
             }
         }

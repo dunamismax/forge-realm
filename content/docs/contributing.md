@@ -7,7 +7,7 @@ description: >
 ---
 
 {{< callout type="info" >}} **Welcome Contributors!** Thank you for contributing
-to Ideal Magic! This guide covers our development process and community
+to Ideal Magic! This guide covers our format curation process and community
 standards. {{< /callout >}}
 
 ## Code of Conduct
@@ -96,9 +96,9 @@ We welcome contributions in many forms:
 
 {{< cards >}}
 
-{{< card title="Game Design" subtitle="- Card designs and balance proposals\n- New mechanic development\n- Format creation and testing\n- Rules clarification and updates" >}}
+{{< card title="Format Curation" subtitle="- Card legality proposals and analysis\n- Balance evaluation of existing cards\n- Meta analysis and format health\n- Banned/restricted list discussions" >}}
 
-{{< card title="Art & Design" subtitle="- Card artwork and illustrations\n- Template design and layout\n- Icon creation and graphics\n- Print template optimization" >}}
+{{< card title="Community Building" subtitle="- Local playgroup organization\n- Tournament organizing and judging\n- New player mentoring\n- Format advocacy and education" >}}
 
 {{< card title="Documentation" subtitle="- Rule clarifications and examples\n- Strategy guides and tutorials\n- Printing guides and troubleshooting\n- Community event documentation" >}}
 
@@ -111,9 +111,9 @@ We welcome contributions in many forms:
 All contributions require:
 
 1. Community discussion on Discord
-2. Documentation review from maintainers
-3. Playtesting for game content changes
-4. Asset quality verification for artwork
+2. Format impact analysis for legality changes
+3. Playtesting for format modifications
+4. Documentation review from maintainers
 
 ## Community Integration
 
@@ -121,12 +121,12 @@ All contributions require:
 
 All major discussions happen on Discord. Join for:
 
-- Game design discussions and brainstorming
-- Balance feedback and playtesting
-- Card artwork and asset submissions
+- Format curation and card legality discussions
+- Balance analysis and format health monitoring
+- Meta analysis and strategy discussion
 - Community event coordination
 - Real-time collaboration with other contributors
-- Announcements about new card releases
+- Announcements about format updates and events
 
 ### GitHub - Technical Development
 

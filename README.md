@@ -1,38 +1,54 @@
 <p align="center">
-  <img src="static/images/ideal-magic-main-wide.webp" alt="Ideal Magic - Open Source Trading Card Game" width="600" />
+  <img src="static/images/ideal-magic-main-wide.webp" alt="Ideal Magic - The Perfect MTG Experience" width="600" />
 </p>
 
-# Ideal Magic TCG - Classic Magic. Community Powered.
+# Ideal Magic - The Perfect MTG Experience
 
-**The future of Magic's past** - Ideal Magic preserves Magic's strategic depth through open-source development. Built on Legacy and Vintage foundations with community-driven evolution, we're democratizing access to the classic Magic experience where strategy matters more than your wallet.
+**Magic at its best** - Ideal Magic is the ultimate curation of Magic: The Gathering, featuring only the most beloved and balanced mechanics while completely removing problematic ones. This isn't a new game—it's Magic as it was meant to be.
 
-[![Play Now](https://img.shields.io/badge/Play_Now-forge--realm.com-50fa7b?style=for-the-badge&labelColor=0b0b0b)](https://ideal-magic.com)
+[![Play Now](https://img.shields.io/badge/Play_Now-ideal--magic.com-50fa7b?style=for-the-badge&labelColor=0b0b0b)](https://ideal-magic.com)
 [![Join Discord](https://img.shields.io/badge/Join_Discord-Community-8839ef?style=for-the-badge&labelColor=0b0b0b)](https://discord.gg/KQTY8DfY)
 [![License](https://img.shields.io/badge/License-CC_BY--SA_4.0-a6e3a1?style=for-the-badge&labelColor=0b0b0b)](LICENSE)
 
 ---
 
-## **Core Set Launch: Tentative Q1 2026**
+## **The Magic You Remember at Its Best**
 
-The inaugural card set featuring full original artwork, complete mechanics, and balanced starter decks is in active development. Built on Legacy and Vintage foundations with carefully chosen enhancements that honor Magic's classic design principles. **Join our Discord - we need contributors for card mechanics, artwork, and game design!**
+It's the Magic you remember at its best—sharp, interactive, and endlessly replayable—refined until every decision feels clean in the hand and vivid on the table. The rules step out of the way. The drama stays.
+
+You start at twenty life with the London Mulligan, and the game meets you halfway: scry, surveil, cycling, and clues smooth rough draws without erasing variance. Lands remain the heartbeat—one a turn, tap for color, plan your curve—and the color pie still shapes every story you tell.
 
 ---
 
-## **Why Ideal Magic?**
+## **What Makes Ideal Magic Special**
 
-### **For Players**
+### **Best Mechanics Only**
 
-- **Always Free** - Print any card, build any deck, no Reserved List nonsense
-- **Classic Magic Experience** - Legacy and Vintage mechanics without corporate interference
-- **Legacy & Vintage Focus** - The most strategic and enduring formats
-- **Global Access** - Play anywhere with just a printer and some friends
+We've carefully curated the "glue suite" of beloved mechanics that make choices sing:
 
-### **For the Community**
+- **Kicker** lets you scale a spell to the moment
+- **Cycling** trades dead draws for live ones
+- **Flashback** turns your graveyard into a second hand—once, cleanly
+- **Foretell** banks a spell for later, adding tension to the turn
+- **Adventure** tucks a cantrip of story into your creature
+- **Landfall** rewards the rhythm of natural play
+- **Sagas** pace a chaptered arc with visible counters
+- **Investigate** gives you Clues: half a card now, a whole card when you're ready
 
-- **True Democracy** - Every major decision is voted on by the community
-- **Complete Transparency** - All discussions, votes, and development are public
-- **Open Source Forever** - Game rules, artwork, and code will always be free
-- **No Corporate Control** - Players own and control Magic's future
+Plus **Raid**, **Surge**, and **Rebound** that celebrate the perfect turns without breaking them.
+
+### **No Problematic Mechanics**
+
+We cut the mechanics that asked you to track ghosts or broke the pace:
+
+- **Storm, Dredge, Companion** - format-warping engines
+- **Day/Night, Dungeons, Cipher** - off-board bookkeeping
+- **Cumulative Upkeep** - escalating maintenance costs
+- **"Free engine" loops** that turn games into solitaire
+
+### **Board-First, Paper-Friendly**
+
+Every moving part lives where you can see it: counters on permanents, tokens on the battlefield, choices made openly. No off-board mini-games to babysit, no global timers to forget.
 
 ---
 
@@ -45,90 +61,82 @@ The inaugural card set featuring full original artwork, complete mechanics, and 
 4. Find Opponents      → Play with Discord community
 ```
 
-**Ready to revolutionize TCGs?** **Click the badges above to get started!**
+**Ready to experience perfect Magic?** **Click the badges above to get started!**
 
 ---
 
-## **Our Mission**
+## **Our Philosophy**
 
-**To preserve and democratize Magic: The Gathering's strategic depth for future
-generations.**
+**Familiar, but lighter in the hand** - The air between turns is clearer, the edges safer, the middle richer. We keep the soul—the bluff, the dance, the little adrenaline braid of "do they have it?"—and remove the sand in the gears.
 
-We believe that Magic's incredible gameplay shouldn't be locked behind corporate
-paywalls or artificial scarcity. Ideal Magic represents a return to pure Magic
-where:
+Ideal Magic rewards planning and invites audacity; says "yes" to interaction and "no" to bookkeeping; makes tomorrow's decisions brighter because today's were fair.
 
-- **Players control the game**, not Hasbro shareholders
-- **Strategy matters more** than your collection value
-- **Communities thrive** through collaboration, not chasing expensive singles
-- **Classic Magic lives on** through democratic participation, not corporate
-  decisions
+### **Core Principles**
 
----
-
-## **What Makes Us Different**
-
-| Corporate MTG             | Ideal Magic MTG            |
-| ------------------------- | -------------------------- |
-| Reserved List gatekeeping | All cards freely available |
-| $200+ Modern decks        | Print-and-play for $20     |
-| Hasbro profit focus       | Pure gameplay focus        |
-| Closed development        | Transparent process        |
-| Standard format pushing   | Legacy/Vintage emphasis    |
+- **20 life, London Mulligan** - Classic starting point
+- **Ward over Hexproof** - Interaction with a tax, not a wall
+- **Choices over bookkeeping** - Complexity in decisions, not administration
+- **Board-state clarity** - Everything important is visible
+- **The color pie matters** - Each color has its role and restrictions
 
 ---
 
-## **Join the Revolution**
+## **Game Formats**
 
-**[Visit ideal-magic.com](https://ideal-magic.com)** - Complete documentation,
-rules, and everything you need to play
+| Format | Description |
+|--------|-------------|
+| **Ideal Constructed** | 60+ cards, the complete curated card pool |
+| **Eternal (Open)** | Ideal + sanctioned cameo reprints |
+| **Limited (Draft/Sealed)** | 40+ cards, designed for clear archetypes |
+| **Cube** | Custom pools using Ideal-legal cards |
 
-**[Join our Discord](https://discord.gg/KQTY8DfY)** - Active community of
-players, designers, and contributors shaping the game's future
+All formats use the same banlist and philosophy - broad interaction, visible tracking, and meaningful decisions every turn.
 
-**Contact**: [dunamismax@ideal-magic.com](mailto:dunamismax@ideal-magic.com) -
-Questions? Ideas? Let's talk!
+---
+
+## **Join the Community**
+
+**[Visit ideal-magic.com](https://ideal-magic.com)** - Complete documentation, rules, and everything you need to play
+
+**[Join our Discord](https://discord.gg/KQTY8DfY)** - Active community of players, designers, and contributors shaping the perfect MTG experience
+
+**Contact**: [dunamismax@ideal-magic.com](mailto:dunamismax@ideal-magic.com) - Questions? Ideas? Let's talk!
 
 ## Contributing
 
-Contributions are welcome! Visit the
-[Contributing Guide](https://ideal-magic.com/docs/contributing/) on our website
-to learn how to get involved in:
+Contributions are welcome! Visit the [Contributing Guide](https://ideal-magic.com/docs/contributing/) on our website to learn how to get involved in:
 
 ### Game Development
 
-- Game design and balance
-- Card artwork and graphics
-- Playtesting and feedback
-- Community events and testing
+- Card curation and balance feedback
+- Playtesting and format refinement
+- Community events and tournaments
+- Documentation and guides
 
 ### Technical Development
 
 - Website development and improvements
-- Documentation and guides
+- Documentation and user experience
 - Developer tools and automation
 - Performance and accessibility
 
 ## Development
 
-- Custom theme variables live in `assets/scss/_variables_project.scss`.
-- All custom styles (including shortcode UI) are centralized in
-  `assets/scss/_styles_project.scss`.
-- Inline `<style>` blocks were removed from templates in favor of SCSS for
-  maintainability and DRYness.
+This website is built with Hugo and a heavily customized Hextra theme designed for the Ideal Magic experience.
 
-### Design and Theming Quick Guide
+### Design Philosophy
 
-- Tokens: Use CSS variables `--forge-*` (colors, shadows, radii) and SCSS vars
-  in `_variables_project.scss`.
-- Buttons: Primary uses gradient border + soft glow; secondary is a subtle
-  gradient. Both respond to `:focus-visible` with an accessible ring.
-- Navbar/Hero: Glassy navbar with blur; hero gets an overlay vignette for
-  consistent legibility over cover images.
-- Links: Non-button links get animated underlines; icons in buttons nudge on
-  hover for micro‑interaction.
-- Motion: On‑scroll reveals and zoom‑in are disabled under
-  `prefers-reduced-motion`.
+- **Dark theme by default** with MTG mana colors
+- **Mobile-first responsive design** for play-anywhere access
+- **Performance optimized** with service workers and PWA features
+- **Accessibility focused** with proper contrast and navigation
+
+### Technical Details
+
+- Custom theme variables live in `assets/scss/_variables_project.scss`
+- All custom styles centralized in `assets/scss/_styles_project.scss`
+- Progressive Web App features for offline documentation access
+- Optimized for print-friendly card guides and rules references
 
 ## License
 
@@ -140,9 +148,9 @@ See [LICENSE](LICENSE) for complete terms.
 
 ---
 
-**Ready to play? We'll be there soon!** Visit
-**[ideal-magic.com](https://ideal-magic.com)** and join our
-[Discord](https://discord.gg/KQTY8DfY) to join us on this journey!
+**Shuffle up. Every line you see is a line you can play.**
+
+Visit **[ideal-magic.com](https://ideal-magic.com)** and join our [Discord](https://discord.gg/KQTY8DfY) to experience Magic at its absolute best!
 
 ---
 

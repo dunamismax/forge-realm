@@ -1,5 +1,5 @@
 // Ideal Magic - Enhanced Performance & UX System
-class ForgeRealmEnhancer {
+class IdealMagicEnhancer {
   constructor() {
     this.init();
   }
@@ -626,10 +626,10 @@ class ForgeRealmEnhancer {
 
 // Initialize the enhancement system
 document.addEventListener('DOMContentLoaded', () => {
-  new ForgeRealmEnhancer();
+  new IdealMagicEnhancer();
 });
 
 // Export for module systems
 if (typeof module !== 'undefined' && module.exports) {
-  module.exports = ForgeRealmEnhancer;
+  module.exports = IdealMagicEnhancer;
 }

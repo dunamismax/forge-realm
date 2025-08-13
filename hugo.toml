@@ -1,6 +1,6 @@
 baseURL = 'https://ideal-magic.com'
 languageCode = 'en-us'
-title = 'Ideal Magic TCG'
+title = 'Ideal Magic'
 contentDir = 'content'
 enableEmoji = true
 enableRobotsTXT = true
@@ -45,38 +45,34 @@ enableInlineShortcodes = true
     pageRef = "/docs"
     weight = 1
   [[menu.main]]
-    name = "Cards"
-    pageRef = "/docs/cards"
-    weight = 2
-  [[menu.main]]
     name = "Gameplay"
     pageRef = "/docs/gameplay"
-    weight = 3
+    weight = 2
   [[menu.main]]
     name = "Printing"
     pageRef = "/docs/printing"
-    weight = 4
+    weight = 3
   [[menu.main]]
     name = "Search"
-    weight = 5
+    weight = 4
     [menu.main.params]
       type = "search"
   [[menu.main]]
     name = "Discord"
-    weight = 6
+    weight = 5
     url = "https://discord.gg/KQTY8DfY"
     [menu.main.params]
       icon = "discord"
   [[menu.main]]
     name = "GitHub"
-    weight = 7
+    weight = 6
     url = "https://github.com/dunamismax/ideal-magic"
     [menu.main.params]
       icon = "github"
 
 
 [params]
-  description = "Pure Magic: The Gathering as it was meant to be - focusing on Vintage and Modern's most beloved mechanics with modern enhancements."
+  description = "It's the Magic you remember at its best—sharp, interactive, and endlessly replayable—refined until every decision feels clean in the hand and vivid on the table."
 
   [params.navbar]
     displayTitle = true
@@ -126,7 +122,7 @@ enableInlineShortcodes = true
   [params.comments]
     enable = false
   
-  copyright = "© 2025 Ideal Magic."
+  copyright = "© 2025 Ideal Magic. Magic: The Gathering is a trademark of Wizards of the Coast."
   github_repo = "https://github.com/dunamismax/ideal-magic"
   github_branch = "main"
   github_project_repo = "https://github.com/dunamismax/ideal-magic"

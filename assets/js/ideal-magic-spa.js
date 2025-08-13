@@ -1,5 +1,5 @@
 // Ideal Magic - Lightning Fast SPA Navigation System
-class ForgeRealmSPA {
+class IdealMagicSPA {
   constructor() {
     this.cache = new Map();
     this.preloadQueue = new Set();
@@ -448,15 +448,15 @@ class ForgeRealmSPA {
 }
 
 // Initialize immediately - before DOMContentLoaded for fastest setup
-const forgeRealmSPA = new ForgeRealmSPA();
+const idealMagicSPA = new IdealMagicSPA();
 
 // Fallback initialization
 document.addEventListener('DOMContentLoaded', () => {
-  if (!forgeRealmSPA.cache) {
-    new ForgeRealmSPA();
+  if (!idealMagicSPA.cache) {
+    new IdealMagicSPA();
   }
 });
 
 // Export for debugging
-window.ForgeRealmSPA = ForgeRealmSPA;
-window.spa = forgeRealmSPA;
+window.IdealMagicSPA = IdealMagicSPA;
+window.spa = idealMagicSPA;

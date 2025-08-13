@@ -33,19 +33,19 @@ cards at home with detailed instructions and troubleshooting tips.
 
 ### File Formats Available
 
-- **PDF Print Sheets**: Pre-arranged cards optimized for A4/Letter paper
-- **Individual PNG Files**: High-resolution images for custom layouts
-- **Complete Deck PDFs**: Ready-to-print starter decks
-- **Print-and-Play Sets**: Curated card collections
+- **Proxy Templates**: Pre-designed templates for creating Magic card proxies
+- **Blank Templates**: Customizable templates for any Magic card
+- **Legal Card Lists**: Text files for importing into various platforms
+- **Sample Proxy PDFs**: Example proxy layouts for different card types
 
-### Download Process
+### Proxy Resource Access
 
-1. Visit the [Card Gallery](/docs/cards/)
-2. Select your desired card set or individual cards
+1. Download proxy templates and resources from the format guides
+2. Select appropriate templates for the cards you want to proxy
 3. Choose format based on your printing needs:
-   - **Beginners**: Use PDF print sheets for easiest setup
-   - **Advanced users**: Individual PNGs for custom arrangements
-4. Verify file integrity after download (files should be 300 DPI minimum)
+   - **Beginners**: Use pre-made proxy templates for easiest setup
+   - **Advanced users**: Blank templates for custom proxy creation
+4. Verify template quality (should be 300 DPI minimum for best results)
 
 ## Step 2: Prepare Your Printer
 
