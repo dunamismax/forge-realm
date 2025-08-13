@@ -112,18 +112,17 @@
       document.documentElement.classList.add('mobile-device');
     }
     
-    // Preload critical resources
+    // Preload critical resources (excluding favicons to prevent conflicts)
     const preloadCritical = () => {
       const criticalResources = [
-        '/images/forge-realm-PNG-circular-emblem.webp',
-        '/favicon.ico'
+        '/images/forge-realm-PNG-circular-emblem.webp'
       ];
       
       criticalResources.forEach(resource => {
         const link = document.createElement('link');
         link.rel = 'preload';
         link.href = resource;
-        link.as = resource.includes('.webp') ? 'image' : 'icon';
+        link.as = 'image';
         document.head.appendChild(link);
       });
     };
