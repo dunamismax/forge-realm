@@ -60,7 +60,7 @@ enableInlineShortcodes = true
   [[menu.main]]
     name = "Discord"
     weight = 5
-    url = "https://discord.gg/KQTY8DfY"
+    url = "https://discord.gg/DvHRY8h3rs"
     [menu.main.params]
       icon = "discord"
   [[menu.main]]

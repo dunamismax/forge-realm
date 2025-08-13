@@ -220,5 +220,5 @@ Color pairs lean on a mix of these pillars:
 ---
 
 **Need rule clarifications?** Join our
-[Discord community](https://discord.gg/KQTY8DfY) where experienced players help
+[Discord community](https://discord.gg/DvHRY8h3rs) where experienced players help
 resolve complex interactions and strategic questions in real time.

@@ -25,4 +25,4 @@ Everything you need to play **Ideal Magic**—board-first gameplay, broad intera
 1. **Learn**: Read the [Quick Start Guide](quick-start/) (about 5 minutes).
 2. **Print**: Use the [Printing Guide](/docs/printing/home-printing-guide/) to make proxy cards and tokens (Clues, counters).
 3. **Play**: Grab a friend—**2-player, 20 life, London Mulligan**—and start your first match.
-4. **Join**: Connect with the community on [Discord](https://discord.gg/KQTY8DfY) for rules help, deck ideas, and events.
+4. **Join**: Connect with the community on [Discord](https://discord.gg/DvHRY8h3rs) for rules help, deck ideas, and events.

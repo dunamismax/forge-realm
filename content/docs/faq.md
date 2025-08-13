@@ -145,7 +145,7 @@ Durability depends on cardstock quality, printing method, and handling.
 
 ### How can I contribute to the format?
 
-**Format Curation**: Join discussions on [Discord](https://discord.gg/KQTY8DfY)
+**Format Curation**: Join discussions on [Discord](https://discord.gg/DvHRY8h3rs)
 **Balance Analysis**: Help analyze format health and card interactions **Playtesting**: Test format changes and provide feedback  
 **Documentation**: Help improve guides and rules **Website**: Contribute to the
 Hugo website on [GitHub](https://github.com/dunamismax/ideal-magic)
@@ -274,7 +274,7 @@ and rule clarification questions
 **Recommended path**:
 
 1. **Read the [Quick Start Guide](/docs/gameplay/quick-start/)** to learn the format rules
-2. **Join our [Discord server](https://discord.gg/KQTY8DfY)** for community
+2. **Join our [Discord server](https://discord.gg/DvHRY8h3rs)** for community
    support
 3. **Get legal card lists** from our format resources
 4. **Build decks** using only legal cards and approved mechanics
@@ -302,5 +302,5 @@ and rule clarification questions
 ---
 
 **Still have questions?** Join our
-[Discord community](https://discord.gg/KQTY8DfY) where experienced players and
+[Discord community](https://discord.gg/DvHRY8h3rs) where experienced players and
 developers are happy to help with any questions not covered here.

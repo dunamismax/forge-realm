@@ -473,7 +473,7 @@ The depth and complexity you love about Vintage exist in Ideal Magic through int
 
 ### Lead and Compete
 
-- **[Discord Community](https://discord.gg/KQTY8DfY)** for format development and high-level discussion
+- **[Discord Community](https://discord.gg/DvHRY8h3rs)** for format development and high-level discussion
 - **[Proxy Printing](/docs/printing/)** for immediate testing and tournament preparation
 
 **Welcome to Magic's ultimate expression** - maximum skill, maximum fairness.

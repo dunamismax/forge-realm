@@ -318,7 +318,7 @@ When writing content, use these key phrases that embody the vision:
 ### **External Links**
 
 - **GitHub Repository**: <https://github.com/dunamismax/ideal-magic>
-- **Discord Community**: <https://discord.gg/KQTY8DfY>
+- **Discord Community**: <https://discord.gg/DvHRY8h3rs>
 - **Live Website**: <https://ideal-magic.com>
 
 ### **Technical Stack**

@@ -265,7 +265,7 @@ cards at home with detailed instructions and troubleshooting tips.
 
 ### Getting Help
 
-- **Join our [Discord server](https://discord.gg/KQTY8DfY)** for real-time
+- **Join our [Discord server](https://discord.gg/DvHRY8h3rs)** for real-time
   support
 - **Share photos** of your print results for feedback
 - **Ask specific questions** about your printer model
@@ -285,5 +285,5 @@ cards at home with detailed instructions and troubleshooting tips.
 - **Tutorial creation**: Help improve documentation with your experience
 
 For additional support and community tips, visit our
-[Discord server](https://discord.gg/KQTY8DfY) where experienced printers share
+[Discord server](https://discord.gg/DvHRY8h3rs) where experienced printers share
 their knowledge and help troubleshoot specific issues.

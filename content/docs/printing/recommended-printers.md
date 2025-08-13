@@ -369,6 +369,6 @@ For comparison, professional services offer:
 - **Community standards** may evolve with technology
 
 For specific printer recommendations based on your budget, location, and
-printing volume, join our [Discord server](https://discord.gg/KQTY8DfY) where
+printing volume, join our [Discord server](https://discord.gg/DvHRY8h3rs) where
 community members share their experiences and help newcomers choose the right
 equipment.

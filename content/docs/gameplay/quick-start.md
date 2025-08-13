@@ -234,6 +234,6 @@ Plus **Rebound, Surge, Raid** (with conservative **Buyback** and small **Emerge*
 
 ### Connect
 
-* **[Discord](https://discord.gg/KQTY8DfY)** — Strategy, LFG, judging help
+* **[Discord](https://discord.gg/DvHRY8h3rs)** — Strategy, LFG, judging help
 * **Local groups** — Bring Ideal Magic to your play night
 * **Event prep** — Best-of-three, \~45-minute rounds, London Mulligan

@@ -7,7 +7,7 @@
 **Magic at its best** - Ideal Magic is the ultimate curation of Magic: The Gathering, featuring only the most beloved and balanced mechanics while completely removing problematic ones. This isn't a new game—it's Magic as it was meant to be.
 
 [![Play Now](https://img.shields.io/badge/Play_Now-ideal--magic.com-50fa7b?style=for-the-badge&labelColor=0b0b0b)](https://ideal-magic.com)
-[![Join Discord](https://img.shields.io/badge/Join_Discord-Community-8839ef?style=for-the-badge&labelColor=0b0b0b)](https://discord.gg/KQTY8DfY)
+[![Join Discord](https://img.shields.io/badge/Join_Discord-Community-8839ef?style=for-the-badge&labelColor=0b0b0b)](https://discord.gg/DvHRY8h3rs)
 [![License](https://img.shields.io/badge/License-CC_BY--SA_4.0-a6e3a1?style=for-the-badge&labelColor=0b0b0b)](LICENSE)
 
 ---
@@ -98,7 +98,7 @@ All formats use the same banlist and philosophy - broad interaction, visible tra
 
 **[Visit ideal-magic.com](https://ideal-magic.com)** - Complete documentation, rules, and everything you need to play
 
-**[Join our Discord](https://discord.gg/KQTY8DfY)** - Active community of players, designers, and contributors shaping the perfect MTG experience
+**[Join our Discord](https://discord.gg/DvHRY8h3rs)** - Active community of players, designers, and contributors shaping the perfect MTG experience
 
 **Contact**: [dunamismax@ideal-magic.com](mailto:dunamismax@ideal-magic.com) - Questions? Ideas? Let's talk!
 
@@ -150,7 +150,7 @@ See [LICENSE](LICENSE) for complete terms.
 
 **Shuffle up. Every line you see is a line you can play.**
 
-Visit **[ideal-magic.com](https://ideal-magic.com)** and join our [Discord](https://discord.gg/KQTY8DfY) to experience Magic at its absolute best!
+Visit **[ideal-magic.com](https://ideal-magic.com)** and join our [Discord](https://discord.gg/DvHRY8h3rs) to experience Magic at its absolute best!
 
 ---
 

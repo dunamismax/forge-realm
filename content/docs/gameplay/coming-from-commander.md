@@ -272,7 +272,7 @@ Ideal Magic: "What's my curve looking like?"
 4. **Include smoothing** (Cycling, Scry, Investigate)
 5. **Add interaction** with Ward-friendly removal
 6. **Test against other new players** before competitive play
-7. **Join the [Discord](https://discord.gg/KQTY8DfY)** for deck feedback
+7. **Join the [Discord](https://discord.gg/DvHRY8h3rs)** for deck feedback
 
 ### Recommended First Deck
 
@@ -311,6 +311,6 @@ The political timing and threat assessment skills you learned in Commander trans
 ### Build and Play
 
 - **[Proxy Printing](/docs/printing/)** for immediate playtesting
-- **[Discord Community](https://discord.gg/KQTY8DfY)** for deck ideas and opponents
+- **[Discord Community](https://discord.gg/DvHRY8h3rs)** for deck ideas and opponents
 
 **Welcome to Magic at its best** - familiar, but lighter in the hand.

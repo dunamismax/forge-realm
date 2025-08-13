@@ -489,6 +489,6 @@ The strategic depth and complexity you love about Modern exist in Ideal Magic, j
 ### Build and Compete
 
 - **[Proxy Printing](/docs/printing/)** for immediate testing
-- **[Discord Community](https://discord.gg/KQTY8DfY)** for competitive testing and discussion
+- **[Discord Community](https://discord.gg/DvHRY8h3rs)** for competitive testing and discussion
 
 **Welcome to eternal Magic done right** - all the depth, none of the degeneracy.

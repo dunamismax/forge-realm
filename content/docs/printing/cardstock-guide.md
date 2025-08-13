@@ -255,5 +255,5 @@ Regular community testing reveals:
 - **Matte finishes preferred for gameplay**
 - **300 GSM sweet spot for feel vs. printability**
 
-Join our [Discord server](https://discord.gg/KQTY8DfY) to share your cardstock
+Join our [Discord server](https://discord.gg/DvHRY8h3rs) to share your cardstock
 experiences and get recommendations based on your specific printer and location.

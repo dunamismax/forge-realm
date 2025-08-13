@@ -452,6 +452,6 @@ Your experience with efficient curves, tight gameplay, and competitive preparati
 ### Build and Compete
 
 - **[Proxy Printing](/docs/printing/)** for immediate testing
-- **[Discord Community](https://discord.gg/KQTY8DfY)** for competitive testing and tournaments
+- **[Discord Community](https://discord.gg/DvHRY8h3rs)** for competitive testing and tournaments
 
 **Welcome to competitive Magic without rotation** - all the skill, none of the anxiety.

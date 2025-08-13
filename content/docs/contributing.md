@@ -139,5 +139,5 @@ Use GitHub for:
 
 **Join the Community:**
 
-- [Join Discord](https://discord.gg/KQTY8DfY)
+- [Join Discord](https://discord.gg/DvHRY8h3rs)
 - [View on GitHub](https://github.com/dunamismax/ideal-magic)

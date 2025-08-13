@@ -26,7 +26,7 @@ layout: hextra-home
 <div class="hx:mb-6 hx:flex hx:flex-wrap hx:gap-4 hx:justify-center hx:md:justify-start">
   <a class="fr-btn fr-btn--secondary" href="/docs">Documentation</a>
   <a class="fr-btn fr-btn--secondary" href="https://ideal-magic.com/docs/gameplay/coming-from-commander/">Coming from Commander?</a>
-  <a class="fr-btn fr-btn--secondary" href="https://discord.gg/KQTY8DfY" target="_blank" rel="noreferrer">Join Discord</a>
+  <a class="fr-btn fr-btn--secondary" href="https://discord.gg/DvHRY8h3rs" target="_blank" rel="noreferrer">Join Discord</a>
   <a class="fr-btn fr-btn--secondary" href="https://github.com/dunamismax/ideal-magic" target="_blank" rel="noreferrer">View on GitHub</a>
 </div>
 
@@ -75,4 +75,4 @@ Interaction is honest and ever-present. **Ward, not hexproof**, is the default s
 
 We built this from the beloved **"glue suite"**—**Kicker, Cycling, Flashback, Foretell, Adventure, Landfall, Sagas, Investigate**—plus **Rebound, Surge, and Raid** that celebrate perfect turns without breaking them. We cut the mechanics that asked you to track ghosts or broke the pace: **Storm, Dredge, Companion, Day/Night, Dungeons, Cipher, Cumulative Upkeep**.
 
-**This is Magic as it was meant to be**—familiar, but lighter in the hand. The best parts aren't rare moments—they're the default state of play. Join our [Discord](https://discord.gg/KQTY8DfY) to experience it yourself.
+**This is Magic as it was meant to be**—familiar, but lighter in the hand. The best parts aren't rare moments—they're the default state of play. Join our [Discord](https://discord.gg/DvHRY8h3rs) to experience it yourself.
