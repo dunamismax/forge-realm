@@ -1,3 +1,7 @@
+{{/* Forge Realm SPA System - Load first for instant performance */}}
+{{ $spa := resources.Get "js/forge-realm-spa.js" | resources.Minify }}
+<script src="{{ $spa.RelPermalink }}" defer></script>
+
 {{/* Core scripts (theme, menu, tabs, etc.) */}}
 {{- partial "scripts/core.html" . -}}
 
@@ -8,3 +12,7 @@
 {{- if (.Store.Get "hasMermaid") -}}
   {{- partial "scripts/mermaid.html" . -}}
 {{- end -}}
+
+{{/* Enhanced JavaScript - Load after SPA for compatibility */}}
+{{ $enhanced := resources.Get "js/forge-realm-enhanced.js" | resources.Minify }}
+<script src="{{ $enhanced.RelPermalink }}" defer></script>

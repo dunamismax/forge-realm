@@ -160,7 +160,14 @@ class ForgeRealmEnhancer {
   }
 
   smoothNavigation() {
-    // Smooth page transitions
+    // Navigation is now handled by the SPA system
+    // This method is kept for compatibility but delegates to SPA
+    if (window.spa) {
+      console.log('Navigation delegated to SPA system');
+      return;
+    }
+    
+    // Fallback for browsers without SPA support
     document.addEventListener('click', (e) => {
       const link = e.target.closest('a[href]');
       if (!link || link.href.includes('#') || link.target === '_blank') return;

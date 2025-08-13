@@ -1,0 +1,263 @@
+/* Forge Realm - SPA Performance Optimizations */
+
+/* === CRITICAL RENDERING PATH OPTIMIZATIONS === */
+
+/* Eliminate white flash completely */
+html {
+  background-color: #111 !important;
+  color: #f3f4f6 !important;
+}
+
+body {
+  background-color: #111 !important;
+  color: #f3f4f6 !important;
+  /* Disable all transitions during navigation */
+  transition: none !important;
+}
+
+/* Force GPU acceleration for smooth animations */
+.page-transition,
+main,
+nav,
+.sidebar {
+  will-change: transform, opacity;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* === SPA PAGE TRANSITIONS === */
+
+.page-transition {
+  transition: opacity var(--fr-mobile-transition), transform var(--fr-mobile-transition);
+}
+
+.page-transition.page-entering {
+  opacity: 0;
+  transform: translate3d(0, 8px, 0);
+}
+
+.page-transition.page-entered {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.page-transition.page-exiting {
+  opacity: 0;
+  transform: translate3d(0, -4px, 0);
+}
+
+/* === MOBILE-SPECIFIC OPTIMIZATIONS === */
+
+@media (max-width: 768px) {
+  /* Faster transitions on mobile */
+  .page-transition {
+    transition: opacity 0.1s ease-out;
+  }
+  
+  /* Disable unnecessary animations on mobile */
+  .mobile-device * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.1s !important;
+  }
+  
+  /* Optimize touch interactions */
+  .mobile-device a,
+  .mobile-device button {
+    -webkit-tap-highlight-color: rgba(62, 41, 119, 0.3);
+    tap-highlight-color: rgba(62, 41, 119, 0.3);
+  }
+  
+  /* Prevent layout shift */
+  .mobile-device img {
+    height: auto;
+    width: auto;
+    max-width: 100%;
+  }
+  
+  /* Optimize scrolling */
+  .mobile-device {
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: auto; /* Disable smooth scroll on mobile for performance */
+  }
+}
+
+/* === PRELOADING INDICATORS === */
+
+.preloading::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, 
+    transparent, 
+    var(--fr-mana-blue), 
+    transparent
+  );
+  animation: preload-shimmer 1.5s infinite;
+  z-index: 100;
+}
+
+@keyframes preload-shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* === CRITICAL CSS INLINING === */
+
+/* Ensure navigation is always visible */
+nav {
+  background-color: #111;
+  border-bottom: 1px solid #374151;
+}
+
+/* Ensure sidebar has proper background */
+.sidebar {
+  background-color: #111;
+  border-right: 1px solid #374151;
+}
+
+/* === PERFORMANCE OPTIMIZATIONS === */
+
+/* Optimize images for faster loading */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transform: translateZ(0);
+}
+
+/* Optimize fonts */
+body {
+  font-display: swap;
+  text-rendering: optimizeSpeed;
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: reduce) {
+  .page-transition,
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* === LAYOUT STABILITY === */
+
+/* Prevent cumulative layout shift */
+.navbar-brand img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Stable navigation height */
+nav {
+  min-height: var(--fr-nav-height-mobile);
+}
+
+@media (min-width: 480px) {
+  nav {
+    min-height: var(--fr-nav-height-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  nav {
+    min-height: var(--fr-nav-height-desktop);
+  }
+}
+
+/* === LOADING STATES === */
+
+.spa-loading {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.spa-loading::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, 
+    var(--fr-mana-green), 
+    var(--fr-mana-blue), 
+    var(--fr-mana-white), 
+    var(--fr-mana-red), 
+    var(--fr-mana-black)
+  );
+  z-index: 10000;
+  animation: loading-bar 1s ease-in-out infinite;
+}
+
+@keyframes loading-bar {
+  0%, 100% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+}
+
+/* === VIEWPORT OPTIMIZATIONS === */
+
+/* Optimize for different screen sizes */
+@media (max-width: 480px) {
+  .page-transition {
+    transition: opacity 0.08s ease-out;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-transition {
+    transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+  }
+}
+
+/* === DARK MODE ENFORCEMENT === */
+
+/* Ensure all elements respect dark mode */
+*:not(.light-mode-only) {
+  background-color: inherit;
+  color: inherit;
+}
+
+/* Override any light mode styles */
+.hx:bg-white {
+  background-color: #111 !important;
+}
+
+.hx:text-black {
+  color: #f3f4f6 !important;
+}
+
+/* === ACCESSIBILITY OPTIMIZATIONS === */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .page-transition {
+    transition: none;
+  }
+  
+  body {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+}
+
+/* === PRINT OPTIMIZATIONS === */
+
+@media print {
+  .page-transition,
+  .spa-loading,
+  .preloading::before {
+    display: none !important;
+  }
+  
+  body {
+    background-color: white !important;
+    color: black !important;
+  }
+}

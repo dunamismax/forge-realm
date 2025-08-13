@@ -60,27 +60,76 @@
     {{ partial "google-analytics.html" . -}}
   {{- end }}
 
+  <!-- Critical CSS for instant rendering -->
+  <style>
+    /* Prevent white flash immediately */
+    html, body {
+      background-color: #111 !important;
+      color: #f3f4f6 !important;
+      transition: none !important;
+    }
+    
+    /* Critical SPA styles */
+    .page-transition {
+      transition: opacity 0.1s ease-out;
+    }
+    
+    /* Preload indicator */
+    #page-loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #111;
+      z-index: 99999;
+      opacity: 1;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+  </style>
+
   <script>
-    /* Initialize light/dark mode */
-    const defaultTheme = '{{ site.Params.theme.default | default `system`}}';
+    /* Initialize dark mode immediately - SPA optimized */
+    const defaultTheme = '{{ site.Params.theme.default | default `dark`}}';
 
     const setDarkTheme = () => {
       document.documentElement.classList.add("dark");
       document.documentElement.style.colorScheme = "dark";
+      document.documentElement.style.backgroundColor = "#111";
+      document.body.style.backgroundColor = "#111";
     }
     const setLightTheme = () => {
-      document.documentElement.classList.remove("dark");
-      document.documentElement.style.colorScheme = "light";
+      // Force dark mode for Forge Realm - no light mode
+      setDarkTheme();
     }
 
-    if ("color-theme" in localStorage) {
-      localStorage.getItem("color-theme") === "dark" ? setDarkTheme() : setLightTheme();
-    } else {
-      defaultTheme === "dark" ? setDarkTheme() : setLightTheme();
-      if (defaultTheme === "system") {
-        window.matchMedia("(prefers-color-scheme: dark)").matches ? setDarkTheme() : setLightTheme();
-      }
+    // Always use dark theme for optimal performance
+    setDarkTheme();
+    
+    // Mobile optimization flags
+    if (window.innerWidth <= 768) {
+      document.documentElement.classList.add('mobile-device');
     }
+    
+    // Preload critical resources
+    const preloadCritical = () => {
+      const criticalResources = [
+        '/images/forge-realm-PNG-circular-emblem.webp',
+        '/favicon.ico'
+      ];
+      
+      criticalResources.forEach(resource => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.href = resource;
+        link.as = resource.includes('.webp') ? 'image' : 'icon';
+        document.head.appendChild(link);
+      });
+    };
+    
+    // Execute immediately
+    preloadCritical();
   </script>
 
   <!-- KaTeX-->

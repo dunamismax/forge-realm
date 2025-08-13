@@ -18,10 +18,59 @@
 
 html {
   @apply hx:text-base hx:antialiased;
+  background-color: #111 !important;
+  color: #f3f4f6;
 }
 
 body {
-  @apply hx:w-full hx:bg-white hx:dark:bg-dark hx:dark:text-gray-100;
+  @apply hx:w-full hx:dark:bg-dark hx:dark:text-gray-100;
+  background-color: #111 !important;
+  color: #f3f4f6;
+  transition: none !important;
+}
+
+/* SPA-like page transitions */
+.page-transition {
+  transition: opacity 0.15s ease-out, transform 0.15s ease-out;
+}
+
+.page-transition.page-entering {
+  opacity: 0;
+  transform: translateY(8px);
+}
+
+.page-transition.page-entered {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.page-transition.page-exiting {
+  opacity: 0;
+  transform: translateY(-4px);
+}
+
+/* Instant background color to prevent flash */
+* {
+  background-color: inherit;
+}
+
+/* Critical CSS for instant dark mode */
+main, article, section, div {
+  background-color: transparent;
+}
+
+/* Mobile-specific optimizations */
+@media (max-width: 768px) {
+  .page-transition {
+    transition: opacity 0.1s ease-out;
+  }
+  
+  body {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select: none;
+  }
 }
 
 :root {
@@ -57,6 +106,14 @@ body {
   --fr-nav-height-mobile: 3.5rem;
   --fr-nav-height-tablet: 4rem;
   --fr-nav-height-desktop: 5rem;
+  
+  /* Performance optimizations */
+  --fr-gpu-acceleration: translateZ(0);
+  --fr-will-change: transform, opacity;
+  
+  /* Instant transition timing for mobile */
+  --fr-mobile-transition: 0.1s ease-out;
+  --fr-desktop-transition: 0.15s ease-out;
 }
 
 .dark {
@@ -79,3 +136,4 @@ body {
 @import "./components/badge.css";
 @import "./components/toc.css";
 @import "./components/forge-realm.css";
+@import "./components/spa-optimizations.css";

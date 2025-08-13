@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.Language.Lang }}">
+<html lang="{{ .Site.Language.Lang }}" class="dark">
   {{- partial "head.html" . -}}
-  <body dir="{{ .Site.Language.LanguageDirection | default `ltr` }}">
+  <body dir="{{ .Site.Language.LanguageDirection | default `ltr` }}" style="background-color: #111; transition: none;">
+    <div id="page-loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #111; z-index: 99999; opacity: 0; pointer-events: none; transition: opacity 0.2s ease;"></div>
     {{- partial "navbar.html" . -}}
     {{- block "main" . }}{{ end -}}
     {{- if or (eq .Site.Params.footer.enable nil) (.Site.Params.footer.enable) }}

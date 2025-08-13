@@ -1,8 +1,8 @@
-// Forge Realm Service Worker - Offline Support & Performance
-const CACHE_NAME = 'forge-realm-v1.2';
+// Forge Realm Service Worker - SPA-Optimized Performance
+const CACHE_NAME = 'forge-realm-spa-v2.0';
 const OFFLINE_PAGE = '/offline.html';
 
-// Assets to cache immediately
+// Assets to cache immediately for SPA performance
 const CRITICAL_ASSETS = [
   '/',
   '/docs/',
@@ -11,15 +11,20 @@ const CRITICAL_ASSETS = [
   '/docs/printing/',
   '/images/forge-realm-PNG-circular-emblem.webp',
   '/favicon.ico',
-  '/manifest.json'
+  '/manifest.json',
+  // SPA-specific assets
+  '/assets/js/forge-realm-spa.min.js',
+  '/assets/js/forge-realm-enhanced.min.js',
+  '/assets/css/compiled/main.css'
 ];
 
-// Cache strategies
+// Cache strategies optimized for SPA
 const CACHE_STRATEGIES = {
   images: 'cache-first',
-  documents: 'network-first',
+  documents: 'stale-while-revalidate', // Faster for SPA navigation
   assets: 'cache-first',
-  api: 'network-first'
+  api: 'network-first',
+  spa: 'cache-first' // SPA resources should be cached aggressively
 };
 
 // Install event - cache critical assets
