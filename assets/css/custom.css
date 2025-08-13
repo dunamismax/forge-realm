@@ -99,24 +99,35 @@ h6 { font-size: 1rem; }
   -webkit-backdrop-filter: blur(12px);
   transition: background-color var(--transition-duration) var(--transition-easing),
               backdrop-filter var(--transition-duration) var(--transition-easing);
-  min-height: 80px !important;
-  padding-top: 1rem !important;
-  padding-bottom: 1rem !important;
 }
 
-/* Ensure navbar content is properly centered with increased height */
-.hextra-navbar-container {
-  min-height: 80px !important;
-  display: flex !important;
-  align-items: center !important;
+/* Override Hextra's hardcoded navbar height */
+.nav-container nav,
+nav.hextra-max-navbar-width {
+  height: 100px !important;
+  min-height: 100px !important;
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+
+/* Ensure the navbar container accommodates the larger height */
+.nav-container {
+  min-height: 100px !important;
 }
 
 /* Adjust navbar brand/logo container for larger logo */
 .navbar-brand,
-.hextra-navbar-logo {
+.hextra-navbar-logo,
+.nav-container nav .navbar-title {
   display: flex !important;
   align-items: center !important;
-  height: 80px !important;
+  min-height: 100px !important;
+}
+
+/* Make sure all nav items are vertically centered */
+.nav-container nav > * {
+  display: flex !important;
+  align-items: center !important;
 }
 
 /* Enhanced link hover effects */
