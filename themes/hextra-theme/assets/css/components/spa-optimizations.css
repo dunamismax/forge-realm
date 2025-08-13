@@ -218,18 +218,30 @@ nav {
 
 /* === DARK MODE ENFORCEMENT === */
 
-/* Ensure all elements respect dark mode */
-*:not(.light-mode-only) {
-  background-color: inherit;
-  color: inherit;
+/* Ensure consistent dark background across all layouts */
+html, body, main, article, section, div, .content,
+.hextra-home, .docs-layout, .home-layout,
+[class*="hx:"], [class*="layout"],
+.hx\\:flex, .hx\\:grid, .hx\\:block {
+  background-color: #111 !important;
+  color: #f3f4f6 !important;
 }
 
-/* Override any light mode styles */
-.hx:bg-white {
+/* Specific fixes for layout differences */
+.hextra-max-page-width,
+.hextra-max-navbar-width,
+.hextra-max-footer-width {
   background-color: #111 !important;
 }
 
-.hx:text-black {
+/* Override any conflicting background styles */
+.hx\:bg-white, 
+.bg-white {
+  background-color: #111 !important;
+}
+
+.hx\:text-black,
+.text-black {
   color: #f3f4f6 !important;
 }
 
