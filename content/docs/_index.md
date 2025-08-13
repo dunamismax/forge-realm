@@ -7,19 +7,15 @@ description: >
   guides, and contribution information.
 ---
 
-<div class="mt-4"></div>
+<div class="hx:mt-4"></div>
 
 <div class="hx:mt-6 hx:mb-6 hx:text-center">
-<img src="/images/ideal-magic-main.webp" alt="Ideal Magic" style="max-width: 600px;" class="hx:mx-auto hx:rounded-lg hx:shadow-lg" />
+<img src="/images/ideal-magic-main.webp" alt="Ideal Magic" class="hx:mx-auto hx:rounded-lg hx:shadow-lg hx:max-w-xl" />
 </div>
 
 {{< callout type="info" >}} This is the complete documentation for Ideal Magic,
 covering gameplay rules, printing guides, and contribution information.
 {{< /callout >}}
-
-<div class="text-center my-4">
-  <img src="/images/ideal-magic-circular-emblem.webp" alt="Ideal Magic Emblem" style="max-width: 200px; height: auto;" class="img-fluid">
-</div>
 
 ## What is Ideal Magic?
 
