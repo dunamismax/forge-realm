@@ -59,26 +59,52 @@
 <!-- Critical CSS inlining for mobile -->
 <style>
   /* Critical above-the-fold styles for mobile */
-  @media (max-width: 768px) {
+  @media (max-width: 480px) {
     .nav-container {
-      min-height: 70px;
+      min-height: 60px;
       background: rgba(11, 11, 11, 0.95);
       backdrop-filter: blur(12px);
     }
     
     .nav-container nav {
-      height: 70px;
-      padding: 0.75rem 1rem;
+      height: 60px;
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     
     .navbar-brand img {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
+    }
+    
+    /* Hide search immediately on mobile */
+    .nav-container nav [class*="search"],
+    .nav-container nav input[type="search"],
+    .hextra-search {
+      display: none;
     }
     
     .hero-section {
       padding: 2rem 1rem;
       text-align: center;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .nav-container {
+      min-height: 55px;
+    }
+    
+    .nav-container nav {
+      height: 55px;
+      padding: 0.25rem 0.75rem;
+    }
+    
+    .navbar-brand img {
+      width: 35px;
+      height: 35px;
     }
   }
 </style>

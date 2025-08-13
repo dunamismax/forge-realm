@@ -443,43 +443,124 @@ body {
   /* Fix header for mobile */
   .nav-container nav,
   nav.hextra-max-navbar-width {
-    height: 70px !important;
-    min-height: 70px !important;
-    padding: 0.75rem 1rem !important;
+    height: 60px !important;
+    min-height: 60px !important;
+    padding: 0.5rem 1rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
   }
   
   .nav-container {
-    min-height: 70px !important;
+    min-height: 60px !important;
+  }
+  
+  /* Hide search bar completely on mobile */
+  .nav-container nav [class*="search"],
+  .nav-container nav input[type="search"],
+  .nav-container nav .search-input,
+  .nav-container nav [data-search],
+  .hextra-search,
+  nav [title*="Search"],
+  nav a[href*="search"] {
+    display: none !important;
+  }
+  
+  /* Hide text-based navigation links on mobile */
+  .nav-container nav a:not([class*="icon"]):not(.navbar-brand):not(.hextra-navbar-logo) {
+    display: none !important;
+  }
+  
+  /* Hide non-essential menu items that are text-based */
+  .nav-container nav a[href*="docs"]:not([class*="icon"]),
+  .nav-container nav a[href*="cards"]:not([class*="icon"]),
+  .nav-container nav a[href*="gameplay"]:not([class*="icon"]),
+  .nav-container nav a[href*="printing"]:not([class*="icon"]) {
+    display: none !important;
   }
   
   /* Scale down logo for mobile */
   .navbar-brand img,
   .hextra-navbar-logo img {
-    width: 50px !important;
-    height: 50px !important;
-    max-width: 50px !important;
-    max-height: 50px !important;
+    width: 40px !important;
+    height: 40px !important;
+    max-width: 40px !important;
+    max-height: 40px !important;
   }
   
   /* Adjust navbar brand container */
   .navbar-brand,
   .hextra-navbar-logo,
   .nav-container nav .navbar-title {
-    min-height: 70px !important;
-    height: 70px !important;
+    min-height: 60px !important;
+    height: 60px !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
   }
   
-  /* Mobile navigation improvements */
-  .hextra-nav-menu-toggle {
-    padding: 0.5rem !important;
-    margin-right: 0 !important;
-  }
-  
-  /* Better mobile typography */
+  /* Better mobile typography for title */
   .navbar-title h1,
   .navbar-title .title {
-    font-size: 1.2rem !important;
-    margin-left: 0.5rem;
+    font-size: 1.1rem !important;
+    margin-left: 0.5rem !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+  
+  /* Mobile navigation improvements - right side icons */
+  .nav-container nav .hx\:flex {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.5rem !important;
+    flex-shrink: 0 !important;
+  }
+  
+  /* Ensure Discord and GitHub icons are visible */
+  .nav-container nav a[href*="discord"],
+  .nav-container nav a[href*="github"] {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.5rem !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+  }
+  
+  /* Mobile hamburger menu */
+  .hamburger-menu,
+  .hextra-nav-menu-toggle {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.5rem !important;
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+  }
+  
+  /* Create clean mobile header layout */
+  .nav-container nav {
+    grid-template-columns: 1fr auto !important;
+    display: grid !important;
+    align-items: center !important;
+  }
+  
+  /* Left side: Logo + Title */
+  .nav-container nav > :first-child {
+    display: flex !important;
+    align-items: center !important;
+    overflow: hidden !important;
+  }
+  
+  /* Right side: Icons + Menu */
+  .nav-container nav > :last-child {
+    display: flex !important;
+    align-items: center !important;
+    gap: 0.25rem !important;
+    justify-self: end !important;
   }
   
   /* Hero section mobile optimization */
@@ -527,29 +608,68 @@ body {
   /* Slightly larger header for landscape */
   .nav-container nav,
   nav.hextra-max-navbar-width {
-    height: 80px !important;
-    min-height: 80px !important;
-    padding: 1rem 1.5rem !important;
+    height: 70px !important;
+    min-height: 70px !important;
+    padding: 0.75rem 1.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
   }
   
   .nav-container {
-    min-height: 80px !important;
+    min-height: 70px !important;
+  }
+  
+  /* Hide search bar on landscape mobile too */
+  .nav-container nav [class*="search"],
+  .nav-container nav input[type="search"],
+  .nav-container nav .search-input,
+  .nav-container nav [data-search],
+  .hextra-search,
+  nav [title*="Search"],
+  nav a[href*="search"] {
+    display: none !important;
+  }
+  
+  /* Show some navigation links on landscape mobile */
+  .nav-container nav a[href*="docs"]:not([class*="icon"]) {
+    display: none !important;
   }
   
   /* Medium logo size for landscape */
   .navbar-brand img,
   .hextra-navbar-logo img {
-    width: 60px !important;
-    height: 60px !important;
-    max-width: 60px !important;
-    max-height: 60px !important;
+    width: 50px !important;
+    height: 50px !important;
+    max-width: 50px !important;
+    max-height: 50px !important;
   }
   
   .navbar-brand,
   .hextra-navbar-logo,
   .nav-container nav .navbar-title {
-    min-height: 80px !important;
-    height: 80px !important;
+    min-height: 70px !important;
+    height: 70px !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+  
+  /* Better title sizing for landscape */
+  .navbar-title h1,
+  .navbar-title .title {
+    font-size: 1.25rem !important;
+    margin-left: 0.5rem !important;
+  }
+  
+  /* Ensure Discord and GitHub icons are visible */
+  .nav-container nav a[href*="discord"],
+  .nav-container nav a[href*="github"] {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0.5rem !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
   }
   
   /* Two-column layout for feature cards */
@@ -597,24 +717,26 @@ body {
   /* Mobile navigation menu */
   .hextra-nav-menu-items {
     position: fixed !important;
-    top: 70px !important;
+    top: 60px !important;
     left: 0 !important;
     right: 0 !important;
-    max-height: calc(100vh - 70px) !important;
+    max-height: calc(100vh - 60px) !important;
     background: var(--bg-primary) !important;
     border: none !important;
     border-radius: 0 !important;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1) !important;
+    z-index: 60 !important;
   }
   
-  /* Mobile search improvements */
+  /* Mobile search improvements - since search is hidden, this is just fallback */
   .search-results {
     position: fixed !important;
-    top: 70px !important;
+    top: 60px !important;
     left: 1rem !important;
     right: 1rem !important;
-    max-height: calc(100vh - 90px) !important;
+    max-height: calc(100vh - 80px) !important;
     z-index: 50 !important;
+    display: none !important; /* Hidden since search is disabled on mobile */
   }
   
   /* Mobile sidebar improvements */
@@ -622,7 +744,7 @@ body {
     transform: translateX(-100%) !important;
     transition: transform 0.3s ease !important;
     position: fixed !important;
-    top: 70px !important;
+    top: 60px !important;
     left: 0 !important;
     bottom: 0 !important;
     width: 280px !important;
@@ -856,16 +978,51 @@ body {
 /* Extra Small Devices (320px - 375px) */
 @media (max-width: 375px) {
   .nav-container nav {
-    padding: 0.5rem 0.75rem !important;
+    padding: 0.25rem 0.75rem !important;
+    height: 55px !important;
+    min-height: 55px !important;
   }
   
-  .navbar-brand img {
-    width: 45px !important;
-    height: 45px !important;
+  .nav-container {
+    min-height: 55px !important;
   }
   
-  .navbar-title h1 {
-    font-size: 1.1rem !important;
+  /* Even smaller logo for tiny screens */
+  .navbar-brand img,
+  .hextra-navbar-logo img {
+    width: 35px !important;
+    height: 35px !important;
+    max-width: 35px !important;
+    max-height: 35px !important;
+  }
+  
+  .navbar-brand,
+  .hextra-navbar-logo,
+  .nav-container nav .navbar-title {
+    min-height: 55px !important;
+    height: 55px !important;
+  }
+  
+  /* Smaller title for tiny screens */
+  .navbar-title h1,
+  .navbar-title .title {
+    font-size: 1rem !important;
+    margin-left: 0.25rem !important;
+  }
+  
+  /* Smaller icon touch targets for tiny screens */
+  .nav-container nav a[href*="discord"],
+  .nav-container nav a[href*="github"] {
+    padding: 0.375rem !important;
+    min-width: 35px !important;
+    min-height: 35px !important;
+  }
+  
+  .hamburger-menu,
+  .hextra-nav-menu-toggle {
+    padding: 0.375rem !important;
+    min-width: 35px !important;
+    min-height: 35px !important;
   }
   
   .hero-section {
