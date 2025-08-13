@@ -3,7 +3,7 @@ title: "Gameplay"
 linkTitle: "Gameplay"
 weight: 10
 description: >
-Learn how to play Ideal Magic with quick-start rules, the full rulebook, and supported formats
+  Learn how to play Ideal Magic with quick-start rules, the full rulebook, and supported formats
 ---
 
 {{< callout type="info" >}}

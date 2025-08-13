@@ -3,9 +3,9 @@ title: "Comprehensive Rules (Ideal Magic)"
 linkTitle: "Rules"
 weight: 20
 description: >
-The definitive rules for the Ideal Magic format: classic Magic foundations,
-modern paper-friendly design, evergreen interaction, and beloved mechanics
-that maximize agency and minimize bookkeeping.
+  The definitive rules for the Ideal Magic format: classic Magic foundations,
+  modern paper-friendly design, evergreen interaction, and beloved mechanics
+  that maximize agency and minimize bookkeeping.
 ---
 
 {{< callout type="warning" >}}

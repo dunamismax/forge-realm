@@ -3,9 +3,9 @@ title: "Quick Start Guide (Ideal Magic)"
 linkTitle: "Quick Start"
 weight: 10
 description: >
-Get playing in minutes with this streamlined guide for Ideal Magic—
-classic foundations, modern paper-friendly upgrades, and beloved mechanics
-that maximize agency and minimize bookkeeping
+  Get playing in minutes with this streamlined guide for Ideal Magic—
+  classic foundations, modern paper-friendly upgrades, and beloved mechanics
+  that maximize agency and minimize bookkeeping
 ---
 
 {{< callout type="info" >}}

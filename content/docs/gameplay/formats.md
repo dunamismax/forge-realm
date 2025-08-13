@@ -3,8 +3,8 @@ title: "Play Formats (Ideal Magic)"
 linkTitle: "Formats"
 weight: 30
 description: >
-Ways to play Ideal Magic for different group sizes and goals—built on classic
-foundations with modern, paper-friendly upgrades.
+  Ways to play Ideal Magic for different group sizes and goals—built on classic
+  foundations with modern, paper-friendly upgrades.
 ---
 
 {{< callout type="info" >}}
